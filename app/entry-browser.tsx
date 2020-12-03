@@ -7,7 +7,7 @@ import App from './App'
 ReactDOM.hydrate(
   // @ts-expect-error
   <Remix>
-    <App />
+    <App styledComponentsStyles={null} />
   </Remix>,
   document
 )
