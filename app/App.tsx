@@ -1,5 +1,5 @@
 import React from 'react'
-import { Meta, Scripts, Routes } from '@remix-run/react'
+import { Meta, Scripts, Routes, Styles } from '@remix-run/react'
 import { Header } from './components/header'
 
 interface Props {
@@ -14,6 +14,7 @@ export default function App ({ styledComponentsStyles }: Props): JSX.Element {
         <link rel='icon' href='/favicon.png' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <Meta />
+        <Styles />
         {styledComponentsStyles}
       </head>
       <body>

@@ -1,6 +1,9 @@
 {
   "extends": "../config/shared-tsconfig.json",
-  "include": ["**/*"],
+  "include": [
+    "**/*",
+    "../app/definitons.d.ts"
+  ],
   "compilerOptions": {
     "outDir": "../data-build",
     "module": "commonjs"
