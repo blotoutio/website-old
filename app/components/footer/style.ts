@@ -18,7 +18,7 @@ export const Social = styled.div`
 `
 
 export const SiteMap = styled.div`
-  margin-top: 30px;
+  margin-top: 20px;
 `
 
 export const StyledLink = styled(Link)`
@@ -26,6 +26,7 @@ export const StyledLink = styled(Link)`
   margin: 0 18px;
   color: #012F76;
   text-decoration: none;
+  transition: all 0.3s ease;
   
   &:hover {
     color: #e05b17;
