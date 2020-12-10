@@ -3,28 +3,32 @@ import { NavLink } from 'react-router-dom'
 
 export const Wrapper = styled.header`
   display: flex;
-  margin: 65px auto 0;
+  margin: 30px auto 0;
   max-width: 1500px;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   left: 0;
   right: 0;
   justify-content: space-between;
-  padding: 0 15px;
-  align-items: center;
+  padding: 0 30px;
+  align-items: flex-end;
 `
 
 export const StyledLink = styled(NavLink)`
   text-decoration: none;
   margin: 0 25px;
-  color: #69c7ef;
-  font-size: 26px;
-  
+  color: #fff;
+  font-size: 21px;
+
   &.active {
     color: #e05b17;
   }
-  
+
   &:hover {
     text-decoration: underline;
   }
+`
+
+export const Image = styled.img`
+  display: block;
 `

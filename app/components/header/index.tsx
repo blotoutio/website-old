@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper, StyledLink } from './style'
+import { Wrapper, StyledLink, Image } from './style'
 import { Link } from 'react-router-dom'
 
 const links = [
@@ -17,7 +17,7 @@ export const Header = (): JSX.Element => {
   return (
     <Wrapper>
       <Link to='/'>
-        <img src='/logo.svg' alt='logo' width={297} height={67} />
+        <Image src='/logo.svg' alt='logo' width={130} height={44} />
       </Link>
       <div>
         {

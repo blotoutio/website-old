@@ -10,7 +10,8 @@ export const Center = styled.div`
   display: flex;
   margin: 0 auto;
   max-width: 1500px;
-  padding: 0 15px;
+  padding: 0 30px;
+  align-items: center;
 `
 
 export const Text = styled.div`
@@ -19,13 +20,13 @@ export const Text = styled.div`
   margin-right: 130px;
 
   h4 {
-    font-size: 38px;
+    font-size: 30px;
     padding: 0;
     margin: 0;
   }
 
   p {
-    font-size: 28px;
+    font-size: 22px;
     padding: 0;
     margin: 20px 0 0;
   }
@@ -40,7 +41,7 @@ export const Image = styled.div`
 export const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 `
 
 export const Title = styled.h3`

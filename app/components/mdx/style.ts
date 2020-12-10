@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Content = styled.section`
   margin: 0 auto;
   max-width: 1200px;
-  padding: 30px 15px;
+  padding: 30px 15px 50px;
   font-size: 18px;
   line-height: 1.5;
   

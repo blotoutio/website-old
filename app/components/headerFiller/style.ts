@@ -5,6 +5,6 @@ export const Wrapper = styled.div`
 `
 
 export const Filler = styled.div`
-  height: 160px;
+  height: 100px;
   background: linear-gradient(-45deg,#063a7d 0%,#2a63ab 100%);
 `
