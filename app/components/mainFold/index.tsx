@@ -27,7 +27,7 @@ export default function MainFold (): JSX.Element {
         />
       </Buttons>
       <ImageWrapper>
-        <img src='/images/main_fold.png' alt='Main image' width='100%' />
+        <img src='/images/main_fold.png' alt='Main image' height='100%' width='100%' />
       </ImageWrapper>
     </Wrapper>
   )

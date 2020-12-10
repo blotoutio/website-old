@@ -1,6 +1,7 @@
 import React from 'react'
 import { Meta, Scripts, Routes, Styles } from '@remix-run/react'
 import { Header } from './components/header'
+import { Footer } from './components/footer'
 
 interface Props {
   styledComponentsStyles?: React.ReactElement[]
@@ -34,6 +35,7 @@ export default function App ({ styledComponentsStyles }: Props): JSX.Element {
       <body>
         <Header />
         <Routes />
+        <Footer />
         <Scripts />
       </body>
     </html>
