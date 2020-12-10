@@ -3,10 +3,6 @@ import { Wrapper, Links, StyledLink, Logo } from './style'
 
 const links = [
   {
-    link: '/why',
-    text: 'Why Blotout'
-  },
-  {
     link: '/blog',
     text: 'Blog'
   },
