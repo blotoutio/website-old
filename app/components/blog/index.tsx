@@ -10,7 +10,7 @@ const generateArticle = (article: BlogArticle): JSX.Element => {
     .format(new Date(article.date))
   return (
     <article className='blog_article' key={article.link}>
-      <h3 className='blog_title'>{article.title}</h3>
+      <h2 className='blog_title'>{article.title}</h2>
       <small>{formattedDate}</small>
       <p>{article.description}</p>
       <a className='blog_readMore' href={article.link} target='_blank' rel='noreferrer'>

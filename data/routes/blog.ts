@@ -22,13 +22,13 @@ const articles: BlogArticle[] = [
     description: `The world’s first client computed, privacy by design, product analytics SDK for application and 
     web developers.Recommended pre-readingPrivacy has muscle at the device edgePrivacy by trust vs. 
     Privacy by designKiss: making privacy by design...`,
-    date: '2020-6-22',
+    date: '2020-06-22',
     link: 'https://medium.com/@blotout/announcing-blotout-v0-1-e6b938b4e0ca?source=rss-311788da9428------2'
   },
   {
     title: 'Good read Mike Raab; thanks for sharing. Most acknowledgement for what I believe was true!',
     description: 'Good read Mike Raab; thanks for sharing. Most acknowledgement for what I believe was true!',
-    date: '2020-3-5',
+    date: '2020-03-05',
     link: 'https://medium.com/@blotout/good-read-mike-raab-thanks-for-sharing-most-acknowledgement-for-what-i-believe-was-true-963495fbbf05?source=rss-311788da9428------2'
   },
   {
@@ -36,7 +36,7 @@ const articles: BlogArticle[] = [
     description: `KISS: keep it simple, stupid. It is the paradigm that drives the mindset of big tech. That is 
     how we got to this consumer experience where big tech has put us to sleep while invading our four 
     walls without us even noticing.`,
-    date: '2020-1-15',
+    date: '2020-01-15',
     link: 'https://medium.com/@blotout/kiss-making-privacy-by-design-easy-19316b08107d?source=rss-311788da9428------2'
   },
   {

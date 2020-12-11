@@ -7,7 +7,7 @@ export interface Props {
 }
 
 export default function Fold (props: Props): JSX.Element {
-  const className = props.number%2 === 0 ? 'even' : 'odd'
+  const className = props.number % 2 === 0 ? 'even' : 'odd'
 
   return (
     <div className={`fold_wrapper ${className}`} {...props}>

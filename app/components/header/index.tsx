@@ -18,7 +18,7 @@ export const Header = (): JSX.Element => {
       <Link to='/'>
         <img className='header_image' src='/logo.svg' alt='logo' width={130} height={44} />
       </Link>
-      <div>
+      <div className='header_links'>
         {
           links.map(link => <NavLink className='header_link' to={link.link} key={link.link}>{link.text}</NavLink>)
         }

@@ -26,7 +26,9 @@ export default function MainFold (): JSX.Element {
           />
         </div>
         <div className='mainFold_imageWrapper'>
-          <img src='/images/main_fold.png' alt='Main image' height='100%' width='100%' />
+          <div className='mainFold_imageSpacing'>
+            <img src='/images/main_fold.jpg' alt='Main image' height='100%' width='100%' />
+          </div>
         </div>
       </div>
     </section>

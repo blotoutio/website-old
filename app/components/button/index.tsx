@@ -9,7 +9,6 @@ export interface Props {
 }
 
 export const Button = (props: Props): JSX.Element => {
-
   if (props.external) {
     return (
       <a
