@@ -1,11 +1,10 @@
 import React from 'react'
-import { Filler, Wrapper } from './style'
 
 export default function HeaderFiller (props: any): JSX.Element {
   return (
-    <Wrapper>
-      <Filler />
+    <div className='headerFiller_wrapper'>
+      <div className='headerFiller_filler' />
       {props.children}
-    </Wrapper>
+    </div>
   )
 }

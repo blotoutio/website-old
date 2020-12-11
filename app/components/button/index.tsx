@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledLink, StyledExternalLink } from './style'
+import { Link } from 'react-router-dom'
 
 export interface Props {
   link: string
@@ -9,17 +9,22 @@ export interface Props {
 }
 
 export const Button = (props: Props): JSX.Element => {
+
   if (props.external) {
     return (
-      <StyledExternalLink href={props.link} {...props} target='_blank' rel='noreferrer'>
+      <a
+        className={`button ${props.type}`}
+        href={props.link}
+        target='_blank' rel='noreferrer'
+      >
         {props.text}
-      </StyledExternalLink>
+      </a>
     )
   }
 
   return (
-    <StyledLink to={props.link} {...props}>
+    <Link className={`button ${props.type}`} to={props.link}>
       {props.text}
-    </StyledLink>
+    </Link>
   )
 }

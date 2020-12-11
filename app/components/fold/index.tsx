@@ -1,5 +1,4 @@
 import React from 'react'
-import { Wrapper, Text, Image, Center, TitleWrapper, Title } from './style'
 
 export interface Props {
   number: number
@@ -8,20 +7,22 @@ export interface Props {
 }
 
 export default function Fold (props: Props): JSX.Element {
+  const className = props.number%2 === 0 ? 'even' : 'odd'
+
   return (
-    <Wrapper {...props}>
-      <Center>
-        <Text>
-          <TitleWrapper>
+    <div className={`fold_wrapper ${className}`} {...props}>
+      <div className='fold_center'>
+        <div className='fold_text'>
+          <div className='fold_titleWrapper'>
             <img src={`/icons/fold${props.number}.svg`} width='56' height='56' alt={props.title} />
-            <Title>{props.title}</Title>
-          </TitleWrapper>
+            <h3 className='fold_title'>{props.title}</h3>
+          </div>
           {props.children}
-        </Text>
-        <Image>
+        </div>
+        <div className='fold_image'>
           <img src={`/images/fold${props.number}.jpg`} height='100%' width='100%' alt={`section-${props.number}`} />
-        </Image>
-      </Center>
-    </Wrapper>
+        </div>
+      </div>
+    </div>
   )
 }

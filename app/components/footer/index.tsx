@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper, Social, SiteMap, StyledLink, Copy } from './style'
+import { Link } from 'react-router-dom'
 
 const siteMap = [
   {
@@ -49,8 +49,8 @@ const social = [
 
 export const Footer = (): JSX.Element => {
   return (
-    <Wrapper>
-      <Social>
+    <footer className='footer_wrapper'>
+      <div className='footer_social'>
         {
           social.map(item => (
             <a href={item.link} key={item.link}>
@@ -58,15 +58,15 @@ export const Footer = (): JSX.Element => {
             </a>
           ))
         }
-      </Social>
-      <SiteMap>
+      </div>
+      <div className='footer_siteMap'>
         {
-          siteMap.map(link => <StyledLink to={link.link} key={link.link}>{link.text}</StyledLink>)
+          siteMap.map(link => <Link className='footer_link' to={link.link} key={link.link}>{link.text}</Link>)
         }
-      </SiteMap>
-      <Copy>
+      </div>
+      <div className='footer_copy'>
         Copyright © 2020 Blotout. All rights reserved.
-      </Copy>
-    </Wrapper>
+      </div>
+    </footer>
   )
 }

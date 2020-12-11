@@ -3,11 +3,7 @@ import { Meta, Scripts, Routes, Styles } from '@remix-run/react'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 
-interface Props {
-  styledComponentsStyles?: React.ReactElement[]
-}
-
-export default function App ({ styledComponentsStyles }: Props): JSX.Element {
+export default function App (): JSX.Element {
   return (
     <html lang='en'>
       <head>
@@ -30,7 +26,6 @@ export default function App ({ styledComponentsStyles }: Props): JSX.Element {
         }}
         />
         <Styles />
-        {styledComponentsStyles}
       </head>
       <body>
         <Header />

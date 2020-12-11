@@ -1,5 +1,4 @@
 import React from 'react'
-import { Content, Article, ReadMore, Title } from './style'
 import HeaderFiller from '../headerFiller'
 
 interface Props {
@@ -10,23 +9,23 @@ const generateArticle = (article: BlogArticle): JSX.Element => {
   const formattedDate = new Intl.DateTimeFormat('en', { month: 'long', day: '2-digit', year: 'numeric' })
     .format(new Date(article.date))
   return (
-    <Article key={article.link}>
-      <Title>{article.title}</Title>
+    <article className='blog_article' key={article.link}>
+      <h3 className='blog_title'>{article.title}</h3>
       <small>{formattedDate}</small>
       <p>{article.description}</p>
-      <ReadMore href={article.link} target='_blank' rel='noreferrer'>
+      <a className='blog_readMore' href={article.link} target='_blank' rel='noreferrer'>
         Continue reading {'>'}
-      </ReadMore>
-    </Article>
+      </a>
+    </article>
   )
 }
 
 export default function Blog (props: Props): JSX.Element {
   return (
     <HeaderFiller>
-      <Content>
+      <section className='blog_content'>
         {props.articles.map((article: BlogArticle) => generateArticle(article))}
-      </Content>
+      </section>
     </HeaderFiller>
   )
 }

@@ -1,18 +1,17 @@
 import React from 'react'
-import { Wrapper, Header1, Header2, Buttons, ImageWrapper, Front } from './style'
 import { Button } from '../button'
 
 export default function MainFold (): JSX.Element {
   return (
-    <Wrapper>
-      <Front>
-        <Header1>
+    <section className='mainFold_wrapper'>
+      <div className='mainFold_front'>
+        <h1 className='mainFold_header1'>
           The Privacy Era Analytics and Customer Data Platform
-        </Header1>
-        <Header2>
+        </h1>
+        <h2 className='mainFold_header2'>
           Cloud Native Analytics, Data Integrations, Governance, Messaging, and Automation
-        </Header2>
-        <Buttons>
+        </h2>
+        <div className='mainFold_buttons'>
           <Button
             external
             link='mailto:sales@blotout.io'
@@ -25,11 +24,11 @@ export default function MainFold (): JSX.Element {
             text='See our Product Video'
             type='secondary'
           />
-        </Buttons>
-        <ImageWrapper>
+        </div>
+        <div className='mainFold_imageWrapper'>
           <img src='/images/main_fold.png' alt='Main image' height='100%' width='100%' />
-        </ImageWrapper>
-      </Front>
-    </Wrapper>
+        </div>
+      </div>
+    </section>
   )
 }

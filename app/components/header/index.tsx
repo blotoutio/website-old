@@ -1,6 +1,5 @@
 import React from 'react'
-import { Wrapper, StyledLink, Image } from './style'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 const links = [
   {
@@ -15,15 +14,15 @@ const links = [
 
 export const Header = (): JSX.Element => {
   return (
-    <Wrapper>
+    <header className='header_wrapper'>
       <Link to='/'>
-        <Image src='/logo.svg' alt='logo' width={130} height={44} />
+        <img className='header_image' src='/logo.svg' alt='logo' width={130} height={44} />
       </Link>
       <div>
         {
-          links.map(link => <StyledLink to={link.link} key={link.link}>{link.text}</StyledLink>)
+          links.map(link => <NavLink className='header_link' to={link.link} key={link.link}>{link.text}</NavLink>)
         }
       </div>
-    </Wrapper>
+    </header>
   )
 }
