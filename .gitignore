@@ -4,6 +4,7 @@ node_modules/
 /build
 /data-build
 /public/build
+app-build
 
 .idea
 .DS_Store

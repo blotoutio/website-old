@@ -1,4 +1,3 @@
-import React from 'react'
 import MainFold from '../components/mainFold'
 import Fold from '../components/fold'
 
