@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderFiller from '../headerFiller'
 
 export default function MDX (props: any): JSX.Element {

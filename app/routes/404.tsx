@@ -1,5 +1,3 @@
-import React from 'react'
-
 export function meta (): Meta {
   return {
     title: "Ain't nothing here"
