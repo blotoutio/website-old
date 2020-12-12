@@ -1,8 +1,29 @@
-import { Meta, Scripts, Routes, Styles } from '@remix-run/react'
+import { useRef, useEffect } from 'react'
+import { Meta, Routes, Styles } from '@remix-run/react'
+import { useLocation } from 'react-router-dom'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 
+function useScrollToTop() {
+  // TODO: remove when Remix does this automatically
+  let location = useLocation()
+
+  let keys = useRef<Set<string> | null>(null)
+  if (keys.current === null) {
+    keys.current = new Set(location.key)
+  }
+
+  useEffect(() => {
+    if (keys.current?.has(location.key)) {
+      return
+    }
+    keys.current?.add(location.key)
+    window.scrollTo(0, 0)
+  }, [location]);
+}
+
 export default function App (): JSX.Element {
+  useScrollToTop()
   return (
     <html lang='en'>
       <head>
@@ -30,7 +51,6 @@ export default function App (): JSX.Element {
         <Header />
         <Routes />
         <Footer />
-        <Scripts />
       </body>
     </html>
   )
