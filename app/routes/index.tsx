@@ -4,7 +4,7 @@ import Fold from '../components/fold'
 export function meta (): Meta {
   return {
     title: 'Blotout',
-    description: 'Welcome to Blotout!'
+    description: 'Think Privacy. A Federated Data Platform Company. Privacy first. Automation, not just Analytics. Federation, not just Cloud.'
   }
 }
 

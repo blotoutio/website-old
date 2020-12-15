@@ -52,15 +52,21 @@ export const Footer = (): JSX.Element => {
       <div className='footer_social'>
         {
           social.map(item => (
-            <a href={item.link} key={item.link}>
-              <img src={item.image} alt={item.alt} width='30' height='30' />
+            <a href={item.link} key={item.link} target='_blank' rel='noreferrer'>
+              <img src={item.image} alt={item.alt} width='30' height='30' data-event={`footer-${item.alt}`} />
             </a>
           ))
         }
       </div>
       <div className='footer_siteMap'>
         {
-          siteMap.map(link => <Link className='footer_link' to={link.link} key={link.link}>{link.text}</Link>)
+          siteMap.map(link => {
+            return (
+              <Link className='footer_link' to={link.link} key={link.link} data-event={`sitemap-${link.text}`}>
+                {link.text}
+              </Link>
+            )
+          })
         }
       </div>
       <div className='footer_copy'>

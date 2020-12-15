@@ -12,12 +12,14 @@ export default function MainFold (): JSX.Element {
         </h2>
         <div className='mainFold_buttons'>
           <Button
+            id='sign-up'
             external
             link='mailto:sales@blotout.io'
             text='Signup for Demo'
             type='primary'
           />
           <Button
+            id='product-video'
             external
             link='https://www.youtube.com/channel/UC-ywhz5uMq_3kX_JnHorg-A'
             text='See our Product Video'

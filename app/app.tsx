@@ -30,6 +30,7 @@ export default function App (): JSX.Element {
         <meta charSet='utf-8' />
         <link rel='icon' href='/favicon.png' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <script type="application/javascript" src="/global.js" />
         <Meta />
         <style dangerouslySetInnerHTML={{
           __html: `
