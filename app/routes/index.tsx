@@ -79,17 +79,6 @@ export default function Index (): JSX.Element {
           </p>
         </>
       </Fold>
-      <Fold number={7} title='Messaging'>
-        <>
-          <h4>
-            Can I re-engage my users cross-platform?
-          </h4>
-          <p>
-            Blotout provides messaging services that capture cross-platform conversions and partial funnels, allowing
-            real time re-engagement based on a preferential model.
-          </p>
-        </>
-      </Fold>
     </>
   )
 }
