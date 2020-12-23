@@ -6,6 +6,7 @@
     "postinstall": "tsc -b",
     "predeploy": "remix build && tsc -b",
     "deploy": "vercel",
+    "deploy-prod": "npm run predeploy && vercel --prod",
     "start": "concurrently \"tsc -b -w --preserveWatchOutput\" \"remix run\" \"vercel dev\"",
     "lint": "ts-standard"
   },

@@ -4,7 +4,7 @@ import Blog from '../components/blog'
 export function meta (): Meta {
   return {
     title: 'Blog',
-    description: 'Blotout blog'
+    description: 'Read out Blotout philosophy and how we are bring privacy to enterprise while doubling revenue, and reducing costs.'
   }
 }
 

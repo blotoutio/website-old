@@ -5,10 +5,10 @@ export default function MainFold (): JSX.Element {
     <section className='mainFold_wrapper'>
       <div className='mainFold_front'>
         <h1 className='mainFold_header1'>
-          The Privacy Era Analytics and Customer Data Platform
+          The enterprise-grade  privacy-era customer data platform
         </h1>
         <h2 className='mainFold_header2'>
-          Cloud Native Analytics, Data Integrations, Governance, Messaging, and Automation
+          Cloud Native Analytics, Data Integrations, Governance, Messaging, and Activation
         </h2>
         <div className='mainFold_buttons'>
           <Button
