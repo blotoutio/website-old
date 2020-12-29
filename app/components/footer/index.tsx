@@ -14,8 +14,8 @@ const siteMap = [
     text: 'About'
   },
   {
-    link: '/terms-of-services',
-    text: 'Terms of Services'
+    link: '/terms-of-service',
+    text: 'Terms of Service'
   },
   {
     link: '/privacy-policy',
