@@ -8,7 +8,7 @@ export default function MainFold (): JSX.Element {
           The enterprise-grade  privacy-era customer data platform
         </h1>
         <h2 className='mainFold_header2'>
-          Cloud Native Analytics, Data Integrations, Governance, Messaging, and Activation
+          Privacy preserving, yet doubles your conversions. Real time data activation in your Cloud account.
         </h2>
         <div className='mainFold_buttons'>
           <Button
