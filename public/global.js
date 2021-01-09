@@ -1,8 +1,8 @@
 (function() {
-  var head=document.getElementsByTagName('head')[0];
-  var script=document.createElement('script');
+  const head=document.getElementsByTagName('head')[0];
+  const script=document.createElement('script');
   script.type='text/javascript';
-  script.src="https://download.blotout.io/v1.0/sdks/bosdk.js";
+  script.src="https://download.blotout.io/sdkrc/trends.js";
   script.onreadystatechange=analytics;
   script.onload=analytics;
   head.appendChild(script)
