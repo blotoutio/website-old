@@ -7,5 +7,6 @@ interface BlogArticle {
   title: string
   description: string
   date: string
-  link: string
+  link?: string
+  mediumLink: string
 }
