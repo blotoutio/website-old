@@ -1,6 +1,15 @@
 {
-  "extends": "../config/shared-tsconfig.json",
   "compilerOptions": {
-    "noEmit": true
-  }
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "target": "es2019",
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "**/*",
+    "./definitons.d.ts"
+  ],
+  "exclude": ["node_modules"]
 }

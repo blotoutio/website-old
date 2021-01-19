@@ -1,6 +1,4 @@
-import type { DataLoader } from '@remix-run/core'
-
-const articles: BlogArticle[] = [
+export const articles: BlogArticle[] = [
   {
     title: 'The Hypocrisy in Privacy',
     description: `Featuring Apple and AdobeSetting ContextIt was a huge win for web consumers when Apple took up the 
@@ -55,9 +53,3 @@ const articles: BlogArticle[] = [
     link: 'https://medium.com/@blotout/privacy-has-muscle-at-the-device-edge-dd442c026ba4?source=rss-311788da9428------2'
   }
 ]
-
-export const loader: DataLoader = async () => {
-  return {
-    articles
-  }
-}
