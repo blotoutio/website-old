@@ -15,7 +15,7 @@ export const Header = (): JSX.Element => {
   return (
     <header className='header_wrapper'>
       <Link to='/'>
-        <img className='header_image' src='/logo.svg' alt='logo' width={130} height={44} data-event={`header-logo`} />
+        <img className='header_image' src='/logo.svg' alt='logo' width={130} height={44} data-event='header-logo' />
       </Link>
       <div className='header_links'>
         {
