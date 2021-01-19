@@ -3,7 +3,7 @@ import type { Loader } from '@remix-run/data'
 import Blog from '../components/blog'
 import { articles } from '../data/blog'
 
-export let loader: Loader = async () => {
+export const loader: Loader = async () => {
   return {
     articles
   }

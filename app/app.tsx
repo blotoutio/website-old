@@ -4,11 +4,11 @@ import { useLocation } from 'react-router-dom'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 
-function useScrollToTop() {
+function useScrollToTop (): void {
   // TODO: remove when Remix does this automatically
-  let location = useLocation()
+  const location = useLocation()
 
-  let keys = useRef<Set<string> | null>(null)
+  const keys = useRef<Set<string> | null>(null)
   if (keys.current === null) {
     keys.current = new Set(location.key)
   }
@@ -19,7 +19,7 @@ function useScrollToTop() {
     }
     keys.current?.add(location.key)
     window.scrollTo(0, 0)
-  }, [location]);
+  }, [location])
 }
 
 export default function App (): JSX.Element {
@@ -30,7 +30,7 @@ export default function App (): JSX.Element {
         <meta charSet='utf-8' />
         <link rel='icon' href='/favicon.png' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <script type="application/javascript" src="/global.js" />
+        <script type='application/javascript' src='/global.js' />
         <Meta />
         <style dangerouslySetInnerHTML={{
           __html: `
