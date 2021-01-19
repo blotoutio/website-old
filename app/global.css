@@ -8,6 +8,10 @@ body {
   position: relative;
 }
 
+h1 {
+  font-size: 35px;
+}
+
 /*
   BLOG
 */
@@ -322,13 +326,19 @@ body {
 }
 
 .mdx_content a {
-  color: #003173;
+  color: #e05b17;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .mdx_content a:hover {
-  color: #e05b17;
+  text-decoration: underline;
+}
+
+.mdx_content img {
+  max-width: 100%;
+  margin: 10px 0;
+  display: inline-block;
 }
 
 /*
@@ -417,6 +427,15 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
   .header_link {
     margin: 0 15px;
   }

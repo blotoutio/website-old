@@ -1,4 +1,5 @@
 import HeaderFiller from '../headerFiller'
+import { Link } from 'react-router-dom'
 
 interface Props {
   articles: BlogArticle[]
@@ -12,9 +13,18 @@ const generateArticle = (article: BlogArticle): JSX.Element => {
       <h2 className='blog_title'>{article.title}</h2>
       <small>{formattedDate}</small>
       <p>{article.description}</p>
-      <a className='blog_readMore' href={article.link} target='_blank' rel='noreferrer'>
-        Continue reading {'>'}
-      </a>
+      {
+        article.link
+          ? (
+            <Link className='blog_readMore' to={article.link}>
+              Continue reading {'>'}
+            </Link>
+          ) : (
+            <a className='blog_readMore' href={article.mediumLink} target='_blank' rel='noreferrer'>
+              Continue reading {'>'}
+            </a>
+          )
+      }
     </article>
   )
 }

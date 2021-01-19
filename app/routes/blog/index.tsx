@@ -1,7 +1,7 @@
 import { useRouteData } from '@remix-run/react'
 import type { Loader } from '@remix-run/data'
-import Blog from '../components/blog'
-import { articles } from '../data/blog'
+import Blog from '../../components/blog'
+import { articles } from '../../data/blog'
 
 export const loader: Loader = async () => {
   return {
