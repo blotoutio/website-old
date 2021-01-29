@@ -1,16 +1,12 @@
-(function () {
-  const head = document.getElementsByTagName('head')[0]
-  const script = document.createElement('script')
-  script.type = 'text/javascript'
-  script.src = 'https://download.blotout.io/sdkrc/trends.js'
-  script.onreadystatechange = analytics
-  script.onload = analytics
-  head.appendChild(script)
-})()
+!function(){window.trends=window.trends||function(){(trends.stubs=trends.stubs||[]).push(arguments)};const t=document.createElement("script");t.type="text/javascript",t.src="https://download.blotout.io/sdkrc/trends.js",t.async=!0;const e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();
 
-function analytics () {
-  bojs.init({ token: 'ZWBQ5E48ND3VTPB', endpointUrl: 'https://sales.blotout.io/sdk', customDomain: 'blotout.io' })
+trends('init', {
+  token: 'ZWBQ5E48ND3VTPB',
+  endpointUrl: 'https://sales.blotout.io/sdk',
+  customDomain: 'blotout.io'
+})
 
+window.onload = function () {
   document.querySelectorAll('a').forEach(item => {
     item.addEventListener('click', event => {
       if (!event || !event.target || !event.target.dataset) {
@@ -22,7 +18,7 @@ function analytics () {
         return
       }
 
-      bojs.logEvent(`click-${name}`)
+      trends('logEvent', `click-${name}`)
     })
   })
 }
