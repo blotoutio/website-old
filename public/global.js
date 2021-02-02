@@ -18,7 +18,9 @@ window.onload = function () {
         return
       }
 
-      trends('logEvent', `click-${name}`)
+      trends('capture', `click-${name}`, {}, {
+        method: 'beacon'
+      })
     })
   })
 }
