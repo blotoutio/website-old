@@ -20,6 +20,11 @@ const siteMap = [
   {
     link: '/privacy-policy',
     text: 'Privacy Policy'
+  },
+  {
+    link: 'https://docs.blotout.io/',
+    text: 'Documentation',
+    external: true
   }
 ]
 
@@ -61,6 +66,19 @@ export const Footer = (): JSX.Element => {
       <div className='footer_siteMap'>
         {
           siteMap.map(link => {
+            if (link.external) {
+              return (
+                <a
+                  className='footer_link'
+                  href={link.link}
+                  key={link.link}
+                  data-event={`sitemap-${link.text}`}
+                  rel='nofollow noreferrer'
+                  target='_blank'>
+                  {link.text}
+                </a>
+              )
+            }
             return (
               <Link className='footer_link' to={link.link} key={link.link} data-event={`sitemap-${link.text}`}>
                 {link.text}
