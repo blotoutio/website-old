@@ -18,7 +18,19 @@ window.onload = function () {
         return
       }
 
-      trends('capture', `click-${name}`, {}, {
+      let referrer
+      try {
+        referrer = JSON.parse(window.sessionStorage.getItem('_trendsData')).referrer
+      } catch (e) { }
+
+      if (!referrer) {
+        referrer = 'none'
+      }
+
+      trends('capture', `click-${name}`, {
+        time: Date.now(),
+        referrer
+      }, {
         method: 'beacon'
       })
     })

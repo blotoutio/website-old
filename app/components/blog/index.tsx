@@ -9,7 +9,7 @@ const generateArticle = (article: BlogArticle): JSX.Element => {
   const formattedDate = new Intl.DateTimeFormat('en', { month: 'long', day: '2-digit', year: 'numeric' })
     .format(new Date(article.date))
   return (
-    <article className='blog_article' key={article.link}>
+    <article className='blog_article' key={article.link || article.mediumLink}>
       <h2 className='blog_title'>{article.title}</h2>
       <small>{formattedDate}</small>
       <p>{article.description}</p>
