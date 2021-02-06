@@ -28,7 +28,7 @@ window.onload = function () {
       }
 
       trends('capture', `click-${name}`, {
-        time: Date.now(),
+        date: new Intl.DateTimeFormat('en-US').format(Date.now()),
         referrer
       }, {
         method: 'beacon'
