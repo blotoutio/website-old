@@ -48,10 +48,6 @@ const social = [
     image: <Medium />,
   },
   {
-    link: 'https://www.youtube.com/channel/UC-ywhz5uMq_3kX_JnHorg-A',
-    image: <YouTube />,
-  },
-  {
     link: 'https://discord.gg/JsWgSzEV',
     image: <Discord />,
   },
