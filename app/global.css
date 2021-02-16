@@ -158,6 +158,10 @@ h1 {
   color: #737478;
 }
 
+.footer_social svg {
+  fill: #737478;
+}
+
 .footer_social a {
   text-decoration: none;
   display: inline-block;

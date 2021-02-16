@@ -1,4 +1,10 @@
 import { Link } from 'react-router-dom'
+import Slack from '../../icons/slack'
+import Discord from '../../icons/discord'
+import YouTube from '../../icons/youtube'
+import Medium from '../../icons/medium'
+import LinkedIn from '../../icons/linkedin'
+import Twitter from '../../icons/twitter'
 
 const siteMap = [
   {
@@ -31,23 +37,27 @@ const siteMap = [
 const social = [
   {
     link: 'https://twitter.com/blotout3',
-    image: '/icons/twitter.svg',
-    alt: 'twitter'
+    image: <Twitter />,
   },
   {
     link: 'https://www.linkedin.com/company/blotout',
-    image: '/icons/linkedin.svg',
-    alt: 'linkedin'
+    image: <LinkedIn />,
   },
   {
     link: 'https://medium.com/@blotout',
-    image: '/icons/medium.svg',
-    alt: 'medium'
+    image: <Medium />,
   },
   {
     link: 'https://www.youtube.com/channel/UC-ywhz5uMq_3kX_JnHorg-A',
-    image: '/icons/youtube.svg',
-    alt: 'youtube'
+    image: <YouTube />,
+  },
+  {
+    link: 'https://discord.gg/JsWgSzEV',
+    image: <Discord />,
+  },
+  {
+    link: 'https://join.slack.com/t/blotout-workspace/shared_invite/zt-medvirwy-ucfSJGHl6gjBh_tTWPWAYQ',
+    image: <Slack />,
   }
 ]
 
@@ -58,7 +68,7 @@ export const Footer = (): JSX.Element => {
         {
           social.map(item => (
             <a href={item.link} key={item.link} target='_blank' rel='noreferrer'>
-              <img src={item.image} alt={item.alt} width='30' height='30' data-event={`footer-${item.alt}`} />
+              {item.image}
             </a>
           ))
         }
