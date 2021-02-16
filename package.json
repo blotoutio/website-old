@@ -5,7 +5,7 @@
   "scripts": {
     "predeploy": "remix build",
     "deploy": "vercel",
-    "deploy-prod": "npm run predeploy && vercel --prod",
+    "deploy:prod": "npm run predeploy && vercel --prod",
     "start": "concurrently \"remix run\" \"vercel dev\"",
     "lint": "ts-standard"
   },
