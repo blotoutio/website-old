@@ -5,10 +5,10 @@ export default function MainFold (): JSX.Element {
     <section className='mainFold_wrapper'>
       <div className='mainFold_front'>
         <h1 className='mainFold_header1'>
-          The enterprise-grade  privacy-era customer data platform
+          Capture customer journeys in your infrastructure
         </h1>
         <h2 className='mainFold_header2'>
-          Privacy preserving, yet doubles your conversions. Real time data activation in your Cloud account.
+          Blotout lets you balance privacy and attribution.
         </h2>
         <div className='mainFold_buttons'>
           <Button
