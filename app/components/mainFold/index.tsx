@@ -19,10 +19,10 @@ export default function MainFold (): JSX.Element {
             type='primary'
           />
           <Button
-            id='product-video'
+            id='join-slack'
             external
-            link='https://www.youtube.com/channel/UC-ywhz5uMq_3kX_JnHorg-A'
-            text='See our Product Video'
+            link='https://join.slack.com/t/blotout-workspace/shared_invite/zt-medvirwy-ucfSJGHl6gjBh_tTWPWAYQ'
+            text='Join our Slack'
             type='secondary'
           />
         </div>
