@@ -13,7 +13,7 @@ export const articles: BlogArticle[] = [
     billions of dollars to find the right audiences, place media, and analyze results in an efficient manner. 
     “Easy” is a word that comes to mind when one thinks...`,
     date: '2020-10-19',
-    // link: '/blog/blotout-360-for-publishers-and-ssps',
+    link: '/blog/blotout-360-for-publishers-and-ssps',
     mediumLink: 'https://medium.com/@blotout/blotout-360-for-publishers-and-ssps-c8df94159de9'
   },
   {
@@ -21,7 +21,7 @@ export const articles: BlogArticle[] = [
     description: `The world’s first client computed, privacy by design, product analytics SDK for application and 
     web developers. Privacy has muscle at the device edgePrivacy by trust vs. Privacy by designKiss: making privacy by design...`,
     date: '2020-06-22',
-    // link: '/blog/announcing-blotout-V0.1',
+    link: '/blog/announcing-blotout-V0-1',
     mediumLink: 'https://medium.com/@blotout/announcing-blotout-v0-1-e6b938b4e0ca'
   },
   {
@@ -36,7 +36,7 @@ export const articles: BlogArticle[] = [
     how we got to this consumer experience where big tech has put us to sleep while invading our four 
     walls without us even noticing.`,
     date: '2020-01-15',
-    // link: '/blog/kiss-making-privacy-by-design-easy',
+    link: '/blog/kiss-making-privacy-by-design-easy',
     mediumLink: 'https://medium.com/@blotout/kiss-making-privacy-by-design-easy-19316b08107d'
   },
   {
@@ -44,7 +44,7 @@ export const articles: BlogArticle[] = [
     description: `The topic of consumer data privacy needs no introduction. We have hit a stage 
     in technology development where ensuring that users data stays in user control is both critical and necessary.`,
     date: '2019-12-14',
-    // link: '/blog/privacy-by-trust-vs-privacy-by-design',
+    link: '/blog/privacy-by-trust-vs-privacy-by-design',
     mediumLink: 'https://medium.com/@blotout/privacy-by-trust-vs-privacy-by-design-b03e381f7070'
   },
   {
@@ -53,7 +53,7 @@ export const articles: BlogArticle[] = [
     massive thirst for granular data points, enabling technology and business to accelerate. Data is collected and 
     collated in the cloud via privacy notices...`,
     date: '2019-11-17',
-    // link: '/blog/privacy-has-muscle-at-the-device-edge',
+    link: '/blog/privacy-has-muscle-at-the-device-edge',
     mediumLink: 'https://medium.com/@blotout/privacy-has-muscle-at-the-device-edge-dd442c026ba4'
   }
 ]
