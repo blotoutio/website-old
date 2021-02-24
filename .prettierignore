@@ -1,0 +1,8 @@
+/.cache
+/build
+/data-build
+/public/build
+app-build
+*.md
+.vercel
+/public/global.js

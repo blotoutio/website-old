@@ -1,6 +1,6 @@
 // Make sure you turn on "Automatically expose System Environment Variables" in the Vercel console here:
 // https://vercel.com/<username>/<app-name>/settings/environment-variables
-const isLocalDev =
+let isLocalDev =
   process.env.VERCEL_ENV !== 'production' &&
   process.env.VERCEL_ENV !== 'preview'
 
@@ -25,24 +25,16 @@ module.exports = {
   //     route(
   //       // The URL path for this route.
   //       "/pages/one",
-  //       // The path to this route's component file, relative to `appDirectory`.
+  //       // The path to this route's module file, relative to `appDirectory`.
   //       "pages/one",
   //       // Options:
   //       {
-  //         // The path to this route's data module, relative to `dataDirectory`.
-  //         loader: "...",
   //         // The path to this route's styles file, relative to `appDirectory`.
   //         styles: "..."
   //       }
   //     );
   //   });
   // },
-
-  /**
-   * The path to the `data` directory, relative to remix.config.js. Defaults
-   * to "data". The data directory contains data modules for your routes.
-   */
-  dataDirectory: 'data-build',
 
   /**
    * The path to the browser build, relative to remix.config.js. Defaults to
@@ -68,5 +60,5 @@ module.exports = {
   /**
    * The port to use when running `remix run`. Defaults to 8002.
    */
-  devServerPort: 8002
+  devServerPort: 8002,
 }
