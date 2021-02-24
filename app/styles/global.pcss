@@ -1,0 +1,103 @@
+:root {
+  --main-color: #f25c2b;
+  --secondary-color: rgba(0, 52, 114, 1);
+  --text-color: rgba(7, 21, 39, 1);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-regular.woff2') format('woff2'),
+    url('/fonts/montserrat-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-medium.woff2') format('woff2'),
+    url('/fonts/montserrat-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-semibold.woff2') format('woff2'),
+    url('/fonts/montserrat-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-bold.woff2') format('woff2'),
+    url('/fonts/montserrat-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-extrabold.woff2') format('woff2'),
+    url('/fonts/montserrat-extrabold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  position: relative;
+  color: var(--text-color);
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button-main {
+  background: var(--main-color);
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 28px;
+  width: 185px;
+  padding: 10px 5px 12px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.button-secondary {
+  border: 2px solid var(--secondary-color);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--secondary-color);
+  border-radius: 28px;
+  width: 185px;
+  padding: 8px 5px 10px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
