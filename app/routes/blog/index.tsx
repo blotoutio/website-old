@@ -1,3 +1,8 @@
+import { LinksFunction } from '@remix-run/react'
+import BlogList from '../../components/blogList'
+import styles from 'css:../../styles/blog.pcss'
+import { blogArticles } from '../../data/blog'
+
 export function meta() {
   return {
     title: 'Blog',
@@ -6,6 +11,10 @@ export function meta() {
   }
 }
 
+export let links: LinksFunction = () => {
+  return [{ rel: 'stylesheet', href: styles }]
+}
+
 export default function BlogRoute(): JSX.Element {
-  return <div className='content-wrapper'>Blog</div>
+  return <BlogList articles={blogArticles} />
 }

@@ -63,6 +63,7 @@ body {
   box-sizing: border-box;
   position: relative;
   color: var(--text-color);
+  font-size: 16px;
 }
 
 body {
@@ -89,6 +90,10 @@ body {
   text-decoration: none;
 }
 
+.button-main:hover {
+  background: rgba(225, 75, 25, 1);
+}
+
 .button-secondary {
   border: 2px solid var(--secondary-color);
   font-weight: 700;
@@ -100,4 +105,86 @@ body {
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+
+.button-secondary:hover {
+  background: rgba(240, 246, 247, 1);
+}
+
+/**
+  MDX
+ */
+.mdx-content .header {
+  background: rgba(0, 47, 109, 1);
+  text-align: center;
+  color: #fff;
+  height: 320px;
+}
+
+.mdx-content h1 {
+  font-size: 55px;
+  line-height: 69px;
+  font-weight: 900;
+  padding: 60px 15px 10px;
+  margin: 0;
+}
+
+.mdx-content .sub-text {
+  max-width: 664px;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 auto;
+}
+
+.mdx-content .header .date b {
+  color: var(--main-color);
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.mdx-content .content-wrapper {
+  margin-top: -71px;
+  background: #fff;
+  padding: 35px 50px 20px;
+  max-width: 924px;
+}
+
+.mdx-content .content-wrapper h2 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  margin: 0;
+  padding: 30px 0 32px;
+}
+
+.mdx-content .content-wrapper h2:first-child {
+  padding-top: 10px;
+}
+
+.mdx-content .content-wrapper a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.mdx-content .content-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.mdx-content .content-wrapper img {
+  max-width: 100%;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+/**
+  BLOG PAGE
+ */
+.blog-header {
+  padding: 40px 0 71px;
+  max-width: 924px;
+  margin: 0 auto;
+}
+
+.blog-header h1 {
+  padding: 0;
 }

@@ -1,7 +1,6 @@
 footer.wrapper {
   padding: 45px 0 32px;
   font-size: 12px;
-  max-width: 1200px;
 }
 
 footer .top {
@@ -31,6 +30,10 @@ footer .links .link {
   margin-left: 42px;
 }
 
+footer .links .link:hover {
+  color: var(--main-color);
+}
+
 footer .logo {
   height: 25px;
 }
@@ -44,6 +47,10 @@ footer .right svg {
   fill: var(--secondary-color);
 }
 
+footer .right svg:hover {
+  fill: rgba(0, 36, 79, 1)
+}
+
 footer .bottom {
   display: flex;
   margin-top: 0;
@@ -54,4 +61,8 @@ footer .bottom a {
   color: var(--text-color);
   text-decoration: none;
   margin-left: 41px;
+}
+
+footer .bottom a:hover {
+  color: var(--main-color);
 }

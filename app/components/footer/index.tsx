@@ -60,6 +60,21 @@ export const Footer = (): JSX.Element => {
           </Link>
           <div className='links'>
             {links.map((link) => {
+              if (link.link.startsWith('https://')) {
+                return (
+                  <a
+                    className='link'
+                    href={link.link}
+                    key={link.link}
+                    data-event={`menu-${link.text}`}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    {link.text}
+                  </a>
+                )
+              }
+
               return (
                 <NavLink
                   className='link'

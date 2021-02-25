@@ -3,8 +3,8 @@ import React from 'react'
 const MainImage = () => {
   return (
     <svg
-      width='366'
-      height='281'
+      width='465'
+      height='357'
       viewBox='0 0 366 281'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

@@ -1,9 +1,9 @@
 header.wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   max-width: 1200px;
-  margin: 20px auto 0;
+  margin: 20px auto 10px;
+  height: 70px;
 }
 
 header .link {
@@ -23,8 +23,15 @@ header .link:hover {
 
 header .link.active {
   border-bottom: 3px solid var(--main-color);
+  position: relative;
+  top: 1px;
 }
 
 header svg {
   width: 109px;
+}
+
+header .links {
+  display: flex;
+  align-items: center;
 }

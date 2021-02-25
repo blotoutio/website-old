@@ -10,6 +10,7 @@
     "lint": "prettier --check ."
   },
   "dependencies": {
+    "@mdx-js/react": "^1.6.22",
     "@remix-run/cli": "^0.13.0",
     "@remix-run/data": "^0.13.0",
     "@remix-run/react": "^0.13.0",

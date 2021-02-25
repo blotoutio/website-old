@@ -3,8 +3,8 @@ import React from 'react'
 const Measure = () => {
   return (
     <svg
-      width='357'
-      height='173'
+      width='390'
+      height='188'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >

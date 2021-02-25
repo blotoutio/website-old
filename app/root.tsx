@@ -1,12 +1,13 @@
 import type { LinksFunction, LoaderFunction } from '@remix-run/react'
 import { Meta, Links, Scripts, useRouteData } from '@remix-run/react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
+import { Header } from './components/header'
+import { Footer } from './components/footer'
 
 import globalStyle from 'css:./styles/global.pcss'
 import headerStyle from 'css:./components/header/style.pcss'
 import footerStyle from 'css:./components/footer/style.pcss'
-import { Header } from './components/header'
-import { Footer } from './components/footer'
+import { useEffect, useRef } from 'react'
 
 export let links: LinksFunction = () => {
   return [
@@ -20,7 +21,26 @@ export let loader: LoaderFunction = () => {
   return { date: new Date() }
 }
 
+function useScrollToTop(): void {
+  // TODO: remove when Remix does this automatically
+  const location = useLocation()
+
+  const keys = useRef<Set<string> | null>(null)
+  if (keys.current === null) {
+    keys.current = new Set(location.key)
+  }
+
+  useEffect(() => {
+    if (keys.current?.has(location.key)) {
+      return
+    }
+    keys.current?.add(location.key)
+    window.scrollTo(0, 0)
+  }, [location])
+}
+
 export default function App() {
+  useScrollToTop()
   let data = useRouteData()
 
   return (

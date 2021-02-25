@@ -22,7 +22,7 @@ export const Header = (): JSX.Element => {
       <Link to='/'>
         <Logo />
       </Link>
-      <div>
+      <div className='links'>
         {links.map((link) => {
           if (link.link.startsWith('https://')) {
             return (
@@ -31,6 +31,8 @@ export const Header = (): JSX.Element => {
                 href={link.link}
                 key={link.link}
                 data-event={`menu-${link.text}`}
+                target='_blank'
+                rel='noreferrer'
               >
                 {link.text}
               </a>
