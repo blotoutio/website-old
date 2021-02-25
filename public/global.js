@@ -1,4 +1,4 @@
-!function(){window.trends=window.trends||function(){(trends.stubs=trends.stubs||[]).push(arguments)};const t=document.createElement("script");t.type="text/javascript",t.src="https://download.blotout.io/sdkrc/trends.js",t.async=!0;const e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();
+!function(){window.trends=window.trends||function(){(trends.stubs=trends.stubs||[]).push(arguments)};const t=document.createElement("script");t.type="text/javascript",t.src="https://assets.blotout.io/beta/sdk/index.js",t.async=!0;const e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();
 
 trends('init', {
   token: 'ZWBQ5E48ND3VTPB',
