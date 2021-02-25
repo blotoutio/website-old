@@ -48,10 +48,6 @@ export default function Index() {
                 Join our Slack
               </a>
             </div>
-            <div className='watch'>
-              <Watch />
-              <span>Watch the 2-min intro video</span>
-            </div>
           </div>
           <div className='main-image'>
             <MainImage />
