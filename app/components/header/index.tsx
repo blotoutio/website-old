@@ -1,32 +1,68 @@
 import { NavLink, Link } from 'react-router-dom'
+import Logo from '../../icons/logo'
+import { useState } from 'react'
 
 const links = [
   {
+    link: 'https://docs.blotout.io',
+    text: 'Docs',
+  },
+  {
     link: '/blog',
-    text: 'Blog'
+    text: 'Blog',
   },
   {
     link: '/about',
-    text: 'About'
-  }
+    text: 'About',
+  },
 ]
 
 export const Header = (): JSX.Element => {
+  const [menu, setMenu] = useState(false)
+
+  const handleClick = () => {
+    setMenu(!menu)
+  }
+
   return (
-    <header className='header_wrapper'>
-      <Link to='/'>
-        <img className='header_image' src='/logo.svg' alt='logo' width={130} height={44} data-event='header-logo' />
+    <header className='wrapper'>
+      <Link to='/' aria-label='Logo'>
+        <Logo />
       </Link>
-      <div className='header_links'>
-        {
-          links.map(link => {
+      <div className={`toggle ${menu ? 'open' : ''}`} onClick={handleClick}>
+        <div className='spinner diagonal part-1' />
+        <div className='spinner horizontal' />
+        <div className='spinner diagonal part-2' />
+      </div>
+      <div className={`links ${menu ? 'open' : ''}`}>
+        {links.map((link) => {
+          if (link.link.startsWith('https://')) {
             return (
-              <NavLink className='header_link' to={link.link} key={link.link} data-event={`menu-${link.text}`}>
+              <a
+                className='link'
+                href={link.link}
+                key={link.link}
+                data-event={`menu-${link.text}`}
+                target='_blank'
+                rel='noreferrer'
+              >
                 {link.text}
-              </NavLink>
+              </a>
             )
-          })
-        }
+          }
+
+          return (
+            <NavLink
+              className='link'
+              to={link.link}
+              key={link.link}
+              data-event={`menu-${link.text}`}
+              onClick={handleClick}
+            >
+              {link.text}
+            </NavLink>
+          )
+        })}
       </div>
     </header>
   )

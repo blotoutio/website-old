@@ -3,12 +3,12 @@
 trends('init', {
   token: 'ZWBQ5E48ND3VTPB',
   endpointUrl: 'https://sales.blotout.io/sdk',
-  customDomain: 'blotout.io'
+  customDomain: 'blotout.io',
 })
 
 window.onload = function () {
-  document.querySelectorAll('a').forEach(item => {
-    item.addEventListener('click', event => {
+  document.querySelectorAll('a').forEach((item) => {
+    item.addEventListener('click', (event) => {
       if (!event || !event.target || !event.target.dataset) {
         return
       }
@@ -20,19 +20,25 @@ window.onload = function () {
 
       let referrer
       try {
-        referrer = JSON.parse(window.sessionStorage.getItem('_trendsData')).referrer
-      } catch (e) { }
+        referrer = JSON.parse(window.sessionStorage.getItem('_trendsData'))
+          .referrer
+      } catch (e) {}
 
       if (!referrer) {
         referrer = 'none'
       }
 
-      trends('capture', `click-${name}`, {
-        date: new Intl.DateTimeFormat('en-US').format(Date.now()),
-        referrer
-      }, {
-        method: 'beacon'
-      })
+      trends(
+        'capture',
+        `click-${name}`,
+        {
+          date: new Intl.DateTimeFormat('en-US').format(Date.now()),
+          referrer,
+        },
+        {
+          method: 'beacon',
+        }
+      )
     })
   })
 }

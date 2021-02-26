@@ -1,11 +1,3 @@
-import HeaderFiller from '../headerFiller'
-
-export default function MDX (props: any): JSX.Element {
-  return (
-    <HeaderFiller>
-      <section className='mdx_content'>
-        {props.children}
-      </section>
-    </HeaderFiller>
-  )
+export default function MDX(props: any): JSX.Element {
+  return <section className='mdx-content'>{props.children}</section>
 }

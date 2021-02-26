@@ -1,0 +1,150 @@
+header {
+  &.wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 10px;
+    height: 70px;
+    padding: 20px 15px 0;
+    width: 100%;
+    flex: 0;
+  }
+
+  .link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 60px;
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--main-color);
+    }
+
+    &.active {
+      border-bottom: 3px solid var(--main-color);
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  svg {
+    width: 109px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 99;
+    height: 22px;
+    width: 22px;
+    display: none;
+
+    &.open {
+      .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+      }
+
+      .diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+      }
+
+      .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+      }
+    }
+  }
+
+  .spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary-color);
+  }
+
+  .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+
+  .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  header {
+    position: relative;
+
+    .toggle {
+      display: block;
+    }
+
+    &.wrapper {
+      align-items: center;
+      margin-bottom: 0;
+      padding-top: 10px;
+    }
+
+    .menu {
+      display: block;
+    }
+
+    .links {
+      display: none;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 3;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.189136);
+
+      &.open {
+        display: flex;
+      }
+    }
+
+    .link {
+      display: block;
+      margin: 0 0 30px;
+      font-size: 20px;
+    }
+  }
+}

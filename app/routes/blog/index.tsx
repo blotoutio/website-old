@@ -1,22 +1,20 @@
-import { useRouteData } from '@remix-run/react'
-import type { Loader } from '@remix-run/data'
-import Blog from '../../components/blog'
-import { articles } from '../../data/blog'
+import { LinksFunction } from '@remix-run/react'
+import BlogList from '../../components/blogList'
+import styles from 'css:../../styles/blog.pcss'
+import { blogArticles } from '../../data/blog'
 
-export const loader: Loader = async () => {
-  return {
-    articles
-  }
-}
-
-export function meta (): Meta {
+export function meta() {
   return {
     title: 'Blog',
-    description: 'Read out Blotout philosophy and how we are bring privacy to enterprise while doubling revenue, and reducing costs.'
+    description:
+      'Read out Blotout philosophy and how we are bring privacy to enterprise while doubling revenue, and reducing costs.',
   }
 }
 
-export default function BlogRoute (): JSX.Element {
-  const data = useRouteData()
-  return <Blog articles={data.articles} />
+export let links: LinksFunction = () => {
+  return [{ rel: 'stylesheet', href: styles }]
+}
+
+export default function BlogRoute(): JSX.Element {
+  return <BlogList articles={blogArticles} />
 }
