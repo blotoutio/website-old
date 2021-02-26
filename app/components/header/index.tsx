@@ -1,5 +1,6 @@
 import { NavLink, Link } from 'react-router-dom'
 import Logo from '../../icons/logo'
+import { useState } from 'react'
 
 const links = [
   {
@@ -17,12 +18,23 @@ const links = [
 ]
 
 export const Header = (): JSX.Element => {
+  const [menu, setMenu] = useState(false)
+
+  const handleClick = () => {
+    setMenu(!menu)
+  }
+
   return (
     <header className='wrapper'>
       <Link to='/' aria-label='Logo'>
         <Logo />
       </Link>
-      <div className='links'>
+      <div className={`toggle ${menu ? 'open' : ''}`} onClick={handleClick}>
+        <div className='spinner diagonal part-1' />
+        <div className='spinner horizontal' />
+        <div className='spinner diagonal part-2' />
+      </div>
+      <div className={`links ${menu ? 'open' : ''}`}>
         {links.map((link) => {
           if (link.link.startsWith('https://')) {
             return (
@@ -45,6 +57,7 @@ export const Header = (): JSX.Element => {
               to={link.link}
               key={link.link}
               data-event={`menu-${link.text}`}
+              onClick={handleClick}
             >
               {link.text}
             </NavLink>

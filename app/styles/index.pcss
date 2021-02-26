@@ -5,6 +5,7 @@
   margin-top: 40px;
   position: relative;
   z-index: 2;
+  padding-left: 15px;
 
   h1 {
     font-weight: 900;
@@ -51,6 +52,14 @@
 
     a {
       margin-right: 25px;
+    }
+  }
+
+  .main-image {
+    width: 465px;
+
+    svg {
+      width: 100%;
     }
   }
 }
@@ -100,10 +109,11 @@
 #why {
   margin-top: 66px;
   display: grid;
+  width: 100%;
   grid-template-areas:
-    '. .'
-    '. .'
-    '. .';
+    'measure-title measure-image'
+    'unify-image unify-title'
+    'attribute-title attribute-image';
 
   h3 {
     font-size: 30px;
@@ -115,6 +125,7 @@
     &.measure {
       margin-top: 30px;
       position: relative;
+      grid-area: measure-title;
 
       &:after {
         content: '';
@@ -143,6 +154,7 @@
       margin-top: 65px;
       position: relative;
       display: inline-block;
+      grid-area: unify-title;
 
       &:after {
         content: '';
@@ -171,6 +183,7 @@
     &.attribute {
       margin-top: 69px;
       position: relative;
+      grid-area: attribute-title;
 
       &:after {
         content: '';
@@ -212,14 +225,17 @@
 
   div {
     &.measure {
+      grid-area: measure-image;
       margin-bottom: 76px;
     }
 
     &.unify {
+      grid-area: unify-image;
       margin-bottom: 47px;
     }
 
     &.attribute {
+      grid-area: attribute-image;
       margin-bottom: 54px;
     }
   }
@@ -262,6 +278,7 @@
   .boxes {
     display: flex;
     justify-content: space-around;
+    margin: 0 -10px;
   }
 
   .box {
@@ -272,6 +289,7 @@
     text-align: center;
     max-width: 320px;
     width: 100%;
+    margin: 0 10px;
   }
 
   p {
@@ -331,5 +349,239 @@
 
   li {
     list-style-image: url("data:image/svg+xml,%3Csvg width='18' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 6.25l5.138 5.95L16.678 2' stroke='%2302AD91' stroke-width='3'/%3E%3C/svg%3E");
+  }
+}
+
+/**
+  Responsive
+ */
+
+@media screen and (max-width: 1100px) {
+  #main-fold {
+    .main-image {
+      width: 366px;
+    }
+  }
+
+  #why {
+    h3.measure {
+      &:before {
+        left: -7px;
+      }
+
+      &:after {
+        left: -5px;
+      }
+    }
+
+    h3.unify {
+      &:before {
+        right: -5px;
+      }
+
+      &:after {
+        right: -5px;
+      }
+    }
+
+    h3.attribute {
+      &:before {
+        left: 28px;
+      }
+
+      &:after {
+        left: -5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #main-fold {
+    padding: 0;
+    margin-top: 20px;
+
+    .main-image {
+      display: none;
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 43px;
+      max-width: 100%;
+      text-align: center;
+
+      span:after {
+        height: 35px;
+        top: 8px;
+      }
+    }
+
+    h2 {
+      font-size: 16px;
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .buttons {
+      justify-content: center;
+    }
+
+    .button {
+      margin-bottom: 10px;
+    }
+  }
+
+  #third {
+    padding-top: 40px;
+
+    &:before {
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    h2 {
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  #why {
+    margin-top: 40px;
+    text-align: center;
+
+    grid-template-areas:
+      'measure-image'
+      'measure-title '
+      'unify-image'
+      'unify-title'
+      'attribute-image'
+      'attribute-title';
+
+    h3 {
+      font-size: 25px;
+      line-height: 35px;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      &.unify,
+      &.measure,
+      &.attribute {
+        margin-top: 5px;
+      }
+    }
+
+    p {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .right {
+      text-align: center;
+    }
+
+    div {
+      &.measure,
+      &.unify,
+      &.attribute {
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  #cloud {
+    padding-top: 40px;
+
+    .content-wrapper {
+      flex-flow: column-reverse;
+      text-align: center;
+    }
+
+    svg {
+      margin: 0 auto 30px;
+    }
+
+    h3 {
+      margin-top: 0;
+      max-width: 100%;
+    }
+
+    ul {
+      text-align: left;
+      display: inline-block;
+    }
+
+    .button-main {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #main-fold {
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      .button-main {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  #third {
+    &:before {
+      clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  #why {
+    svg {
+      max-width: 100%;
+    }
+  }
+
+  #deploy {
+    &:before {
+      clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+      height: 90%;
+    }
+
+    h2 {
+      font-size: 25px;
+      line-height: 35px;
+      padding: 37px 0 26px;
+    }
+
+    .boxes {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      margin-bottom: 40px;
+    }
+  }
+
+  #cloud {
+    margin-top: 20px;
+
+    svg {
+      max-width: 397px;
+      width: 100%;
+    }
   }
 }

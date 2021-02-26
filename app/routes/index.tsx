@@ -30,10 +30,7 @@ export default function Index() {
             <h1>
               Capture <span>customer</span> journeys in your infrastructure
             </h1>
-            <h2>
-              Blotout lets you see the users and data that third-party analytics
-              can't.
-            </h2>
+            <h2>Blotout lets you balance privacy and attribution.</h2>
             <div className='buttons'>
               <a className='button-main' href='mailto:sales@blotout.io'>
                 Get a demo
