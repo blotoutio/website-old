@@ -4,5 +4,5 @@ module.exports = {
     require('postcss-nested-ancestors'),
     require('autoprefixer'),
     require('cssnano'),
-  ],
+  ].filter(Boolean),
 }

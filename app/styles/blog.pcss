@@ -17,13 +17,6 @@ article {
   margin-bottom: 65px;
 }
 
-a {
-  color: rgba(7, 21, 39, 1);
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 27px;
-}
-
 h2 {
   margin: 0 0 5px;
   padding: 0;
@@ -32,6 +25,13 @@ h2 {
   line-height: 42px;
 }
 
-a:hover h2 {
-  color: var(--main-color);
+a {
+  color: rgba(7, 21, 39, 1);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 27px;
+
+  &:hover h2 {
+    color: var(--main-color);
+  }
 }

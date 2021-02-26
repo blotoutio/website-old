@@ -1,71 +1,75 @@
-footer.wrapper {
-  padding: 45px 0 32px;
-  font-size: 12px;
-  width: 100%;
-  flex: 0;
-}
+footer {
+  &.wrapper {
+    padding: 45px 0 32px;
+    font-size: 12px;
+    width: 100%;
+    flex: 0;
+  }
 
-footer .top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-footer .left {
-  display: flex;
-  align-items: center;
-}
+  .left {
+    display: flex;
+    align-items: center;
 
-footer .left svg {
-  width: 109px;
-}
+    svg {
+      width: 109px;
+    }
+  }
 
-footer .links {
-  margin-left: 10px;
-}
+  .links {
+    margin-left: 10px;
 
-footer .links .link {
-  font-weight: 600;
-  line-height: 15px;
-  color: var(--text-color);
-  text-decoration: none;
-  margin-left: 42px;
-}
+    .link {
+      font-weight: 600;
+      line-height: 15px;
+      color: var(--text-color);
+      text-decoration: none;
+      margin-left: 42px;
 
-footer .links .link:hover {
-  color: var(--main-color);
-}
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
 
-footer .logo {
-  height: 25px;
-}
+  .logo {
+    height: 25px;
+  }
 
-footer .right a {
-  margin-left: 30px;
-  color: var(--secondary-color);
-  display: inline-block;
-}
+  .right {
+    a {
+      margin-left: 30px;
+      color: var(--secondary-color);
+      display: inline-block;
+    }
 
-footer .right svg {
-  fill: var(--secondary-color);
-}
+    svg {
+      fill: var(--secondary-color);
 
-footer .right svg:hover {
-  fill: rgba(0, 36, 79, 1);
-}
+      &:hover {
+        fill: rgba(0, 36, 79, 1);
+      }
+    }
+  }
 
-footer .bottom {
-  display: flex;
-  margin-top: 0;
-  justify-content: space-between;
-}
+  .bottom {
+    display: flex;
+    margin-top: 0;
+    justify-content: space-between;
 
-footer .bottom a {
-  color: var(--text-color);
-  text-decoration: none;
-  margin-left: 41px;
-}
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+      margin-left: 41px;
 
-footer .bottom a:hover {
-  color: var(--main-color);
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
 }
