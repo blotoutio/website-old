@@ -19,7 +19,7 @@ const links = [
 export const Header = (): JSX.Element => {
   return (
     <header className='wrapper'>
-      <Link to='/'>
+      <Link to='/' aria-label='Logo'>
         <Logo />
       </Link>
       <div className='links'>

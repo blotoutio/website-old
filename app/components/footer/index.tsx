@@ -55,7 +55,7 @@ export const Footer = (): JSX.Element => {
     <footer className='wrapper content-wrapper'>
       <div className='top'>
         <div className='left'>
-          <Link to='/'>
+          <Link to='/' aria-label='Logo'>
             <Logo />
           </Link>
           <div className='links'>
@@ -96,6 +96,7 @@ export const Footer = (): JSX.Element => {
               data-event={`social-${item.name}`}
               target='_blank'
               rel='noreferrer'
+              aria-label={item.name}
             >
               {item.image}
             </a>

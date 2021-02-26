@@ -2,7 +2,6 @@ import type { MetaFunction, LinksFunction } from '@remix-run/react'
 
 import styles from 'css:../styles/index.pcss'
 import MainImage from '../icons/home/main'
-import Watch from '../icons/home/watch'
 import Measure from '../icons/home/measure'
 import Person from '../icons/home/person'
 import Attribute from '../icons/home/attribute'
