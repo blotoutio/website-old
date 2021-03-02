@@ -1,4 +1,4 @@
-# Remix Starter for Vercel
+# Blotout Website
 
 Welcome to Remix!
 
