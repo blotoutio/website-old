@@ -10,7 +10,6 @@ import { useEffect, useRef } from 'react'
 export function meta() {
   return {
     viewport: 'width=device-width,initial-scale=1,viewport-fit=cover',
-    charSet: 'utf-8',
   }
 }
 
@@ -49,9 +48,10 @@ export default function App() {
   return (
     <html lang='en'>
       <head>
-        <script type='application/javascript' src='/global.js' />
+        <meta charSet='utf-8' />
         <Meta />
         <Links />
+        <script type='text/javascript' src='/global.js' />
         <Scripts />
       </head>
       <body>
