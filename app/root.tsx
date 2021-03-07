@@ -52,7 +52,6 @@ export default function App() {
         <script type='application/javascript' src='/global.js' />
         <Meta />
         <Links />
-        <Scripts />
       </head>
       <body>
         <Header />
