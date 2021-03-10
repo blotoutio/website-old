@@ -5,15 +5,19 @@ import { Header } from './components/header'
 import { Footer } from './components/footer'
 
 import globalStyle from 'css:./styles/global.pcss'
-import headerStyle from 'css:./components/header/style.pcss'
-import footerStyle from 'css:./components/footer/style.pcss'
 import { useEffect, useRef } from 'react'
+
+export function meta() {
+  return {
+    viewport: 'width=device-width,initial-scale=1,viewport-fit=cover',
+    charSet: 'utf-8',
+  }
+}
 
 export let links: LinksFunction = () => {
   return [
+    { rel: 'icon', href: '/favicon.png' },
     { rel: 'stylesheet', href: globalStyle },
-    { rel: 'stylesheet', href: headerStyle },
-    { rel: 'stylesheet', href: footerStyle },
   ]
 }
 
@@ -46,9 +50,6 @@ export default function App() {
   return (
     <html lang='en'>
       <head>
-        <meta charSet='utf-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.png' />
         <script type='application/javascript' src='/global.js' />
         <Meta />
         <Links />
