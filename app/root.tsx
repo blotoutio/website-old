@@ -45,7 +45,6 @@ function useScrollToTop(): void {
 
 export default function App() {
   useScrollToTop()
-  let data = useRouteData()
 
   return (
     <html lang='en'>
