@@ -4,7 +4,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 
-import globalStyle from 'css:./styles/global.pcss'
+import globalStyle from 'css:./styles/global.css'
 import { useEffect, useRef } from 'react'
 
 export function meta() {

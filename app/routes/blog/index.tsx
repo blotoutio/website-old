@@ -1,6 +1,6 @@
 import { LinksFunction } from '@remix-run/react'
 import BlogList from '../../components/blogList'
-import styles from 'css:../../styles/blog.pcss'
+import styles from 'css:../../styles/blog.css'
 import { blogArticles } from '../../data/blog'
 
 export function meta() {

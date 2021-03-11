@@ -2,9 +2,7 @@ node_modules/
 
 /.cache
 /build
-/data-build
 /public/build
-app-build
 
 .idea
 .DS_Store
