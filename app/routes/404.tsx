@@ -1,6 +1,6 @@
 import type { LinksFunction } from '@remix-run/react'
 import For0For from '../icons/404'
-import styles from 'css:../styles/404.pcss'
+import styles from 'css:../styles/404.css'
 
 export let links: LinksFunction = () => {
   return [{ rel: 'stylesheet', href: styles }]

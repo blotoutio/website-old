@@ -1,6 +1,6 @@
 import type { MetaFunction, LinksFunction } from '@remix-run/react'
 
-import styles from 'css:../styles/index.pcss'
+import styles from 'css:../styles/index.css'
 import MainImage from '../icons/home/main'
 import Measure from '../icons/home/measure'
 import Person from '../icons/home/person'
