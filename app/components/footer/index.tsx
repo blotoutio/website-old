@@ -105,7 +105,7 @@ export const Footer = (): JSX.Element => {
       </div>
       <div className='bottom'>
         <div className='copy'>
-          Copyright © 2020 Blotout. All rights reserved.
+          Copyright © {new Date().getFullYear()} Blotout. All rights reserved.
         </div>
         <div className='second-links'>
           <NavLink
