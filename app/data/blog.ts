@@ -4,7 +4,7 @@ export const blogArticles: BlogArticle[] = [
     description: `We're thrilled to announce that we have taken an investment from Y Combinator and are participants in the YC Winter 2021 batch. 
     This is yet another point of validation for our vision....`,
     date: '2021-03-22',
-    link: '/blog/yc-company',
+    link: '/blog/yc-announcement',
   },
   {
     title: 'The Hypocrisy in Privacy',
