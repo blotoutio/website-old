@@ -1,5 +1,12 @@
 export const blogArticles: BlogArticle[] = [
   {
+    title: `Exciting funding news: we’re a YC company`,
+    description: `We're thrilled to announce that we have taken an investment from Y Combinator and are participants in the YC Winter 2021 batch. 
+    This is yet another point of validation for our vision....`,
+    date: '2021-03-22',
+    link: '/blog/yc-company',
+  },
+  {
     title: 'The Hypocrisy in Privacy',
     description: `It was a huge win for web consumers when Apple took up the cause of protecting user privacy. Since 2017, the company has steadily 
     improved the Intelligent Tracking Prevention (ITP) feature in WebKit, the engine...`,
