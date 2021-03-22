@@ -1,6 +1,6 @@
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 import Logo from '../../icons/logo'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const links = [
   {
@@ -18,7 +18,12 @@ const links = [
 ]
 
 export const Header = (): JSX.Element => {
+  const location = useLocation()
   const [menu, setMenu] = useState(false)
+
+  useEffect(() => {
+    trends('pageView')
+  }, [location])
 
   const handleClick = () => {
     setMenu(!menu)
