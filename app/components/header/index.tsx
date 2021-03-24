@@ -1,11 +1,16 @@
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import Logo from '../../icons/logo'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { pageView } from '@blotoutio/sdk-core'
 
 const links = [
   {
     link: 'https://docs.blotout.io',
     text: 'Docs',
+  },
+  {
+    link: '/case-studies',
+    text: 'Case studies',
   },
   {
     link: '/blog',
@@ -19,10 +24,14 @@ const links = [
 
 export const Header = (): JSX.Element => {
   const location = useLocation()
+  const prevLocationRef = useRef()
   const [menu, setMenu] = useState(false)
 
   useEffect(() => {
-    trends('pageView')
+    if (prevLocationRef.current) {
+      pageView()
+    }
+    prevLocationRef.current = location
   }, [location])
 
   const handleClick = () => {

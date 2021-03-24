@@ -1,11 +1,51 @@
 import type { LinksFunction, LoaderFunction } from '@remix-run/react'
-import { Meta, Links, Scripts, useRouteData } from '@remix-run/react'
+import { Meta, Links, Scripts } from '@remix-run/react'
+import { init, capture } from '@blotoutio/sdk-core'
 import { Outlet, useLocation } from 'react-router-dom'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 
 import globalStyle from 'css:./styles/global.css'
 import { useEffect, useRef } from 'react'
+
+const addListeners = () => {
+  window.onload = function () {
+    document.querySelectorAll('a').forEach((item) => {
+      item.addEventListener('click', (event) => {
+        if (!event || !event.target || !event.target.dataset) {
+          return
+        }
+
+        const name = event.target.dataset.event
+        if (!name) {
+          return
+        }
+
+        let referrer
+        try {
+          referrer = JSON.parse(
+            window.sessionStorage.getItem('_trendsData') || ''
+          ).referrer
+        } catch (e) {}
+
+        if (!referrer) {
+          referrer = 'none'
+        }
+
+        capture(
+          `click-${name}`,
+          {
+            date: new Intl.DateTimeFormat('en-US').format(Date.now()),
+            referrer,
+          },
+          {
+            method: 'beacon',
+          }
+        )
+      })
+    })
+  }
+}
 
 export function meta() {
   return {
@@ -43,6 +83,15 @@ function useScrollToTop(): void {
 }
 
 export default function App() {
+  useEffect(() => {
+    init({
+      token: 'ZWBQ5E48ND3VTPB',
+      endpointUrl: 'https://sales.blotout.io/sdk',
+      customDomain: 'blotout.io',
+    })
+    addListeners()
+  }, [])
+
   useScrollToTop()
 
   return (
@@ -51,7 +100,6 @@ export default function App() {
         <meta charSet='utf-8' />
         <Meta />
         <Links />
-        <script type='text/javascript' src='/global.js' />
         <Scripts />
       </head>
       <body>

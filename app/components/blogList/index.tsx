@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom'
+import { formatDate } from '../../utils'
 
 interface Props {
   articles: BlogArticle[]
 }
 
 const generateArticle = (article: BlogArticle): JSX.Element => {
-  const formattedDate = new Intl.DateTimeFormat('en', {
-    month: 'long',
-    day: '2-digit',
-    year: 'numeric',
-  }).format(new Date(article.date))
+  const formattedDate = formatDate(article.date)
 
   return (
     <article key={article.link}>
