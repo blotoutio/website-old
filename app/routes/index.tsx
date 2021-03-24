@@ -1,12 +1,9 @@
 import type { MetaFunction, LinksFunction } from '@remix-run/react'
 
 import styles from 'css:../styles/index.css'
-import MainImage from '../icons/home/main'
 import Accurate from '../icons/home/accurate'
 import Unify from '../icons/home/unify'
 import Efficient from '../icons/home/efficient'
-import Self from '../icons/home/self'
-import Managed from '../icons/home/managed'
 import Cloud from '../icons/home/cloud'
 import Private from '../icons/home/private'
 import Solution from '../icons/home/solution'
