@@ -45,7 +45,7 @@ const social = [
   {
     name: 'slack',
     link:
-      'https://join.slack.com/t/blotout-workspace/shared_invite/zt-medvirwy-ucfSJGHl6gjBh_tTWPWAYQ',
+      'https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw',
     image: <Slack />,
   },
 ]

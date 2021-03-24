@@ -36,7 +36,7 @@ export default function Index() {
           </a>
           <a
             className='button-secondary'
-            href='https://join.slack.com/t/blotout-workspace/shared_invite/zt-medvirwy-ucfSJGHl6gjBh_tTWPWAYQ'
+            href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
             target='_blank'
             rel='noreferrer'
           >
