@@ -11,3 +11,8 @@ interface StudyArticle {
   date: string
   link: To
 }
+
+interface Jobs {
+  title: string
+  link: string
+}

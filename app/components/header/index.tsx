@@ -17,6 +17,10 @@ const links = [
     text: 'Blog',
   },
   {
+    link: '/jobs',
+    text: 'Jobs',
+  },
+  {
     link: '/about',
     text: 'About',
   },
