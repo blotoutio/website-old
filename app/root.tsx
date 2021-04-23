@@ -1,5 +1,5 @@
 import type { LinksFunction, LoaderFunction } from '@remix-run/react'
-import { Meta, Links, Scripts } from '@remix-run/react'
+import { Meta, Links, Scripts, useLiveReload } from '@remix-run/react'
 import { init, capture } from '@blotoutio/sdk-core'
 import { Outlet, useLocation } from 'react-router-dom'
 import { Header } from './components/header'
@@ -83,6 +83,7 @@ function useScrollToTop(): void {
 }
 
 export default function App() {
+  useLiveReload()
   useEffect(() => {
     init({
       token: 'ZWBQ5E48ND3VTPB',

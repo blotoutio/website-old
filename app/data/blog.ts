@@ -1,5 +1,11 @@
 export const blogArticles: BlogArticle[] = [
   {
+    title: `iOS 14.5 and the tracking apocalypse`,
+    description: `Apple’s iOS 14.5 represents one of the most significant privacy events in the mobile ecosystem. Devices running iOS 14.5 will ask users  ....`,
+    date: '2021-04-26',
+    link: '/blog/ios-update-14-5',
+  },
+  {
     title: `Exciting funding news: we’re a YC company`,
     description: `We're thrilled to announce that we have taken an investment from Y Combinator and are participants in the YC Winter 2021 batch. 
     This is yet another point of validation for our vision....`,
