@@ -218,6 +218,22 @@ body {
       display: inline-block;
     }
   }
+
+  .center {
+    text-align: center;
+  }
+
+  .right {
+    float: right;
+    padding-left: 10px;
+    width: 40%;
+  }
+
+  .left {
+    float: left;
+    padding-right: 10px;
+    width: 40%;
+  }
 }
 
 /**
@@ -263,6 +279,11 @@ body {
       padding-top: 0;
       font-size: 40px;
       line-height: 60px;
+    }
+
+    .left,
+    .right {
+      width: 100%;
     }
   }
 
