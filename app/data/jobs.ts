@@ -12,7 +12,15 @@ export const jobs: Jobs[] = [
     link: '/jobs/data-engineer-052021',
   },
   {
+    title: `Server Engineer`,
+    link: '/jobs/server-engineer-052021',
+  },
+  {
     title: `Client Engineer (Internship)`,
     link: '/jobs/client-internship-052021',
+  },
+  {
+    title: `Server Engineer (Internship)`,
+    link: '/jobs/server-internship-052021',
   },
 ]
