@@ -102,6 +102,7 @@ export default function App() {
         <Meta />
         <Links />
         <Scripts />
+        <script src='/truetraffic.js'></script>
       </head>
       <body>
         <Header />
