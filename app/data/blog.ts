@@ -1,7 +1,13 @@
 export const blogArticles: BlogArticle[] = [
   {
+    title: `Accommodating evil in the era of trust`,
+    description: `Let’s lay it plainly. The only value that third-party cookies provide is to let companies track users.`,
+    date: '2021-06-22',
+    link: '/blog/accommodating-evil-in-the-era-of-trust',
+  },
+  {
     title: `iOS 14.5 and the tracking apocalypse`,
-    description: `Apple’s iOS 14.5 represents one of the most significant privacy events in the mobile ecosystem. Devices running iOS 14.5 will ask users  ....`,
+    description: `Apple’s iOS 14.5 represents one of the most significant privacy events in the mobile ecosystem. Devices running iOS 14.5 will ask users...`,
     date: '2021-04-26',
     link: '/blog/ios-update-14-5',
   },
