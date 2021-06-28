@@ -2,7 +2,7 @@ export const blogArticles: BlogArticle[] = [
   {
     title: `Accommodating evil in the era of trust`,
     description: `Let’s lay it plainly. The only value that third-party cookies provide is to let companies track users.`,
-    date: '2021-06-22',
+    date: '2021-06-28',
     link: '/blog/accommodating-evil-in-the-era-of-trust',
   },
   {
