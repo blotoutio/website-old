@@ -1,5 +1,11 @@
 export const blogArticles: BlogArticle[] = [
   {
+    title: `Introducing the Blotout Technical Blog Series`,
+    description: `We believe that every human has the right to privacy and trustworthy handling of their data. Our mission is to fill the gap in data tooling that has grown as the digital world migrates toward an era of trust and respect for user data.`,
+    date: '2021-07-16',
+    link: '/blog/introducing-technical-blogs',
+  },
+  {
     title: `Accommodating evil in the era of trust`,
     description: `Let’s lay it plainly. The only value that third-party cookies provide is to let companies track users.`,
     date: '2021-06-28',
