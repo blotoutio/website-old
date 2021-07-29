@@ -1,5 +1,11 @@
 export const blogArticles: BlogArticle[] = [
   {
+    title: `Blotout experimenting with Open AI`,
+    description: `OpenAI is the largest open ecosystem for pre-classified NLP models and it supports the completion of even very complex queries within 100 milliseconds.`,
+    date: '2021-07-27',
+    link: '/blog/open-ai',
+  },
+  {
     title: `Introducing the Blotout Technical Blog Series`,
     description: `We believe that every human has the right to privacy and trustworthy handling of their data. Our mission is to fill the gap in data tooling that has grown as the digital world migrates toward an era of trust and respect for user data.`,
     date: '2021-07-16',

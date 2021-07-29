@@ -1,0 +1,100 @@
+---
+meta:
+  title: Blotout experimenting with Open AI
+  description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+---
+
+import MDX from '../../components/mdx'
+
+<MDX>
+  <div className="blog-header">
+    <h1>Blotout experimenting with Open AI</h1>
+    <span className="date">July 27, 2021</span>
+  </div>
+  <div className='content-wrapper'>
+
+**Author: [Raman Kumar Lal](https://www.linkedin.com/in/raman-kumar-lal-a65581181/) (Summer Intern at Blotout)**
+
+I am going to attempt to explain the challenges of building a PII detection classification model; and lay down the appreciation for how Open AI addresses solving these challenges and some flaws that we experienced along the way.
+
+## Some considerations
+
+To create the machine learning model the first thing we needed was a training data set that matched our requirements. Getting a training label set is always hard and the reality is that noisy data leads to noisier outcomes. A model is not likely to perform well if the training data is small, noisy, or filled with outliers.
+
+Developing models is not hard, but they need constant upkeep, and re-enforcement requires more work. Once the model is built, setting up sound MLOps infrastructure is yet another challenge for developing scalable models.
+
+## Our decision to go with GPT-3 OpenAI Beta
+
+OpenAI is the largest open ecosystem for pre-classified NLP models and it supports the completion of even very complex queries within 100 milliseconds.
+
+<div className='right'>
+  <img src='/images/blog/open-ai.jpg' alt='open ai' />
+</div>
+
+Considering the challenge of finding a large training set, GPT-3 allowed us to use a minimal training set for the model. This was very useful in getting going quicker without having to spend lots of time dealing with accurate training sets. With GPT-3, once we gave it some basic examples for training to detect PII metadata, we were done.
+
+Open AI is actually smart enough that with only a few examples it clearly understands what we are going to do, what kind of classification model or competition model we are going to make. so it's very easy when we are working with open AI.
+
+Our assumptions are that for everyday NLP, we can focus on doing automation and data engineering work and let GPT-3 take care of the predictions.
+
+## So how does GPT-3 OpenAI work?
+
+[GPT-3](https://openai.com/blog/gpt-3-apps/) (Generative Pre-trained Transformer-3) is third generation GPT language -- it’s basically a deep learning transformer model which can produce a sequence of text upon some input text designed for question answering, text generation, and summarization.
+
+**Example**: If we pass the query as, "once upon a time," then it will return a completion in such a way that connects to a sentence like, "once upon a time there was a boy who won the Nobel Prize for a great invention."
+
+Along with that, GPT-3 has classification models that can classify the text by labels that are based upon our provided inputs labels.
+
+**Example**: I created this classification model very quickly using GPT-3 to classify text into two categories -- PII and NON PII (PII stands for personally identifiable information).
+
+To create the model we passed a few examples so the model could understand the classification, like `{"Name" = "PII", "Mobile number" = "PII", "Gender" = Non PII }`.
+
+Now on passing any query the model will say the category from given labels
+
+**Example**: We provide "credit card" and the model returns "PII."
+
+Yes, it's really that awesome! 😊
+
+Here’s the Python code:
+
+```python
+import openai
+openai.api_key = "XXXXXXXXX"
+example = [["first Name", "PII"], ["email", "PII"], ["ip_address", "PII"],
+    ["Date of birth", " PII"], ["userid", "Non PII"],
+    ["Date of Joining", "NON PII"], ["Account number", "PII"],
+    ["city", "NON PII"], ["Gender", "NON PII"],
+query = ["name", "email"]
+for i in query:
+    predict = openai.Classification.create(
+        search_model="davinci",
+        model="davinci",
+        examples=example,
+        query=i,
+        labels=["PII", "NON PII"],
+    ).label.lower()
+    print(str(i) + " is " + str(predict))
+```
+
+### What does Blotout want to achieve with OpenAI?
+
+Blotout is a privacy infrastructure as a service company solving everyday enterprise problems -- classifying high risk data (PII), classifying data segments, automating personalization APIs, etc.
+
+We are constantly exploring capabilities that enhance our automations and workflows to keep private data secure.
+
+### Why should people look at OpenAI?
+
+Building AI models from scratch is difficult and time-consuming, but with GPT-3, even a 10 year child can create well performing Deep Learning models.
+
+But it has its own limitations. In fact, every machine learning model no matter how powerful has some limitations. I am listing some which I experienced:
+
+- We can't retrain the model at run time. **Example**; Let's suppose I trained 50MB of files to create a classification model and received a fine-tuned model. Now imagine after a week I want to add some more training data to it (for better performance). Suppose the size of new required training data is 2MB. Then we need to train the model from scratch every time, which means we need to train (50+2)MB data again, and that will cost us again.
+
+- Because GPT-3 is so large, it works slowly to create a fine tuned model. But the team is working on it and soon they will come up with great solutions. AI is going to change the world.
+
+In an open and transparent ecosystem, and for a purpose such as protecting sensitive data, AI can be worth its weight in gold. Where today data protectors in companies and other organizations are desperately trying to ensure the protection of sensitive data in sprawling decentralized data streams, AI can help to overcome these limitations with ease and thus has the potential to be a faithful companion for data protection, just like R2D2 for the Skywalkers.
+
+Feedback or questions? Talk to us: [Blotout-Slack](https://blotout-shared.slack.com)
+
+  </div>
+</MDX>
