@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "TT Interphases";
+  src: url("/fonts/TTInterphasesTrl-Medium.woff2") format("woff2"), url("/fonts/TTInterphasesTrl-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "TT Interphases";
+  src: url("/fonts/TTInterphasesTrl-DemiBold.woff2") format("woff2"), url("/fonts/TTInterphasesTrl-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "TT Interphases";
+  src: url("/fonts/TTInterphasesTrl-Bold.woff2") format("woff2"), url("/fonts/TTInterphasesTrl-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "TT Interphases Mono";
+  src: url("/fonts/TTInterphasesMonoTrl-Bold.woff2") format("woff2"), url("/fonts/TTInterphasesMonoTrl-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: auto;
+  width: 100%;
+  font-family: "TT Interphases"; }
+
+header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #001f3d; }
+  @media (max-width: 1200px) {
+    header {
+      padding: 0 25px; } }
+  header #header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 780px;
+    font-weight: 600;
+    color: #ffffff; }
+    header #header-content #header-nav {
+      display: flex;
+      flex-direction: row; }
+      header #header-content #header-nav .nav-link {
+        margin-right: 25px; }
+        header #header-content #header-nav .nav-link:last-of-type {
+          margin-right: 0; }
+
+footer {
+  color: blue; }

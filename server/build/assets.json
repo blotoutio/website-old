@@ -1,0 +1,38 @@
+{
+  "version": "b06bd92e",
+  "entry": {
+    "module": "/build/entry.client-D67BOVA6.js",
+    "imports": [
+      "/build/_shared/chunk-IXE73DEJ.js",
+      "/build/_shared/chunk-DOM5QJLA.js"
+    ]
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "/",
+      "module": "/build/root-OMXHHKG3.js",
+      "hasAction": false,
+      "hasLoader": true
+    },
+    "routes/404": {
+      "id": "routes/404",
+      "parentId": "root",
+      "path": "*",
+      "caseSensitive": false,
+      "module": "/build/routes/404-H4ZT3UY5.js",
+      "hasAction": false,
+      "hasLoader": false
+    },
+    "routes/index": {
+      "id": "routes/index",
+      "parentId": "root",
+      "path": "/",
+      "caseSensitive": false,
+      "module": "/build/routes/index-JZT43U4A.js",
+      "hasAction": false,
+      "hasLoader": false
+    }
+  },
+  "url": "/build/manifest-B06BD92E.js"
+}

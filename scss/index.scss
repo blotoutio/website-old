@@ -1,0 +1,100 @@
+// Colours
+
+$dark-blue-1: #1856dc;
+$dark-blue-2: #133581;
+$dark-blue-3: #001f3d;
+$dark-blue-4: #0a0825;
+
+$light-blue-1: #f8fbff;
+$light-blue-2: #eef6ff;
+$light-blue-3: #e2f0ff;
+$light-blue-4: #b3d4ff;
+
+$grey-1: #ffffff;
+$grey-2: #f6f6f6;
+$grey-3: #e1e1e1;
+$grey-4: #c1c7d0;
+
+$yellow-1: #ffe893;
+$yellow-2: #ffd53d;
+$yellow-3: #ffc400;
+$yellow-4: #ffb304;
+
+$red-1: #f5b1a2;
+$red-2: #ff522c;
+$red-3: #de350b;
+$red-4: #ad2402;
+
+$green-1: #a5d7c1;
+$green-2: #36b37e;
+$green-3: #008a5c;
+$green-4: #016846;
+
+#home {
+    width: 100%;
+
+    .home-section {
+        width: 100%;
+        padding: 100px 0 125px 0;
+
+        @media (max-width: 1200px) {
+            padding: 100px 25px 125px 25px;
+        }
+
+        .home-section-content {
+            width: 100%;
+            max-width: 1180px;
+            margin: auto;
+        }
+    }
+
+    #hero {
+        background-color: $dark-blue-3;
+
+        #hero-content {
+            padding-top: 125px;
+
+            #hero-title {
+                margin-bottom: 50px;
+                width: 100%;
+                max-width: 960px;
+                font-weight: 600;
+                font-size: 78px;
+                line-height: 100%;
+                letter-spacing: -2px;
+                color: $grey-1;
+            }
+
+            #hero-subtitle {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 130%;
+                color: $light-blue-3;
+            }
+        }
+    }
+
+    #explainer {
+        background-color: $dark-blue-2;
+    }
+
+    #marketers {
+        background-color: $light-blue-1;
+    }
+
+    #product-managers {
+        background-color: $light-blue-1;
+    }
+
+    #engineers {
+        background-color: $dark-blue-3;
+    }
+
+    #blog {
+        background-color: $light-blue-2;
+    }
+
+    #privacy {
+        background-color: $dark-blue-1;
+    }
+}

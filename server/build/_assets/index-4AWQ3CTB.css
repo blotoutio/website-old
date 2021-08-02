@@ -1,0 +1,59 @@
+#home {
+  width: 100%;
+}
+#home .home-section {
+  width: 100%;
+  padding: 100px 0 125px 0;
+}
+@media (max-width: 1200px) {
+  #home .home-section {
+    padding: 100px 25px 125px 25px;
+  }
+}
+#home .home-section .home-section-content {
+  width: 100%;
+  max-width: 1180px;
+  margin: auto;
+}
+#home #hero {
+  background-color: #001f3d;
+}
+#home #hero #hero-content {
+  padding-top: 125px;
+}
+#home #hero #hero-content #hero-title {
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 960px;
+  font-weight: 600;
+  font-size: 78px;
+  line-height: 100%;
+  letter-spacing: -26%;
+  color: #ffffff;
+}
+#home #hero #hero-content #hero-subtitle {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
+  color: #e2f0ff;
+}
+#home #explainer {
+  background-color: #133581;
+}
+#home #marketers {
+  background-color: #f8fbff;
+}
+#home #product-managers {
+  background-color: #f8fbff;
+}
+#home #engineers {
+  background-color: #001f3d;
+}
+#home #blog {
+  background-color: #eef6ff;
+}
+#home #privacy {
+  background-color: #1856dc;
+}
+
+/*# sourceMappingURL=index.css.map */
