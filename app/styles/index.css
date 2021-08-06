@@ -3,57 +3,611 @@
 }
 #home .home-section {
   width: 100%;
-  padding: 100px 0 125px 0;
-}
-@media (max-width: 1200px) {
-  #home .home-section {
-    padding: 100px 25px 125px 25px;
-  }
 }
 #home .home-section .home-section-content {
   width: 100%;
   max-width: 1180px;
   margin: auto;
+  padding: 100px 0;
+}
+@media (max-width: 1200px) {
+  #home .home-section .home-section-content {
+    padding: 80px 25px;
+  }
+}
+@media (max-width: 1024px) {
+  #home .home-section .home-section-content {
+    padding: 80px 20px;
+  }
+}
+@media (max-width: 768px) {
+  #home .home-section .home-section-content {
+    padding: 80px 15px;
+  }
 }
 #home #hero {
-  background-color: #001f3d;
+  background-color: var(--dark-blue-3);
 }
 #home #hero #hero-content {
   padding-top: 125px;
 }
+@media (max-width: 1200px) {
+  #home #hero #hero-content {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+}
+@media (max-width: 1024px) {
+  #home #hero #hero-content {
+    padding-top: 85px;
+    padding-bottom: 100px;
+  }
+}
 #home #hero #hero-content #hero-title {
-  margin-bottom: 50px;
   width: 100%;
-  max-width: 960px;
+  max-width: 900px;
   font-weight: 600;
-  font-size: 78px;
-  line-height: 100%;
-  letter-spacing: -2px;
-  color: #ffffff;
+  font-size: 60px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  color: var(--grey-1);
+}
+@media (max-width: 1200px) {
+  #home #hero #hero-content #hero-title {
+    max-width: 700px;
+    font-size: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  #home #hero #hero-content #hero-title {
+    max-width: 650px;
+    font-size: 45px;
+  }
+}
+@media (max-width: 700px) {
+  #home #hero #hero-content #hero-title {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  #home #hero #hero-content #hero-title {
+    font-size: 35px;
+  }
 }
 #home #hero #hero-content #hero-subtitle {
+  margin: 50px 0;
+  width: 100%;
+  max-width: 800px;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 23px;
   line-height: 130%;
-  color: #e2f0ff;
+  color: var(--light-blue-4);
+}
+@media (max-width: 1200px) {
+  #home #hero #hero-content #hero-subtitle {
+    max-width: 700px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  #home #hero #hero-content #hero-subtitle {
+    max-width: 650px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  #home #hero #hero-content #hero-subtitle {
+    text-align: center;
+  }
+}
+#home #hero #hero-content #hero-cta-group {
+  display: flex;
+}
+@media (max-width: 700px) {
+  #home #hero #hero-content #hero-cta-group {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  #home #hero #hero-content #hero-cta-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#home #hero #hero-content #hero-cta-group .hero-cta {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+#home #hero #hero-content #hero-cta-group #hero-primary-cta {
+  margin-right: 25px;
+  background-color: var(--yellow-2);
+  color: var(--dark-blue-3);
+}
+@media (max-width: 400px) {
+  #home #hero #hero-content #hero-cta-group #hero-primary-cta {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+#home #hero #hero-content #hero-cta-group #hero-secondary-cta {
+  background-color: var(--light-blue-1);
+  color: var(--dark-blue-3);
 }
 #home #explainer {
-  background-color: #133581;
+  background-color: var(--dark-blue-2);
+}
+#home .non-engineer .non-engineer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#home .non-engineer .non-engineer-content .non-engineer-text-group {
+  max-width: 750px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  #home .non-engineer .non-engineer-content .non-engineer-text-group {
+    max-width: 660px;
+  }
+}
+@media (max-width: 768px) {
+  #home .non-engineer .non-engineer-content .non-engineer-text-group {
+    max-width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  #home .non-engineer .non-engineer-content .non-engineer-text-group {
+    max-width: 550px;
+  }
+}
+#home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-heading {
+  font-family: "TT Interphases Mono";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--dark-blue-1);
+}
+@media (max-width: 1024px) {
+  #home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-heading {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  #home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-heading {
+    font-size: 16px;
+  }
+}
+#home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-title {
+  margin: 35px 0;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: var(--dark-blue-3);
+}
+@media (max-width: 1024px) {
+  #home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-title {
+    margin: 28px 0;
+    font-size: 40px;
+  }
+}
+@media (max-width: 700px) {
+  #home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-title {
+    margin: 25px 0;
+    font-size: 30px;
+  }
+}
+#home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-subtitle {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 130%;
+  color: rgba(0, 0, 0, 0.65);
+}
+@media (max-width: 1024px) {
+  #home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-subtitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  #home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-subtitle {
+    font-size: 16px;
+  }
+}
+#home .non-engineer .non-engineer-content .non-engineer-cta {
+  margin: auto;
+  padding: 10px 20px;
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--yellow-2);
+  color: var(--dark-blue-3);
+  border-radius: 3px;
+}
+@media (max-width: 768px) {
+  #home .non-engineer .non-engineer-content .non-engineer-cta {
+    margin-top: 40px;
+  }
+}
+#home .non-engineer .non-engineer-content .non-engineer-illustration-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 85px;
+}
+@media (max-width: 768px) {
+  #home .non-engineer .non-engineer-content .non-engineer-illustration-group {
+    margin-top: 60px;
+  }
+}
+#home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-illustration {
+  width: 100%;
+  max-width: 1000px;
+  background-color: var(--grey-1);
+  border-radius: 3px;
+  box-shadow: 0px 24px 150px rgba(193, 199, 208, 0.65);
+}
+#home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-point-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+  background-color: var(--grey-2);
+  border-radius: 0 0 3px 3px;
+}
+@media (max-width: 900px) {
+  #home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-point-group {
+    width: 90%;
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  #home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-point-group {
+    max-width: 550px;
+    padding-bottom: 30px;
+  }
+}
+#home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-point-group .non-engineer-point {
+  display: flex;
+  align-items: flex-start;
+  width: 33%;
+  margin: 40px 0;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: rgba(0, 0, 0, 0.65);
+}
+@media (max-width: 1024px) {
+  #home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-point-group .non-engineer-point {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  #home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-point-group .non-engineer-point {
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0 0 0;
+    padding: 0;
+  }
+  #home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-point-group .non-engineer-point:nth-of-type(3n + 2) {
+    width: 100% !important;
+  }
+}
+#home .non-engineer .non-engineer-content .non-engineer-illustration-group .non-engineer-point-group .non-engineer-point:nth-of-type(3n + 2) {
+  width: 34%;
 }
 #home #marketers {
-  background-color: #f8fbff;
+  background-color: var(--light-blue-1);
 }
 #home #product-managers {
-  background-color: #f8fbff;
+  background-color: var(--light-blue-1);
+}
+#home #product-managers #product-managers-content {
+  padding-top: 50px;
+}
+@media (max-width: 1200px) {
+  #home #product-managers #product-managers-content {
+    padding-top: 40px;
+  }
+}
+#home #product-managers #product-managers-content #product-managers-point-group {
+  border-radius: 0 3px 3px 0;
 }
 #home #engineers {
-  background-color: #001f3d;
+  background-color: var(--dark-blue-3);
+}
+#home #engineers #engineers-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#home #engineers #engineers-content #engineers-text-group {
+  max-width: 750px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  #home #engineers #engineers-content #engineers-text-group {
+    max-width: 660px;
+  }
+}
+@media (max-width: 768px) {
+  #home #engineers #engineers-content #engineers-text-group {
+    max-width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  #home #engineers #engineers-content #engineers-text-group {
+    max-width: 550px;
+  }
+}
+#home #engineers #engineers-content #engineers-text-group #engineers-text-heading {
+  font-family: "TT Interphases Mono";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--dark-blue-1);
+}
+@media (max-width: 1024px) {
+  #home #engineers #engineers-content #engineers-text-group #engineers-text-heading {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  #home #engineers #engineers-content #engineers-text-group #engineers-text-heading {
+    font-size: 16px;
+  }
+}
+#home #engineers #engineers-content #engineers-text-group #engineers-text-title {
+  margin: 35px 0;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: var(--grey-1);
+}
+@media (max-width: 1024px) {
+  #home #engineers #engineers-content #engineers-text-group #engineers-text-title {
+    margin: 28px 0;
+    font-size: 35px;
+    letter-spacing: -0.5px;
+  }
+}
+@media (max-width: 700px) {
+  #home #engineers #engineers-content #engineers-text-group #engineers-text-title {
+    margin: 25px 0;
+    font-size: 28px;
+  }
+}
+#home #engineers #engineers-content #engineers-text-group #engineers-text-subtitle {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.65);
+}
+@media (max-width: 1024px) {
+  #home #engineers #engineers-content #engineers-text-group #engineers-text-subtitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  #home #engineers #engineers-content #engineers-text-group #engineers-text-subtitle {
+    font-size: 16px;
+  }
+}
+#home #engineers #engineers-content #engineers-cta {
+  margin: auto;
+  padding: 10px 20px;
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--yellow-2);
+  color: var(--dark-blue-3);
+  border-radius: 3px;
+}
+@media (max-width: 768px) {
+  #home #engineers #engineers-content #engineers-cta {
+    margin-top: 40px;
+  }
+}
+#home #engineers #engineers-content #engineers-illustration {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin-top: 85px;
+  background-color: var(--dark-blue-4);
+}
+@media (max-width: 700px) {
+  #home #engineers #engineers-content #engineers-illustration {
+    margin-top: 60px;
+  }
+}
+#home #engineers #engineers-content #engineers-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#home #engineers #engineers-content #engineers-point-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-align: center;
+  color: var(--light-blue-2);
+}
+@media (max-width: 1024px) {
+  #home #engineers #engineers-content #engineers-point-group {
+    margin-top: 75px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  #home #engineers #engineers-content #engineers-point-group {
+    margin-top: 65px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 600px) {
+  #home #engineers #engineers-content #engineers-point-group {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 45px;
+  }
+}
+#home #engineers #engineers-content #engineers-point-group .engineers-point {
+  width: 100%;
+  padding: 85px 25px;
+  border-right: 2px solid rgba(226, 240, 255, 0.1);
+}
+@media (max-width: 1024px) {
+  #home #engineers #engineers-content #engineers-point-group .engineers-point {
+    padding: 65px 20px;
+  }
+}
+@media (max-width: 768px) {
+  #home #engineers #engineers-content #engineers-point-group .engineers-point {
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 600px) {
+  #home #engineers #engineers-content #engineers-point-group .engineers-point {
+    max-width: 450px;
+    padding: 25px 0;
+    border-right: none;
+    border-bottom: 2px solid rgba(226, 240, 255, 0.1);
+  }
+}
+#home #engineers #engineers-content #engineers-point-group .engineers-point:last-of-type {
+  border-right: none;
+}
+@media (max-width: 600px) {
+  #home #engineers #engineers-content #engineers-point-group .engineers-point:last-of-type {
+    border-bottom: none;
+  }
 }
 #home #blog {
-  background-color: #eef6ff;
+  background-color: var(--light-blue-2);
 }
 #home #privacy {
-  background-color: #1856dc;
+  background-color: var(--dark-blue-1);
+}
+#home #privacy #privacy-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+#home #privacy #privacy-content #privacy-content-text {
+  max-width: 750px;
+}
+@media (max-width: 1024px) {
+  #home #privacy #privacy-content #privacy-content-text {
+    max-width: 660px;
+  }
+}
+@media (max-width: 850px) {
+  #home #privacy #privacy-content #privacy-content-text {
+    max-width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  #home #privacy #privacy-content #privacy-content-text {
+    max-width: 520px;
+  }
+}
+@media (max-width: 600px) {
+  #home #privacy #privacy-content #privacy-content-text {
+    max-width: 500px;
+  }
+}
+#home #privacy #privacy-content #privacy-content-text #privacy-hashtag {
+  font-family: "TT Interphases Mono";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  color: var(--yellow-2);
+}
+@media (max-width: 1024px) {
+  #home #privacy #privacy-content #privacy-content-text #privacy-hashtag {
+    font-size: 24px;
+  }
+}
+@media (max-width: 700px) {
+  #home #privacy #privacy-content #privacy-content-text #privacy-hashtag {
+    font-size: 20px;
+  }
+}
+#home #privacy #privacy-content #privacy-content-text #privacy-title {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: var(--light-blue-2);
+}
+@media (max-width: 1024px) {
+  #home #privacy #privacy-content #privacy-content-text #privacy-title {
+    margin-top: 38px;
+    font-size: 36px;
+    letter-spacing: -0.5px;
+  }
+}
+@media (max-width: 700px) {
+  #home #privacy #privacy-content #privacy-content-text #privacy-title {
+    font-size: 28px;
+  }
+}
+#home #privacy #privacy-content #privacy-content-text #privacy-subtitle {
+  margin-top: 35px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.75);
+}
+@media (max-width: 1024px) {
+  #home #privacy #privacy-content #privacy-content-text #privacy-subtitle {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  #home #privacy #privacy-content #privacy-content-text #privacy-subtitle {
+    font-size: 18px;
+  }
+}
+#home #privacy #privacy-content #privacy-content-text #privacy-point-group {
+  margin-top: 65px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--light-blue-1);
+}
+@media (max-width: 1024px) {
+  #home #privacy #privacy-content #privacy-content-text #privacy-point-group {
+    margin-top: 45px;
+    font-size: 16px;
+  }
+}
+#home #privacy #privacy-content #privacy-content-text #privacy-point-group .privacy-point {
+  margin-top: 16px;
+}
+@media (max-width: 1024px) {
+  #home #privacy #privacy-content #privacy-content-text #privacy-point-group .privacy-point {
+    margin-top: 13px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

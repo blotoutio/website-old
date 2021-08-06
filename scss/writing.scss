@@ -1,0 +1,243 @@
+.writing {
+    .writing-header,
+    .writing-list {
+        width: 100%;
+
+        .writing-header-content,
+        .writing-list-content {
+            width: 100%;
+            max-width: 1180px;
+            margin: auto;
+            padding: 70px 0 100px 0;
+
+            @media (max-width: 1200px) {
+                padding: 60px 25px;
+            }
+
+            @media (max-width: 1024px) {
+                padding: 60px 20px;
+            }
+
+            @media (max-width: 768px) {
+                padding: 60px 15px;
+            }
+        }
+
+        .writing-header-content {
+            text-align: center;
+
+            .writing-title {
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 100%;
+                letter-spacing: -1px;
+                color: var(--dark-blue-4);
+
+                @media (max-width: 1024px) {
+                    font-size: 40px;
+                }
+
+                @media (max-width: 550px) {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .writing-list-content {
+            .featured {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: auto;
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                .featured-image {
+                    width: 100%;
+                    max-width: 60%;
+                    height: 350px;
+                    background-color: var(--grey-1);
+                    border-radius: 3px;
+
+                    @media (max-width: 1200px) {
+                        height: 300px;
+                    }
+
+                    @media (max-width: 768px) {
+                        max-width: 500px;
+                        height: 250px;
+                        margin: auto;
+                    }
+                }
+
+                .featured-text {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    max-width: 35%;
+                    height: 350px;
+
+                    @media (max-width: 1200px) {
+                        height: 300px;
+                    }
+
+                    @media (max-width: 768px) {
+                        max-width: 500px;
+                        height: auto;
+                        margin: auto;
+                        margin-top: 35px;
+                    }
+
+                    .featured-text-title {
+                        font-weight: 600;
+                        font-size: 40px;
+                        line-height: 115%;
+                        letter-spacing: -1px;
+                        color: var(--dark-blue-3);
+
+                        @media (max-width: 1024px) {
+                            font-size: 30px;
+                            line-height: 110%;
+                            letter-spacing: -0.5px;
+                        }
+
+                        @media (max-width: 900px) {
+                            font-size: 28px;
+                        }
+                    }
+
+                    .featured-text-subtitle {
+                        padding: 20px 0;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 130%;
+                        color: var(--dark-blue-4);
+
+                        @media (max-width: 1024px) {
+                            font-size: 18px;
+                            line-height: 130%;
+                        }
+
+                        @media (max-width: 900px) {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .featured-text-info {
+                        font-family: "TT Interphases Mono";
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: rgba(0, 0, 0, 0.65);
+
+                        @media (max-width: 1024px) {
+                            font-size: 18px;
+                        }
+
+                        @media (max-width: 900px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .list {
+                max-width: 650px;
+                margin: auto;
+                margin-top: 100px;
+
+                @media (max-width: 768px) {
+                    max-width: 500px;
+                }
+
+                .list-title {
+                    font-family: "TT Interphases Mono";
+                    font-weight: 700;
+                    font-size: 25px;
+                    color: var(--dark-blue-1);
+                    text-align: center;
+
+                    @media (max-width: 768px) {
+                    }
+                }
+
+                .list-content {
+                    margin-top: 65px;
+
+                    @media (max-width: 768px) {
+                        margin-top: 50px;
+                    }
+
+                    .list-item {
+                        margin-top: 45px;
+
+                        @media (max-width: 768px) {
+                            margin-top: 40px;
+                        }
+
+                        .list-item-title {
+                            font-weight: 600;
+                            font-size: 30px;
+                            line-height: 110%;
+                            letter-spacing: -1px;
+                            color: var(--dark-blue-3);
+
+                            @media (max-width: 768px) {
+                                font-size: 23px;
+                            }
+                        }
+
+                        .list-item-info {
+                            margin-top: 15px;
+                            font-family: "TT Interphases Mono";
+                            font-weight: 700;
+                            font-size: 16px;
+                            color: rgba(0, 0, 0, 0.65);
+
+                            @media (max-width: 768px) {
+                                margin-top: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //     .writing-divider {
+    //         svg {
+    //             display: block;
+    //             width: 100%;
+    //             height: 7vw;
+    //
+    //             polygon {
+    //                 fill: var(--grey-1);
+    //             }
+    //         }
+    //     }
+
+    .writing-header {
+        background-color: var(--light-blue-3);
+
+        // .legal-divider {
+        //     svg {
+        //         polygon {
+        //             fill: var(--grey-1);
+        //         }
+        //     }
+        // }
+    }
+
+    .writing-list {
+        background-color: var(--light-blue-1);
+
+        // .legal-divider {
+        //     svg {
+        //         polygon {
+        //             fill: var(--grey-2);
+        //         }
+        //     }
+        // }
+    }
+}

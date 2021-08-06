@@ -1,3 +1,30 @@
+:root {
+  --dark-blue-1: #1856dc;
+  --dark-blue-2: #133581;
+  --dark-blue-3: #001f3d;
+  --dark-blue-4: #0a0825;
+  --light-blue-1: #f8fbff;
+  --light-blue-2: #eef6ff;
+  --light-blue-3: #e2f0ff;
+  --light-blue-4: #b3d4ff;
+  --grey-1: #ffffff;
+  --grey-2: #f6f6f6;
+  --grey-3: #e1e1e1;
+  --grey-4: #c1c7d0;
+  --yellow-1: #ffe893;
+  --yellow-2: #ffd53d;
+  --yellow-3: #ffc400;
+  --yellow-4: #ffb304;
+  --red-1: #f5b1a2;
+  --red-2: #ff522c;
+  --red-3: #de350b;
+  --red-4: #ad2402;
+  --green-1: #a5d7c1;
+  --green-2: #36b37e;
+  --green-3: #008a5c;
+  --green-4: #016846;
+}
+
 @font-face {
   font-family: "TT Interphases";
   src: url("/fonts/TTInterphasesTrl-Medium.woff2") format("woff2"), url("/fonts/TTInterphasesTrl-Medium.woff") format("woff");
@@ -46,7 +73,6 @@ header {
   display: flex;
   align-items: center;
   height: 80px;
-  background-color: #001f3d;
 }
 @media (max-width: 1200px) {
   header {
@@ -62,7 +88,6 @@ header #header-content {
   width: 100%;
   max-width: 1180px;
   line-height: 130%;
-  color: #f8fbff;
 }
 header #header-content #logo {
   width: 100px;
@@ -71,30 +96,71 @@ header #header-content #header-nav {
   display: flex;
   flex-direction: row;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  header #header-content #header-nav {
+    display: none;
+  }
 }
 header #header-content #header-nav .header-nav-link {
-  margin-right: 35px;
+  padding: 20px;
+  text-align: center;
 }
-header #header-content #header-nav .header-nav-link:last-of-type {
-  margin-right: 0;
+@media (max-width: 1024px) {
+  header #header-content #header-nav .header-nav-link {
+    padding: 15px;
+  }
+}
+@media (max-width: 900px) {
+  header #header-content #header-nav .header-nav-link {
+    padding: 10px;
+  }
 }
 header #header-content #cta {
   font-weight: 600;
   font-size: 16px;
+  text-align: center;
   padding: 10px 20px;
-  background-color: #1856dc;
+  background-color: var(--yellow-2);
+  color: var(--dark-blue-3);
   border-radius: 3px;
+}
+@media (max-width: 768px) {
+  header #header-content #cta {
+    display: none;
+  }
+}
+header #header-content #header-nav-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  header #header-content #header-nav-mobile {
+    display: block;
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--grey-1);
+    transform: rotate(90deg);
+  }
 }
 
 footer {
-  padding-top: 100px;
-  padding-bottom: 125px;
-  background-color: #f6f6f6;
+  padding: 100px 0;
+  background-color: var(--grey-2);
 }
 @media (max-width: 1200px) {
   footer {
-    padding: 100px 25px 125px 25px;
+    padding: 80px 25px;
+  }
+}
+@media (max-width: 1024px) {
+  footer {
+    padding: 80px 20px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 80px 15px;
   }
 }
 footer #footer-content {
@@ -105,52 +171,113 @@ footer #footer-content {
   width: 100%;
   max-width: 1180px;
 }
+@media (max-width: 1024px) {
+  footer #footer-content {
+    flex-direction: column;
+  }
+}
 footer #footer-content #footer-special {
   max-width: 390px;
 }
+@media (max-width: 1100px) {
+  footer #footer-content #footer-special {
+    max-width: 360px;
+  }
+}
+@media (max-width: 1024px) {
+  footer #footer-content #footer-special {
+    margin: auto;
+    text-align: center;
+  }
+}
 footer #footer-content #footer-special #footer-special-text {
-  margin-bottom: 40px;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 130%;
-  color: #133581;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 115%;
+  color: var(--dark-blue-2);
 }
 footer #footer-content #footer-special #footer-special-cta {
   display: inline-block;
   font-weight: 600;
   font-size: 16px;
   line-height: 130%;
+  text-align: center;
   padding: 10px 20px;
-  background-color: #001f3d;
-  color: #f8fbff;
+  background-color: var(--dark-blue-3);
+  color: var(--light-blue-1);
   border-radius: 3px;
 }
 footer #footer-content #footer-nav {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 1024px) {
+  footer #footer-content #footer-nav {
+    margin: auto;
+    margin-top: 80px;
+  }
+}
+@media (max-width: 600px) {
+  footer #footer-content #footer-nav {
+    flex-wrap: wrap;
+  }
+}
 footer #footer-content #footer-nav .footer-nav-group {
-  margin-right: 65px;
+  margin-right: 50px;
+}
+@media (max-width: 1100px) {
+  footer #footer-content #footer-nav .footer-nav-group {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  footer #footer-content #footer-nav .footer-nav-group {
+    margin-right: 80px;
+  }
+}
+@media (max-width: 600px) {
+  footer #footer-content #footer-nav .footer-nav-group {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 600px) {
+  footer #footer-content #footer-nav .footer-nav-group {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  footer #footer-content #footer-nav .footer-nav-group:first-of-type {
+    margin-top: 0;
+  }
 }
 footer #footer-content #footer-nav .footer-nav-group:last-of-type {
   margin-right: 0;
 }
+@media (max-width: 600px) {
+  footer #footer-content #footer-nav .footer-nav-group:nth-of-type(3), footer #footer-content #footer-nav .footer-nav-group:nth-of-type(4) {
+    margin-top: 50px;
+  }
+}
 footer #footer-content #footer-nav .footer-nav-group .footer-nav-heading {
   font-family: "TT Interphases Mono";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 130%;
-  color: #133581;
+  color: var(--dark-blue-2);
   margin-bottom: 25px;
 }
 footer #footer-content #footer-nav .footer-nav-group .footer-nav-link-group {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 130%;
-  color: #001f3d;
+  color: var(--dark-blue-3);
 }
 footer #footer-content #footer-nav .footer-nav-group .footer-nav-link-group .footer-nav-link {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 footer #footer-content #footer-nav .footer-nav-group .footer-nav-link-group .footer-nav-link:last-of-type {
   margin-bottom: 0;
