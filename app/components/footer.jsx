@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
     return (
         <footer>
@@ -11,35 +13,66 @@ export const Footer = () => {
                     <div className="footer-nav-group">
                         <div className="footer-nav-heading">Product</div>
                         <div className="footer-nav-link-group">
-                            <div className="footer-nav-link">Overview</div>
-                            <div className="footer-nav-link">Integrations</div>
-                            <div className="footer-nav-link">For Marketers</div>
-                            <div className="footer-nav-link">For Product Managers</div>
-                            <div className="footer-nav-link">For Engineers</div>
-                            <div className="footer-nav-link">For Privacy Teams</div>
+                            <Link to="/" className="footer-nav-link">
+                                Overview
+                            </Link>
+                            <Link to="/" className="footer-nav-link">
+                                Integrations
+                            </Link>
+                            <Link to="/" className="footer-nav-link">
+                                For Marketers
+                            </Link>
+                            <Link to="/" className="footer-nav-link">
+                                For Product Managers
+                            </Link>
+                            <Link to="/" className="footer-nav-link">
+                                For Engineers
+                            </Link>
+                            <Link to="/" className="footer-nav-link">
+                                For Privacy Teams
+                            </Link>
                         </div>
                     </div>
                     <div className="footer-nav-group">
                         <div className="footer-nav-heading">Docs</div>
                         <div className="footer-nav-link-group">
-                            <div className="footer-nav-link">Web</div>
-                            <div className="footer-nav-link">iOS</div>
-                            <div className="footer-nav-link">Android</div>
-                            <div className="footer-nav-link">Rust / C++</div>
+                            <a href="https://docs.blotout.io/" className="footer-nav-link">
+                                Overview
+                            </a>
+                            <a href="https://docs-js.blotout.io/" className="footer-nav-link">
+                                JavaScript
+                            </a>
+                            <a href="https://docs-ios.blotout.io/" className="footer-nav-link">
+                                iOS
+                            </a>
+                            <a href="https://docs-android.blotout.io/" className="footer-nav-link">
+                                Android
+                            </a>
+                            <a href="https://docs-rust.blotout.io/" className="footer-nav-link">
+                                Rust / C++
+                            </a>
                         </div>
                     </div>
                     <div className="footer-nav-group">
                         <div className="footer-nav-heading">Resources</div>
                         <div className="footer-nav-link-group">
-                            <div className="footer-nav-link">Blog</div>
-                            <div className="footer-nav-link">Case Studies</div>
-                            <div className="footer-nav-link">Slack Community</div>
+                            <Link to="/blog" className="footer-nav-link">
+                                Blog
+                            </Link>
+                            <Link to="/case-studies" className="footer-nav-link">
+                                Case Studies
+                            </Link>
+                            <Link to="/" className="footer-nav-link">
+                                Slack Community
+                            </Link>
                         </div>
                     </div>
                     <div className="footer-nav-group">
                         <div className="footer-nav-heading">Company</div>
                         <div className="footer-nav-link-group">
-                            <div className="footer-nav-link">About</div>
+                            <Link to="/about" className="footer-nav-link">
+                                About
+                            </Link>
                         </div>
                     </div>
                 </div>

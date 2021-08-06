@@ -18,7 +18,7 @@ export const Header = () => {
                     <div className="header-nav-link">Resources</div>
                     <div className="header-nav-link">Company</div>
                 </div>
-                <div id="cta">Request a Demo</div>
+                <div id="cta">Start Free Trial</div>
                 <div id="header-nav-mobile">|||</div>
             </div>
         </header>

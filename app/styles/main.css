@@ -274,13 +274,18 @@ footer #footer-content #footer-nav .footer-nav-group .footer-nav-link-group {
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
-  color: var(--dark-blue-3);
 }
 footer #footer-content #footer-nav .footer-nav-group .footer-nav-link-group .footer-nav-link {
+  display: block;
   margin-bottom: 12px;
+  color: var(--dark-blue-3);
+  text-decoration: none;
 }
 footer #footer-content #footer-nav .footer-nav-group .footer-nav-link-group .footer-nav-link:last-of-type {
   margin-bottom: 0;
+}
+footer #footer-content #footer-nav .footer-nav-group .footer-nav-link-group .footer-nav-link:hover {
+  color: var(--dark-blue-1);
 }
 
 /*# sourceMappingURL=main.css.map */

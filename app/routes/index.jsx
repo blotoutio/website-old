@@ -25,7 +25,7 @@ export default function Index() {
                     <div id="hero-subtitle">Your third-party tools are bleeding data. Fix this by going in-house. Blotout gives you the only no-code, cloud prem customer data infrastructure built at SaaS scale.</div>
                     <div id="hero-cta-group">
                         <div id="hero-primary-cta" className="hero-cta">
-                            Request a Demo
+                            Start Free Trial
                         </div>
                         <div id="hero-secondary-cta" className="hero-cta">
                             Join our Slack
@@ -59,7 +59,7 @@ export default function Index() {
                         </div>
                     </div>
                     <div id="marketers-cta" className="non-engineer-cta">
-                        Request a Demo
+                        Start Free Trial
                     </div>
                     <div id="marketers-illustration-group" className="non-engineer-illustration-group">
                         <div id="marketers-illustration" className="non-engineer-illustration">
@@ -88,7 +88,7 @@ export default function Index() {
                         </div>
                     </div>
                     <div id="product-managers-cta" className="non-engineer-cta">
-                        Request a Demo
+                        Start Free Trial
                     </div>
                     <div id="product-managers-illustration-group" className="non-engineer-illustration-group">
                         <div id="product-managers-illustration" className="non-engineer-illustration">
@@ -111,7 +111,7 @@ export default function Index() {
                         <div id="engineers-text-title">A complete privacy data engineering stack in your cloud prem</div>
                         <div id="engineers-text-subtitle">Data engineering is expensive. Engineers aren’t privacy lawyers. Solve for both with our no-code customer data infrastructure stack built for privacy.</div>
                     </div>
-                    <div id="engineers-cta">Request a Demo</div>
+                    <div id="engineers-cta">Start Free Trial</div>
                     <div id="engineers-illustration">
                         <img src="/engineers.png" />
                     </div>
