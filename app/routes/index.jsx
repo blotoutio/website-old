@@ -1,3 +1,5 @@
+import SlackIcon from "../graphics/icons/slack-icon";
+import PrivacyIcons from "../graphics/privacy-icons";
 import stylesUrl from "../styles/index.css";
 
 export function meta() {
@@ -28,7 +30,10 @@ export default function Index() {
                             Start Free Trial
                         </div>
                         <div id="hero-secondary-cta" className="hero-cta">
-                            Join our Slack
+                            <div className="cta-icon">
+                                <SlackIcon />
+                            </div>
+                            <div className="cta-text">Join our Slack</div>
                         </div>
                     </div>
                     {/* <div id="hero-customer-logo-group">
@@ -62,13 +67,13 @@ export default function Index() {
                         Start Free Trial
                     </div>
                     <div id="marketers-illustration-group" className="non-engineer-illustration-group">
-                        <div id="marketers-illustration" className="non-engineer-illustration">
-                            <img src="/marketers.png" />
-                        </div>
                         <div id="marketers-point-group" className="non-engineer-point-group">
                             <div className="marketers-point non-engineer-point">Re-capture every missing user and event</div>
                             <div className="marketers-point non-engineer-point">Measure true campaign ROI and ROAS</div>
                             <div className="marketers-point non-engineer-point">Attribute conversions across channels and devices</div>
+                        </div>
+                        <div id="marketers-illustration" className="non-engineer-illustration">
+                            <img src="/marketers.png" />
                         </div>
                     </div>
                 </div>
@@ -91,14 +96,13 @@ export default function Index() {
                         Start Free Trial
                     </div>
                     <div id="product-managers-illustration-group" className="non-engineer-illustration-group">
-                        <div id="product-managers-illustration" className="non-engineer-illustration">
-                            <img src="/product-managers.png" />
-                        </div>
                         <div id="product-managers-point-group" className="non-engineer-point-group">
                             <div className="product-managers-point non-engineer-point">Visualize and optimize complete customer funnels</div>
                             <div className="product-managers-point non-engineer-point">Segment behaviors and personas without code</div>
                             <div className="product-managers-point non-engineer-point">Personalize content and products with feature flags</div>
-                            <div className="product-managers-point non-engineer-point">Build trust by keeping data private in your cloud prem</div>
+                        </div>
+                        <div id="product-managers-illustration" className="non-engineer-illustration">
+                            <img src="/product-managers.png" />
                         </div>
                     </div>
                 </div>
@@ -123,9 +127,9 @@ export default function Index() {
                 </div>
             </div>
 
-            <div id="blog" className="home-section">
+            {/* <div id="blog" className="home-section">
                 <div id="blog-content" className="home-section-content"></div>
-            </div>
+            </div> */}
 
             <div id="privacy" className="home-section">
                 <div id="privacy-content" className="home-section-content">
@@ -143,6 +147,9 @@ export default function Index() {
                             <div className="privacy-point">Privacy-preserving data sharing via consent management</div>
                             <div className="privacy-point">Privacy incident management and clearinghouse</div>
                         </div>
+                    </div>
+                    <div id="privacy-icons">
+                        <PrivacyIcons />
                     </div>
                 </div>
             </div>

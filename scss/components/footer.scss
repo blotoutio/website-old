@@ -47,15 +47,26 @@ footer {
             }
 
             #footer-special-cta {
-                display: inline-block;
+                display: inline-flex;
+                width: 175px;
+                padding: 10px 20px;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 130%;
                 text-align: center;
-                padding: 10px 20px;
                 background-color: var(--dark-blue-3);
                 color: var(--light-blue-1);
                 border-radius: 3px;
+
+                &:hover {
+                    background-color: var(--dark-blue-4);
+                }
+
+                .cta-icon {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                }
             }
         }
 

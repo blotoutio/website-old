@@ -1,0 +1,82 @@
+#integrations #integrations-header,
+#integrations #integrations-text {
+  width: 100%;
+}
+#integrations #integrations-header #integrations-header-content,
+#integrations #integrations-header #integrations-text-content,
+#integrations #integrations-text #integrations-header-content,
+#integrations #integrations-text #integrations-text-content {
+  width: 100%;
+  margin: auto;
+  padding: 70px 0 100px 0;
+}
+@media (max-width: 1200px) {
+  #integrations #integrations-header #integrations-header-content,
+#integrations #integrations-header #integrations-text-content,
+#integrations #integrations-text #integrations-header-content,
+#integrations #integrations-text #integrations-text-content {
+    padding: 60px 25px;
+  }
+}
+@media (max-width: 1024px) {
+  #integrations #integrations-header #integrations-header-content,
+#integrations #integrations-header #integrations-text-content,
+#integrations #integrations-text #integrations-header-content,
+#integrations #integrations-text #integrations-text-content {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 768px) {
+  #integrations #integrations-header #integrations-header-content,
+#integrations #integrations-header #integrations-text-content,
+#integrations #integrations-text #integrations-header-content,
+#integrations #integrations-text #integrations-text-content {
+    padding: 60px 15px;
+  }
+}
+#integrations #integrations-header #integrations-header-content,
+#integrations #integrations-text #integrations-header-content {
+  max-width: 1180px;
+  text-align: center;
+}
+#integrations #integrations-header #integrations-header-content #integrations-title,
+#integrations #integrations-text #integrations-header-content #integrations-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  color: var(--light-blue-1);
+}
+@media (max-width: 1024px) {
+  #integrations #integrations-header #integrations-header-content #integrations-title,
+#integrations #integrations-text #integrations-header-content #integrations-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 550px) {
+  #integrations #integrations-header #integrations-header-content #integrations-title,
+#integrations #integrations-text #integrations-header-content #integrations-title {
+    font-size: 30px;
+  }
+}
+#integrations #integrations-header #integrations-text-content,
+#integrations #integrations-text #integrations-text-content {
+  max-width: 650px;
+  padding: 70px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--dark-blue-3);
+}
+#integrations #integrations-header #integrations-text-content span,
+#integrations #integrations-text #integrations-text-content span {
+  font-weight: 700;
+}
+#integrations #integrations-header {
+  background-color: var(--dark-blue-2);
+}
+#integrations #integrations-text {
+  background-color: var(--light-blue-1);
+}
+
+/*# sourceMappingURL=integrations.css.map */

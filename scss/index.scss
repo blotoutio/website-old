@@ -79,14 +79,14 @@
             #hero-subtitle {
                 margin: 50px 0;
                 width: 100%;
-                max-width: 800px;
+                max-width: 900px;
                 font-weight: 500;
                 font-size: 23px;
                 line-height: 130%;
                 color: var(--light-blue-4);
 
                 @media (max-width: 1200px) {
-                    max-width: 700px;
+                    max-width: 750px;
                     font-size: 20px;
                 }
 
@@ -113,9 +113,11 @@
                 }
 
                 .hero-cta {
+                    width: 175px;
+                    padding: 10px 20px;
                     font-weight: 600;
                     font-size: 16px;
-                    padding: 10px 20px;
+                    text-align: center;
                     border-radius: 3px;
                 }
 
@@ -124,6 +126,10 @@
                     background-color: var(--yellow-2);
                     color: var(--dark-blue-3);
 
+                    &:hover {
+                        background-color: var(--yellow-1);
+                    }
+
                     @media (max-width: 400px) {
                         margin-right: 0;
                         margin-bottom: 25px;
@@ -131,8 +137,19 @@
                 }
 
                 #hero-secondary-cta {
+                    display: flex;
                     background-color: var(--light-blue-1);
                     color: var(--dark-blue-3);
+
+                    &:hover {
+                        background-color: var(--grey-3);
+                    }
+
+                    .cta-icon {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 10px;
+                    }
                 }
             }
         }
@@ -232,6 +249,7 @@
             }
 
             .non-engineer-cta {
+                width: 175px;
                 margin: auto;
                 padding: 10px 20px;
                 margin-top: 60px;
@@ -239,7 +257,12 @@
                 font-size: 16px;
                 background-color: var(--yellow-2);
                 color: var(--dark-blue-3);
+                text-align: center;
                 border-radius: 3px;
+
+                &:hover {
+                    background-color: var(--yellow-1);
+                }
 
                 @media (max-width: 768px) {
                     margin-top: 40px;
@@ -248,21 +271,31 @@
 
             .non-engineer-illustration-group {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                flex-direction: row;
+                justify-content: center;
                 width: 100%;
                 margin-top: 85px;
 
                 @media (max-width: 768px) {
                     margin-top: 60px;
+                    flex-direction: column-reverse;
+                    align-items: center;
                 }
 
                 .non-engineer-illustration {
                     width: 100%;
-                    max-width: 1000px;
+                    max-width: 750px;
                     background-color: var(--grey-1);
                     border-radius: 3px;
                     box-shadow: 0px 24px 150px rgba(193, 199, 208, 0.65);
+
+                    @media (max-width: 1024px) {
+                        max-width: 600px;
+                    }
+
+                    @media (max-width: 768px) {
+                        max-width: 650px;
+                    }
 
                     img {
                         display: block;
@@ -273,54 +306,51 @@
 
                 .non-engineer-point-group {
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     flex-wrap: wrap;
                     width: 100%;
-                    max-width: 800px;
-                    margin: auto;
-                    padding: 0 20px;
-                    text-align: center;
-                    background-color: var(--grey-2);
-                    border-radius: 0 0 3px 3px;
+                    max-width: 350px;
+                    margin-right: 30px;
 
-                    @media (max-width: 900px) {
-                        width: 90%;
-                        max-width: 700px;
+                    @media (max-width: 1024px) {
+                        max-width: 250px;
+                        margin-right: 20px;
                     }
 
                     @media (max-width: 768px) {
-                        max-width: 550px;
-                        padding-bottom: 30px;
+                        max-width: 500px;
+                        margin-top: 40px;
+                        margin-left: 0;
+                        margin-right: 0;
+                        text-align: center;
                     }
 
                     .non-engineer-point {
                         display: flex;
-                        align-items: flex-start;
-                        width: 33%;
-                        margin: 40px 0;
-                        padding: 0 20px;
+                        margin: 25px 0;
                         font-weight: 600;
-                        font-size: 18px;
+                        font-size: 24px;
                         line-height: 130%;
-                        color: rgba(0, 0, 0, 0.65);
+                        color: var(--dark-blue-2);
 
                         @media (max-width: 1024px) {
-                            font-size: 16px;
+                            font-size: 20px;
                         }
 
                         @media (max-width: 768px) {
                             justify-content: center;
-                            width: 100%;
                             margin: 30px 0 0 0;
                             padding: 0;
-
-                            &:nth-of-type(3n + 2) {
-                                width: 100% !important;
-                            }
                         }
 
-                        &:nth-of-type(3n + 2) {
-                            width: 34%;
+                        @media (max-width: 600px) {
+                            padding: 15px 0;
+                            border-bottom: 2px solid var(--light-blue-3);
+
+                            &:last-of-type {
+                                border-bottom: none;
+                            }
                         }
                     }
                 }
@@ -330,38 +360,33 @@
 
     #marketers {
         background-color: var(--light-blue-1);
-
-        // #marketers-divider {
-        //     svg {
-        //         polygon {
-        //             fill: var(--light-blue-1);
-        //         }
-        //     }
-        // }
     }
 
     #product-managers {
         background-color: var(--light-blue-1);
 
         #product-managers-content {
-            padding-top: 50px;
+            #product-managers-illustration-group {
+                flex-direction: row-reverse;
 
-            @media (max-width: 1200px) {
-                padding-top: 40px;
+                @media (max-width: 768px) {
+                    flex-direction: column-reverse;
+                }
             }
 
             #product-managers-point-group {
-                border-radius: 0 3px 3px 0;
+                margin-left: 40px;
+                margin-right: 0;
+
+                @media (max-width: 1024px) {
+                    margin-left: 30px;
+                }
+
+                @media (max-width: 768px) {
+                    margin-left: 0;
+                }
             }
         }
-
-        // #product-managers-divider {
-        //     svg {
-        //         polygon {
-        //             fill: var(--dark-blue-3);
-        //         }
-        //     }
-        // }
     }
 
     #engineers {
@@ -393,7 +418,10 @@
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 100%;
-                    color: var(--dark-blue-1);
+
+                    ////////////////////
+                    color: #1a5ef1;
+                    ////////////////////
 
                     @media (max-width: 1024px) {
                         font-size: 18px;
@@ -441,6 +469,7 @@
             }
 
             #engineers-cta {
+                width: 175px;
                 margin: auto;
                 padding: 10px 20px;
                 margin-top: 60px;
@@ -448,7 +477,12 @@
                 font-size: 16px;
                 background-color: var(--yellow-2);
                 color: var(--dark-blue-3);
+                text-align: center;
                 border-radius: 3px;
+
+                &:hover {
+                    background-color: var(--yellow-1);
+                }
 
                 @media (max-width: 768px) {
                     margin-top: 40px;
@@ -553,6 +587,7 @@
 
     #privacy {
         #privacy-content {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -648,6 +683,27 @@
                             margin-top: 13px;
                         }
                     }
+                }
+            }
+
+            #privacy-icons {
+                position: absolute;
+                bottom: 100px;
+                left: 0;
+
+                @media (max-width: 1200px) {
+                    bottom: 80px;
+                    left: 25px;
+                }
+
+                @media (max-width: 1024px) {
+                    left: 20px;
+                    max-width: 270px;
+                }
+
+                @media (max-width: 768px) {
+                    left: 15px;
+                    max-width: 220px;
                 }
             }
         }

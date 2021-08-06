@@ -12,6 +12,8 @@
         "@remix-run/react": "^0.17.5",
         "@remix-run/vercel": "^0.17.5",
         "@vercel/node": "^1.8.3",
+        "esbuild": "^0.11.16",
+        "mdx-bundler": "^5.2.1",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-router-dom": "^6.0.0-beta.0",
