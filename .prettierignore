@@ -2,6 +2,7 @@
 /build
 /data-build
 /public/build
+/server/build
 app-build
 *.md
 .vercel

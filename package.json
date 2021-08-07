@@ -6,7 +6,8 @@
         "dev": "remix dev",
         "start": "vercel dev",
         "main": "concurrently \"vercel dev\" \"remix dev\"",
-        "sass": "sass --watch scss:app/styles"
+        "sass": "sass --watch scss:app/styles",
+        "lint": "prettier --check ."
     },
     "dependencies": {
         "@remix-run/react": "^0.17.5",
@@ -22,6 +23,7 @@
     "devDependencies": {
         "@remix-run/dev": "^0.17.5",
         "concurrently": "^6.2.0",
+        "prettier": "^2.3.2",
         "sass": "^1.37.0",
         "vercel": "^21.2.2"
     },
