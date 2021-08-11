@@ -82,7 +82,7 @@ export const Header = () => {
           }
         >
           <Link
-            to={{ pathname: './', hash: '#marketers' }}
+            to={{ pathname: './', hash: '#explainer' }}
             id='header-nav-link-product'
             className='header-nav-link'
           >
