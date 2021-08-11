@@ -6,4 +6,5 @@
 app-build
 *.md
 .vercel
-/public/global.js
+package-lock.json
+app/styles

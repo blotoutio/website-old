@@ -1,96 +1,99 @@
 .legal {
-    .legal-header,
-    .legal-text {
-        width: 100%;
+  .legal-text {
+    padding: 70px 0;
+  }
 
-        .legal-header-content,
-        .legal-text-content {
-            width: 100%;
-            margin: auto;
-            padding: 70px 0 100px 0;
+  .legal-header,
+  .legal-text {
+    width: 100%;
+    padding: 70px 0 100px 0;
 
-            @media (max-width: 1200px) {
-                padding: 60px 25px;
-            }
-
-            @media (max-width: 1024px) {
-                padding: 60px 20px;
-            }
-
-            @media (max-width: 768px) {
-                padding: 60px 15px;
-            }
-        }
-
-        .legal-header-content {
-            max-width: 1180px;
-            text-align: center;
-
-            .legal-title {
-                font-weight: 700;
-                font-size: 45px;
-                line-height: 100%;
-                letter-spacing: -1px;
-                color: var(--dark-blue-4);
-
-                @media (max-width: 1024px) {
-                    font-size: 40px;
-                }
-
-                @media (max-width: 550px) {
-                    font-size: 30px;
-                }
-            }
-        }
-
-        .legal-text-content {
-            max-width: 650px;
-            padding: 70px 0;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 130%;
-            color: var(--dark-blue-3);
-
-            span {
-                font-weight: 700;
-                color: var(--dark-blue-4);
-            }
-        }
+    @media (max-width: 1200px) {
+      padding: 60px 25px;
     }
 
-    //     .legal-divider {
-    //         svg {
-    //             display: block;
-    //             width: 100%;
-    //             height: 7vw;
-    //
-    //             polygon {
-    //                 fill: var(--grey-1);
-    //             }
+    @media (max-width: 1024px) {
+      padding: 60px 20px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 60px 15px;
+    }
+
+    .legal-text-content {
+      max-width: 800px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--dark-blue-3);
+
+      span {
+        font-weight: 700;
+        color: var(--dark-blue-4);
+      }
+    }
+
+    .legal-header-content,
+    .legal-text-content {
+      width: 100%;
+      margin: auto;
+    }
+
+    .legal-header-content {
+      max-width: 1180px;
+      text-align: center;
+
+      .legal-title {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 100%;
+        letter-spacing: -1px;
+        color: var(--dark-blue-4);
+
+        @media (max-width: 1024px) {
+          font-size: 40px;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  //     .legal-divider {
+  //         svg {
+  //             display: block;
+  //             width: 100%;
+  //             height: 7vw;
+  //
+  //             polygon {
+  //                 fill: var(--grey-1);
+  //             }
+  //         }
+  //     }
+
+  .legal-header {
+    background-color: var(--grey-3);
+
+    // .legal-divider {
+    //     svg {
+    //         polygon {
+    //             fill: var(--grey-1);
     //         }
     //     }
+    // }
+  }
 
-    .legal-header {
-        background-color: var(--grey-3);
+  .legal-text {
+    background-color: var(--grey-1);
 
-        // .legal-divider {
-        //     svg {
-        //         polygon {
-        //             fill: var(--grey-1);
-        //         }
-        //     }
-        // }
-    }
-
-    .legal-text {
-        background-color: var(--grey-1);
-
-        // .legal-divider {
-        //     svg {
-        //         polygon {
-        //             fill: var(--grey-2);
-        //         }
-        //     }
-        // }
-    }
+    // .legal-divider {
+    //     svg {
+    //         polygon {
+    //             fill: var(--grey-2);
+    //         }
+    //     }
+    // }
+  }
 }

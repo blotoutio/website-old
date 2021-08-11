@@ -1,6 +1,41 @@
+.legal .legal-text {
+  padding: 70px 0;
+}
 .legal .legal-header,
 .legal .legal-text {
   width: 100%;
+  padding: 70px 0 100px 0;
+}
+@media (max-width: 1200px) {
+  .legal .legal-header,
+.legal .legal-text {
+    padding: 60px 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .legal .legal-header,
+.legal .legal-text {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .legal .legal-header,
+.legal .legal-text {
+    padding: 60px 15px;
+  }
+}
+.legal .legal-header .legal-text-content,
+.legal .legal-text .legal-text-content {
+  max-width: 800px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--dark-blue-3);
+}
+.legal .legal-header .legal-text-content span,
+.legal .legal-text .legal-text-content span {
+  font-weight: 700;
+  color: var(--dark-blue-4);
 }
 .legal .legal-header .legal-header-content,
 .legal .legal-header .legal-text-content,
@@ -8,31 +43,6 @@
 .legal .legal-text .legal-text-content {
   width: 100%;
   margin: auto;
-  padding: 70px 0 100px 0;
-}
-@media (max-width: 1200px) {
-  .legal .legal-header .legal-header-content,
-.legal .legal-header .legal-text-content,
-.legal .legal-text .legal-header-content,
-.legal .legal-text .legal-text-content {
-    padding: 60px 25px;
-  }
-}
-@media (max-width: 1024px) {
-  .legal .legal-header .legal-header-content,
-.legal .legal-header .legal-text-content,
-.legal .legal-text .legal-header-content,
-.legal .legal-text .legal-text-content {
-    padding: 60px 20px;
-  }
-}
-@media (max-width: 768px) {
-  .legal .legal-header .legal-header-content,
-.legal .legal-header .legal-text-content,
-.legal .legal-text .legal-header-content,
-.legal .legal-text .legal-text-content {
-    padding: 60px 15px;
-  }
 }
 .legal .legal-header .legal-header-content,
 .legal .legal-text .legal-header-content {
@@ -58,20 +68,6 @@
 .legal .legal-text .legal-header-content .legal-title {
     font-size: 30px;
   }
-}
-.legal .legal-header .legal-text-content,
-.legal .legal-text .legal-text-content {
-  max-width: 650px;
-  padding: 70px 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 130%;
-  color: var(--dark-blue-3);
-}
-.legal .legal-header .legal-text-content span,
-.legal .legal-text .legal-text-content span {
-  font-weight: 700;
-  color: var(--dark-blue-4);
 }
 .legal .legal-header {
   background-color: var(--grey-3);

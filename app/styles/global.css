@@ -26,35 +26,53 @@
 }
 
 @font-face {
-  font-family: "TT Interphases";
-  src: url("/fonts/TTInterphasesTrl-Medium.woff2") format("woff2"), url("/fonts/TTInterphasesTrl-Medium.woff") format("woff");
+  font-family: "Inter";
+  src: url("/font/Inter-Regular.woff2") format("woff2"), url("/font/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/font/Inter-Medium.woff2") format("woff2"), url("/font/Inter-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "TT Interphases";
-  src: url("/fonts/TTInterphasesTrl-DemiBold.woff2") format("woff2"), url("/fonts/TTInterphasesTrl-DemiBold.woff") format("woff");
+  font-family: "Inter";
+  src: url("/font/Inter-SemiBold.woff2") format("woff2"), url("/font/Inter-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "TT Interphases";
-  src: url("/fonts/TTInterphasesTrl-Bold.woff2") format("woff2"), url("/fonts/TTInterphasesTrl-Bold.woff") format("woff");
+  font-family: "Inter";
+  src: url("/font/Inter-Bold.woff2") format("woff2"), url("/font/Inter-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "TT Interphases Mono";
-  src: url("/fonts/TTInterphasesMonoTrl-Bold.woff2") format("woff2"), url("/fonts/TTInterphasesMonoTrl-Bold.woff") format("woff");
-  font-weight: 700;
+  font-family: "Inter";
+  src: url("/font/Inter-ExtraBold.woff2") format("woff2"), url("/font/Inter-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/font/Inter-Medium.woff2") format("woff2"), url("/font/Inter-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -63,10 +81,11 @@ body {
   padding: 0;
 }
 
-body {
+body,
+input {
   margin: auto;
   width: 100%;
-  font-family: "TT Interphases";
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 /*# sourceMappingURL=global.css.map */

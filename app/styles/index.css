@@ -46,7 +46,7 @@
 #home #hero #hero-content #hero-title {
   width: 100%;
   max-width: 900px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 60px;
   line-height: 110%;
   letter-spacing: -1px;
@@ -115,11 +115,12 @@
   }
 }
 #home #hero #hero-content #hero-cta-group .hero-cta {
-  width: 175px;
+  width: 180px;
   padding: 10px 20px;
   font-weight: 600;
   font-size: 16px;
   text-align: center;
+  text-decoration: none;
   border-radius: 3px;
 }
 #home #hero #hero-content #hero-cta-group #hero-primary-cta {
@@ -149,8 +150,78 @@
   align-items: center;
   margin-right: 10px;
 }
+#home #hero #hero-content #hero-customer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+@media (max-width: 700px) {
+  #home #hero #hero-content #hero-customer {
+    align-items: center;
+  }
+}
+#home #hero #hero-content #hero-customer #hero-customer-text {
+  color: var(--grey-3);
+  font-family: 500;
+  font-size: 14px;
+}
+@media (max-width: 700px) {
+  #home #hero #hero-content #hero-customer #hero-customer-text {
+    text-align: center;
+  }
+}
+#home #hero #hero-content #hero-customer #hero-customer-logo-group {
+  margin-top: 40px;
+}
+#home #hero #hero-content #hero-customer #hero-customer-logo-group .hero-customer-logo {
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  margin-right: 50px;
+}
+#home #hero #hero-content #hero-customer #hero-customer-logo-group .hero-customer-logo:last-of-type {
+  margin-right: 0;
+}
+@media (max-width: 500px) {
+  #home #hero #hero-content #hero-customer #hero-customer-logo-group .hero-customer-logo {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+  }
+  #home #hero #hero-content #hero-customer #hero-customer-logo-group .hero-customer-logo:first-of-type {
+    margin-top: 0;
+  }
+}
 #home #explainer {
   background-color: var(--dark-blue-2);
+  color: var(--light-blue-1);
+}
+#home #explainer #explainer-title {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #home #explainer #explainer-title {
+    max-width: 90%;
+    font-size: 25px;
+  }
+}
+@media (max-width: 600px) {
+  #home #explainer #explainer-title {
+    max-width: 550px;
+    font-size: 21px;
+  }
+}
+#home #explainer #explainer-image {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
 }
 #home .non-engineer .non-engineer-content {
   display: flex;
@@ -177,7 +248,7 @@
   }
 }
 #home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-heading {
-  font-family: "TT Interphases Mono";
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
@@ -214,7 +285,7 @@
   }
 }
 #home .non-engineer .non-engineer-content .non-engineer-text-group .non-engineer-text-subtitle {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 21px;
   line-height: 130%;
   color: rgba(0, 0, 0, 0.65);
@@ -230,7 +301,7 @@
   }
 }
 #home .non-engineer .non-engineer-content .non-engineer-cta {
-  width: 175px;
+  width: 180px;
   margin: auto;
   padding: 10px 20px;
   margin-top: 60px;
@@ -239,6 +310,7 @@
   background-color: var(--yellow-2);
   color: var(--dark-blue-3);
   text-align: center;
+  text-decoration: none;
   border-radius: 3px;
 }
 #home .non-engineer .non-engineer-content .non-engineer-cta:hover {
@@ -394,11 +466,11 @@
   }
 }
 #home #engineers #engineers-content #engineers-text-group #engineers-text-heading {
-  font-family: "TT Interphases Mono";
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
-  color: #1a5ef1;
+  color: #4680ff;
 }
 @media (max-width: 1024px) {
   #home #engineers #engineers-content #engineers-text-group #engineers-text-heading {
@@ -432,7 +504,7 @@
   }
 }
 #home #engineers #engineers-content #engineers-text-group #engineers-text-subtitle {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 21px;
   line-height: 130%;
   color: rgba(255, 255, 255, 0.65);
@@ -448,7 +520,7 @@
   }
 }
 #home #engineers #engineers-content #engineers-cta {
-  width: 175px;
+  width: 180px;
   margin: auto;
   padding: 10px 20px;
   margin-top: 60px;
@@ -457,6 +529,7 @@
   background-color: var(--yellow-2);
   color: var(--dark-blue-3);
   text-align: center;
+  text-decoration: none;
   border-radius: 3px;
 }
 #home #engineers #engineers-content #engineers-cta:hover {
@@ -581,7 +654,7 @@
   }
 }
 #home #privacy #privacy-content #privacy-content-text #privacy-hashtag {
-  font-family: "TT Interphases Mono";
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-weight: 700;
   font-size: 26px;
   line-height: 100%;
@@ -619,7 +692,7 @@
 }
 #home #privacy #privacy-content #privacy-content-text #privacy-subtitle {
   margin-top: 35px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   line-height: 130%;
   color: rgba(255, 255, 255, 0.75);
@@ -654,29 +727,6 @@
 @media (max-width: 1024px) {
   #home #privacy #privacy-content #privacy-content-text #privacy-point-group .privacy-point {
     margin-top: 13px;
-  }
-}
-#home #privacy #privacy-content #privacy-icons {
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-}
-@media (max-width: 1200px) {
-  #home #privacy #privacy-content #privacy-icons {
-    bottom: 80px;
-    left: 25px;
-  }
-}
-@media (max-width: 1024px) {
-  #home #privacy #privacy-content #privacy-icons {
-    left: 20px;
-    max-width: 270px;
-  }
-}
-@media (max-width: 768px) {
-  #home #privacy #privacy-content #privacy-icons {
-    left: 15px;
-    max-width: 220px;
   }
 }
 

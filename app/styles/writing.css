@@ -59,131 +59,10 @@
     font-size: 30px;
   }
 }
-.writing .writing-header .writing-list-content .featured,
-.writing .writing-list .writing-list-content .featured {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: auto;
-}
-@media (max-width: 768px) {
-  .writing .writing-header .writing-list-content .featured,
-.writing .writing-list .writing-list-content .featured {
-    flex-direction: column;
-  }
-}
-.writing .writing-header .writing-list-content .featured .featured-image,
-.writing .writing-list .writing-list-content .featured .featured-image {
-  width: 100%;
-  max-width: 60%;
-  height: 350px;
-  background-color: var(--grey-1);
-  border-radius: 3px;
-}
-@media (max-width: 1200px) {
-  .writing .writing-header .writing-list-content .featured .featured-image,
-.writing .writing-list .writing-list-content .featured .featured-image {
-    height: 300px;
-  }
-}
-@media (max-width: 768px) {
-  .writing .writing-header .writing-list-content .featured .featured-image,
-.writing .writing-list .writing-list-content .featured .featured-image {
-    max-width: 500px;
-    height: 250px;
-    margin: auto;
-  }
-}
-.writing .writing-header .writing-list-content .featured .featured-text,
-.writing .writing-list .writing-list-content .featured .featured-text {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 35%;
-  height: 350px;
-}
-@media (max-width: 1200px) {
-  .writing .writing-header .writing-list-content .featured .featured-text,
-.writing .writing-list .writing-list-content .featured .featured-text {
-    height: 300px;
-  }
-}
-@media (max-width: 768px) {
-  .writing .writing-header .writing-list-content .featured .featured-text,
-.writing .writing-list .writing-list-content .featured .featured-text {
-    max-width: 500px;
-    height: auto;
-    margin: auto;
-    margin-top: 35px;
-  }
-}
-.writing .writing-header .writing-list-content .featured .featured-text .featured-text-title,
-.writing .writing-list .writing-list-content .featured .featured-text .featured-text-title {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 115%;
-  letter-spacing: -1px;
-  color: var(--dark-blue-3);
-}
-@media (max-width: 1024px) {
-  .writing .writing-header .writing-list-content .featured .featured-text .featured-text-title,
-.writing .writing-list .writing-list-content .featured .featured-text .featured-text-title {
-    font-size: 30px;
-    line-height: 110%;
-    letter-spacing: -0.5px;
-  }
-}
-@media (max-width: 900px) {
-  .writing .writing-header .writing-list-content .featured .featured-text .featured-text-title,
-.writing .writing-list .writing-list-content .featured .featured-text .featured-text-title {
-    font-size: 28px;
-  }
-}
-.writing .writing-header .writing-list-content .featured .featured-text .featured-text-subtitle,
-.writing .writing-list .writing-list-content .featured .featured-text .featured-text-subtitle {
-  padding: 20px 0;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 130%;
-  color: var(--dark-blue-4);
-}
-@media (max-width: 1024px) {
-  .writing .writing-header .writing-list-content .featured .featured-text .featured-text-subtitle,
-.writing .writing-list .writing-list-content .featured .featured-text .featured-text-subtitle {
-    font-size: 18px;
-    line-height: 130%;
-  }
-}
-@media (max-width: 900px) {
-  .writing .writing-header .writing-list-content .featured .featured-text .featured-text-subtitle,
-.writing .writing-list .writing-list-content .featured .featured-text .featured-text-subtitle {
-    font-size: 16px;
-  }
-}
-.writing .writing-header .writing-list-content .featured .featured-text .featured-text-info,
-.writing .writing-list .writing-list-content .featured .featured-text .featured-text-info {
-  font-family: "TT Interphases Mono";
-  font-weight: 700;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.65);
-}
-@media (max-width: 1024px) {
-  .writing .writing-header .writing-list-content .featured .featured-text .featured-text-info,
-.writing .writing-list .writing-list-content .featured .featured-text .featured-text-info {
-    font-size: 18px;
-  }
-}
-@media (max-width: 900px) {
-  .writing .writing-header .writing-list-content .featured .featured-text .featured-text-info,
-.writing .writing-list .writing-list-content .featured .featured-text .featured-text-info {
-    font-size: 16px;
-  }
-}
 .writing .writing-header .writing-list-content .list,
 .writing .writing-list .writing-list-content .list {
   max-width: 650px;
   margin: auto;
-  margin-top: 100px;
 }
 @media (max-width: 768px) {
   .writing .writing-header .writing-list-content .list,
@@ -193,7 +72,7 @@
 }
 .writing .writing-header .writing-list-content .list .list-title,
 .writing .writing-list .writing-list-content .list .list-title {
-  font-family: "TT Interphases Mono";
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-weight: 700;
   font-size: 25px;
   color: var(--dark-blue-1);
@@ -219,6 +98,14 @@
     margin-top: 40px;
   }
 }
+.writing .writing-header .writing-list-content .list .list-content .list-item a,
+.writing .writing-list .writing-list-content .list .list-content .list-item a {
+  text-decoration: none;
+}
+.writing .writing-header .writing-list-content .list .list-content .list-item a:hover,
+.writing .writing-list .writing-list-content .list .list-content .list-item a:hover {
+  color: var(--dark-blue-1);
+}
 .writing .writing-header .writing-list-content .list .list-content .list-item .list-item-title,
 .writing .writing-list .writing-list-content .list .list-content .list-item .list-item-title {
   font-weight: 600;
@@ -236,7 +123,7 @@
 .writing .writing-header .writing-list-content .list .list-content .list-item .list-item-info,
 .writing .writing-list .writing-list-content .list .list-content .list-item .list-item-info {
   margin-top: 15px;
-  font-family: "TT Interphases Mono";
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-weight: 700;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.65);

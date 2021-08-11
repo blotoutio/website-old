@@ -35,7 +35,9 @@ header #header-content #header-nav {
 header #header-content #header-nav .header-nav-link {
   position: relative;
   padding: 10px 20px;
+  color: var(--light-blue-1);
   text-align: left;
+  text-decoration: none;
 }
 @media (max-width: 1024px) {
   header #header-content #header-nav .header-nav-link {
@@ -48,9 +50,9 @@ header #header-content #header-nav .header-nav-link {
   }
 }
 header #header-content #header-nav .header-nav-link:hover {
-  font-weight: 700;
   background-color: var(--light-blue-1);
   color: var(--dark-blue-4);
+  border-radius: 3px;
 }
 header #header-content #header-nav .header-nav-link:hover .header-nav-submenu {
   display: flex;
@@ -86,12 +88,33 @@ header #header-content #header-nav .header-nav-link .header-nav-submenu a {
 header #header-content #header-nav .header-nav-link .header-nav-submenu a:hover {
   color: var(--dark-blue-1);
 }
+header #header-content #header-nav #header-nav-link-product:hover,
+header #header-content #header-nav #header-nav-link-company:hover {
+  color: var(--dark-blue-1);
+}
+header #header-content #header-nav #header-nav-link-docs:hover,
+header #header-content #header-nav #header-nav-link-resources:hover {
+  border-radius: 3px 3px 0 0;
+}
+header #header-content #header-nav #header-nav-link-docs:hover span,
+header #header-content #header-nav #header-nav-link-resources:hover span {
+  color: var(--dark-blue-2);
+}
+header #header-content #header-nav #header-nav-link-docs:hover .header-nav-submenu,
+header #header-content #header-nav #header-nav-link-resources:hover .header-nav-submenu {
+  border-radius: 0 3px 3px 3px;
+}
+header #header-content .blog .header-nav-link,
+header #header-content .case-studies .header-nav-link {
+  color: var(--dark-blue-3) !important;
+}
 header #header-content #cta {
-  width: 175px;
+  width: 180px;
   padding: 10px 20px;
   font-weight: 600;
   font-size: 16px;
   text-align: center;
+  text-decoration: none;
   background-color: var(--yellow-2);
   color: var(--dark-blue-3);
   border-radius: 3px;
@@ -113,8 +136,11 @@ header #header-content #header-nav-mobile {
     font-weight: 500;
     font-size: 25px;
     color: var(--grey-1);
-    transform: rotate(90deg);
   }
+}
+header #header-content #header-nav-mobile:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -1,0 +1,111 @@
+.writing {
+  .writing-item-header,
+  .writing-item-text {
+    width: 100%;
+
+    .writing-item-header-content,
+    .writing-item-text-content {
+      width: 100%;
+      max-width: 1180px;
+      margin: auto;
+      padding: 70px 0 100px 0;
+
+      @media (max-width: 1200px) {
+        padding: 60px 25px;
+      }
+
+      @media (max-width: 1024px) {
+        padding: 60px 20px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 60px 15px;
+      }
+    }
+
+    .writing-item-header-content {
+      text-align: center;
+
+      .writing-item-title {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 100%;
+        letter-spacing: -1px;
+        color: var(--dark-blue-4);
+
+        @media (max-width: 1024px) {
+          font-size: 40px;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 30px;
+        }
+      }
+
+      .writing-item-subtitle {
+        margin-top: 25px;
+        font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+          Liberation Mono, monospace;
+        font-weight: 700;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.65);
+
+        @media (max-width: 1024px) {
+          font-size: 18px;
+        }
+
+        @media (max-width: 900px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .writing-item-text-content {
+      max-width: 650px;
+      margin: auto;
+
+      a {
+        font-weight: 500;
+        color: var(--dark-blue-2);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--dark-blue-1);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        margin: 25px 0;
+
+        @media (max-width: 1024px) {
+          margin: 15px 0;
+        }
+      }
+
+      pre {
+        padding: 15px;
+        line-height: 150%;
+        background-color: var(--dark-blue-3);
+        color: var(--grey-1);
+      }
+    }
+  }
+
+  .writing-item-header {
+    background-color: var(--light-blue-3);
+  }
+
+  #jobs-item-header {
+    background-color: var(--dark-blue-1);
+
+    .writing-item-title {
+      color: var(--light-blue-1);
+    }
+  }
+
+  .writing-item-text {
+    background-color: var(--light-blue-1);
+  }
+}

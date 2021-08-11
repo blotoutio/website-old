@@ -46,14 +46,14 @@ footer #footer-content #footer-special {
 }
 footer #footer-content #footer-special #footer-special-text {
   margin-bottom: 25px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 23px;
   line-height: 115%;
   color: var(--dark-blue-2);
 }
 footer #footer-content #footer-special #footer-special-cta {
   display: inline-flex;
-  width: 175px;
+  width: 180px;
   padding: 10px 20px;
   font-weight: 600;
   font-size: 16px;
@@ -61,6 +61,7 @@ footer #footer-content #footer-special #footer-special-cta {
   text-align: center;
   background-color: var(--dark-blue-3);
   color: var(--light-blue-1);
+  text-decoration: none;
   border-radius: 3px;
 }
 footer #footer-content #footer-special #footer-special-cta:hover {
@@ -126,7 +127,7 @@ footer #footer-content #footer-nav .footer-nav-group:last-of-type {
   }
 }
 footer #footer-content #footer-nav .footer-nav-group .footer-nav-heading {
-  font-family: "TT Interphases Mono";
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
