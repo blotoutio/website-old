@@ -61,39 +61,11 @@
     }
   }
 
-  //     .legal-divider {
-  //         svg {
-  //             display: block;
-  //             width: 100%;
-  //             height: 7vw;
-  //
-  //             polygon {
-  //                 fill: var(--grey-1);
-  //             }
-  //         }
-  //     }
-
   .legal-header {
     background-color: var(--grey-3);
-
-    // .legal-divider {
-    //     svg {
-    //         polygon {
-    //             fill: var(--grey-1);
-    //         }
-    //     }
-    // }
   }
 
   .legal-text {
     background-color: var(--grey-1);
-
-    // .legal-divider {
-    //     svg {
-    //         polygon {
-    //             fill: var(--grey-2);
-    //         }
-    //     }
-    // }
   }
 }
