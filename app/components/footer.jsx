@@ -32,6 +32,8 @@ export const Footer = () => {
           <a
             href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
             target='_blank'
+            rel='noopener'
+            rel='noreferrer'
             id='footer-special-cta'
           >
             <div className='cta-icon'>
@@ -83,26 +85,47 @@ export const Footer = () => {
           <div className='footer-nav-group'>
             <div className='footer-nav-heading'>Docs</div>
             <div className='footer-nav-link-group'>
-              <a href='https://docs.blotout.io/' className='footer-nav-link'>
+              <a
+                href='https://docs.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
+                className='footer-nav-link'
+              >
                 Overview
               </a>
-              <a href='https://docs-js.blotout.io/' className='footer-nav-link'>
+              <a
+                href='https://docs-js.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
+                className='footer-nav-link'
+              >
                 JavaScript
               </a>
               <a
                 href='https://docs-ios.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
                 className='footer-nav-link'
               >
                 iOS
               </a>
               <a
                 href='https://docs-android.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
                 className='footer-nav-link'
               >
                 Android
               </a>
               <a
                 href='https://docs-rust.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
                 className='footer-nav-link'
               >
                 Rust / C++
@@ -122,6 +145,8 @@ export const Footer = () => {
                 href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
                 id='hero-secondary-cta'
                 target='_blank'
+                rel='noopener'
+                rel='noreferrer'
                 className='footer-nav-link'
               >
                 Slack Community

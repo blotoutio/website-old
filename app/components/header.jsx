@@ -91,11 +91,46 @@ export const Header = () => {
           <div id='header-nav-link-docs' className='header-nav-link'>
             <span>Docs</span>
             <div className='header-nav-submenu'>
-              <a href='https://docs.blotout.io/'>Overview</a>
-              <a href='https://docs-js.blotout.io/'>JavaScript</a>
-              <a href='https://docs-ios.blotout.io/'>iOS</a>
-              <a href='https://docs-android.blotout.io/'>Android</a>
-              <a href='https://docs-rust.blotout.io/'>Rust / C++</a>
+              <a
+                href='https://docs.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
+              >
+                Overview
+              </a>
+              <a
+                href='https://docs-js.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
+              >
+                JavaScript
+              </a>
+              <a
+                href='https://docs-ios.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
+              >
+                iOS
+              </a>
+              <a
+                href='https://docs-android.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
+              >
+                Android
+              </a>
+              <a
+                href='https://docs-rust.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
+              >
+                Rust / C++
+              </a>
             </div>
           </div>
           <div id='header-nav-link-resources' className='header-nav-link'>
@@ -114,7 +149,14 @@ export const Header = () => {
             <span>Company</span>
           </Link>
         </div>
-        <a href='https://calendly.com/blotout-experts' target='_blank' id='cta'>
+        <a
+          href='https://calendly.com/blotout-experts'
+          target='_blank'
+          target='_blank'
+          rel='noopener'
+          rel='noreferrer'
+          id='cta'
+        >
           Start Free Trial
         </a>
         <div id='header-nav-mobile'>
