@@ -280,8 +280,7 @@ export default function Index() {
             </div>
             <div id='privacy-subtitle'>
               Consent management, audit logs, and governance from the moment of
-              ingestion for compliance with the GDPR, CPRA, and all global
-              privacy laws.
+              ingestion for compliance global privacy laws.
             </div>
             <div id='privacy-point-group'>
               <div className='privacy-point'>
