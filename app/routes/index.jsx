@@ -275,27 +275,38 @@ export default function Index() {
         <div id='privacy-content' className='home-section-content'>
           <div id='privacy-content-text'>
             <div id='privacy-hashtag'>#PrivacyOps</div>
-            <div id='privacy-title'>
+            <h1 id='privacy-title'>
               Privacy woven into the fabric of your data infrastructure
-            </div>
-            <div id='privacy-subtitle'>
+            </h1>
+            <h3 id='privacy-subtitle'>
               Consent management, audit logs, and governance from the moment of
               ingestion for compliance with global privacy laws.
-            </div>
+            </h3>
             <div id='privacy-point-group'>
               <div className='privacy-point'>
                 Data processing in your cloud prem as Controller
+                <img src='/img/check.svg' />
               </div>
               <div className='privacy-point'>
                 Integrated consent for subject identity
+                <img src='/img/check.svg' />
               </div>
               <div className='privacy-point'>
                 Observable and auditable infra
+                <img src='/img/check.svg' />
               </div>
               <div className='privacy-point'>
                 Governed and secure data management
+                <img src='/img/check.svg' />
               </div>
-              <div className='privacy-point'>Purpose-limited data sharing</div>
+              <div className='privacy-point'>
+                Purpose-limited data sharing
+                <img src='/img/check.svg' />
+              </div>
+              <div className='privacy-point special'>
+                GDPR, CCPA, CPRA, POPIA, LGPD
+                <img src='/img/check.svg' />
+              </div>
             </div>
           </div>
         </div>

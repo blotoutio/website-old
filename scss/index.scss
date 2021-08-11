@@ -480,9 +480,8 @@
           font-size: 20px;
           line-height: 100%;
 
-          ////////////////////
+          // TODO: More accessible palette
           color: #4680ff;
-          ////////////////////
 
           @media (max-width: 1024px) {
             font-size: 18px;
@@ -648,14 +647,32 @@
   }
 
   #privacy {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    @media (max-width: 1200px) {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+
     #privacy-content {
+      width: 90%;
       position: relative;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      text-align: right;
+      align-items: center;
+      text-align: center;
+      background-color: var(--dark-blue-1);
+      border-radius: 10px;
+
+      @media (max-width: 1024px) {
+        max-width: 900px;
+      }
 
       #privacy-content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 750px;
 
         @media (max-width: 1024px) {
@@ -728,11 +745,14 @@
         }
 
         #privacy-point-group {
+          width: 100%;
+          max-width: 550px;
           margin-top: 65px;
           font-weight: 500;
           font-size: 18px;
           line-height: 130%;
           color: var(--light-blue-1);
+          text-align: left;
 
           @media (max-width: 1024px) {
             margin-top: 45px;
@@ -740,16 +760,43 @@
           }
 
           .privacy-point {
+            display: flex;
+            justify-content: space-between;
             margin-top: 16px;
 
             @media (max-width: 1024px) {
               margin-top: 13px;
             }
+
+            @media (max-width: 500px) {
+              flex-direction: row-reverse;
+              justify-content: flex-end;
+            }
+
+            img {
+              margin-top: 2px;
+              display: block;
+              width: 20px;
+              height: 20px;
+              margin-left: 10px;
+
+              @media (max-width: 500px) {
+                width: 18px;
+                height: 18px;
+                margin-left: 0;
+                margin-right: 10px;
+              }
+            }
+          }
+
+          .special {
+            // TODO: More accessible palette
+            color: #ffdc5d;
           }
         }
       }
     }
 
-    background-color: var(--dark-blue-1);
+    background-color: var(--grey-2);
   }
 }
