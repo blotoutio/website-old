@@ -62,16 +62,28 @@ export default function Index() {
             </div>
             <div id='hero-customer-logo-group'>
               <div className='hero-customer-logo'>
-                <img src='/img/customer/razer.png' />
+                <img
+                  src='/img/customer/razer.png'
+                  alt='A logo of the company Razer'
+                />
               </div>
               <div className='hero-customer-logo'>
-                <img src='/img/customer/uphold.png' />
+                <img
+                  src='/img/customer/uphold.png'
+                  alt='A logo of the company Uphold'
+                />
               </div>
               <div className='hero-customer-logo'>
-                <img src='/img/customer/swarm-markets.png' />
+                <img
+                  src='/img/customer/swarm-markets.png'
+                  alt='A logo of the company Swarm Markets'
+                />
               </div>
               <div className='hero-customer-logo'>
-                <img src='/img/customer/global-id.png' />
+                <img
+                  src='/img/customer/global-id.png'
+                  alt='A logo of the company GlobaliD'
+                />
               </div>
             </div>
           </div>
@@ -285,27 +297,27 @@ export default function Index() {
             <div id='privacy-point-group'>
               <div className='privacy-point'>
                 Data processing in your cloud prem as Controller
-                <img src='/img/check.svg' />
+                <img src='/img/check.svg' alt='A check mark' />
               </div>
               <div className='privacy-point'>
                 Integrated consent for subject identity
-                <img src='/img/check.svg' />
+                <img src='/img/check.svg' alt='A check mark' />
               </div>
               <div className='privacy-point'>
                 Observable and auditable infra
-                <img src='/img/check.svg' />
+                <img src='/img/check.svg' alt='A check mark' />
               </div>
               <div className='privacy-point'>
                 Governed and secure data management
-                <img src='/img/check.svg' />
+                <img src='/img/check.svg' alt='A check mark' />
               </div>
               <div className='privacy-point'>
                 Purpose-limited data sharing
-                <img src='/img/check.svg' />
+                <img src='/img/check.svg' alt='A check mark' />
               </div>
               <div className='privacy-point special'>
                 GDPR, CCPA, CPRA, POPIA, LGPD
-                <img src='/img/check.svg' />
+                <img src='/img/check.svg' alt='A check mark' />
               </div>
             </div>
           </div>
