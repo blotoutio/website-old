@@ -100,7 +100,7 @@ header {
       #header-nav-link-product,
       #header-nav-link-company {
         &:hover {
-          color: var(--dark-blue-1);
+          color: var(--dark-blue-1) !important;
         }
       }
 
