@@ -2,7 +2,7 @@ import { redirect } from 'remix'
 
 export function meta() {
   return {
-    title: 'Blotout - Job',
+    title: 'Blotout - Jobs',
     description:
       'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
