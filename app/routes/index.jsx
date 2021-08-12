@@ -61,18 +61,18 @@ export default function Index() {
               Trusted by privacy-first organizations
             </div>
             <div id='hero-customer-logo-group'>
-              <img
-                src='/img/customer/razer.png'
-                className='hero-customer-logo'
-              />
-              <img
-                src='/img/customer/uphold.png'
-                className='hero-customer-logo'
-              />
-              <img
-                src='/img/customer/swarm-markets.png'
-                className='hero-customer-logo'
-              />
+              <div className='hero-customer-logo'>
+                <img src='/img/customer/razer.png' />
+              </div>
+              <div className='hero-customer-logo'>
+                <img src='/img/customer/uphold.png' />
+              </div>
+              <div className='hero-customer-logo'>
+                <img src='/img/customer/swarm-markets.png' />
+              </div>
+              <div className='hero-customer-logo'>
+                <img src='/img/customer/global-id.png' />
+              </div>
             </div>
           </div>
         </div>
