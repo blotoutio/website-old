@@ -143,7 +143,6 @@ export const Footer = () => {
               </Link>
               <a
                 href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
-                id='hero-secondary-cta'
                 target='_blank'
                 rel='noopener'
                 rel='noreferrer'
