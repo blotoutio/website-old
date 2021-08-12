@@ -21,4 +21,4 @@ Ideal time zone: IST or CEST
 
 Location: Remote
 
-Send us your resume to jobs@blotout.io
+Send us your resume to [jobs@blotout.io](mailto:jobs@blotout.io)

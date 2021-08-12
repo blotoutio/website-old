@@ -22,4 +22,4 @@ Ideal time zone: IST or CEST. Most of the server team is in India.
 
 Location: Remote
 
-Send us your resume to jobs@blotout.io
+Send us your resume to [jobs@blotout.io](mailto:jobs@blotout.io)
