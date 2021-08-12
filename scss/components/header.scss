@@ -154,15 +154,15 @@ header {
         display: block;
       }
 
-      &:hover {
-        opacity: 0.7;
-        cursor: pointer;
-      }
-
-      img {
+      svg {
         display: block;
         width: 26px;
         height: 26px;
+
+        &:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
       }
     }
     #header-nav-mobile-container {
@@ -172,7 +172,6 @@ header {
       right: 0;
       width: 100vw;
       height: 100vh;
-      background-color: rgba(0, 31, 61, 0.85);
 
       #header-nav-mobile {
         position: absolute;
@@ -180,7 +179,6 @@ header {
         right: 0;
         width: 65%;
         height: 100vh;
-        background-color: var(--dark-blue-4);
         overflow: scroll;
 
         @media (max-width: 600px) {
@@ -201,7 +199,7 @@ header {
           right: 15px;
           height: 80px;
 
-          img {
+          svg {
             display: block;
             width: 32px;
             height: 32px;
@@ -239,11 +237,10 @@ header {
           a {
             display: flex;
             width: 100%;
-            color: var(--light-blue-1);
             text-decoration: none;
 
             &:hover {
-              color: var(--dark-blue-1);
+              color: var(--dark-blue-1) !important;
             }
           }
 
