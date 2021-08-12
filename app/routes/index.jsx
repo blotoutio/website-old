@@ -99,7 +99,7 @@ export default function Index() {
           </h2>
           <img
             id='explainer-image'
-            src='/explainer.png'
+            src='/img/main/explainer.png'
             alt='An image illustrating how Blotout can benefit teams'
           />
         </div>
@@ -161,7 +161,7 @@ export default function Index() {
               className='non-engineer-illustration'
             >
               <img
-                src='/marketers.png'
+                src='/img/main/marketers.png'
                 alt='An image illustrating how Blotout can benefit marketers'
               />
             </div>
@@ -232,7 +232,7 @@ export default function Index() {
               className='non-engineer-illustration'
             >
               <img
-                src='/product-managers.png'
+                src='/img/main/product-managers.png'
                 alt='An image illustrating how Blotout can benefit product managers'
               />
             </div>
@@ -264,7 +264,7 @@ export default function Index() {
           </a>
           <div id='engineers-illustration'>
             <img
-              src='/engineers.png'
+              src='/img/main/engineers.png'
               alt='An image illustrating how Blotout can benefit engineers'
             />
           </div>
