@@ -747,24 +747,24 @@
           width: 100%;
           max-width: 550px;
           margin-top: 40px;
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 130%;
           color: var(--light-blue-1);
           text-align: left;
 
           @media (max-width: 1024px) {
             margin-top: 30px;
-            font-size: 16px;
           }
 
           .privacy-point {
             display: flex;
             justify-content: space-between;
             margin-top: 16px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
 
             @media (max-width: 1024px) {
               margin-top: 13px;
+              font-size: 16px;
             }
 
             @media (max-width: 500px) {
