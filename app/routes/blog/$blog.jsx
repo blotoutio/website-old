@@ -15,7 +15,7 @@ export function meta({ params }) {
   const blogItem = blogList.find((item) => item.slug === params.blog)
   return {
     title: `Blotout - Blog | ${blogItem.title}`,
-    description: '',
+    description: blogItem.description,
   }
 }
 
