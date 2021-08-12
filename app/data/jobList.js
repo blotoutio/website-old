@@ -1,26 +1,26 @@
 export const jobList = [
   {
     title: `Client Engineer`,
-    slug: 'client-engineer',
+    slug: 'client-engineer-052021',
   },
   {
     title: `UI/UX Engineer`,
-    slug: 'ui-ux-engineer',
+    slug: 'ui-ux-engineer-052021',
   },
   {
     title: `Data Engineer`,
-    slug: 'data-engineer',
+    slug: 'data-engineer-052021',
   },
   {
     title: `Server Engineer`,
-    slug: 'server-engineer',
+    slug: 'server-engineer-052021',
   },
   {
     title: `Client Engineer (Internship)`,
-    slug: 'client-engineer-internship',
+    slug: 'client-internship-052021',
   },
   {
     title: `Server Engineer (Internship)`,
-    slug: 'server-engineer-internship',
+    slug: 'server-internship-052021',
   },
 ]
