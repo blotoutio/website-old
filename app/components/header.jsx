@@ -138,7 +138,14 @@ export const Header = () => {
             <div className='header-nav-submenu'>
               <Link to='/blog'>Blog</Link>
               <Link to='/case-studies'>Case Studies</Link>
-              <Link to='/'>Slack Community</Link>
+              <a
+                href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
+                target='_blank'
+                rel='noopener'
+                rel='noreferrer'
+              >
+                Slack Community
+              </a>
             </div>
           </div>
           <Link
