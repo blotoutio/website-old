@@ -19,7 +19,7 @@ export function meta({ params }) {
   )
   return {
     title: `Blotout - Case Studies | ${caseStudyItem.title}`,
-    description: '',
+    description: caseStudyItem.description,
   }
 }
 
