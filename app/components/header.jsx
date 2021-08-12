@@ -183,7 +183,10 @@ export const Header = () => {
               <img src='/img/x.svg' onClick={toggleMobileMenu} />
             </div>
             <div id='header-nav-mobile-links'>
-              <Link to={{ pathname: './', hash: '#explainer' }}>
+              <Link
+                to={{ pathname: './', hash: '#explainer' }}
+                onClick={toggleMobileMenu}
+              >
                 <span>Product</span>
               </Link>
               <div className='header-nav-mobile-group'>
@@ -229,8 +232,12 @@ export const Header = () => {
               <div className='header-nav-mobile-group'>
                 <div className='header-nav-mobile-group-title'>Resources</div>
                 <div className='header-nav-mobile-subgroup'>
-                  <Link to='/blog'>Blog</Link>
-                  <Link to='/case-studies'>Case Studies</Link>
+                  <Link to='/blog' onClick={toggleMobileMenu}>
+                    Blog
+                  </Link>
+                  <Link to='/case-studies' onClick={toggleMobileMenu}>
+                    Case Studies
+                  </Link>
                   <a
                     href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
                     target='_blank'
@@ -240,7 +247,7 @@ export const Header = () => {
                   </a>
                 </div>
               </div>
-              <Link to='/about'>
+              <Link to='/about' onClick={toggleMobileMenu}>
                 <span>Company</span>
               </Link>
             </div>
