@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 import LogoLight from '../graphics/logo-light'
 import LogoBlue from '../graphics/logo-blue'
@@ -42,6 +42,12 @@ export const Header = () => {
     }
 
     return <LogoLight />
+  }
+
+  const [isOpen, changeCSS] = useState('false')
+
+  const toggleMobileMenu = () => {
+    changeCSS(!isOpen)
   }
 
   useEffect(() => {
@@ -166,8 +172,80 @@ export const Header = () => {
         >
           Start Free Trial
         </a>
-        <div id='header-nav-mobile'>
-          <img src='/img/menu.svg' />
+        <div id='header-nav-mobile-menu-icon'>
+          <img src='/img/menu.svg' onClick={toggleMobileMenu} />
+        </div>
+        <div
+          id='header-nav-mobile-container'
+          style={{ display: isOpen ? 'none' : 'block' }}
+        >
+          <div id='header-nav-mobile'>
+            <div id='header-nav-mobile-x-icon'>
+              <img src='/img/x.svg' onClick={toggleMobileMenu} />
+            </div>
+            <div id='header-nav-mobile-links'>
+              <Link to={{ pathname: './', hash: '#explainer' }}>
+                <span>Product</span>
+              </Link>
+              <div className='header-nav-mobile-group'>
+                <div className='header-nav-mobile-group-title'>Docs</div>
+                <div className='header-nav-mobile-subgroup'>
+                  <a
+                    href='https://docs.blotout.io/'
+                    target='_blank'
+                    rel='noopener'
+                  >
+                    Overview
+                  </a>
+                  <a
+                    href='https://docs-js.blotout.io/'
+                    target='_blank'
+                    rel='noopener'
+                  >
+                    JavaScript
+                  </a>
+                  <a
+                    href='https://docs-ios.blotout.io/'
+                    target='_blank'
+                    rel='noopener'
+                  >
+                    iOS
+                  </a>
+                  <a
+                    href='https://docs-android.blotout.io/'
+                    target='_blank'
+                    rel='noopener'
+                  >
+                    Android
+                  </a>
+                  <a
+                    href='https://docs-rust.blotout.io/'
+                    target='_blank'
+                    rel='noopener'
+                  >
+                    Rust / C++
+                  </a>
+                </div>
+              </div>
+              <div className='header-nav-mobile-group'>
+                <div className='header-nav-mobile-group-title'>Resources</div>
+                <div className='header-nav-mobile-subgroup'>
+                  <Link to='/blog'>Blog</Link>
+                  <Link to='/case-studies'>Case Studies</Link>
+                  <a
+                    href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Slack Community
+                  </a>
+                </div>
+              </div>
+              <Link to='/about'>
+                <span>Company</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </header>
