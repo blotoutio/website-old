@@ -6,12 +6,11 @@ import parse from 'html-react-parser'
 import stylesUrl from '../../styles/writing-item.css'
 
 export function loader({ params }) {
-  const jobItem = jobList.find((item) => item.slug === params.about)
-  return jobItem
+  return jobList.find((item) => item.slug === params.job)
 }
 
 export function meta({ params }) {
-  const jobItem = jobList.find((item) => item.slug === params.about)
+  const jobItem = jobList.find((item) => item.slug === params.job)
   return {
     title: `Blotout - Jobs | ${jobItem.title}`,
     description:
@@ -28,9 +27,8 @@ export function links() {
   ]
 }
 
-export default function CaseStudyItem() {
+export default function Job() {
   let data = useRouteData()
-
   const [html, setHTML] = useState('')
 
   useEffect(() => {

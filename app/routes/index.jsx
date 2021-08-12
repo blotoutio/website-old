@@ -1,5 +1,4 @@
 import SlackIcon from '../graphics/icons/slack-icon'
-import PrivacyIcons from '../graphics/privacy-icons'
 import stylesUrl from '../styles/index.css'
 
 export function meta() {
@@ -36,7 +35,6 @@ export default function Index() {
             <a
               href='https://calendly.com/blotout-experts'
               target='_blank'
-              rel='noopener'
               rel='noreferrer'
               id='hero-primary-cta'
               className='hero-cta'
@@ -47,7 +45,6 @@ export default function Index() {
               href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
               id='hero-secondary-cta'
               target='_blank'
-              rel='noopener'
               rel='noreferrer'
               className='hero-cta'
             >
@@ -131,7 +128,6 @@ export default function Index() {
           <a
             href='https://calendly.com/blotout-experts'
             target='_blank'
-            rel='noopener'
             rel='noreferrer'
             id='marketers-cta'
             className='non-engineer-cta'
@@ -202,7 +198,6 @@ export default function Index() {
           <a
             href='https://calendly.com/blotout-experts'
             target='_blank'
-            rel='noopener'
             rel='noreferrer'
             id='product-managers-cta'
             className='non-engineer-cta'
@@ -256,7 +251,6 @@ export default function Index() {
           <a
             href='https://calendly.com/blotout-experts'
             target='_blank'
-            rel='noopener'
             rel='noreferrer'
             id='engineers-cta'
           >

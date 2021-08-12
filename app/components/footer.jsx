@@ -32,7 +32,6 @@ export const Footer = () => {
           <a
             href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
             target='_blank'
-            rel='noopener'
             rel='noreferrer'
             id='footer-special-cta'
           >
@@ -89,7 +88,6 @@ export const Footer = () => {
                 href='https://docs.blotout.io/'
                 target='_blank'
                 rel='noopener'
-                rel='noreferrer'
                 className='footer-nav-link'
               >
                 Overview
@@ -98,7 +96,6 @@ export const Footer = () => {
                 href='https://docs-js.blotout.io/'
                 target='_blank'
                 rel='noopener'
-                rel='noreferrer'
                 className='footer-nav-link'
               >
                 JavaScript
@@ -107,7 +104,6 @@ export const Footer = () => {
                 href='https://docs-ios.blotout.io/'
                 target='_blank'
                 rel='noopener'
-                rel='noreferrer'
                 className='footer-nav-link'
               >
                 iOS
@@ -116,7 +112,6 @@ export const Footer = () => {
                 href='https://docs-android.blotout.io/'
                 target='_blank'
                 rel='noopener'
-                rel='noreferrer'
                 className='footer-nav-link'
               >
                 Android
@@ -125,7 +120,6 @@ export const Footer = () => {
                 href='https://docs-rust.blotout.io/'
                 target='_blank'
                 rel='noopener'
-                rel='noreferrer'
                 className='footer-nav-link'
               >
                 Rust / C++
@@ -144,7 +138,6 @@ export const Footer = () => {
               <a
                 href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
                 target='_blank'
-                rel='noopener'
                 rel='noreferrer'
                 className='footer-nav-link'
               >

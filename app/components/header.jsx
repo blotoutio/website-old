@@ -1,12 +1,48 @@
 import { useEffect } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 import LogoLight from '../graphics/logo-light'
-import LogoDark from '../graphics/logo-dark'
 import LogoBlue from '../graphics/logo-blue'
 
 export const Header = () => {
   const location = useLocation()
-  const { pathname, hash } = useLocation()
+  const { pathname } = useLocation()
+
+  const getBackgroundColor = () => {
+    if (pathname === '/about' || pathname.includes('/job')) {
+      return 'var(--dark-blue-1)'
+    }
+
+    if (pathname === '/integrations') {
+      return 'var(--dark-blue-2)'
+    }
+
+    if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
+      return 'var(--grey-3)'
+    }
+
+    if (pathname.includes('/blog')) {
+      return 'var(--light-blue-3)'
+    }
+
+    if (pathname.includes('/case-studies')) {
+      return 'var(--light-blue-3)'
+    }
+
+    return 'var(--dark-blue-3)'
+  }
+
+  const getLogo = () => {
+    if (
+      pathname === '/privacy-policy' ||
+      pathname === '/terms-of-service' ||
+      pathname.includes('/blog') ||
+      pathname.includes('/case-studies')
+    ) {
+      return <LogoBlue />
+    }
+
+    return <LogoLight />
+  }
 
   useEffect(() => {
     if (location.hash) {
@@ -26,36 +62,12 @@ export const Header = () => {
   return (
     <header
       style={{
-        backgroundColor: pathname.includes('/about')
-          ? 'var(--dark-blue-1)'
-          : pathname === '/integrations'
-          ? 'var(--dark-blue-2)'
-          : pathname === '/privacy-policy'
-          ? 'var(--grey-3)'
-          : pathname === '/terms-of-service'
-          ? 'var(--grey-3)'
-          : pathname.includes('/blog')
-          ? 'var(--light-blue-3)'
-          : pathname.includes('/case-studies')
-          ? 'var(--light-blue-3)'
-          : 'var(--dark-blue-3)',
+        backgroundColor: getBackgroundColor(),
       }}
     >
       <div id='header-content'>
         <div id='logo'>
-          <Link to='/'>
-            {pathname === '/privacy-policy' ? (
-              <LogoBlue />
-            ) : pathname === '/terms-of-service' ? (
-              <LogoBlue />
-            ) : pathname.includes('/blog') ? (
-              <LogoBlue />
-            ) : pathname.includes('/case-studies') ? (
-              <LogoBlue />
-            ) : (
-              <LogoLight />
-            )}
-          </Link>
+          <Link to='/'>{getLogo()}</Link>
         </div>
         <div
           id='header-nav'
@@ -91,19 +103,13 @@ export const Header = () => {
           <div id='header-nav-link-docs' className='header-nav-link'>
             <span>Docs</span>
             <div className='header-nav-submenu'>
-              <a
-                href='https://docs.blotout.io/'
-                target='_blank'
-                rel='noopener'
-                rel='noreferrer'
-              >
+              <a href='https://docs.blotout.io/' target='_blank' rel='noopener'>
                 Overview
               </a>
               <a
                 href='https://docs-js.blotout.io/'
                 target='_blank'
                 rel='noopener'
-                rel='noreferrer'
               >
                 JavaScript
               </a>
@@ -111,7 +117,6 @@ export const Header = () => {
                 href='https://docs-ios.blotout.io/'
                 target='_blank'
                 rel='noopener'
-                rel='noreferrer'
               >
                 iOS
               </a>
@@ -119,7 +124,6 @@ export const Header = () => {
                 href='https://docs-android.blotout.io/'
                 target='_blank'
                 rel='noopener'
-                rel='noreferrer'
               >
                 Android
               </a>
@@ -127,7 +131,6 @@ export const Header = () => {
                 href='https://docs-rust.blotout.io/'
                 target='_blank'
                 rel='noopener'
-                rel='noreferrer'
               >
                 Rust / C++
               </a>
@@ -141,7 +144,6 @@ export const Header = () => {
               <a
                 href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
                 target='_blank'
-                rel='noopener'
                 rel='noreferrer'
               >
                 Slack Community
@@ -159,8 +161,6 @@ export const Header = () => {
         <a
           href='https://calendly.com/blotout-experts'
           target='_blank'
-          target='_blank'
-          rel='noopener'
           rel='noreferrer'
           id='cta'
         >

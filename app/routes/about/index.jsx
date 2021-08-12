@@ -61,7 +61,11 @@ export default function About() {
           <div id='job-list'>
             {jobList.map((jobItem) => {
               return (
-                <Link to={jobItem.slug} className='job-item' key={jobItem.slug}>
+                <Link
+                  to={`/jobs/${jobItem.slug}`}
+                  className='job-item'
+                  key={jobItem.slug}
+                >
                   {jobItem.title}
                 </Link>
               )

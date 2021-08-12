@@ -7,6 +7,7 @@ const LogoBlue = () => {
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
+      <title>Blotout logo</title>
       <path d='M3289 321.041H3415.23V686.459H3289V321.041Z' fill='#1856DC' />
       <path
         fillRule='evenodd'
