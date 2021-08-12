@@ -23,14 +23,14 @@ export default function Index() {
     <div id='home'>
       <div id='hero' className='home-section'>
         <div id='hero-content' className='home-section-content'>
-          <div id='hero-title'>
+          <h1 id='hero-title'>
             Cloud prem analytics and marketing attribution for the privacy era
-          </div>
-          <div id='hero-subtitle'>
+          </h1>
+          <h3 id='hero-subtitle'>
             Your third-party analytics and marketing tools are bleeding data.
             Blotout gives you the turnkey cloud prem infrastructure and
             solutions to solve this.
-          </div>
+          </h3>
           <div id='hero-cta-group'>
             <a
               href='https://calendly.com/blotout-experts'
@@ -80,10 +80,10 @@ export default function Index() {
 
       <div id='explainer' className='home-section'>
         <div id='explainer-content' className='home-section-content'>
-          <div id='explainer-title'>
+          <h2 id='explainer-title'>
             Fix your measurements, enhance your metrics, and exceed your privacy
             obligations at a fraction of the cost of doing it yourself
-          </div>
+          </h2>
           <img
             id='explainer-image'
             src='/explainer.png'
@@ -104,16 +104,16 @@ export default function Index() {
             >
               For Marketers
             </div>
-            <div id='marketers-text-title' className='non-engineer-text-title'>
+            <h1 id='marketers-text-title' className='non-engineer-text-title'>
               Accurately measure and optimize conversions in the post-cookie era
-            </div>
-            <div
+            </h1>
+            <h3
               id='marketers-text-subtitle'
               className='non-engineer-text-subtitle'
             >
               Capture your data in-house to accurately measure the value of
               every dollar you spend across the lifetimes of your campaigns.
-            </div>
+            </h3>
           </div>
           <a
             href='https://calendly.com/blotout-experts'
@@ -133,15 +133,15 @@ export default function Index() {
               id='marketers-point-group'
               className='non-engineer-point-group'
             >
-              <div className='marketers-point non-engineer-point'>
+              <h3 className='marketers-point non-engineer-point'>
                 Capture every missing user and event
-              </div>
-              <div className='marketers-point non-engineer-point'>
+              </h3>
+              <h3 className='marketers-point non-engineer-point'>
                 Measure true campaign ROI and ROAS
-              </div>
-              <div className='marketers-point non-engineer-point'>
+              </h3>
+              <h3 className='marketers-point non-engineer-point'>
                 Attribute conversions across channels and devices
-              </div>
+              </h3>
             </div>
             <div
               id='marketers-illustration'
@@ -171,20 +171,20 @@ export default function Index() {
             >
               For Product Managers
             </div>
-            <div
+            <h1
               id='product-managers-text-title'
               className='non-engineer-text-title'
             >
               Map the entire customer journey
-            </div>
-            <div
+            </h1>
+            <h3
               id='product-managers-text-subtitle'
               className='non-engineer-text-subtitle'
             >
               Customer journeys go beyond your site and app. Finally see
               journeys with every service ticket, package return, and all your
               other interactions in one place.
-            </div>
+            </h3>
           </div>
           <a
             href='https://calendly.com/blotout-experts'
@@ -204,15 +204,15 @@ export default function Index() {
               id='product-managers-point-group'
               className='non-engineer-point-group'
             >
-              <div className='product-managers-point non-engineer-point'>
+              <h3 className='product-managers-point non-engineer-point'>
                 Optimize your customer funnels
-              </div>
-              <div className='product-managers-point non-engineer-point'>
+              </h3>
+              <h3 className='product-managers-point non-engineer-point'>
                 Segment behaviors and personas without code
-              </div>
-              <div className='product-managers-point non-engineer-point'>
+              </h3>
+              <h3 className='product-managers-point non-engineer-point'>
                 Personalize content and products with feature flags
-              </div>
+              </h3>
             </div>
             <div
               id='product-managers-illustration'
@@ -231,14 +231,14 @@ export default function Index() {
         <div id='engineers-content' className='home-section-content'>
           <div id='engineers-text-group'>
             <div id='engineers-text-heading'>For Engineers</div>
-            <div id='engineers-text-title'>
+            <h1 id='engineers-text-title'>
               A complete privacy data engineering stack in your cloud prem
-            </div>
-            <div id='engineers-text-subtitle'>
+            </h1>
+            <h3 id='engineers-text-subtitle'>
               Data engineering is expensive. Engineers aren’t privacy lawyers.
               Solve for both with our no-code customer data infrastructure stack
               built for privacy.
-            </div>
+            </h3>
           </div>
           <a
             href='https://calendly.com/blotout-experts'
@@ -256,13 +256,13 @@ export default function Index() {
             />
           </div>
           <div id='engineers-point-group'>
-            <div className='engineers-point'>Deploy to your cloud premise</div>
-            <div className='engineers-point'>
+            <h3 className='engineers-point'>Deploy to your cloud premise</h3>
+            <h3 className='engineers-point'>
               Save millions in engineering time and effort
-            </div>
-            <div className='engineers-point'>
+            </h3>
+            <h3 className='engineers-point'>
               Rely on built in-privacy solutions
-            </div>
+            </h3>
           </div>
         </div>
       </div>

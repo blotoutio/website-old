@@ -578,20 +578,15 @@
         display: flex;
         justify-content: space-between;
         margin-top: 85px;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 115%;
         text-align: center;
         color: var(--light-blue-2);
 
         @media (max-width: 1024px) {
           margin-top: 75px;
-          font-size: 20px;
         }
 
         @media (max-width: 800px) {
           margin-top: 65px;
-          letter-spacing: 0;
         }
 
         @media (max-width: 600px) {
@@ -603,10 +598,17 @@
         .engineers-point {
           width: 100%;
           padding: 85px 25px;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 115%;
           border-right: 2px solid rgb(226, 240, 255, 10%);
 
           @media (max-width: 1024px) {
             padding: 65px 20px;
+            font-size: 20px;
+          }
+          @media (max-width: 800px) {
+            letter-spacing: 0;
           }
 
           @media (max-width: 768px) {
