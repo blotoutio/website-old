@@ -1,0 +1,36 @@
+## KISS principles
+
+[KISS](https://en.wikipedia.org/wiki/KISS_principle): keep it simple, stupid. It is the paradigm that drives the mindset of big tech. That is how we got to this consumer experience where big tech has put us to sleep while invading our four walls without us even noticing. The [example](https://bgr.com/2018/01/26/oneplus-data-collection-clipboard-app/) of OnePlus App is a classic way to understand why our smartphone was subsidized to start with; very much like it, all services that are free essentially make us the [product](https://www.forbes.com/sites/marketshare/2012/03/05/if-youre-not-paying-for-it-you-become-the-product/?sh=2cb11df35d6e) — essentially, there is no such thing as free.
+
+The same principles apply as we, in the tech industry that created these issues, in the first place, drive the change to reign in big tech’s worst practices. Any sea change is going to have to align to the same principles — if you can’t make a privacy-by-design product simple and provide parity features, it would be hard for users or enterprises, alike, to switch.
+
+## Moving to Privacy by design
+
+In our previous [article](/blog/privacy-by-trust-vs-privacy-by-design), we explicitly discussed why change won’t happen to the world of private data unless we move to a privacy by design concept. We strongly believe that the current policies, GDPR or CCPA, start addressing the challenge but won’t change the overall challenges with collecting data. The way to realize change is to keep personal data in user control.
+
+## KISS is inversely proportional to switching cost
+
+Changing the everyday consumer mindset and product manager’s mindset about privacy starts with making things uncomplicated. If things are not kept simple for anyone to switch, the war on privacy will have ended quickly.
+
+The same goes for product managers who are used to getting byte by byte level of data from their applications and know exactly what needs to be done. From a consumers point of view, while privacy is key, the user product interface would lose a lot of personalized features that have clear benefits, both, from an uptake and utility perspective.
+
+While policies will drive product managers to be careful, they bet their livelihoods on their product consumer experience, personalization, and data analysis. The same goes for consumers who will turn away if the product experience degrades; though some may stick due to brand affinity for a privacy centric product — so there is some give and take.
+
+Step one in the war for change will require tools that allow product managers to achieve most, if not all, that was possible in the privacy invading world. Privacy toolkit providers will have to keep things as simple and familiar . Change will be slow, but it will come if things are made simpler; otherwise we see the cost of switching will be too high for anyone to burden.
+
+![image](/img/blog/duckduckgo.png)
+
+As an example of KISS, [DuckDuckGo’s](https://duckduckgo.com/) search engine provides results very similar to Google search, but without algorithms that track the user. The results for blot out or blotout or blotout.io are very similar, if not the same, providing and the search result experience is similar.
+
+![image](/img/blog/captured_via_brave.png)
+
+[Brave](https://brave.com/download/) provides another good example. The browser was recently rebuilt using Chrome as a foundation, retaining its features and familiarity, while adding Shields to allow users to know what data is being tracked via 3rd parties. This familiarity makes it easy for anyone using Chrome to switch.
+
+## Blotout principles
+
+Blotout is still in stealth mode, but we are working on toolchains that will allow product managers to do what they do today, but with edge computing [principles](/blog/privacy-has-muscle-at-the-device-edge) that keep data in user control at all times. Our goal is to keep integration with our toolkit the same and provide exactly the same tools, very similar to the approach that DuckDuckGo and Brave have taken.
+
+Follow us [here](https://blotout.io/).
+
+Thank you,
+The Blotout team!

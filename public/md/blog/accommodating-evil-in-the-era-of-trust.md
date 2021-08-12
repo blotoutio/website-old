@@ -1,0 +1,25 @@
+Let’s lay it plainly. The only value that third-party cookies provide is to let companies track users.
+
+Google has done this more than anyone else and laid the groundwork for an entire advertising industry built on secretly tracking and profiling users. That was why it was a relief when it finally [announced](https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html) (and then [confirmed](https://blog.google/products/ads-commerce/a-more-privacy-first-web/)) that it was going to phase out third-party cookies by the end of 2021, just the way Apple has [already done](https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/) since the start of 2020. That would have marked the death of this scourge and the acceleration of the inevitable shift to an era of privacy and respect.
+
+Which makes Thursday's Google [announcement](https://blog.google/products/chrome/updated-timeline-privacy-sandbox-milestones/) so utterly disappointing. It has decided to backtrack on its promise — which it had [emphasized](https://www.wsj.com/articles/google-to-stop-selling-ads-based-on-your-specific-web-browsing-11614780021) only four months back — so it can delay phasing out third-party cookies to late 2023.
+
+The reason, it claims, is the need to move at a "responsible pace." But responsible to whom?
+
+This will continue to leave a huge number of users — anyone not operating within the Apple ecosystem — exposed to being secretly and profiled.
+
+We also have striking evidence that, unlike what Google might claim, users do not accept this invasion of their privacy as a fair trade for advertisements that are theoretically better tailored to them. When iOS users upgraded to version 14.5, they needed to approve any tracking being done by apps on their devices, and the [latest figures](https://www.flurry.com/blog/ios-14-5-opt-in-rate-att-restricted-app-tracking-transparency-worldwide-us-daily-latest-update/) show the opt in rate at an abysmally low 6%.
+
+Users don't want to be tracked and when they have the choice they overwhelmingly say no.
+
+So who is Google taking care of?
+
+The [public markets](https://www.cnbc.com/2021/06/24/google-pushes-back-deadline-to-deprecate-third-party-cookies-to-2023.html) give us a good indication. Companies like the Trade Desk saw their market caps meaningfully rise on this announcement. These are the same companies who knew about Google's plans to phase out the third-party cookie and did little to change, hoping it would reverse course. These are companies that have no relationship with consumers but that have still built their businesses on invisibly following users from site-to-site so they can act as brokers for advertising sales.
+
+Why does Google owe these companies an obligation but not the multitudes of individuals who have trusted Google as their gateway to the online world? Is it because these users don't know just how pervasive and invasive these practices are?
+
+We live in a strange world where we depend on companies, whose obligations are to their shareholders and not users, to protect us from unacceptable online practices. When self-regulation fails — as it clearly has in Google's case — is where regulators need to step in.
+
+It remains to be seen whether they will.
+
+Until then, we must contend with Google's betrayal — which will only delay the inevitable — and protect ourselves by adopting ad blockers, privacy browsers, and other technologies that should be unnecessary in a well ordered world.

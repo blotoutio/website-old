@@ -1,9 +1,18 @@
-node_modules/
+# Development Environment
 
+/node_modules
 /.cache
+/app/styles
 /build
 /public/build
+/server/build
+.vercel
+
+# Editors
 
 .idea
+.nova
+
+# macOS
+
 .DS_Store
-.vercel

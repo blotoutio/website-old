@@ -2,7 +2,9 @@
 /build
 /data-build
 /public/build
+/server/build
 app-build
 *.md
 .vercel
-/public/global.js
+package-lock.json
+app/styles
