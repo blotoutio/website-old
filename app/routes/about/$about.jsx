@@ -14,7 +14,8 @@ export function meta({ params }) {
   const jobItem = jobList.find((item) => item.slug === params.about)
   return {
     title: `Blotout - Jobs | ${jobItem.title}`,
-    description: '',
+    description:
+      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 

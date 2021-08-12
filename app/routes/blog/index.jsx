@@ -6,7 +6,8 @@ import stylesUrl from '../../styles/writing.css'
 export function meta() {
   return {
     title: 'Blotout - Blog',
-    description: '',
+    description:
+      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 

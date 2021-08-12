@@ -3,7 +3,8 @@ import stylesUrl from '../styles/legal.css'
 export function meta() {
   return {
     title: 'Blotout - Privacy Policy',
-    description: '',
+    description:
+      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 

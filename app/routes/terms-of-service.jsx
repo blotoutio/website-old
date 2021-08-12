@@ -3,7 +3,8 @@ import stylesUrl from '../styles/legal.css'
 export function meta() {
   return {
     title: 'Blotout - Terms of Service',
-    description: '',
+    description:
+      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 
