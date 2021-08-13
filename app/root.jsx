@@ -1,11 +1,33 @@
 import { useEffect } from 'react'
 import { Meta, Links, Scripts, useRouteData, LiveReload } from 'remix'
 import { init, capture } from '@blotoutio/sdk-core'
-import { Outlet } from 'react-router-dom'
+import { useLocation, Outlet } from 'react-router-dom'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 
 import stylesUrl from './styles/main.css'
+
+export function meta() {
+  const { pathname } = useLocation()
+
+  /* For staging link */
+
+  /* return {
+    'og:site_name': 'Blotout, Inc.',
+    'og:image': 'https://blotout-website-yashghelani.vercel.app/img/og-rectangle.png',
+    'og:url': `https://blotout-website-yashghelani.vercel.app${pathname}`,
+    'twitter:image': 'https://blotout-website-yashghelani.vercel.app/img/og-square.png',
+    'twitter:card': 'summary',
+    } */
+
+  return {
+    'og:site_name': 'Blotout, Inc.',
+    'og:image': 'https://blotout.io/img/og-rectangle.png',
+    'og:url': `https://blotout.io${pathname}`,
+    'twitter:image': 'https://blotout.io/img/og-square.png',
+    'twitter:card': 'summary',
+  }
+}
 
 export function links() {
   return [

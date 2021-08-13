@@ -15,6 +15,9 @@ export function meta({ params }) {
     title: `Blotout - Jobs | ${jobItem.title}`,
     description:
       'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+    'og:title': `Blotout - Jobs | ${jobItem.title}`,
+    'og:description':
+      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 

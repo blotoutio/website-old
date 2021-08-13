@@ -8,6 +8,9 @@ export function meta() {
     title: 'Blotout - Case Studies',
     description:
       'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+    'og:title': 'Blotout - Case Studies',
+    'og:description':
+      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 

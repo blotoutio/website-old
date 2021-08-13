@@ -20,6 +20,8 @@ export function meta({ params }) {
   return {
     title: `Blotout - Case Studies | ${caseStudyItem.title}`,
     description: caseStudyItem.description,
+    'og:title': `Blotout - Case Studies | ${caseStudyItem.title}`,
+    'og:description': caseStudyItem.description,
   }
 }
 
