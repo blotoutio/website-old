@@ -7,6 +7,9 @@ export function meta() {
     title: 'Blotout - About',
     description:
       'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+    'og:title': 'Blotout - About',
+    'og:description':
+      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 

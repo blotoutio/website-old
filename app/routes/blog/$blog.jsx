@@ -16,6 +16,8 @@ export function meta({ params }) {
   return {
     title: `Blotout - Blog | ${blogItem.title}`,
     description: blogItem.description,
+    'og:title': `Blotout - Blog | ${blogItem.title}`,
+    'og:description': blogItem.description,
   }
 }
 

@@ -26,13 +26,17 @@ $ npm install
 $ vercel link
 ```
 
-4. To start developing, use the start script:
+4. To start developing, run these two commands in their separate terminals:
 
 ```sh
-$ npm start
+$ npm run sass
 ```
 
-This will start the Remix development server, a TypeScript watcher for the server code, and the Vercel development server.
+```sh
+$ npm run main
+```
+
+The first command will watch and build Sass files and the second will start the Remix and Vercel development servers.
 
 ## Documentation
 
