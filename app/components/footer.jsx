@@ -160,7 +160,7 @@ export const Footer = () => {
         <div id='footer-rest'>
           <div id='footer-social'>
             <a
-              href='https://twitter.com/blotout3'
+              href='https://twitter.com/blotout_io'
               target='_blank'
               rel='noreferrer'
             >
