@@ -1,5 +1,11 @@
 export const blogList = [
   {
+    title: `Storybook for Blotout`,
+    description: `How Blotout uses Storybook to streamline front-end development.`,
+    date: '2021-08-18',
+    slug: 'storybook-for-blotout',
+  },
+  {
     title: `Blotout experimenting with Open AI`,
     description: `OpenAI is the largest open ecosystem for pre-classified NLP models and it supports the completion of even very complex queries within 100 milliseconds.`,
     date: '2021-07-27',
