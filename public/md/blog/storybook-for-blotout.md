@@ -1,0 +1,66 @@
+**Author: [Kannekanti Manoj](https://www.linkedin.com/in/kannekanti-manoj-445407172/) and [Karri Srinivas Rao](https://www.linkedin.com/in/srinivas1999/)**
+
+UI development is an iterative process that often requires integrating new components or new features. Front-end developers need to understand coding styles, approaches used, and combinations of components to process them faster and easier. A storybook that has all the components, code design, and structure of the front-end related components can help with that and is essential for front-end developers in the current modern era.
+
+Assume you're working on a front-end project at a firm. When you modify a component, it's always a struggle to go back and validate if all the components are rendered correctly. Imagine having a platform that allows you to work with all these components in isolation at the same time, as well as having to see changes without validating other components. This is where the idea of storybooks can shine.
+
+## Intro to Storybook
+
+[Storybook](https://storybook.js.org/) is an open-source tool for building UI components and pages in isolation. It streamlines UI development, testing, and documentation.
+
+It offers an advanced documentation of all UI components that allows you to browse a component library, view the different states of each component, and interactively develop and test components.
+
+## Benefits
+
+- A faster and easier development process
+- All components of a project are displayed in one place
+- Every state of a component can be seen in isolation
+- Edge cases can be tested easily
+- UI bugs can be avoided
+- Bridging the gap between design and development teams
+- Saving time in understanding the design and structure of components
+- Compatibility with popular front-end frameworks
+- Ability to mock props and view changes in real-time
+
+## Why Storybook
+
+Storybook is used by almost 30,000 projects. Organizations like Airbnb, Lyft, Slack, Twitter use it to fuel their front-end development.
+
+
+There are some alternatives to Storybook, like [Docz](https://www.docz.site/), [Atellier](https://scup.github.io/atellier/), [Carte Blanche](https://github.com/carteb/carte-blanche), and [React Cosmos](https://github.com/react-cosmos/react-cosmos). Here are some of the reasons why we decided to go with Storybook:
+
+- Storybook is compatible with most of the popular front-end frameworks
+- Automation of testing is possible through the Storybook
+- You can see and interact with your components in isolation using Storybook
+- Using Storybook, we can visually test our application while it's being built
+- Storybook comes with many add-ons, that let us customize and configure our stories
+
+We are using Storybook to innovate our components, interact with our team more effectively, and cover voids in our workflow.
+
+## How we used Storybook
+
+Storybook is being used for several applications. We specifically use it for testing, configuring, and developing components in our website. Our product at Blotout is focused on providing a rich user experience for data visualization and analytics. To provide this experience, we regularly experiment with various components such as colors, dropdowns, dialog boxes, snack bars, button styles, etc. To make this process faster and more efficient, we use Storybook, which integrates the components that make our development process quicker and easier.
+
+**Example**: We have created a separate story to display all icons in one place.
+
+<div className="right">
+    <img src="/img/blog/storybook-1.png" alt="storybook" />
+</div>
+
+**Example**: We manage different states for dropdowns in Storybook.
+
+<div className="right">
+    <img src="/img/blog/storybook-2.gif" alt="storybook" />
+</div>
+
+**Example**: We are able explore button properties for new UI contexts.
+
+<div className="right">
+    <img src="/img/blog/storybook-3.gif" alt="storybook" />
+</div>
+
+## Conclusion
+
+Using Storybook lets you create lean components which means less code. Less code leads to fewer bugs which in turn means  happier developers and users.
+
+<a href='https://storybook.blotout.io' target='blank'>Here</a> you can find the Blotout storybook. Feel free to look around. If you have comments or want to share feedback, join our <a href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw' target='_blank'>Slack</a>.
