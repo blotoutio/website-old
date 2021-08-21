@@ -44,9 +44,11 @@ export default function Blog() {
 
                 return (
                   <div className='list-item' key={blog.slug}>
-                    <Link to={blog.slug} className='list-item-title'>
-                      {blog.title}
-                    </Link>
+                    <h2>
+                      <Link to={blog.slug} className='list-item-title'>
+                        {blog.title}
+                      </Link>
+                    </h2>
                     <div className='list-item-info'>{formattedDate}</div>
                   </div>
                 )

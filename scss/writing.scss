@@ -30,7 +30,7 @@
         font-weight: 700;
         font-size: 45px;
         line-height: 100%;
-        letter-spacing: -1px;
+        letter-spacing: -0.035em;
         color: var(--dark-blue-4);
 
         @media (max-width: 1024px) {
@@ -75,23 +75,19 @@
               margin-top: 40px;
             }
 
-            a {
-              text-decoration: none;
+            h2 {
+              margin: 0;
 
-              &:hover {
-                color: var(--dark-blue-1);
+              .list-item-title {
+                color: var(--dark-blue-3);
               }
-            }
 
-            .list-item-title {
-              font-weight: 600;
-              font-size: 30px;
-              line-height: 110%;
-              letter-spacing: -1px;
-              color: var(--dark-blue-3);
+              a {
+                text-decoration: none;
 
-              @media (max-width: 768px) {
-                font-size: 23px;
+                &:hover {
+                  color: var(--dark-blue-1);
+                }
               }
             }
 
@@ -118,6 +114,6 @@
   }
 
   .writing-list {
-    background-color: var(--light-blue-1);
+    background-color: var(--grey-1);
   }
 }
