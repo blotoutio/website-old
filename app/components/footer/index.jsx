@@ -1,27 +1,10 @@
-import { useEffect } from 'react'
-import { useLocation, Link } from 'react-router-dom'
-import SlackIcon from '../graphics/icons/slack-icon'
-import TwitterIcon from '../graphics/icons/twitter-icon'
-import LinkedInIcon from '../graphics/icons/linkedin-icon'
+import { Link } from 'react-router-dom'
+import SlackIcon from '../../graphics/icons/slack-icon'
+import TwitterIcon from '../../graphics/icons/twitter-icon'
+import LinkedInIcon from '../../graphics/icons/linkedin-icon'
+import { codifyClick } from '../../utils'
 
-export const Footer = () => {
-  const location = useLocation()
-  const { pathname, hash } = useLocation()
-
-  useEffect(() => {
-    if (location.hash) {
-      let element = document.getElementById(location.hash.slice(1))
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-      }
-    } else {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-      })
-    }
-  }, [location])
-
+const Footer = () => {
   return (
     <footer>
       <div id='footer-content'>
@@ -36,6 +19,7 @@ export const Footer = () => {
               target='_blank'
               rel='noreferrer'
               id='footer-special-cta'
+              onClick={() => codifyClick('Footer - Slack Button')}
             >
               <div className='cta-icon'>
                 <SlackIcon />
@@ -51,33 +35,42 @@ export const Footer = () => {
                 <Link
                   to={{ pathname: './', hash: '#explainer' }}
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Product Overview')}
                 >
                   Overview
                 </Link>
-                <Link to='/integrations' className='footer-nav-link'>
+                <Link
+                  to='/integrations'
+                  className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Product Integrations')}
+                >
                   Integrations
                 </Link>
                 <Link
                   to={{ pathname: './', hash: '#marketers' }}
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Product Marketers')}
                 >
                   For Marketers
                 </Link>
                 <Link
                   to={{ pathname: './', hash: '#product-managers' }}
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Product PM')}
                 >
                   For Product Managers
                 </Link>
                 <Link
                   to={{ pathname: './', hash: '#engineers' }}
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Product Engineers')}
                 >
                   For Engineers
                 </Link>
                 <Link
                   to={{ pathname: './', hash: '#privacy' }}
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Product Privacy')}
                 >
                   For Privacy Teams
                 </Link>
@@ -91,6 +84,7 @@ export const Footer = () => {
                   target='_blank'
                   rel='noopener'
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Docs Overview')}
                 >
                   Overview
                 </a>
@@ -99,6 +93,7 @@ export const Footer = () => {
                   target='_blank'
                   rel='noopener'
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Docs JS')}
                 >
                   JavaScript
                 </a>
@@ -107,6 +102,7 @@ export const Footer = () => {
                   target='_blank'
                   rel='noopener'
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Docs iOS')}
                 >
                   iOS
                 </a>
@@ -115,6 +111,7 @@ export const Footer = () => {
                   target='_blank'
                   rel='noopener'
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Docs Android')}
                 >
                   Android
                 </a>
@@ -123,6 +120,7 @@ export const Footer = () => {
                   target='_blank'
                   rel='noopener'
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Docs Rust')}
                 >
                   Rust / C++
                 </a>
@@ -131,10 +129,18 @@ export const Footer = () => {
             <div className='footer-nav-group'>
               <div className='footer-nav-heading'>Resources</div>
               <div className='footer-nav-link-group'>
-                <Link to='/blog' className='footer-nav-link'>
+                <Link
+                  to='/blog'
+                  className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Resources Blog')}
+                >
                   Blog
                 </Link>
-                <Link to='/case-studies' className='footer-nav-link'>
+                <Link
+                  to='/case-studies'
+                  className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Resources Studies')}
+                >
                   Case Studies
                 </Link>
                 <a
@@ -142,6 +148,7 @@ export const Footer = () => {
                   target='_blank'
                   rel='noreferrer'
                   className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Resources Slack')}
                 >
                   Slack Community
                 </a>
@@ -150,7 +157,11 @@ export const Footer = () => {
             <div className='footer-nav-group'>
               <div className='footer-nav-heading'>Company</div>
               <div className='footer-nav-link-group'>
-                <Link to='/about' className='footer-nav-link'>
+                <Link
+                  to='/about'
+                  className='footer-nav-link'
+                  onClick={() => codifyClick('Footer - Company About')}
+                >
                   About
                 </Link>
               </div>
@@ -163,6 +174,7 @@ export const Footer = () => {
               href='https://twitter.com/blotout_io'
               target='_blank'
               rel='noreferrer'
+              onClick={() => codifyClick('Footer - Twitter')}
             >
               <TwitterIcon />
             </a>
@@ -170,16 +182,29 @@ export const Footer = () => {
               href='https://www.linkedin.com/company/blotout/'
               target='_blank'
               rel='noreferrer'
+              onClick={() => codifyClick('Footer - LinkedIn')}
             >
               <LinkedInIcon />
             </a>
           </div>
           <div id='footer-legal'>
-            <Link to='/privacy-policy'>Privacy Policy</Link>
-            <Link to='/terms-of-service'>Terms of Service</Link>
+            <Link
+              to='/privacy-policy'
+              onClick={() => codifyClick('Footer - Privacy Policy')}
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to='/terms-of-service'
+              onClick={() => codifyClick('Footer - TOS')}
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>
     </footer>
   )
 }
+
+export default Footer

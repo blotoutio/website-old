@@ -1,5 +1,6 @@
 import SlackIcon from '../graphics/icons/slack-icon'
 import stylesUrl from '../styles/index.css'
+import { codifyClick } from '../utils'
 
 export function meta() {
   return {
@@ -41,6 +42,7 @@ export default function Index() {
               rel='noreferrer'
               id='hero-primary-cta'
               className='hero-cta'
+              onClick={() => codifyClick('Hero - Trial')}
             >
               Start Free Trial
             </a>
@@ -50,6 +52,7 @@ export default function Index() {
               target='_blank'
               rel='noreferrer'
               className='hero-cta'
+              onClick={() => codifyClick('Hero - Slack')}
             >
               <div className='cta-icon'>
                 <SlackIcon />
@@ -134,6 +137,7 @@ export default function Index() {
             rel='noreferrer'
             id='marketers-cta'
             className='non-engineer-cta'
+            onClick={() => codifyClick('Marketer - Trial')}
           >
             Start Free Trial
           </a>
@@ -204,6 +208,7 @@ export default function Index() {
             rel='noreferrer'
             id='product-managers-cta'
             className='non-engineer-cta'
+            onClick={() => codifyClick('PM - Trial')}
           >
             Start Free Trial
           </a>
@@ -256,6 +261,7 @@ export default function Index() {
             target='_blank'
             rel='noreferrer'
             id='engineers-cta'
+            onClick={() => codifyClick('Engineer - Trial')}
           >
             Start Free Trial
           </a>
@@ -276,10 +282,6 @@ export default function Index() {
           </div>
         </div>
       </div>
-
-      {/* <div id="blog" className="home-section">
-                <div id="blog-content" className="home-section-content"></div>
-            </div> */}
 
       <div id='privacy' className='home-section'>
         <div id='privacy-content' className='home-section-content'>

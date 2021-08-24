@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { caseStudyList } from '../../data/caseStudyList'
-import { formatDate } from '../../utils'
+import { codifyClick, formatDate } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
 export function meta() {
@@ -40,7 +40,6 @@ export default function CaseStudies() {
       <div id='case-studies-list' className='writing-list'>
         <div id='case-studies-list-content' className='writing-list-content'>
           <div className='list'>
-            {/* <div className='list-title'>All Case Studies</div> */}
             <div className='list-content'>
               {caseStudyList.map((caseStudy) => {
                 const formattedDate = formatDate(caseStudy.date)
@@ -48,7 +47,13 @@ export default function CaseStudies() {
                 return (
                   <div className='list-item' key={caseStudy.slug}>
                     <h2>
-                      <Link to={caseStudy.slug} className='list-item-title'>
+                      <Link
+                        to={caseStudy.slug}
+                        className='list-item-title'
+                        onClick={() =>
+                          codifyClick(`Case Studies - ${caseStudy.title}`)
+                        }
+                      >
                         {caseStudy.title}
                       </Link>
                     </h2>

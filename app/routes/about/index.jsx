@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { jobList } from '../../data/jobList'
 import stylesUrl from '../../styles/about.css'
+import { codifyClick } from '../../utils'
 
 export function meta() {
   return {
@@ -68,6 +69,7 @@ export default function About() {
                   to={`/jobs/${jobItem.slug}`}
                   className='job-item'
                   key={jobItem.slug}
+                  onClick={() => codifyClick(`Jobs - ${jobItem.title}`)}
                 >
                   {jobItem.title}
                 </Link>
