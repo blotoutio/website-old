@@ -1,206 +1,21 @@
 import { useState, useEffect } from 'react'
 import { useLocation, Link } from 'react-router-dom'
-import LogoLight from '../graphics/logo-light'
-import LogoBlue from '../graphics/logo-blue'
-import MenuIconLight from '../graphics/icons/menu-icon-light'
-import MenuIconDark from '../graphics/icons/menu-icon-dark'
-import XIconLight from '../graphics/icons/x-icon-light'
-import XIconDark from '../graphics/icons/x-icon-dark'
+import {
+  getBackgroundColor,
+  getLogo,
+  getMenuIcon,
+  getMobileBackgroundColor,
+  getMobileLinkColor,
+  getMobileOverlayColor,
+  getMobileTitleColor,
+  getXIcon,
+} from './utils'
+import { codifyClick } from '../../utils'
 
-export const Header = () => {
+const Header = () => {
   const location = useLocation()
   const { pathname } = useLocation()
-
-  const getBackgroundColor = () => {
-    if (pathname === '/about' || pathname.includes('/job')) {
-      return 'var(--dark-blue-1)'
-    }
-
-    if (pathname === '/integrations') {
-      return 'var(--dark-blue-2)'
-    }
-
-    if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
-      return 'var(--grey-3)'
-    }
-
-    if (pathname.includes('/blog')) {
-      return 'var(--light-blue-3)'
-    }
-
-    if (pathname.includes('/case-studies')) {
-      return 'var(--light-blue-3)'
-    }
-
-    return 'var(--dark-blue-3)'
-  }
-
-  const getMobileBackgroundColor = () => {
-    if (pathname === '/about' || pathname.includes('/job')) {
-      {
-        return 'var(--dark-blue-3)'
-      }
-    }
-
-    if (pathname === '/integrations') {
-      {
-        return 'var(--dark-blue-3)'
-      }
-    }
-
-    if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
-      {
-        return 'var(--grey-3)'
-      }
-    }
-
-    if (pathname.includes('/blog')) {
-      return 'var(--light-blue-3)'
-    }
-
-    if (pathname.includes('/case-studies')) {
-      return 'var(--light-blue-3)'
-    }
-
-    return 'var(--dark-blue-4)'
-  }
-
-  const getMobileOverlayColor = () => {
-    if (pathname === '/about' || pathname.includes('/job')) {
-      {
-        return 'rgb(0 31 61 / 75%)'
-      }
-    }
-
-    if (pathname === '/integrations') {
-      {
-        return 'rgb(0 31 61 / 75%)'
-      }
-    }
-
-    if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
-      {
-        return 'rgb(193 199 208 / 85%)'
-      }
-    }
-
-    if (pathname.includes('/blog')) {
-      return 'rgb(179 212 255 / 65%)'
-    }
-
-    if (pathname.includes('/case-studies')) {
-      return 'rgb(179 212 255 / 65%)'
-    }
-
-    return 'rgba(0, 31, 61, 0.85)'
-  }
-
-  const getMobileLinkColor = () => {
-    if (pathname === '/about' || pathname.includes('/job')) {
-      {
-        return 'var(--light-blue-1)'
-      }
-    }
-
-    if (pathname === '/integrations') {
-      {
-        return 'var(--light-blue-1)'
-      }
-    }
-
-    if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
-      {
-        return 'var(--dark-blue-4)'
-      }
-    }
-
-    if (pathname.includes('/blog')) {
-      return 'var(--dark-blue-4)'
-    }
-
-    if (pathname.includes('/case-studies')) {
-      return 'var(--dark-blue-4)'
-    }
-
-    return 'var(--light-blue-1)'
-  }
-
-  const getMobileTitleColor = () => {
-    if (pathname === '/about' || pathname.includes('/job')) {
-      {
-        return 'rgb(179 212 255 / 50%)'
-      }
-    }
-
-    if (pathname === '/integrations') {
-      {
-        {
-          return 'rgb(179 212 255 / 50%)'
-        }
-      }
-    }
-
-    if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
-      {
-        return 'rgb(10 8 37 / 50%)'
-      }
-    }
-
-    if (pathname.includes('/blog')) {
-      return 'var(--dark-blue-2)'
-    }
-
-    if (pathname.includes('/case-studies')) {
-      return 'var(--dark-blue-2)'
-    }
-
-    return 'var(--light-blue-4)'
-  }
-
-  const getLogo = () => {
-    if (
-      pathname === '/privacy-policy' ||
-      pathname === '/terms-of-service' ||
-      pathname.includes('/blog') ||
-      pathname.includes('/case-studies')
-    ) {
-      return <LogoBlue />
-    }
-
-    return <LogoLight />
-  }
-
-  const getMenuIcon = () => {
-    if (
-      pathname === '/privacy-policy' ||
-      pathname === '/terms-of-service' ||
-      pathname.includes('/blog') ||
-      pathname.includes('/case-studies')
-    ) {
-      return <MenuIconDark />
-    }
-
-    return <MenuIconLight />
-  }
-
-  const getXIcon = () => {
-    if (
-      pathname === '/privacy-policy' ||
-      pathname === '/terms-of-service' ||
-      pathname.includes('/blog') ||
-      pathname.includes('/case-studies')
-    ) {
-      return <XIconDark />
-    }
-
-    return <XIconLight />
-  }
-
   const [isOpen, changeCSS] = useState('false')
-
-  const toggleMobileMenu = () => {
-    changeCSS(!isOpen)
-  }
 
   useEffect(() => {
     if (location.hash) {
@@ -216,15 +31,24 @@ export const Header = () => {
     }
   }, [location])
 
+  const toggleMobileMenu = () => {
+    changeCSS(!isOpen)
+  }
+
+  const mobileLinkColor = getMobileLinkColor(pathname)
+  const mobileTitleColor = getMobileTitleColor(pathname)
+
   return (
     <header
       style={{
-        backgroundColor: getBackgroundColor(),
+        backgroundColor: getBackgroundColor(pathname),
       }}
     >
       <div id='header-content'>
         <div id='logo'>
-          <Link to='/'>{getLogo()}</Link>
+          <Link to='/' onClick={() => codifyClick('Header - Logo')}>
+            {getLogo(pathname)}
+          </Link>
         </div>
         <div
           id='header-nav'
@@ -254,19 +78,26 @@ export const Header = () => {
             to={{ pathname: './', hash: '#explainer' }}
             id='header-nav-link-product'
             className='header-nav-link'
+            onClick={() => codifyClick('Menu - Product')}
           >
             <span>Product</span>
           </Link>
           <div id='header-nav-link-docs' className='header-nav-link'>
             <span>Docs</span>
             <div className='header-nav-submenu'>
-              <a href='https://docs.blotout.io/' target='_blank' rel='noopener'>
+              <a
+                href='https://docs.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                onClick={() => codifyClick('Menu - Docs Overview')}
+              >
                 Overview
               </a>
               <a
                 href='https://docs-js.blotout.io/'
                 target='_blank'
                 rel='noopener'
+                onClick={() => codifyClick('Menu - Docs JS')}
               >
                 JavaScript
               </a>
@@ -274,6 +105,7 @@ export const Header = () => {
                 href='https://docs-ios.blotout.io/'
                 target='_blank'
                 rel='noopener'
+                onClick={() => codifyClick('Menu - Docs iOS')}
               >
                 iOS
               </a>
@@ -281,6 +113,7 @@ export const Header = () => {
                 href='https://docs-android.blotout.io/'
                 target='_blank'
                 rel='noopener'
+                onClick={() => codifyClick('Menu - Docs Android')}
               >
                 Android
               </a>
@@ -288,6 +121,7 @@ export const Header = () => {
                 href='https://docs-rust.blotout.io/'
                 target='_blank'
                 rel='noopener'
+                onClick={() => codifyClick('Menu - Docs Rust')}
               >
                 Rust / C++
               </a>
@@ -296,12 +130,23 @@ export const Header = () => {
           <div id='header-nav-link-resources' className='header-nav-link'>
             <span>Resources</span>
             <div className='header-nav-submenu'>
-              <Link to='/blog'>Blog</Link>
-              <Link to='/case-studies'>Case Studies</Link>
+              <Link
+                to='/blog'
+                onClick={() => codifyClick('Menu - Resources Blog')}
+              >
+                Blog
+              </Link>
+              <Link
+                to='/case-studies'
+                onClick={() => codifyClick('Menu - Resources Studies')}
+              >
+                Case Studies
+              </Link>
               <a
                 href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
                 target='_blank'
                 rel='noreferrer'
+                onClick={() => codifyClick('Menu - Resources Slack')}
               >
                 Slack Community
               </a>
@@ -311,6 +156,7 @@ export const Header = () => {
             to='/about'
             id='header-nav-link-company'
             className='header-nav-link'
+            onClick={() => codifyClick('Menu - Company')}
           >
             <span>Company</span>
           </Link>
@@ -320,38 +166,42 @@ export const Header = () => {
           target='_blank'
           rel='noreferrer'
           id='cta'
+          onClick={() => codifyClick('Menu - Trial')}
         >
           Start Free Trial
         </a>
         <div id='header-nav-mobile-menu-icon' onClick={toggleMobileMenu}>
-          {getMenuIcon()}
+          {getMenuIcon(pathname)}
         </div>
         <div
           id='header-nav-mobile-container'
           style={{
             display: isOpen ? 'none' : 'block',
-            backgroundColor: getMobileOverlayColor(),
+            backgroundColor: getMobileOverlayColor(pathname),
           }}
         >
           <div
             id='header-nav-mobile'
-            style={{ backgroundColor: getMobileBackgroundColor() }}
+            style={{ backgroundColor: getMobileBackgroundColor(pathname) }}
           >
             <div id='header-nav-mobile-x-icon' onClick={toggleMobileMenu}>
-              {getXIcon()}
+              {getXIcon(pathname)}
             </div>
             <div id='header-nav-mobile-links'>
               <Link
                 to={{ pathname: './', hash: '#explainer' }}
-                onClick={toggleMobileMenu}
-                style={{ color: getMobileLinkColor() }}
+                style={{ color: mobileLinkColor }}
+                onClick={() => {
+                  toggleMobileMenu()
+                  codifyClick('Menu - Product')
+                }}
               >
                 <span>Product</span>
               </Link>
               <div className='header-nav-mobile-group'>
                 <div
                   className='header-nav-mobile-group-title'
-                  style={{ color: getMobileTitleColor() }}
+                  style={{ color: mobileTitleColor }}
                 >
                   Docs
                 </div>
@@ -360,7 +210,8 @@ export const Header = () => {
                     href='https://docs.blotout.io/'
                     target='_blank'
                     rel='noopener'
-                    style={{ color: getMobileLinkColor() }}
+                    style={{ color: mobileLinkColor }}
+                    onClick={() => codifyClick('Menu - Docs')}
                   >
                     Overview
                   </a>
@@ -368,7 +219,8 @@ export const Header = () => {
                     href='https://docs-js.blotout.io/'
                     target='_blank'
                     rel='noopener'
-                    style={{ color: getMobileLinkColor() }}
+                    style={{ color: mobileLinkColor }}
+                    onClick={() => codifyClick('Menu - JS')}
                   >
                     JavaScript
                   </a>
@@ -376,7 +228,8 @@ export const Header = () => {
                     href='https://docs-ios.blotout.io/'
                     target='_blank'
                     rel='noopener'
-                    style={{ color: getMobileLinkColor() }}
+                    style={{ color: mobileLinkColor }}
+                    onClick={() => codifyClick('Menu - iOS')}
                   >
                     iOS
                   </a>
@@ -384,7 +237,8 @@ export const Header = () => {
                     href='https://docs-android.blotout.io/'
                     target='_blank'
                     rel='noopener'
-                    style={{ color: getMobileLinkColor() }}
+                    style={{ color: mobileLinkColor }}
+                    onClick={() => codifyClick('Menu - Android')}
                   >
                     Android
                   </a>
@@ -392,7 +246,8 @@ export const Header = () => {
                     href='https://docs-rust.blotout.io/'
                     target='_blank'
                     rel='noopener'
-                    style={{ color: getMobileLinkColor() }}
+                    style={{ color: mobileLinkColor }}
+                    onClick={() => codifyClick('Menu - Rust')}
                   >
                     Rust / C++
                   </a>
@@ -401,22 +256,28 @@ export const Header = () => {
               <div className='header-nav-mobile-group'>
                 <div
                   className='header-nav-mobile-group-title'
-                  style={{ color: getMobileTitleColor() }}
+                  style={{ color: mobileTitleColor }}
                 >
                   Resources
                 </div>
                 <div className='header-nav-mobile-subgroup'>
                   <Link
                     to='/blog'
-                    onClick={toggleMobileMenu}
-                    style={{ color: getMobileLinkColor() }}
+                    style={{ color: mobileLinkColor }}
+                    onClick={() => {
+                      toggleMobileMenu()
+                      codifyClick('Menu - Blog')
+                    }}
                   >
                     Blog
                   </Link>
                   <Link
                     to='/case-studies'
-                    onClick={toggleMobileMenu}
-                    style={{ color: getMobileLinkColor() }}
+                    style={{ color: mobileLinkColor }}
+                    onClick={() => {
+                      toggleMobileMenu()
+                      codifyClick('Menu - Studies')
+                    }}
                   >
                     Case Studies
                   </Link>
@@ -424,7 +285,8 @@ export const Header = () => {
                     href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
                     target='_blank'
                     rel='noreferrer'
-                    style={{ color: getMobileLinkColor() }}
+                    style={{ color: mobileLinkColor }}
+                    onClick={() => codifyClick('Menu - Slack')}
                   >
                     Slack Community
                   </a>
@@ -432,8 +294,11 @@ export const Header = () => {
               </div>
               <Link
                 to='/about'
-                onClick={toggleMobileMenu}
-                style={{ color: getMobileLinkColor() }}
+                style={{ color: mobileLinkColor }}
+                onClick={() => {
+                  toggleMobileMenu()
+                  codifyClick('Menu - Company')
+                }}
               >
                 <span>Company</span>
               </Link>
@@ -444,3 +309,5 @@ export const Header = () => {
     </header>
   )
 }
+
+export default Header

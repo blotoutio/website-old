@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
-import { Meta, Links, Scripts, useRouteData, LiveReload } from 'remix'
-import { init, capture } from '@blotoutio/sdk-core'
+import { Meta, Links, Scripts, LiveReload } from 'remix'
+import { capture, init } from '@blotoutio/sdk-core'
 import { useLocation, Outlet } from 'react-router-dom'
-import { Header } from './components/header'
-import { Footer } from './components/footer'
+import Header from './components/header'
+import Footer from './components/footer'
 
 import stylesUrl from './styles/main.css'
 
@@ -26,45 +26,6 @@ export function links() {
       href: stylesUrl,
     },
   ]
-}
-
-const addListeners = () => {
-  window.onload = function () {
-    document.querySelectorAll('a').forEach((item) => {
-      item.addEventListener('click', (event) => {
-        if (!event || !event.target || !event.target.dataset) {
-          return
-        }
-
-        const name = event.target.dataset.event
-        if (!name) {
-          return
-        }
-
-        let referrer
-        try {
-          referrer = JSON.parse(
-            window.sessionStorage.getItem('_trendsData') || ''
-          ).referrer
-        } catch (e) {}
-
-        if (!referrer) {
-          referrer = 'none'
-        }
-
-        capture(
-          `click-${name}`,
-          {
-            date: new Intl.DateTimeFormat('en-US').format(Date.now()),
-            referrer,
-          },
-          {
-            method: 'beacon',
-          }
-        )
-      })
-    })
-  }
 }
 
 function Document({ children }) {
@@ -96,11 +57,8 @@ export default function App() {
       endpointUrl: 'https://sales.blotout.io/sdk',
       customDomain: 'blotout.io',
     })
-    addListeners()
+    capture('Page Navigation', { link: window.location.pathname })
   }, [])
-
-  let data = useRouteData()
-
   return (
     <Document>
       <Header />

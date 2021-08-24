@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { blogList } from '../../data/blogList'
-import { formatDate } from '../../utils'
+import { codifyClick, formatDate } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
 export function meta() {
@@ -37,7 +37,6 @@ export default function Blog() {
       <div id='blog-list' className='writing-list'>
         <div id='blog-list-content' className='writing-list-content'>
           <div className='list'>
-            {/* <div className='list-title'>All Blog Posts</div> */}
             <div className='list-content'>
               {blogList.map((blog) => {
                 const formattedDate = formatDate(blog.date)
@@ -45,7 +44,11 @@ export default function Blog() {
                 return (
                   <div className='list-item' key={blog.slug}>
                     <h2>
-                      <Link to={blog.slug} className='list-item-title'>
+                      <Link
+                        to={blog.slug}
+                        className='list-item-title'
+                        onClick={() => codifyClick(`Blog - ${blog.title}`)}
+                      >
                         {blog.title}
                       </Link>
                     </h2>

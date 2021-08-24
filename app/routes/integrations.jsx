@@ -1,5 +1,7 @@
 import { integrationList } from '../data/integrationList'
 import stylesUrl from '../styles/integrations.css'
+import { capture } from '@blotoutio/sdk-core'
+import { codifyClick } from '../utils'
 
 export function meta() {
   return {
@@ -21,9 +23,9 @@ export function links() {
   ]
 }
 
+let filterTimer
 const filter = (event) => {
   let search = event.target.value.toLowerCase()
-  console.log(event.target.value)
   document.querySelectorAll('.integration-text').forEach(function (item) {
     let text = item.innerText.toLowerCase()
     if (text.match(search)) {
@@ -32,6 +34,16 @@ const filter = (event) => {
       item.parentNode.style.display = 'none'
     }
   })
+
+  clearTimeout(filterTimer)
+  filterTimer = setTimeout(captureSearch, 500, [search])
+}
+
+const captureSearch = (text) => {
+  if (!text) {
+    return
+  }
+  capture('Integration - Search', { text })
 }
 
 export default function Integrations() {
@@ -45,25 +57,32 @@ export default function Integrations() {
 
       <div id='integrations-text'>
         <div id='integrations-text-content'>
-          {/* <div id='integrations-tab'>
-            <div id='integrations-tab-item'>Target</div>
-            <div id='integrations-tab-item'>Source</div>
-          </div> */}
           <div id='integrations-search'>
-            <input type='text' placeholder='Search' onKeyUp={filter} />
+            <input
+              type='text'
+              placeholder='Search'
+              onKeyUp={filter}
+              onFocus={() => capture('Integration - Search Focus')}
+            />
           </div>
           <div id='integrations-list'>
             {integrationList.map((integration) => {
               return (
-                <div className='integration' key={integration.git_url}>
+                <a
+                  href={integration.git_url}
+                  className='integration'
+                  key={integration.git_url}
+                  onClick={() =>
+                    codifyClick('Integration - Box', { type: integration.name })
+                  }
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <div className='integration-icon'>
                     <img src={integration.icon_url} />
                   </div>
                   <div className='integration-text'>{integration.name}</div>
-                  <a href={integration.git_url} className='integration-link'>
-                    GitHub
-                  </a>
-                </div>
+                </a>
               )
             })}
           </div>
