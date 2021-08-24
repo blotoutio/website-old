@@ -47,9 +47,11 @@ export default function CaseStudies() {
 
                 return (
                   <div className='list-item' key={caseStudy.slug}>
-                    <Link to={caseStudy.slug} className='list-item-title'>
-                      {caseStudy.title}
-                    </Link>
+                    <h2>
+                      <Link to={caseStudy.slug} className='list-item-title'>
+                        {caseStudy.title}
+                      </Link>
+                    </h2>
                     <div className='list-item-info'>{formattedDate}</div>
                   </div>
                 )
