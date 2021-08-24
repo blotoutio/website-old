@@ -51,14 +51,25 @@ function Document({ children }) {
 }
 
 export default function App() {
+  const { pathname } = useLocation()
+
   useEffect(() => {
     init({
       token: 'ZWBQ5E48ND3VTPB',
       endpointUrl: 'https://sales.blotout.io/sdk',
       customDomain: 'blotout.io',
     })
-    capture('Page Navigation', { link: window.location.pathname })
   }, [])
+
+  useEffect(() => {
+    let link = pathname
+    link = link.substr(1, link.length)
+    if (!link) {
+      link = 'homepage'
+    }
+    capture('Page Navigation', { link })
+  }, [pathname])
+
   return (
     <Document>
       <Header />
