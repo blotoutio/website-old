@@ -338,7 +338,7 @@ export const integrationList = [
   {
     type: 'source',
     name: `Criteo`,
-    icon_url: '/img/integrations/taps/criteo.png',
+    icon_url: '/img/integrations/taps/criteo-new.png',
     git_url: 'https://github.com/Jude188/tap-criteo',
   },
   {
@@ -416,7 +416,7 @@ export const integrationList = [
   {
     type: 'source',
     name: `Eloqua`,
-    icon_url: '/img/integrations/taps/eloqua.png',
+    icon_url: '/img/integrations/taps/eloqua-new.png',
     git_url: '/img/integrations/taps/ebay.png',
   },
   {
@@ -890,7 +890,7 @@ export const integrationList = [
   {
     type: 'source',
     name: `Mixpanel`,
-    icon_url: '/img/integrations/taps/mixpanel.png',
+    icon_url: '/img/integrations/taps/mixpanel-new.png',
     git_url: 'https://github.com/transferwise/pipelinewise-tap-mixpanel',
   },
   {
