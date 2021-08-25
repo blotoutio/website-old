@@ -212,7 +212,7 @@ const Header = () => {
                 style={{ color: mobileLinkColor }}
                 onClick={() => {
                   toggleMobileMenu()
-                  codifyClick('Menu - Company')
+                  codifyClick('Menu - Integrations')
                 }}
               >
                 <span>Integrations</span>
