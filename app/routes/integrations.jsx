@@ -36,7 +36,7 @@ const filter = (event) => {
   })
 
   clearTimeout(filterTimer)
-  filterTimer = setTimeout(captureSearch, 500, [search])
+  filterTimer = setTimeout(captureSearch, 500, search)
 }
 
 const captureSearch = (text) => {
