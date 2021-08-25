@@ -82,6 +82,14 @@ const Header = () => {
           >
             <span>Product</span>
           </Link>
+          <Link
+            to='/integrations'
+            id='header-nav-link-integrations'
+            className='header-nav-link'
+            onClick={() => codifyClick('Menu - Integrations')}
+          >
+            <span>Integrations</span>
+          </Link>
           <div id='header-nav-link-docs' className='header-nav-link'>
             <span>Docs</span>
             <div className='header-nav-submenu'>
@@ -195,8 +203,19 @@ const Header = () => {
                   toggleMobileMenu()
                   codifyClick('Menu - Product')
                 }}
+                id='header-nav-mobile-product'
               >
                 <span>Product</span>
+              </Link>
+              <Link
+                to='/integrations'
+                style={{ color: mobileLinkColor }}
+                onClick={() => {
+                  toggleMobileMenu()
+                  codifyClick('Menu - Company')
+                }}
+              >
+                <span>Integrations</span>
               </Link>
               <div className='header-nav-mobile-group'>
                 <div
