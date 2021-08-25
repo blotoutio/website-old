@@ -7,10 +7,10 @@ export function meta() {
   return {
     title: 'Blotout - Integrations',
     description:
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
     'og:title': 'Blotout - Integrations',
     'og:description':
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 
@@ -36,7 +36,7 @@ const filter = (event) => {
   })
 
   clearTimeout(filterTimer)
-  filterTimer = setTimeout(captureSearch, 500, [search])
+  filterTimer = setTimeout(captureSearch, 500, search)
 }
 
 const captureSearch = (text) => {

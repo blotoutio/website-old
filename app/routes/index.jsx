@@ -6,10 +6,10 @@ export function meta() {
   return {
     title: 'Blotout',
     description:
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
     'og:title': 'Blotout',
     'og:description':
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 
@@ -28,12 +28,12 @@ export default function Index() {
       <div id='hero' className='home-section'>
         <div id='hero-content' className='home-section-content'>
           <h1 id='hero-title'>
-            Cloud prem analytics and marketing attribution for the privacy era
+            Serverless analytics and marketing attribution for the privacy era
           </h1>
           <p id='hero-subtitle'>
             Your third-party analytics and marketing tools are bleeding data.
-            Blotout gives you the turnkey cloud prem infrastructure and
-            solutions to solve this.
+            Blotout gives you the turnkey infrastructure and solutions to solve
+            this.
           </p>
           <div id='hero-cta-group'>
             <a
@@ -248,7 +248,7 @@ export default function Index() {
           <div id='engineers-text-group'>
             <div id='engineers-text-heading'>For Engineers</div>
             <h2 id='engineers-text-title'>
-              A complete privacy data engineering stack in your cloud prem
+              A complete privacy data engineering stack as infrastructure
             </h2>
             <p id='engineers-text-subtitle'>
               Data engineering is expensive. Engineers aren’t privacy lawyers.
@@ -272,7 +272,7 @@ export default function Index() {
             />
           </div>
           <div id='engineers-point-group'>
-            <h3 className='engineers-point'>Deploy to your cloud premise</h3>
+            <h3 className='engineers-point'>Deploy as your infrastructure</h3>
             <h3 className='engineers-point'>
               Save millions in engineering time and effort
             </h3>
@@ -296,7 +296,7 @@ export default function Index() {
             </p>
             <div id='privacy-point-group'>
               <h3 className='privacy-point'>
-                Data processing in your cloud prem as Controller
+                Data processing in your infrastructure as Controller
                 <img src='/img/check.svg' alt='A check mark' />
               </h3>
               <h3 className='privacy-point'>

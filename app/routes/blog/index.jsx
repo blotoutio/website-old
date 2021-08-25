@@ -7,10 +7,10 @@ export function meta() {
   return {
     title: 'Blotout - Blog',
     description:
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
     'og:title': 'Blotout - Blog',
     'og:description':
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 

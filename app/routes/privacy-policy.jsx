@@ -4,10 +4,10 @@ export function meta() {
   return {
     title: 'Blotout - Privacy Policy',
     description:
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
     'og:title': 'Blotout - Privacy Policy',
     'og:description':
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 

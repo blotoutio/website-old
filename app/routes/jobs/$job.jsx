@@ -14,10 +14,10 @@ export function meta({ params }) {
   return {
     title: `Blotout - Jobs | ${jobItem.title}`,
     description:
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
     'og:title': `Blotout - Jobs | ${jobItem.title}`,
     'og:description':
-      'Cloud prem data infrastructure to capture, analyze, and activate customer data as a first-party',
+      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
   }
 }
 
