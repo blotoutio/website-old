@@ -1,6 +1,6 @@
 export const caseStudyList = [
   {
-    title: `How BeSmitten scaled its data infrastructure with Blotout to expand within Asia`,
+    title: `How BeSmitten saves $500,000 and accelerates market expansion with Blotout Infra`,
     company: `BeSmitten`,
     description: `When BeSmitten wanted to scale its operations across Asia it faced significant engineering challenges. Fragmented data sources from 3rd party vendors were making it difficult to see a full picture. The only solution forward, so they thought, was hiring additional engineers and to begin building a data lake solution from scratch.`,
     date: '2021-08-18',
