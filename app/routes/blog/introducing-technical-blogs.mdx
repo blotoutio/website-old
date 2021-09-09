@@ -1,3 +1,13 @@
+---
+meta:
+  title: "Blotout - Blog | Introducing the Blotout Technical Blog Series"
+  description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+---
+
+import Blog from '../../components/mdx/blog'
+
+<Blog title={attributes.meta.title}>
+  
 **We believe** that every human has the right to privacy and trustworthy handling of their data. The world needs new technologies that enable accurate analysis of customer insights while protecting consumer privacy.
 
 Our mission is to fill the gap in data tooling that has grown as the digital world migrates toward an era of trust and respect for user data.
@@ -43,23 +53,23 @@ Every unit of data possesses associated consent and purpose, providing privacy-b
 
 The platform consists of the following components:
 
--   Docker deployment (managed via Argo CD) in your cloud prem
--   Enterprise ID resolution for any user (zero code mapping)
--   Integrated consent and purpose to the Graph ID (Mid Q3)
--   Native SDK for you to collect events (both system and coded) to your cloud prem
--   EL and T using OSS tools; zero code event and Graph ID mapping
--   A privacy incident and event management stack (Late Q3)
--   Scaled API and Airflow support
--   Organizational workspaces (Personal, Marketing, Product, Engineering, Compliance)
--   Governed [Superset](https://superset.apache.org/) integration for unlimited BI and charting needs
--   Reverse EL and T using [synthetic data](https://en.wikipedia.org/wiki/Synthetic_data) (Q4, 2021)
+- Docker deployment (managed via Argo CD) in your cloud prem
+- Enterprise ID resolution for any user (zero code mapping)
+- Integrated consent and purpose to the Graph ID (Mid Q3)
+- Native SDK for you to collect events (both system and coded) to your cloud prem
+- EL and T using OSS tools; zero code event and Graph ID mapping
+- A privacy incident and event management stack (Late Q3)
+- Scaled API and Airflow support
+- Organizational workspaces (Personal, Marketing, Product, Engineering, Compliance)
+- Governed [Superset](https://superset.apache.org/) integration for unlimited BI and charting needs
+- Reverse EL and T using [synthetic data](https://en.wikipedia.org/wiki/Synthetic_data) (Q4, 2021)
 
 Our value proposition to engineering teams:
 
--   Turnkey data plumbing for your lake or warehouse ($1M in annual cost savings)
--   Easy like SaaS but works in your cloud prem - sign up and go!
--   Privacy by design, **so engineers don’t have to be lawyers**
--   [Open Sourcing](https://github.com/blotoutio) the common core -- if we die you keep it
+- Turnkey data plumbing for your lake or warehouse ($1M in annual cost savings)
+- Easy like SaaS but works in your cloud prem - sign up and go!
+- Privacy by design, **so engineers don’t have to be lawyers**
+- [Open Sourcing](https://github.com/blotoutio) the common core -- if we die you keep it
 
 ## What are we not?
 
@@ -83,3 +93,5 @@ With the increasing significance of consent and the death of third-party cookies
 
 **Thank you for reading,
 Team Blotout**
+
+</Blog>
