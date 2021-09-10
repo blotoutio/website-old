@@ -48,6 +48,7 @@ jobs:
           github-comment: false
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          reply-token-markus: ${{ secrets.REPLY_TOKEN_MARKUS}}
 
       - name: Comment
         if: github.event_name == 'pull_request'
@@ -69,3 +70,4 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
           vercel-args: '--prod'
+          reply-token-markus: ${{ secrets.REPLY_TOKEN_MARKUS}}

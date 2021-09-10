@@ -64,6 +64,8 @@ const Header = () => {
                 ? 'var(--dark-blue-3)'
                 : pathname.includes('/case-studies')
                 ? 'var(--dark-blue-3)'
+                : pathname.includes('/compare-with-google-analytics')
+                ? 'var(--dark-blue-3)'
                 : 'var(--dark-blue-3)',
           }}
           className={
@@ -71,6 +73,8 @@ const Header = () => {
               ? 'blog'
               : pathname.includes('/case-studies')
               ? 'case-studies'
+              : pathname.includes('/compare-with-google-analytics')
+              ? 'compare-with-google-analytics'
               : 'other'
           }
         >
