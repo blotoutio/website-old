@@ -1,3 +1,13 @@
+---
+meta:
+  title: "Blotout - Blog | iOS 14.5 and the tracking apocalypse"
+  description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+---
+
+import Blog from '../../components/mdx/blog'
+
+<Blog title={attributes.meta.title}>
+    
 Apple’s [iOS 14.5](https://developer.apple.com/app-store/user-privacy-and-data-use/) represents one of the most significant privacy events in the mobile ecosystem. Devices running iOS 14.5 will ask users if they want to be tracked by any app that relies on 3rd-parties for advertising or measurement. They can say no, and they can change their preferences later, even if they agreed when first prompted.
 
 The change should not be a surprise. As a matter of policy, it is a natural continuation of what privacy regulations have been trending toward: telling users how their data is being used and giving them a choice. Apple itself has been preparing developers for the release for over a year (it even delayed the release to accommodate concerns from the advertising industry) and has provided extensive technical documentation to prepare for the change.
@@ -20,8 +30,8 @@ This is a broad definition. It encompasses everything from advertisers to analyt
 
 Apple’s intended effect is to significantly curtail this activity. However, in essence it seems like Apple is implementing GDPR in its original intent.
 
-<div className="right">
-    <img src="/img/blog/ios-145-ask.png" alt="ask" />
+<div className='right'>
+  <img src='/img/blog/ios-145-ask.png' alt='ask' />
 </div>
 
 ## What does this mean for advertisers that rely on the IDFA?
@@ -36,8 +46,8 @@ In other words, trying to track users through 3rd-parties is no longer the way f
 
 But imagine asking the user that is likely paying for your App to suggest you want to track the user despite a monetary exchange. Worse, you are a health app or finance app, the problems likely exacerbate.
 
-<div className="right">
-    <img src="/img/blog/ios-145-how.png" alt="how" />
+<div className='right'>
+  <img src='/img/blog/ios-145-how.png' alt='how' />
 </div>
 
 ## The rise 1st-party customer data management
@@ -103,3 +113,5 @@ We have specifically designed Blotout to be no-code/low-code (reducing your reli
 ### Use Case 5: HIPAA, PCI DSS
 
 Our infra sits in your warehouse while a BAA enables you to continue to be compliant to your necessary regulations out of the box.
+
+</Blog>

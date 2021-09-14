@@ -1,3 +1,13 @@
+---
+meta:
+  title: "Blotout - Blog | Blotout experimenting with Open AI"
+  description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+---
+
+import Blog from '../../components/mdx/blog'
+
+<Blog title={attributes.meta.title}>
+    
 **Author: [Raman Kumar Lal](https://www.linkedin.com/in/raman-kumar-lal-a65581181/) (Summer Intern at Blotout)**
 
 I am going to attempt to explain the challenges of building a PII detection classification model; and lay down the appreciation for how Open AI addresses solving these challenges and some flaws that we experienced along the way.
@@ -12,8 +22,8 @@ Developing models is not hard, but they need constant upkeep, and re-enforcement
 
 OpenAI is the largest open ecosystem for pre-classified NLP models and it supports the completion of even very complex queries within 100 milliseconds.
 
-<div className="right">
-    <img src="/img/blog/open-ai.jpg" alt="open ai" />
+<div className='right'>
+  <img src='/img/blog/open-ai.jpg' alt='open ai' />
 </div>
 
 Considering the challenge of finding a large training set, GPT-3 allowed us to use a minimal training set for the model. This was very useful in getting going quicker without having to spend lots of time dealing with accurate training sets. With GPT-3, once we gave it some basic examples for training to detect PII metadata, we were done.
@@ -73,10 +83,12 @@ Building AI models from scratch is difficult and time-consuming, but with GPT-3,
 
 But it has its own limitations. In fact, every machine learning model no matter how powerful has some limitations. I am listing some which I experienced:
 
--   We can't retrain the model at run time. **Example**; Let's suppose I trained 50MB of files to create a classification model and received a fine-tuned model. Now imagine after a week I want to add some more training data to it (for better performance). Suppose the size of new required training data is 2MB. Then we need to train the model from scratch every time, which means we need to train (50+2)MB data again, and that will cost us again.
+- We can't retrain the model at run time. **Example**; Let's suppose I trained 50MB of files to create a classification model and received a fine-tuned model. Now imagine after a week I want to add some more training data to it (for better performance). Suppose the size of new required training data is 2MB. Then we need to train the model from scratch every time, which means we need to train (50+2)MB data again, and that will cost us again.
 
--   Because GPT-3 is so large, it works slowly to create a fine tuned model. But the team is working on it and soon they will come up with great solutions. AI is going to change the world.
+- Because GPT-3 is so large, it works slowly to create a fine tuned model. But the team is working on it and soon they will come up with great solutions. AI is going to change the world.
 
 In an open and transparent ecosystem, and for a purpose such as protecting sensitive data, AI can be worth its weight in gold. Where today data protectors in companies and other organizations are desperately trying to ensure the protection of sensitive data in sprawling decentralized data streams, AI can help to overcome these limitations with ease and thus has the potential to be a faithful companion for data protection, just like R2D2 for the Skywalkers.
 
 Feedback or questions? Talk to us: [Blotout-Slack](https://blotout-shared.slack.com)
+
+</Blog>
