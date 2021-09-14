@@ -82,11 +82,6 @@ export let action = async ({ request }) => {
 export default function Campaign() {
   const submit = useSubmit()
 
-  let leadGenFormTop = document.getElementById('form-top')
-  let leadGenFormBottom = document.getElementById('form-bottom')
-  leadGenFormTop.style.display = 'block'
-  leadGenFormBottom.style.display = 'block'
-
   const submission = (event) => {
     submit(event.currentTarget, { replace: true })
     event.preventDefault()
