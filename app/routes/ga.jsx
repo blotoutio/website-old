@@ -1,14 +1,27 @@
 import stylesUrl from '../styles/campaign.css'
-import { useSubmit, redirect, json, useRouteData } from 'remix'
+import { useSubmit, redirect, useRouteData } from 'remix'
 import { capture } from '@blotoutio/sdk-core'
 import { codifyClick } from '../utils'
 import LogoBlue from '../graphics/logo-blue'
 
-export let loader = async ({ request }) => {
-  requestJSON = json(await request)
-  requestCode = requestJSON.status
-  console.log(requestCode)
-  return requestCode
+export function loader({ request }) {
+  let requestURL = new URL(request.url)
+  let urlStatus = requestURL.searchParams.get('status')
+  let status
+  let formMesage
+
+  if (urlStatus == 'thank-you') {
+    status = urlStatus
+    formMessage = 'Thank you. We’ll be in touch shortly.'
+  } else if (urlStatus == 'error') {
+    status = urlStatus
+    formMessage = 'Something went wrong. Please try again.'
+  } else {
+    status = 'pending'
+    formMessage = null
+  }
+
+  return { status, formMessage }
 }
 
 export function meta() {
@@ -57,29 +70,22 @@ export let action = async ({ request }) => {
     headers: headers,
   }
 
-  let responseCode
+  let responseText
 
   await fetch('https://api.reply.io/v1/people', options).then((response) => {
-    if (response.status === 201) {
-      responseCode = 201
-      console.log('New user has signed up')
-      console.log(responseCode)
-    } else if (response.status === 200) {
-      responseCode = 200
-      console.set('Already signed up')
-      console.log(responseCode)
+    if (response.status === 201 || response.status === 200) {
+      responseText = 'thank-you'
     } else {
-      responseCode = response.status
-      console.log(response)
+      responseText = 'error'
     }
   })
 
-  return redirect(`/compare-with-google-analytics`, {
-    status: responseCode,
-  })
+  return redirect(`/compare-with-google-analytics?status=${responseText}`)
 }
 
 export default function Campaign() {
+  const data = useRouteData()
+
   const submit = useSubmit()
 
   const submission = (event) => {
@@ -96,9 +102,9 @@ export default function Campaign() {
           solves that.
         </h2>
 
-        <div className='cta-box campaign-section'>
+        <div className={'cta-box campaign-section ' + data.status}>
           <div className='cta-text'>Learn how to fix your analytics today</div>
-          <form id='form-top' method='post' onSubmit={submission}>
+          <form method='post' onSubmit={submission}>
             <input
               placeholder='E-mail address here'
               type='email'
@@ -113,9 +119,7 @@ export default function Campaign() {
               Learn More
             </button>
           </form>
-          <div className='form-message'>
-            Thank you. We’ll be in touch shortly.
-          </div>
+          <div className='form-message'>{data.formMessage}</div>
         </div>
 
         <div id='points' className='campaign-section'>
@@ -372,9 +376,9 @@ export default function Campaign() {
           <div>Alex S., Shredcube Founder</div>
         </div>
 
-        <div className='cta-box campaign-section'>
+        <div className={'cta-box campaign-section ' + data.status}>
           <div className='cta-text'>Learn how to fix your analytics today</div>
-          <form id='form-bottom' method='post'>
+          <form method='post' onSubmit={submission}>
             <input
               placeholder='E-mail address here'
               type='email'
@@ -389,9 +393,7 @@ export default function Campaign() {
               Learn More
             </button>
           </form>
-          <div className='form-message'>
-            Thank you. We’ll be in touch shortly.
-          </div>
+          <div className='form-message'>{data.formMessage}</div>
         </div>
       </div>
     </div>

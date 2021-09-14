@@ -183,10 +183,19 @@
       }
 
       .form-message {
-        font-style: italic;
-        color: var(--light-blue-3);
+        margin-top: 15px;
+        color: var(--yellow-1);
         display: none;
       }
+    }
+
+    .cta-box.thank-you > form {
+      display: none;
+    }
+
+    .cta-box.thank-you > .form-message,
+    .cta-box.error > .form-message {
+      display: block;
     }
 
     #points {
