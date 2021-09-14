@@ -1,7 +1,15 @@
-import stylesUrl from '../../styles/campaign.css'
+import stylesUrl from '../styles/campaign.css'
+import { useSubmit, redirect, json, useRouteData } from 'remix'
 import { capture } from '@blotoutio/sdk-core'
-import { codifyClick } from '../../utils'
-import LogoBlue from '../../graphics/logo-blue'
+import { codifyClick } from '../utils'
+import LogoBlue from '../graphics/logo-blue'
+
+export let loader = async ({ request }) => {
+  requestJSON = json(await request)
+  requestCode = requestJSON.status
+  console.log(requestCode)
+  return requestCode
+}
 
 export function meta() {
   return {
@@ -41,7 +49,7 @@ export let action = async ({ request }) => {
 
   let headers = new Headers()
   headers.append('Content-Type', 'application/json')
-  headers.append('x-api-key', 'ZWBQ5E48ND3VTPB')
+  headers.append('x-api-key', `4J6OqWceq69vqTNRQPCLD44n`)
 
   let options = {
     method: 'post',
@@ -49,15 +57,41 @@ export let action = async ({ request }) => {
     headers: headers,
   }
 
-  await fetch('https://api.reply.io/v1/people', options)
-    .then((response) => response.text())
-    .then((result) => console.log(result))
-    .catch((error) => console.log('error', error))
+  let responseCode
 
-  return '/'
+  await fetch('https://api.reply.io/v1/people', options).then((response) => {
+    if (response.status === 201) {
+      responseCode = 201
+      console.log('New user has signed up')
+      console.log(responseCode)
+    } else if (response.status === 200) {
+      responseCode = 200
+      console.set('Already signed up')
+      console.log(responseCode)
+    } else {
+      responseCode = response.status
+      console.log(response)
+    }
+  })
+
+  return redirect(`/compare-with-google-analytics`, {
+    status: responseCode,
+  })
 }
 
 export default function Campaign() {
+  const submit = useSubmit()
+
+  let leadGenFormTop = document.getElementById('form-top')
+  let leadGenFormBottom = document.getElementById('form-bottom')
+  leadGenFormTop.style.display = 'block'
+  leadGenFormBottom.style.display = 'block'
+
+  const submission = (event) => {
+    submit(event.currentTarget, { replace: true })
+    event.preventDefault()
+  }
+
   return (
     <div id='campaign'>
       <div id='campaign-content'>
@@ -69,7 +103,7 @@ export default function Campaign() {
 
         <div className='cta-box campaign-section'>
           <div className='cta-text'>Learn how to fix your analytics today</div>
-          <form method='post'>
+          <form id='form-top' method='post' onSubmit={submission}>
             <input
               placeholder='E-mail address here'
               type='email'
@@ -84,6 +118,9 @@ export default function Campaign() {
               Learn More
             </button>
           </form>
+          <div className='form-message'>
+            Thank you. We’ll be in touch shortly.
+          </div>
         </div>
 
         <div id='points' className='campaign-section'>
@@ -342,7 +379,7 @@ export default function Campaign() {
 
         <div className='cta-box campaign-section'>
           <div className='cta-text'>Learn how to fix your analytics today</div>
-          <form method='post'>
+          <form id='form-bottom' method='post'>
             <input
               placeholder='E-mail address here'
               type='email'
@@ -357,6 +394,9 @@ export default function Campaign() {
               Learn More
             </button>
           </form>
+          <div className='form-message'>
+            Thank you. We’ll be in touch shortly.
+          </div>
         </div>
       </div>
     </div>

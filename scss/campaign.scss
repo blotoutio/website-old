@@ -181,6 +181,12 @@
           background-color: var(--yellow-1);
         }
       }
+
+      .form-message {
+        font-style: italic;
+        color: var(--light-blue-3);
+        display: none;
+      }
     }
 
     #points {
