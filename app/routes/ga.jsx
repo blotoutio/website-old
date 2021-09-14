@@ -62,7 +62,7 @@ export let action = async ({ request }) => {
 
   let headers = new Headers()
   headers.append('Content-Type', 'application/json')
-  headers.append('x-api-key', `4J6OqWceq69vqTNRQPCLD44n`)
+  headers.append('x-api-key', process.env.REPLY_TOKEN_MARKUS)
 
   let options = {
     method: 'post',
