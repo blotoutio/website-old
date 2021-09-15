@@ -26,6 +26,10 @@ export const getBackgroundColor = (pathname) => {
     return 'var(--light-blue-3)'
   }
 
+  if (pathname.includes('/compare-with-google-analytics')) {
+    return 'var(--grey-1)'
+  }
+
   return 'var(--dark-blue-3)'
 }
 
@@ -54,6 +58,10 @@ export const getMobileBackgroundColor = (pathname) => {
 
   if (pathname.includes('/case-studies')) {
     return 'var(--light-blue-3)'
+  }
+
+  if (pathname.includes('/compare-with-google-analytics')) {
+    return 'var(--grey-1)'
   }
 
   return 'var(--dark-blue-4)'
@@ -86,6 +94,10 @@ export const getMobileOverlayColor = (pathname) => {
     return 'rgb(179 212 255 / 65%)'
   }
 
+  if (pathname.includes('/compare-with-google-analytics')) {
+    return 'rgb(179 212 255 / 65%)'
+  }
+
   return 'rgba(0, 31, 61, 0.85)'
 }
 
@@ -113,6 +125,10 @@ export const getMobileLinkColor = (pathname) => {
   }
 
   if (pathname.includes('/case-studies')) {
+    return 'var(--dark-blue-4)'
+  }
+
+  if (pathname.includes('/compare-with-google-analytics')) {
     return 'var(--dark-blue-4)'
   }
 
@@ -148,6 +164,10 @@ export const getMobileTitleColor = (pathname) => {
     return 'var(--dark-blue-2)'
   }
 
+  if (pathname.includes('/compare-with-google-analytics')) {
+    return 'var(--dark-blue-2)'
+  }
+
   return 'var(--light-blue-4)'
 }
 
@@ -156,7 +176,8 @@ export const getLogo = (pathname) => {
     pathname === '/privacy-policy' ||
     pathname === '/terms-of-service' ||
     pathname.includes('/blog') ||
-    pathname.includes('/case-studies')
+    pathname.includes('/case-studies') ||
+    pathname.includes('/compare-with-google-analytics')
   ) {
     return <LogoBlue />
   }
@@ -169,7 +190,8 @@ export const getMenuIcon = (pathname) => {
     pathname === '/privacy-policy' ||
     pathname === '/terms-of-service' ||
     pathname.includes('/blog') ||
-    pathname.includes('/case-studies')
+    pathname.includes('/case-studies') ||
+    pathname.includes('/compare-with-google-analytics')
   ) {
     return <MenuIconDark />
   }
@@ -182,7 +204,8 @@ export const getXIcon = (pathname) => {
     pathname === '/privacy-policy' ||
     pathname === '/terms-of-service' ||
     pathname.includes('/blog') ||
-    pathname.includes('/case-studies')
+    pathname.includes('/case-studies') ||
+    pathname.includes('/compare-with-google-analytics')
   ) {
     return <XIconDark />
   }
