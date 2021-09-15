@@ -1,5 +1,7 @@
+import { formatDate } from '../../utils'
+
 const getBlogTitle = (title) => {
-  return title.replace('Blotout - Blog | ', '')
+  return title.replace(' | Blotout', '')
 }
 
 const Blog = (props) => {
@@ -13,7 +15,9 @@ const Blog = (props) => {
           <h1 id='blog-item-title' className='writing-item-title'>
             {getBlogTitle(props.title)}
           </h1>
-          <div id='blog-item-subtitle' className='writing-item-subtitle'></div>
+          <div id='blog-item-subtitle' className='writing-item-subtitle'>
+            {formatDate(props.date)}
+          </div>
         </div>
       </div>
 

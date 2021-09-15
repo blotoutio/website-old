@@ -1,17 +1,11 @@
 import { redirect } from 'remix'
+import { metaInfo } from '../../utils'
 
 export function meta() {
-  return {
-    title: 'Blotout - Jobs',
-    description:
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-    'og:title': 'Blotout - Jobs',
-    'og:description':
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-  }
+  return metaInfo('Jobs')
 }
 
-export function loader({ request }) {
+export function loader() {
   throw redirect('/about')
 }
 

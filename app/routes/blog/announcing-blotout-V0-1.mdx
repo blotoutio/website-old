@@ -1,13 +1,15 @@
 ---
 meta:
-  title: "Blotout - Blog | Announcing Blotout V0.1"
+  title: Announcing Blotout V0.1 | Blotout
   description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+data:
+  date: '2020-06-22'
 ---
 
 import Blog from '../../components/mdx/blog'
 
-<Blog title={attributes.meta.title}>
-  
+<Blog {...attributes.meta} {...attributes.data}>
+
 The world’s first client computed, privacy by design, product analytics SDK for application and web developers.
 
 ## Recommended pre-reading

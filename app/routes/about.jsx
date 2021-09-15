@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
-import { jobList } from '../../data/jobList'
-import stylesUrl from '../../styles/about.css'
-import { codifyClick } from '../../utils'
+import { useRouteData } from '@remix-run/react'
+import stylesUrl from '../styles/about.css'
+import { codifyClick, metaInfo, postFromModule } from '../utils'
+
+import * as post6 from './jobs/client-engineer-052021.mdx'
+import * as post5 from './jobs/ui-ux-engineer-052021.mdx'
+import * as post4 from './jobs/data-engineer-052021.mdx'
+import * as post3 from './jobs/server-engineer-052021.mdx'
+import * as post2 from './jobs/client-internship-052021.mdx'
+import * as post1 from './jobs/server-internship-052021.mdx'
 
 export function meta() {
-  return {
-    title: 'Blotout - About',
-    description:
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-    'og:title': 'Blotout - About',
-    'og:description':
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-  }
+  return metaInfo('About')
 }
 
 export function links() {
@@ -23,7 +23,19 @@ export function links() {
   ]
 }
 
+export function loader() {
+  return [
+    postFromModule(post6),
+    postFromModule(post5),
+    postFromModule(post4),
+    postFromModule(post3),
+    postFromModule(post2),
+    postFromModule(post1),
+  ]
+}
+
 export default function About() {
+  let posts = useRouteData()
   return (
     <div id='about'>
       <div id='about-header'>
@@ -63,7 +75,7 @@ export default function About() {
           </div>
           <div className='about-text-header'>Open Jobs</div>
           <div id='job-list'>
-            {jobList.map((jobItem) => {
+            {posts.map((jobItem) => {
               return (
                 <Link
                   to={`/jobs/${jobItem.slug}`}

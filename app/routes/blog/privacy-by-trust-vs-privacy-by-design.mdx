@@ -1,13 +1,15 @@
 ---
 meta:
-  title: "Blotout - Blog | Privacy by trust vs. Privacy by design"
+  title: Privacy by trust vs. Privacy by design | Blotout
   description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+data:
+  date: '2019-12-14'
 ---
 
 import Blog from '../../components/mdx/blog'
 
-<Blog title={attributes.meta.title}>
-  
+<Blog {...attributes.meta} {...attributes.data}>
+
 ## Valuing consumer privacy
 
 The topic of consumer data privacy needs no [introduction](https://www.newyorker.com/magazine/2018/06/18/why-do-we-care-so-much-about-privacy). We have hit a stage in technology development where ensuring that users data stays in user control is both critical and necessary.

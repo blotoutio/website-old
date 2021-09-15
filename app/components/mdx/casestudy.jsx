@@ -1,5 +1,7 @@
+import { formatDate } from '../../utils'
+
 const getCaseStudyTitle = (title) => {
-  return title.replace('Blotout - Case Studies | ', '')
+  return title.replace(' | Blotout', '')
 }
 
 const CaseStudy = (props) => {
@@ -16,7 +18,9 @@ const CaseStudy = (props) => {
           <div
             id='case-studies-item-subtitle'
             className='writing-item-subtitle'
-          ></div>
+          >
+            {formatDate(props.date)}
+          </div>
         </div>
       </div>
 

@@ -1,17 +1,10 @@
 import { integrationList } from '../data/integrationList'
 import stylesUrl from '../styles/integrations.css'
 import { capture } from '@blotoutio/sdk-core'
-import { codifyClick } from '../utils'
+import { codifyClick, metaInfo } from '../utils'
 
 export function meta() {
-  return {
-    title: 'Blotout - Integrations',
-    description:
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-    'og:title': 'Blotout - Integrations',
-    'og:description':
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-  }
+  return metaInfo('Integration')
 }
 
 export function links() {

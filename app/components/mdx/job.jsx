@@ -1,5 +1,5 @@
 const getJobTitle = (title) => {
-  return title.replace('Blotout - Jobs | ', '')
+  return title.replace(' | Blotout', '')
 }
 
 const Job = (props) => {

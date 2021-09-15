@@ -1,12 +1,14 @@
 ---
 meta:
-  title: "Blotout - Blog | Accommodating evil in the era of trust"
+  title: Accommodating evil in the era of trust | Blotout
   description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+data:
+  date: '2021-06-28'
 ---
 
 import Blog from '../../components/mdx/blog'
 
-<Blog title={attributes.meta.title}>
+<Blog {...attributes.meta} {...attributes.data}>
 
 Let’s lay it plainly. The only value that third-party cookies provide is to let companies track users.
 

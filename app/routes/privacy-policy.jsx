@@ -1,14 +1,8 @@
 import stylesUrl from '../styles/legal.css'
+import { metaInfo } from '../utils'
 
 export function meta() {
-  return {
-    title: 'Blotout - Privacy Policy',
-    description:
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-    'og:title': 'Blotout - Privacy Policy',
-    'og:description':
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-  }
+  return metaInfo('Privacy Policy')
 }
 
 export function links() {

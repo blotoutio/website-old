@@ -1,5 +1,7 @@
+import { metaInfo } from '../utils'
+
 export function meta() {
-  return { title: "Ain't nothing here" }
+  return metaInfo('Page Not Found')
 }
 
 export default function FourOhFour() {

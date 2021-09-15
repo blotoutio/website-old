@@ -1,14 +1,8 @@
 import stylesUrl from '../styles/legal.css'
+import { metaInfo } from '../utils'
 
 export function meta() {
-  return {
-    title: 'Blotout - Terms of Service',
-    description:
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-    'og:title': 'Blotout - Terms of Service',
-    'og:description':
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-  }
+  return metaInfo('Terms of Service')
 }
 
 export function links() {
