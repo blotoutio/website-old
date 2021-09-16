@@ -124,16 +124,6 @@ export default function Index() {
               every dollar you spend across the lifetimes of your campaigns.
             </p>
           </div>
-          <a
-            href='https://calendly.com/blotout-experts'
-            target='_blank'
-            rel='noreferrer'
-            id='marketers-cta'
-            className='non-engineer-cta'
-            onClick={() => codifyClick('Marketer - Trial')}
-          >
-            Start Free Trial
-          </a>
           <div
             id='marketers-illustration-group'
             className='non-engineer-illustration-group'
@@ -162,6 +152,16 @@ export default function Index() {
               />
             </div>
           </div>
+          <a
+            href='https://calendly.com/blotout-experts'
+            target='_blank'
+            rel='noreferrer'
+            id='marketers-cta'
+            className='non-engineer-cta'
+            onClick={() => codifyClick('Marketer - Trial')}
+          >
+            Start Free Trial
+          </a>
         </div>
       </div>
 
@@ -195,16 +195,6 @@ export default function Index() {
               other interactions in one place.
             </p>
           </div>
-          <a
-            href='https://calendly.com/blotout-experts'
-            target='_blank'
-            rel='noreferrer'
-            id='product-managers-cta'
-            className='non-engineer-cta'
-            onClick={() => codifyClick('PM - Trial')}
-          >
-            Start Free Trial
-          </a>
           <div
             id='product-managers-illustration-group'
             className='non-engineer-illustration-group'
@@ -233,6 +223,16 @@ export default function Index() {
               />
             </div>
           </div>
+          <a
+            href='https://calendly.com/blotout-experts'
+            target='_blank'
+            rel='noreferrer'
+            id='product-managers-cta'
+            className='non-engineer-cta'
+            onClick={() => codifyClick('PM - Trial')}
+          >
+            Start Free Trial
+          </a>
         </div>
       </div>
 
@@ -249,15 +249,6 @@ export default function Index() {
               built for privacy.
             </p>
           </div>
-          <a
-            href='https://calendly.com/blotout-experts'
-            target='_blank'
-            rel='noreferrer'
-            id='engineers-cta'
-            onClick={() => codifyClick('Engineer - Trial')}
-          >
-            Start Free Trial
-          </a>
           <div id='engineers-illustration'>
             <img
               src='/img/main/engineers.png'
@@ -273,6 +264,15 @@ export default function Index() {
               Rely on built in-privacy solutions
             </h3>
           </div>
+          <a
+            href='https://calendly.com/blotout-experts'
+            target='_blank'
+            rel='noreferrer'
+            id='engineers-cta'
+            onClick={() => codifyClick('Engineer - Trial')}
+          >
+            Start Free Trial
+          </a>
         </div>
       </div>
 
@@ -314,6 +314,15 @@ export default function Index() {
               </h3>
             </div>
           </div>
+          <a
+            href='https://calendly.com/blotout-experts'
+            target='_blank'
+            rel='noreferrer'
+            id='privacy-cta'
+            onClick={() => codifyClick('Privacy - Trial')}
+          >
+            Start Free Trial
+          </a>
         </div>
       </div>
     </div>

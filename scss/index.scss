@@ -326,7 +326,7 @@
         width: 180px;
         margin: auto;
         padding: 10px 20px;
-        margin-top: 60px;
+        margin-top: 100px;
         font-weight: 600;
         font-size: 16px;
         background-color: var(--yellow-2);
@@ -340,7 +340,7 @@
         }
 
         @media (max-width: 768px) {
-          margin-top: 40px;
+          margin-top: 65px;
         }
       }
 
@@ -349,10 +349,10 @@
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        margin-top: 85px;
+        margin-top: 65px;
 
         @media (max-width: 768px) {
-          margin-top: 60px;
+          margin-top: 40px;
           flex-direction: column-reverse;
           align-items: center;
         }
@@ -415,17 +415,17 @@
 
             @media (max-width: 768px) {
               justify-content: center;
-              margin: 30px 0 0 0;
-              padding: 0;
-            }
-
-            @media (max-width: 600px) {
-              padding: 15px 0;
-              border-bottom: 2px solid var(--light-blue-3);
+              margin: 0;
+              padding: 30px 0;
+              border-bottom: 2px solid var(--light-blue-4);
 
               &:last-of-type {
                 border-bottom: none;
               }
+            }
+
+            @media (max-width: 600px) {
+              padding: 15px 0;
             }
           }
         }
@@ -434,11 +434,11 @@
   }
 
   #marketers {
-    background-color: var(--light-blue-1);
+    background-color: var(--light-blue-2);
   }
 
   #product-managers {
-    background-color: var(--light-blue-1);
+    background-color: var(--grey-1);
 
     #product-managers-content {
       #product-managers-illustration-group {
@@ -459,6 +459,10 @@
 
         @media (max-width: 768px) {
           margin-left: 0;
+
+          .non-engineer-point {
+            border-color: var(--grey-4);
+          }
         }
       }
     }
@@ -547,7 +551,7 @@
         width: 180px;
         margin: auto;
         padding: 10px 20px;
-        margin-top: 60px;
+        margin-top: 100px;
         font-weight: 600;
         font-size: 16px;
         background-color: var(--yellow-2);
@@ -561,7 +565,7 @@
         }
 
         @media (max-width: 768px) {
-          margin-top: 40px;
+          margin-top: 65px;
         }
       }
 
@@ -569,11 +573,11 @@
         width: 100%;
         max-width: 1000px;
         height: auto;
-        margin-top: 85px;
+        margin-top: 65px;
         background-color: var(--dark-blue-4);
 
         @media (max-width: 700px) {
-          margin-top: 60px;
+          margin-top: 40px;
         }
 
         img {
@@ -598,7 +602,7 @@
           margin-top: 65px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
           flex-direction: column;
           flex-wrap: wrap;
           margin-top: 45px;
@@ -621,20 +625,21 @@
           }
 
           @media (max-width: 768px) {
-            padding: 50px 20px;
-          }
-
-          @media (max-width: 600px) {
-            max-width: 450px;
+            max-width: 500px;
+            margin: 0;
             padding: 25px 0;
             border-right: none;
             border-bottom: 2px solid rgb(226, 240, 255, 10%);
           }
 
+          @media (max-width: 600px) {
+            padding: 25px 0;
+          }
+
           &:last-of-type {
             border-right: none;
 
-            @media (max-width: 600px) {
+            @media (max-width: 768px) {
               border-bottom: none;
             }
           }
@@ -732,6 +737,7 @@
           font-weight: 400;
           font-size: 22px;
           line-height: 130%;
+          margin: 1em;
           color: rgba(255, 255, 255, 0.8);
 
           @media (max-width: 1024px) {
@@ -792,6 +798,28 @@
             // TODO: More accessible palette
             color: #ffdc5d;
           }
+        }
+      }
+
+      #privacy-cta {
+        width: 180px;
+        margin: auto;
+        padding: 10px 20px;
+        margin-top: 60px;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: var(--yellow-2);
+        color: var(--dark-blue-3);
+        text-align: center;
+        text-decoration: none;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: var(--yellow-1);
+        }
+
+        @media (max-width: 768px) {
+          margin-top: 45px;
         }
       }
     }
