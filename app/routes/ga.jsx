@@ -1,7 +1,7 @@
 import stylesUrl from '../styles/campaign.css'
 import { useSubmit, redirect, useRouteData } from 'remix'
 import { capture } from '@blotoutio/sdk-core'
-import { codifyClick } from '../utils'
+import { codifyClick, metaInfo } from '../utils'
 import LogoBlue from '../graphics/logo-blue'
 
 export function loader({ request }) {
