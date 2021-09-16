@@ -1,16 +1,9 @@
 import SlackIcon from '../graphics/icons/slack-icon'
 import stylesUrl from '../styles/index.css'
-import { codifyClick } from '../utils'
+import { codifyClick, metaInfo } from '../utils'
 
 export function meta() {
-  return {
-    title: 'Blotout',
-    description:
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-    'og:title': 'Blotout',
-    'og:description':
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-  }
+  return metaInfo('')
 }
 
 export function links() {

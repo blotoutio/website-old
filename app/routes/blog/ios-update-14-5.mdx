@@ -1,13 +1,15 @@
 ---
 meta:
-  title: "Blotout - Blog | iOS 14.5 and the tracking apocalypse"
+  title: iOS 14.5 and the tracking apocalypse | Blotout
   description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+data:
+  date: '2021-04-26'
 ---
 
 import Blog from '../../components/mdx/blog'
 
-<Blog title={attributes.meta.title}>
-    
+<Blog {...attributes.meta} {...attributes.data}>
+
 Apple’s [iOS 14.5](https://developer.apple.com/app-store/user-privacy-and-data-use/) represents one of the most significant privacy events in the mobile ecosystem. Devices running iOS 14.5 will ask users if they want to be tracked by any app that relies on 3rd-parties for advertising or measurement. They can say no, and they can change their preferences later, even if they agreed when first prompted.
 
 The change should not be a surprise. As a matter of policy, it is a natural continuation of what privacy regulations have been trending toward: telling users how their data is being used and giving them a choice. Apple itself has been preparing developers for the release for over a year (it even delayed the release to accommodate concerns from the advertising industry) and has provided extensive technical documentation to prepare for the change.

@@ -1,7 +1,7 @@
 import stylesUrl from '../styles/campaign.css'
 import { useSubmit, redirect, useRouteData } from 'remix'
 import { capture } from '@blotoutio/sdk-core'
-import { codifyClick } from '../utils'
+import { codifyClick, metaInfo } from '../utils'
 import LogoBlue from '../graphics/logo-blue'
 
 export function loader({ request }) {
@@ -25,14 +25,7 @@ export function loader({ request }) {
 }
 
 export function meta() {
-  return {
-    title: 'Blotout - Comparison with Google Analytics',
-    description:
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-    'og:title': 'Blotout - Comparison with Google Analytics',
-    'og:description':
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-  }
+  return metaInfo('Comparison with Google Analytics')
 }
 
 export function links() {

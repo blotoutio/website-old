@@ -1,17 +1,13 @@
 import { Link } from 'react-router-dom'
-import { caseStudyList } from '../../data/caseStudyList'
-import { codifyClick, formatDate } from '../../utils'
+import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
+import { useRouteData } from '@remix-run/react'
+
+import * as post1 from './lux-foundation-solutions.mdx'
+import * as post2 from './besmitten.mdx'
 
 export function meta() {
-  return {
-    title: 'Blotout - Case Studies',
-    description:
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-    'og:title': 'Blotout - Case Studies',
-    'og:description':
-      'Serverless data infrastructure to capture, analyze, and activate customer data as a first-party',
-  }
+  return metaInfo('Case Studies')
 }
 
 export function links() {
@@ -23,7 +19,12 @@ export function links() {
   ]
 }
 
+export function loader() {
+  return [postFromModule(post2), postFromModule(post1)]
+}
+
 export default function CaseStudies() {
+  let posts = useRouteData()
   return (
     <div id='case-studies' className='writing'>
       <div id='case-studies-header' className='writing-header'>
@@ -41,7 +42,7 @@ export default function CaseStudies() {
         <div id='case-studies-list-content' className='writing-list-content'>
           <div className='list'>
             <div className='list-content'>
-              {caseStudyList.map((caseStudy) => {
+              {posts.map((caseStudy) => {
                 const formattedDate = formatDate(caseStudy.date)
 
                 return (

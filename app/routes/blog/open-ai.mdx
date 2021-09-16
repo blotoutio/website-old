@@ -1,13 +1,15 @@
 ---
 meta:
-  title: "Blotout - Blog | Blotout experimenting with Open AI"
+  title: Blotout experimenting with Open AI | Blotout
   description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+data:
+  date: '2021-07-27'
 ---
 
 import Blog from '../../components/mdx/blog'
 
-<Blog title={attributes.meta.title}>
-    
+<Blog {...attributes.meta} {...attributes.data}>
+
 **Author: [Raman Kumar Lal](https://www.linkedin.com/in/raman-kumar-lal-a65581181/) (Summer Intern at Blotout)**
 
 I am going to attempt to explain the challenges of building a PII detection classification model; and lay down the appreciation for how Open AI addresses solving these challenges and some flaws that we experienced along the way.

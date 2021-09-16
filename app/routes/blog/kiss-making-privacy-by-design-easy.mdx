@@ -1,13 +1,15 @@
 ---
 meta:
-  title: "Blotout - Blog | Kiss: making privacy by design easy!"
+  title: "Kiss: making privacy by design easy! | Blotout"
   description: Latest news and insights from Blotout -- the cloud native privacy data engineering platform.
+data:
+  date: '2020-01-15'
 ---
 
 import Blog from '../../components/mdx/blog'
 
-<Blog title={attributes.meta.title}>
-  
+<Blog {...attributes.meta} {...attributes.data}>
+
 ## KISS principles
 
 [KISS](https://en.wikipedia.org/wiki/KISS_principle): keep it simple, stupid. It is the paradigm that drives the mindset of big tech. That is how we got to this consumer experience where big tech has put us to sleep while invading our four walls without us even noticing. The [example](https://bgr.com/2018/01/26/oneplus-data-collection-clipboard-app/) of OnePlus App is a classic way to understand why our smartphone was subsidized to start with; very much like it, all services that are free essentially make us the [product](https://www.forbes.com/sites/marketshare/2012/03/05/if-youre-not-paying-for-it-you-become-the-product/?sh=2cb11df35d6e) — essentially, there is no such thing as free.
