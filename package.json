@@ -3,7 +3,7 @@
   "name": "blotout-website",
   "scripts": {
     "build": "remix build",
-    "build:sass": "sass scss:app/styles",
+    "build:sass": "sass --no-source-map scss:app/styles",
     "dev": "remix dev",
     "start": "vercel dev",
     "main": "concurrently \"vercel dev\" \"remix dev\"",
