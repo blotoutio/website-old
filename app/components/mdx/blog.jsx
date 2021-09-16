@@ -15,9 +15,9 @@ const Blog = (props) => {
           <h1 id='blog-item-title' className='writing-item-title'>
             {getBlogTitle(props.title)}
           </h1>
-          <div id='blog-item-subtitle' className='writing-item-subtitle'>
+          <p id='blog-item-subtitle' className='writing-item-subtitle'>
             {formatDate(props.date)}
-          </div>
+          </p>
         </div>
       </div>
 
