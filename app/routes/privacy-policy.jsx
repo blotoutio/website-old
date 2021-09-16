@@ -25,6 +25,9 @@ export default function PrivacyPolicy() {
           <h1 id='privacy-policy-title' className='legal-title'>
             Privacy Policy
           </h1>
+          <p id='privacy-policy-subtitle' className='legal-subtitle'>
+            Last Updated: 26 June, 2020
+          </p>
         </div>
       </div>
 
