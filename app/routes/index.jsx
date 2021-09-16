@@ -96,7 +96,7 @@ export default function Index() {
           <img
             id='explainer-image'
             src='/img/main/explainer.png'
-            alt='An image illustrating how Blotout can benefit teams'
+            alt='A table illustrating how Blotout can benefit teams by being simpler, faster and significantly cost-effective than buidling your own expensive infrastructure or using third-party services plagued with problems like data loss. It also illustrates how Blotout offers everything from CDP, ELT + reverse El and data modeling to BI, privacy compliance and data governance'
           />
         </div>
       </div>
@@ -148,7 +148,7 @@ export default function Index() {
             >
               <img
                 src='/img/main/marketers.png'
-                alt='An image illustrating how Blotout can benefit marketers'
+                alt='A diagram illustrating how Blotout can benefit marketers by letting them capture 100% of their website visitors compared to only 30-50% when using third-party services like Facebook, Google Analytics and Segment'
               />
             </div>
           </div>
@@ -219,7 +219,7 @@ export default function Index() {
             >
               <img
                 src='/img/main/product-managers.png'
-                alt='An image illustrating how Blotout can benefit product managers'
+                alt='A diagram illustrating how Blotout can benefit product managers by letting them see the complete customer journey by letting them track not just their websites and apps but interactions beyond them like service tickets and package return status'
               />
             </div>
           </div>
@@ -252,7 +252,7 @@ export default function Index() {
           <div id='engineers-illustration'>
             <img
               src='/img/main/engineers.png'
-              alt='An image illustrating how Blotout can benefit engineers'
+              alt='A diagram illustrating how the Blotout infrastructure can be deployed under two hours and that it comprises of only three steps - configuration, deployment and scaling'
             />
           </div>
           <div id='engineers-point-group'>
