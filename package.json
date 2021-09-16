@@ -7,7 +7,7 @@
     "dev": "remix dev",
     "start": "vercel dev",
     "main": "concurrently \"vercel dev\" \"remix dev\"",
-    "sass": "sass --watch scss:app/styles",
+    "sass": "sass --watch --embed-source-map scss:app/styles",
     "lint": "prettier --check .",
     "postinstall": "remix setup"
   },
