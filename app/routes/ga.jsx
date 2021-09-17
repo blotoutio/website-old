@@ -8,12 +8,12 @@ export function loader({ request }) {
   let requestURL = new URL(request.url)
   let urlStatus = requestURL.searchParams.get('status')
   let status
-  let formMesage
+  let formMessage
 
-  if (urlStatus == 'thank-you') {
+  if (urlStatus === 'thank-you') {
     status = urlStatus
     formMessage = 'Thank you. We’ll be in touch shortly.'
-  } else if (urlStatus == 'error') {
+  } else if (urlStatus === 'error') {
     status = urlStatus
     formMessage = 'Something went wrong. Please try again.'
   } else {
@@ -104,7 +104,7 @@ export default function Campaign() {
               name='email'
               required
               onFocus={() => capture('GA Campaign - Form Input Focus')}
-            ></input>
+            />
             <button
               type='submit'
               onClick={() => codifyClick('Form Submit - GA Campaign')}
@@ -140,7 +140,6 @@ export default function Campaign() {
           {/* Desktop */}
 
           <div id='table-content'>
-            <div></div>
             <div className='blotout-box main-box'>
               <LogoBlue />
             </div>
@@ -378,7 +377,7 @@ export default function Campaign() {
               name='email'
               required
               onFocus={() => capture('GA Campaign - Form Focus')}
-            ></input>
+            />
             <button
               type='submit'
               onClick={() => codifyClick('Form Submit - GA Campaign')}
