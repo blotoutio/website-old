@@ -96,7 +96,7 @@ export default function Index() {
           <img
             id='explainer-image'
             src='/img/main/explainer.png'
-            alt='An image illustrating how Blotout can benefit teams'
+            alt='A table illustrating how Blotout can benefit teams by being simpler, faster and significantly cost-effective than buidling your own expensive infrastructure or using third-party services plagued with problems like data loss. It also illustrates how Blotout offers everything from CDP, ELT + reverse El and data modeling to BI, privacy compliance and data governance'
           />
         </div>
       </div>
@@ -124,16 +124,6 @@ export default function Index() {
               every dollar you spend across the lifetimes of your campaigns.
             </p>
           </div>
-          <a
-            href='https://calendly.com/blotout-experts'
-            target='_blank'
-            rel='noreferrer'
-            id='marketers-cta'
-            className='non-engineer-cta'
-            onClick={() => codifyClick('Marketer - Trial')}
-          >
-            Start Free Trial
-          </a>
           <div
             id='marketers-illustration-group'
             className='non-engineer-illustration-group'
@@ -158,10 +148,20 @@ export default function Index() {
             >
               <img
                 src='/img/main/marketers.png'
-                alt='An image illustrating how Blotout can benefit marketers'
+                alt='A diagram illustrating how Blotout can benefit marketers by letting them capture 100% of their website visitors compared to only 30-50% when using third-party services like Facebook, Google Analytics and Segment'
               />
             </div>
           </div>
+          <a
+            href='https://calendly.com/blotout-experts'
+            target='_blank'
+            rel='noreferrer'
+            id='marketers-cta'
+            className='non-engineer-cta'
+            onClick={() => codifyClick('Marketer - Trial')}
+          >
+            Start Free Trial
+          </a>
         </div>
       </div>
 
@@ -195,16 +195,6 @@ export default function Index() {
               other interactions in one place.
             </p>
           </div>
-          <a
-            href='https://calendly.com/blotout-experts'
-            target='_blank'
-            rel='noreferrer'
-            id='product-managers-cta'
-            className='non-engineer-cta'
-            onClick={() => codifyClick('PM - Trial')}
-          >
-            Start Free Trial
-          </a>
           <div
             id='product-managers-illustration-group'
             className='non-engineer-illustration-group'
@@ -229,10 +219,20 @@ export default function Index() {
             >
               <img
                 src='/img/main/product-managers.png'
-                alt='An image illustrating how Blotout can benefit product managers'
+                alt='A diagram illustrating how Blotout can benefit product managers by letting them see the complete customer journey by letting them track not just their websites and apps but interactions beyond them like service tickets and package return status'
               />
             </div>
           </div>
+          <a
+            href='https://calendly.com/blotout-experts'
+            target='_blank'
+            rel='noreferrer'
+            id='product-managers-cta'
+            className='non-engineer-cta'
+            onClick={() => codifyClick('PM - Trial')}
+          >
+            Start Free Trial
+          </a>
         </div>
       </div>
 
@@ -249,19 +249,10 @@ export default function Index() {
               built for privacy.
             </p>
           </div>
-          <a
-            href='https://calendly.com/blotout-experts'
-            target='_blank'
-            rel='noreferrer'
-            id='engineers-cta'
-            onClick={() => codifyClick('Engineer - Trial')}
-          >
-            Start Free Trial
-          </a>
           <div id='engineers-illustration'>
             <img
               src='/img/main/engineers.png'
-              alt='An image illustrating how Blotout can benefit engineers'
+              alt='A diagram illustrating how the Blotout infrastructure can be deployed under two hours and that it comprises of only three steps - configuration, deployment and scaling'
             />
           </div>
           <div id='engineers-point-group'>
@@ -273,6 +264,15 @@ export default function Index() {
               Rely on built in-privacy solutions
             </h3>
           </div>
+          <a
+            href='https://calendly.com/blotout-experts'
+            target='_blank'
+            rel='noreferrer'
+            id='engineers-cta'
+            onClick={() => codifyClick('Engineer - Trial')}
+          >
+            Start Free Trial
+          </a>
         </div>
       </div>
 
@@ -314,6 +314,15 @@ export default function Index() {
               </h3>
             </div>
           </div>
+          <a
+            href='https://calendly.com/blotout-experts'
+            target='_blank'
+            rel='noreferrer'
+            id='privacy-cta'
+            onClick={() => codifyClick('Privacy - Trial')}
+          >
+            Start Free Trial
+          </a>
         </div>
       </div>
     </div>

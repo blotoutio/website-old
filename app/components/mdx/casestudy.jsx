@@ -15,12 +15,9 @@ const CaseStudy = (props) => {
           <h1 id='case-studies-item-title' className='writing-item-title'>
             {getCaseStudyTitle(props.title)}
           </h1>
-          <div
-            id='case-studies-item-subtitle'
-            className='writing-item-subtitle'
-          >
+          <p id='case-studies-item-subtitle' className='writing-item-subtitle'>
             {formatDate(props.date)}
-          </div>
+          </p>
         </div>
       </div>
 

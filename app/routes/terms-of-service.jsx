@@ -25,6 +25,9 @@ export default function TermsOfService() {
           <h1 id='terms-of-service-title' className='legal-title'>
             Terms of Service
           </h1>
+          <p id='terms-of-service-subtitle' className='legal-subtitle'>
+            Last Updated: 26 June, 2020
+          </p>
         </div>
       </div>
 
