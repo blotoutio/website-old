@@ -52,27 +52,15 @@ const Header = () => {
         </div>
         <div
           id='header-nav'
-          style={{
-            color:
-              pathname === './'
-                ? 'var(--light-blue-1)'
-                : pathname === '/privacy-policy'
-                ? 'var(--dark-blue-3)'
-                : pathname === '/terms-of-service'
-                ? 'var(--dark-blue-3)'
-                : pathname.includes('/blog')
-                ? 'var(--dark-blue-3)'
-                : pathname.includes('/case-studies')
-                ? 'var(--dark-blue-3)'
-                : pathname.includes('/compare-with-google-analytics')
-                ? 'var(--dark-blue-3)'
-                : 'var(--dark-blue-3)',
-          }}
           className={
             pathname.includes('/blog')
               ? 'blog'
               : pathname.includes('/case-studies')
               ? 'case-studies'
+              : pathname === '/privacy-policy'
+              ? 'privacy-policy'
+              : pathname === '/terms-of-service'
+              ? 'terms-of-service'
               : pathname.includes('/compare-with-google-analytics')
               ? 'compare-with-google-analytics'
               : 'other'
