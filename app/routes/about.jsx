@@ -37,8 +37,6 @@ export function loader() {
 export default function About() {
   let jobs = useRouteData()
 
-  console.log(jobs)
-
   return (
     <div id='about'>
       <div id='about-header'>
