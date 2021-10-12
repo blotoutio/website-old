@@ -1,14 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useRouteData } from '@remix-run/react'
 import stylesUrl from '../styles/about.css'
-import { codifyClick, metaInfo, postFromModule } from '../utils'
-
-import * as post6 from './jobs/client-engineer-052021.mdx'
-import * as post5 from './jobs/ui-ux-engineer-052021.mdx'
-import * as post4 from './jobs/data-engineer-052021.mdx'
-import * as post3 from './jobs/server-engineer-052021.mdx'
-import * as post2 from './jobs/client-internship-052021.mdx'
-import * as post1 from './jobs/server-internship-052021.mdx'
+import { codifyClick, metaInfo } from '../utils'
 
 export function meta() {
   return metaInfo('About')
@@ -24,18 +17,14 @@ export function links() {
 }
 
 export function loader() {
-  return [
-    postFromModule(post6),
-    postFromModule(post5),
-    postFromModule(post4),
-    postFromModule(post3),
-    postFromModule(post2),
-    postFromModule(post1),
-  ]
+  let jobs = fetch('https://api.lever.co/v0/postings/blotout?group=department')
+
+  return jobs
 }
 
 export default function About() {
-  let posts = useRouteData()
+  let jobs = useRouteData()
+
   return (
     <div id='about'>
       <div id='about-header'>
@@ -75,16 +64,27 @@ export default function About() {
           </div>
           <div className='about-text-header'>Open Jobs</div>
           <div id='job-list'>
-            {posts.map((jobItem) => {
+            {jobs.map((department) => {
               return (
-                <Link
-                  to={`/jobs/${jobItem.slug}`}
-                  className='job-item'
-                  key={jobItem.slug}
-                  onClick={() => codifyClick(`Jobs - ${jobItem.title}`)}
-                >
-                  {jobItem.title}
-                </Link>
+                <div className='job-group' key={department.title}>
+                  <div className='job-group-title'>{department.title}</div>
+                  <div className='job-group-items'>
+                    {department.postings.map((posting) => {
+                      return (
+                        <a
+                          href={posting.hostedUrl}
+                          className='job-title'
+                          target='_blank'
+                          rel='noreferrer'
+                          key={posting.id}
+                          onClick={() => codifyClick(`Jobs - ${posting.text}`)}
+                        >
+                          {posting.text}
+                        </a>
+                      )
+                    })}
+                  </div>
+                </div>
               )
             })}
           </div>
