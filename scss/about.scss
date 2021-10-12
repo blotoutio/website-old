@@ -44,10 +44,12 @@
     }
 
     #about-text-content {
-      max-width: 800px;
+      max-width: 1180px;
       color: var(--dark-blue-3);
 
       #about-text-title {
+        max-width: 800px;
+        margin: auto;
         font-weight: 600;
         font-size: 25px;
         text-align: center;
@@ -63,7 +65,10 @@
       }
 
       .about-text-header {
-        margin: 85px 0 40px 0;
+        max-width: 800px;
+        margin: auto;
+        margin-top: 85px;
+        margin-bottom: 40px;
         font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
           Liberation Mono, monospace;
         font-weight: 700;
@@ -73,6 +78,8 @@
       }
 
       .about-text-header-content {
+        max-width: 800px;
+        margin: auto;
         font-weight: 500;
         font-size: 18px;
         line-height: 135%;
@@ -81,34 +88,87 @@
       }
 
       #job-list {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-
-        .job-item {
+        .job-group {
+          padding-bottom: 15px;
+          border-radius: 5px;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          max-width: 33%;
-          padding: 25px;
-          font-weight: 600;
-          font-size: 25px;
-          color: var(--dark-blue-2);
-          text-decoration: none;
+          flex-direction: column;
 
-          &:hover {
-            color: var(--dark-blue-1);
+          .job-group-title {
+            font-weight: 400;
+            font-size: 28px;
+            color: var(--yellow-2);
+            text-align: center;
+            margin: auto;
+            padding: 3px 25px;
+            max-width: 300px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: inline;
+            background-color: var(--dark-blue-4);
           }
 
-          @media (max-width: 768px) {
+          .job-sub-group {
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .job-sub-group-title {
+            display: inline-block;
+            font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+              Liberation Mono, monospace;
+            font-weight: 700;
             font-size: 22px;
-            max-width: 50%;
+            line-height: 30px;
+            background-color: #f9f3dc;
+            color: var(--dark-blue-2);
+            text-align: center;
+            margin: auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 0 10px;
           }
 
-          @media (max-width: 768px) {
-            max-width: 100%;
-            padding: 15px;
+          .job-group-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .job-title {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 100px;
+              text-align: center;
+              width: 100%;
+              width: 33%;
+              max-width: 300px;
+              padding: 20px;
+              margin: 15px;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 130%;
+              background-color: var(--light-blue-2);
+              color: var(--dark-blue-3);
+              border-radius: 5px;
+              text-decoration: none;
+
+              &:hover {
+                color: var(--dark-blue-1);
+              }
+
+              @media (max-width: 820px) {
+                width: 50%;
+              }
+
+              @media (max-width: 768px) {
+                max-width: 330px;
+                width: 100%;
+                padding: 15px;
+                margin: 10px;
+              }
+            }
           }
         }
       }
@@ -117,9 +177,5 @@
 
   #about-header {
     background-color: var(--dark-blue-1);
-  }
-
-  #about-text {
-    background-color: var(--light-blue-1);
   }
 }

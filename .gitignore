@@ -1,19 +1,17 @@
 # Development Environment
-
 .env
-/node_modules
-/.cache
-/app/styles
-/build
-/public/build
-/server/build
+node_modules
+.cache
+app/styles
+build
+public/build
+server/build
 .vercel
 
 # Editors
-
+.vscode
 .idea
 .nova
 
 # macOS
-
 .DS_Store

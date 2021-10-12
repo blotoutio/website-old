@@ -3,6 +3,7 @@ import { useRouteData } from '@remix-run/react'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
+import * as post13 from './google-ministry-of-magic-losing.mdx'
 import * as post12 from './storybook-for-blotout.mdx'
 import * as post11 from './open-ai.mdx'
 import * as post10 from './introducing-technical-blogs.mdx'
@@ -31,6 +32,7 @@ export function links() {
 
 export function loader() {
   return [
+    postFromModule(post13),
     postFromModule(post12),
     postFromModule(post11),
     postFromModule(post10),

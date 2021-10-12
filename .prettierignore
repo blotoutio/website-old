@@ -1,10 +1,11 @@
-/.cache
-/build
-/data-build
-/public/build
-/server/build
-app-build
-*.mdx
+.cache
+app/styles
+build
+public/build
+server/build
 .vercel
 package-lock.json
-app/styles
+
+# TODO - Fix mdx formatting
+
+*.mdx
