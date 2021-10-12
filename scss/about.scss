@@ -89,18 +89,39 @@
 
       #job-list {
         .job-group {
+          background-color: var(--light-blue-2);
           margin-bottom: 50px;
+          padding-bottom: 15px;
+          border-radius: 5px;
 
           .job-group-title {
             font-weight: 500;
-            font-size: 25px;
+            font-size: 30px;
             color: var(--yellow-4);
             text-align: center;
-            margin: 50px 0;
+            padding: 50px 0;
+          }
 
-            &:first-of-type {
-              margin-top: 85px;
-            }
+          .job-sub-group {
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .job-sub-group-title {
+            display: inline-block;
+            font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+              Liberation Mono, monospace;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 30px;
+            background-color: var(--light-blue-4);
+            color: var(--dark-blue-2);
+            text-align: center;
+            margin: auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 0 10px;
           }
 
           .job-group-items {
@@ -118,11 +139,11 @@
               width: 33%;
               max-width: 300px;
               padding: 20px;
-              margin: 20px;
+              margin: 15px;
               font-weight: 500;
               font-size: 20px;
               line-height: 130%;
-              background-color: var(--light-blue-3);
+              background-color: var(--grey-1);
               color: var(--dark-blue-3);
               border-radius: 5px;
               text-decoration: none;
@@ -154,9 +175,5 @@
 
   #about-header {
     background-color: var(--dark-blue-1);
-  }
-
-  #about-text {
-    background-color: var(--light-blue-1);
   }
 }

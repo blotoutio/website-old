@@ -17,13 +17,27 @@ export function links() {
 }
 
 export function loader() {
-  return fetch(
-    'https://api.lever.co/v0/postings/blotout?group=department'
-  ).then((response) => response.json())
+  return fetch('https://api.lever.co/v0/postings/blotout?group=department')
+    .then((response) => response.json())
+    .then((data) => {
+      return Promise.all(
+        data.map((department) => {
+          return fetch(
+            `https://api.lever.co/v0/postings/blotout?department=${department.title}&group=team`
+          )
+            .then((response) => response.json())
+            .then((data) => {
+              return { title: department.title, teams: data }
+            })
+        })
+      )
+    })
 }
 
 export default function About() {
   let jobs = useRouteData()
+
+  console.log(jobs)
 
   return (
     <div id='about'>
@@ -68,22 +82,31 @@ export default function About() {
               return (
                 <div className='job-group' key={department.title}>
                   <div className='job-group-title'>{department.title}</div>
-                  <div className='job-group-items'>
-                    {department.postings.map((posting) => {
-                      return (
-                        <a
-                          href={posting.hostedUrl}
-                          className='job-title'
-                          target='_blank'
-                          rel='noreferrer'
-                          key={posting.id}
-                          onClick={() => codifyClick(`Jobs - ${posting.text}`)}
-                        >
-                          {posting.text}
-                        </a>
-                      )
-                    })}
-                  </div>
+                  {department.teams.map((team, index) => {
+                    return (
+                      <div className='job-sub-group' key={team.title}>
+                        <div className='job-sub-group-title'>{team.title}</div>
+                        <div className='job-group-items'>
+                          {team.postings.map((posting) => {
+                            return (
+                              <a
+                                href={posting.hostedUrl}
+                                className='job-title'
+                                target='_blank'
+                                rel='noreferrer'
+                                key={posting.id}
+                                onClick={() =>
+                                  codifyClick(`Jobs - ${posting.text}`)
+                                }
+                              >
+                                {posting.text}
+                              </a>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    )
+                  })}
                 </div>
               )
             })}
