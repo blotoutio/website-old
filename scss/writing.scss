@@ -8,18 +8,34 @@
       width: 100%;
       max-width: 1180px;
       margin: auto;
-      padding: 70px 0 100px 0;
+      padding: 70px 0 60px 0;
 
       @media (max-width: 1200px) {
         padding: 60px 25px;
       }
 
       @media (max-width: 1024px) {
-        padding: 60px 20px;
+        padding: 50px 20px;
       }
 
       @media (max-width: 768px) {
-        padding: 60px 15px;
+        padding: 40px 15px;
+      }
+    }
+
+    .writing-list-content {
+      padding-top: 0;
+
+      @media (max-width: 1200px) {
+        padding-top: 0;
+      }
+
+      @media (max-width: 1024px) {
+        padding-top: 0;
+      }
+
+      @media (max-width: 768px) {
+        padding-top: 0;
       }
     }
 
@@ -27,18 +43,18 @@
       text-align: center;
 
       .writing-title {
-        font-weight: 700;
-        font-size: 45px;
+        font-weight: 600;
+        font-size: 50px;
         line-height: 100%;
         letter-spacing: -0.035em;
-        color: var(--dark-blue-4);
+        color: var(--dark-blue-2);
 
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
           font-size: 40px;
         }
 
         @media (max-width: 550px) {
-          font-size: 30px;
+          font-size: 35px;
         }
       }
     }
@@ -62,14 +78,9 @@
         }
 
         .list-content {
-          margin-top: 65px;
-
-          @media (max-width: 768px) {
-            margin-top: 50px;
-          }
-
           .list-item {
             margin-top: 45px;
+            padding-bottom: 15px;
 
             @media (max-width: 768px) {
               margin-top: 40px;
@@ -77,6 +88,15 @@
 
             h2 {
               margin: 0;
+              line-height: 135%;
+
+              @media (max-width: 768px) {
+                font-size: 26px;
+              }
+
+              @media (max-width: 550px) {
+                font-size: 23px;
+              }
 
               .list-item-title {
                 color: var(--dark-blue-3);
@@ -107,13 +127,5 @@
         }
       }
     }
-  }
-
-  .writing-header {
-    background-color: var(--light-blue-3);
-  }
-
-  .writing-list {
-    background-color: var(--grey-1);
   }
 }

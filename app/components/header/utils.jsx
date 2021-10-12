@@ -18,15 +18,11 @@ export const getBackgroundColor = (pathname) => {
     return 'var(--grey-3)'
   }
 
-  if (pathname.includes('/blog')) {
-    return 'var(--light-blue-3)'
-  }
-
-  if (pathname.includes('/case-studies')) {
-    return 'var(--light-blue-3)'
-  }
-
-  if (pathname.includes('/compare-with-google-analytics')) {
+  if (
+    pathname.includes('/blog') ||
+    pathname.includes('/case-studies') ||
+    pathname === '/compare-with-google-analytics'
+  ) {
     return 'var(--grey-1)'
   }
 
@@ -52,15 +48,11 @@ export const getMobileBackgroundColor = (pathname) => {
     }
   }
 
-  if (pathname.includes('/blog')) {
-    return 'var(--light-blue-3)'
-  }
-
-  if (pathname.includes('/case-studies')) {
-    return 'var(--light-blue-3)'
-  }
-
-  if (pathname.includes('/compare-with-google-analytics')) {
+  if (
+    pathname.includes('/blog') ||
+    pathname.includes('/case-studies') ||
+    pathname === '/compare-with-google-analytics'
+  ) {
     return 'var(--grey-1)'
   }
 
@@ -86,15 +78,11 @@ export const getMobileOverlayColor = (pathname) => {
     }
   }
 
-  if (pathname.includes('/blog')) {
-    return 'rgb(179 212 255 / 65%)'
-  }
-
-  if (pathname.includes('/case-studies')) {
-    return 'rgb(179 212 255 / 65%)'
-  }
-
-  if (pathname.includes('/compare-with-google-analytics')) {
+  if (
+    pathname.includes('/blog') ||
+    pathname.includes('/case-studies') ||
+    pathname === '/compare-with-google-analytics'
+  ) {
     return 'rgb(179 212 255 / 65%)'
   }
 
@@ -120,15 +108,11 @@ export const getMobileLinkColor = (pathname) => {
     }
   }
 
-  if (pathname.includes('/blog')) {
-    return 'var(--dark-blue-4)'
-  }
-
-  if (pathname.includes('/case-studies')) {
-    return 'var(--dark-blue-4)'
-  }
-
-  if (pathname.includes('/compare-with-google-analytics')) {
+  if (
+    pathname.includes('/blog') ||
+    pathname.includes('/case-studies') ||
+    pathname === '/compare-with-google-analytics'
+  ) {
     return 'var(--dark-blue-4)'
   }
 
@@ -156,15 +140,11 @@ export const getMobileTitleColor = (pathname) => {
     }
   }
 
-  if (pathname.includes('/blog')) {
-    return 'var(--dark-blue-2)'
-  }
-
-  if (pathname.includes('/case-studies')) {
-    return 'var(--dark-blue-2)'
-  }
-
-  if (pathname.includes('/compare-with-google-analytics')) {
+  if (
+    pathname.includes('/blog') ||
+    pathname.includes('/case-studies') ||
+    pathname === '/compare-with-google-analytics'
+  ) {
     return 'var(--dark-blue-2)'
   }
 
@@ -177,7 +157,7 @@ export const getLogo = (pathname) => {
     pathname === '/terms-of-service' ||
     pathname.includes('/blog') ||
     pathname.includes('/case-studies') ||
-    pathname.includes('/compare-with-google-analytics')
+    pathname === '/compare-with-google-analytics'
   ) {
     return <LogoBlue />
   }
@@ -191,7 +171,7 @@ export const getMenuIcon = (pathname) => {
     pathname === '/terms-of-service' ||
     pathname.includes('/blog') ||
     pathname.includes('/case-studies') ||
-    pathname.includes('/compare-with-google-analytics')
+    pathname === '/compare-with-google-analytics'
   ) {
     return <MenuIconDark />
   }
@@ -205,7 +185,7 @@ export const getXIcon = (pathname) => {
     pathname === '/terms-of-service' ||
     pathname.includes('/blog') ||
     pathname.includes('/case-studies') ||
-    pathname.includes('/compare-with-google-analytics')
+    pathname === '/compare-with-google-analytics'
   ) {
     return <XIconDark />
   }
