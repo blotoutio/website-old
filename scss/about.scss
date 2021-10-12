@@ -89,21 +89,27 @@
 
       #job-list {
         .job-group {
-          background-color: var(--light-blue-2);
-          margin-bottom: 50px;
           padding-bottom: 15px;
           border-radius: 5px;
+          display: flex;
+          flex-direction: column;
 
           .job-group-title {
-            font-weight: 500;
-            font-size: 30px;
-            color: var(--yellow-4);
+            font-weight: 400;
+            font-size: 28px;
+            color: var(--yellow-2);
             text-align: center;
-            padding: 50px 0;
+            margin: auto;
+            padding: 3px 25px;
+            max-width: 300px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: inline;
+            background-color: var(--dark-blue-4);
           }
 
           .job-sub-group {
-            margin-bottom: 50px;
+            margin-bottom: 35px;
             display: flex;
             flex-direction: column;
           }
@@ -115,7 +121,7 @@
             font-weight: 700;
             font-size: 22px;
             line-height: 30px;
-            background-color: var(--light-blue-4);
+            background-color: #f9f3dc;
             color: var(--dark-blue-2);
             text-align: center;
             margin: auto;
@@ -143,7 +149,7 @@
               font-weight: 500;
               font-size: 20px;
               line-height: 130%;
-              background-color: var(--grey-1);
+              background-color: var(--light-blue-2);
               color: var(--dark-blue-3);
               border-radius: 5px;
               text-decoration: none;
