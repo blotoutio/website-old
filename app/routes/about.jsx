@@ -17,9 +17,7 @@ export function links() {
 }
 
 export function loader() {
-  let jobs = fetch('https://api.lever.co/v0/postings/blotout?group=department')
-
-  return jobs
+  return fetch('https://api.lever.co/v0/postings/blotout?group=department')
 }
 
 export default function About() {
