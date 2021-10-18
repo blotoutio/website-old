@@ -25,7 +25,7 @@
   }
 
   #hero {
-    background-color: var(--dark-blue-3);
+    background-color: var(--neutral-100);
 
     #hero-content {
       padding-top: 125px;
@@ -52,7 +52,7 @@
         font-size: 60px;
         line-height: 110%;
         letter-spacing: -1px;
-        color: var(--grey-1);
+        color: var(--white);
 
         @media (max-width: 1200px) {
           max-width: 700px;
@@ -82,7 +82,7 @@
         font-weight: 500;
         font-size: 23px;
         line-height: 130%;
-        color: var(--light-blue-4);
+        color: var(--blue-10);
 
         @media (max-width: 1200px) {
           max-width: 750px;
@@ -123,11 +123,13 @@
 
         #hero-primary-cta {
           margin-right: 25px;
-          background-color: var(--yellow-2);
-          color: var(--dark-blue-3);
+          background-color: var(--orange-50);
+          color: var(--white);
+          transition: all 0.2s ease-in-out;
 
           &:hover {
-            background-color: var(--yellow-1);
+            background-color: var(--orange-60);
+            color: var(--neutral-10);
           }
 
           @media (max-width: 400px) {
@@ -138,11 +140,13 @@
 
         #hero-secondary-cta {
           display: flex;
-          background-color: var(--light-blue-1);
-          color: var(--dark-blue-3);
+          background-color: var(--white);
+          color: var(--blue-100);
+          transition: all 0.2s ease-in-out;
 
           &:hover {
-            background-color: var(--grey-3);
+            background-color: var(--neutral-10);
+            color: var(--blue-70);
           }
 
           .cta-icon {
@@ -163,7 +167,7 @@
         }
 
         #hero-customer-text {
-          color: var(--grey-3);
+          color: var(--neutral-40);
           font-weight: 500;
           font-size: 14px;
 
@@ -217,8 +221,8 @@
   }
 
   #explainer {
-    background-color: var(--dark-blue-2);
-    color: var(--light-blue-1);
+    background-color: var(--neutral-90);
+    color: var(--neutral-10);
 
     #explainer-title {
       width: 100%;
@@ -276,7 +280,7 @@
           font-weight: 700;
           font-size: 20px;
           line-height: 100%;
-          color: var(--dark-blue-1);
+          color: var(--blue-40);
 
           @media (max-width: 1024px) {
             font-size: 18px;
@@ -293,7 +297,7 @@
           font-size: 45px;
           line-height: 115%;
           letter-spacing: -1px;
-          color: var(--dark-blue-3);
+          color: var(--blue-90);
 
           @media (max-width: 1024px) {
             margin: 28px 0;
@@ -310,7 +314,7 @@
           font-weight: 400;
           font-size: 21px;
           line-height: 130%;
-          color: rgba(0, 0, 0, 0.65);
+          color: var(--neutral-70);
 
           @media (max-width: 1024px) {
             font-size: 18px;
@@ -329,14 +333,16 @@
         margin-top: 100px;
         font-weight: 600;
         font-size: 16px;
-        background-color: var(--yellow-2);
-        color: var(--dark-blue-3);
+        background-color: var(--orange-50);
+        color: var(--white);
         text-align: center;
         text-decoration: none;
         border-radius: 3px;
+        transition: all 0.2s ease-in-out;
 
         &:hover {
-          background-color: var(--yellow-1);
+          background-color: var(--orange-60);
+          color: var(--neutral-10);
         }
 
         @media (max-width: 768px) {
@@ -360,7 +366,7 @@
         .non-engineer-illustration {
           width: 100%;
           max-width: 750px;
-          background-color: var(--grey-1);
+          background-color: var(--white);
           border-radius: 3px;
           box-shadow: 0px 24px 150px rgba(193, 199, 208, 0.65);
 
@@ -407,7 +413,7 @@
             font-weight: 600;
             font-size: 24px;
             line-height: 130%;
-            color: var(--dark-blue-2);
+            color: var(--blue-70);
 
             @media (max-width: 1024px) {
               font-size: 20px;
@@ -417,7 +423,7 @@
               justify-content: center;
               margin: 0;
               padding: 30px 0;
-              border-bottom: 2px solid var(--light-blue-4);
+              border-bottom: 2px solid var(--neutral-30);
 
               &:last-of-type {
                 border-bottom: none;
@@ -434,11 +440,11 @@
   }
 
   #marketers {
-    background-color: var(--light-blue-2);
+    background-color: var(--neutral-10);
   }
 
   #product-managers {
-    background-color: var(--grey-1);
+    background-color: var(--white);
 
     #product-managers-content {
       #product-managers-illustration-group {
@@ -461,7 +467,7 @@
           margin-left: 0;
 
           .non-engineer-point {
-            border-color: var(--grey-4);
+            border-color: var(--neutral-20);
           }
         }
       }
@@ -469,7 +475,7 @@
   }
 
   #engineers {
-    background-color: var(--dark-blue-3);
+    background-color: var(--neutral-100);
 
     #engineers-content {
       display: flex;
@@ -499,8 +505,7 @@
           font-size: 20px;
           line-height: 100%;
 
-          // TODO: More accessible palette
-          color: #4680ff;
+          color: var(--blue-30);
 
           @media (max-width: 1024px) {
             font-size: 18px;
@@ -517,7 +522,7 @@
           font-size: 45px;
           line-height: 115%;
           letter-spacing: -1px;
-          color: var(--grey-1);
+          color: var(--white);
 
           @media (max-width: 1024px) {
             margin: 28px 0;
@@ -535,7 +540,7 @@
           font-weight: 400;
           font-size: 21px;
           line-height: 130%;
-          color: rgba(255, 255, 255, 0.65);
+          color: var(--neutral-40);
 
           @media (max-width: 1024px) {
             font-size: 18px;
@@ -554,14 +559,16 @@
         margin-top: 100px;
         font-weight: 600;
         font-size: 16px;
-        background-color: var(--yellow-2);
-        color: var(--dark-blue-3);
+        background-color: var(--orange-50);
+        color: var(--white);
         text-align: center;
         text-decoration: none;
         border-radius: 3px;
+        transition: all 0.2s ease-in-out;
 
         &:hover {
-          background-color: var(--yellow-1);
+          background-color: var(--orange-60);
+          color: var(--neutral-10);
         }
 
         @media (max-width: 768px) {
@@ -574,7 +581,6 @@
         max-width: 1000px;
         height: auto;
         margin-top: 65px;
-        background-color: var(--dark-blue-4);
 
         @media (max-width: 700px) {
           margin-top: 40px;
@@ -592,7 +598,7 @@
         justify-content: space-between;
         margin-top: 85px;
         text-align: center;
-        color: var(--light-blue-2);
+        color: var(--neutral-10);
 
         @media (max-width: 1024px) {
           margin-top: 75px;
@@ -614,7 +620,7 @@
           font-weight: 500;
           font-size: 24px;
           line-height: 115%;
-          border-right: 2px solid rgb(226, 240, 255, 10%);
+          border-right: 2px solid var(--neutral-90);
 
           @media (max-width: 1024px) {
             padding: 65px 20px;
@@ -629,7 +635,7 @@
             margin: 0;
             padding: 25px 0;
             border-right: none;
-            border-bottom: 2px solid rgb(226, 240, 255, 10%);
+            border-bottom: 2px solid rgba(226, 240, 255, 0.1);
           }
 
           @media (max-width: 600px) {
@@ -649,12 +655,13 @@
   }
 
   #blog {
-    background-color: var(--light-blue-2);
+    background-color: var(--neutral-10);
   }
 
   #privacy {
     padding-top: 100px;
     padding-bottom: 50px;
+    background-color: var(--neutral-10);
 
     @media (max-width: 1200px) {
       padding-top: 80px;
@@ -668,7 +675,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      background-color: var(--dark-blue-1);
+      background-color: var(--blue-70);
       border-radius: 10px;
 
       @media (max-width: 1024px) {
@@ -703,7 +710,7 @@
           font-weight: 700;
           font-size: 26px;
           line-height: 100%;
-          color: var(--yellow-2);
+          color: var(--orange-30);
 
           @media (max-width: 1024px) {
             font-size: 24px;
@@ -720,7 +727,7 @@
           font-size: 45px;
           line-height: 115%;
           letter-spacing: -1px;
-          color: var(--light-blue-2);
+          color: var(--neutral-10);
 
           @media (max-width: 1024px) {
             margin-top: 38px;
@@ -738,7 +745,7 @@
           font-size: 22px;
           line-height: 130%;
           margin: 1em;
-          color: rgba(255, 255, 255, 0.8);
+          color: var(--neutral-30);
 
           @media (max-width: 1024px) {
             font-size: 20px;
@@ -753,7 +760,7 @@
           width: 100%;
           max-width: 550px;
           margin-top: 40px;
-          color: var(--light-blue-1);
+          color: var(--neutral-10);
           text-align: left;
 
           @media (max-width: 1024px) {
@@ -796,7 +803,7 @@
 
           .special {
             // TODO: More accessible palette
-            color: #ffdc5d;
+            color: var(--orange-30);
           }
         }
       }
@@ -808,14 +815,16 @@
         margin-top: 60px;
         font-weight: 600;
         font-size: 16px;
-        background-color: var(--yellow-2);
-        color: var(--dark-blue-3);
+        background-color: var(--orange-50);
+        color: var(--white);
         text-align: center;
         text-decoration: none;
         border-radius: 3px;
+        transition: all 0.2s ease-in-out;
 
         &:hover {
-          background-color: var(--yellow-1);
+          background-color: var(--orange-60);
+          color: var(--neutral-10);
         }
 
         @media (max-width: 768px) {
@@ -823,7 +832,5 @@
         }
       }
     }
-
-    background-color: var(--grey-2);
   }
 }

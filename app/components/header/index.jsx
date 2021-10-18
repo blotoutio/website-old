@@ -53,10 +53,14 @@ const Header = () => {
         <div
           id='header-nav'
           className={
-            pathname.includes('/blog')
+            pathname.includes('/about')
+              ? 'about'
+              : pathname.includes('/blog')
               ? 'blog'
               : pathname.includes('/case-studies')
               ? 'case-studies'
+              : pathname.includes('/integrations')
+              ? 'integrations'
               : pathname === '/privacy-policy'
               ? 'privacy-policy'
               : pathname === '/terms-of-service'
