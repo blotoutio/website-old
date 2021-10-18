@@ -4,7 +4,7 @@ import { capture } from '@blotoutio/sdk-core'
 import { codifyClick, metaInfo } from '../utils'
 
 export function meta() {
-  return metaInfo('Integration')
+  return metaInfo('Integrations')
 }
 
 export function links() {
