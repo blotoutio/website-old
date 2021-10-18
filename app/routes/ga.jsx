@@ -140,6 +140,7 @@ export default function Campaign() {
           {/* Desktop */}
 
           <div id='table-content'>
+            <div></div>
             <div className='blotout-box main-box'>
               <LogoBlue />
             </div>
