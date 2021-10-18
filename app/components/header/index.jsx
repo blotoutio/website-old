@@ -143,6 +143,14 @@ const Header = () => {
                 Case Studies
               </Link>
               <a
+                href='https://help.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                onClick={() => codifyClick('Menu - Help Center')}
+              >
+                Help Center
+              </a>
+              <a
                 href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
                 target='_blank'
                 rel='noreferrer'
