@@ -1,4 +1,6 @@
 #integrations {
+  background-color: var(--neutral-20);
+
   #integrations-header,
   #integrations-text {
     width: 100%;
@@ -7,18 +9,34 @@
     #integrations-text-content {
       width: 100%;
       margin: auto;
-      padding: 70px 0 100px 0;
+      padding: 70px 0 60px 0;
 
       @media (max-width: 1200px) {
         padding: 60px 25px;
       }
 
       @media (max-width: 1024px) {
-        padding: 60px 20px;
+        padding: 50px 20px;
       }
 
       @media (max-width: 768px) {
-        padding: 60px 15px;
+        padding: 40px 15px;
+      }
+    }
+
+    #integrations-text-content {
+      padding-top: 0;
+
+      @media (max-width: 1200px) {
+        padding-top: 0;
+      }
+
+      @media (max-width: 1024px) {
+        padding-top: 0;
+      }
+
+      @media (max-width: 768px) {
+        padding-top: 0;
       }
     }
 
@@ -27,18 +45,18 @@
       text-align: center;
 
       #integrations-title {
-        font-weight: 700;
-        font-size: 45px;
+        font-weight: 600;
+        font-size: 50px;
         line-height: 100%;
-        letter-spacing: -1px;
-        color: var(--light-blue-1);
+        letter-spacing: -0.035em;
+        color: var(--blue-80);
 
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
           font-size: 40px;
         }
 
         @media (max-width: 550px) {
-          font-size: 30px;
+          font-size: 35px;
         }
       }
     }
@@ -67,10 +85,15 @@
           font-weight: 500;
           font-size: 23px;
           text-align: center;
-          background-color: var(--grey-1);
-          color: var(--dark-blue-4);
-          border: 2px solid var(--dark-blue-2);
+          background-color: var(--white);
+          color: var(--blue-80);
+          border: 2px solid var(--neutral-50);
           border-radius: 3px;
+
+          &::placeholder {
+            font-weight: 400;
+            color: var(--neutral-40);
+          }
 
           @media (max-width: 1024px) {
             font-size: 20px;
@@ -100,12 +123,13 @@
           width: 300px;
           margin-bottom: 50px;
           padding: 30px;
-          border: 2px solid var(--light-blue-4);
+          border: 2px solid var(--neutral-30);
           border-radius: 3px;
           text-decoration: none;
+          background-color: var(--neutral-10);
 
           &:hover {
-            background-color: var(--light-blue-2);
+            background-color: var(--white);
           }
 
           @media (max-width: 1024px) {
@@ -136,10 +160,10 @@
           .integration-text {
             width: 100%;
             margin-top: 50px;
-            font-weight: 600;
-            font-size: 25px;
+            font-weight: 500;
+            font-size: 23px;
             text-align: center;
-            color: var(--dark-blue-2);
+            color: var(--blue-100);
 
             @media (max-width: 768px) {
               margin-top: 30px;
@@ -148,13 +172,5 @@
         }
       }
     }
-  }
-
-  #integrations-header {
-    background-color: var(--dark-blue-2);
-  }
-
-  #integrations-text {
-    background-color: var(--light-blue-1);
   }
 }

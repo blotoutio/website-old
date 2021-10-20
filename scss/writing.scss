@@ -1,4 +1,6 @@
 .writing {
+  background-color: var(--neutral-10);
+
   .writing-header,
   .writing-list {
     width: 100%;
@@ -47,7 +49,7 @@
         font-size: 50px;
         line-height: 100%;
         letter-spacing: -0.035em;
-        color: var(--dark-blue-2);
+        color: var(--blue-80);
 
         @media (max-width: 768px) {
           font-size: 40px;
@@ -66,15 +68,6 @@
 
         @media (max-width: 768px) {
           max-width: 500px;
-        }
-
-        .list-title {
-          font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-            Liberation Mono, monospace;
-          font-weight: 700;
-          font-size: 25px;
-          color: var(--dark-blue-1);
-          text-align: center;
         }
 
         .list-content {
@@ -99,14 +92,14 @@
               }
 
               .list-item-title {
-                color: var(--dark-blue-3);
+                color: var(--blue-90);
               }
 
               a {
                 text-decoration: none;
 
                 &:hover {
-                  color: var(--dark-blue-1);
+                  color: var(--blue-50);
                 }
               }
             }
@@ -115,7 +108,7 @@
               margin-top: 15px;
               font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo,
                 Consolas, Liberation Mono, monospace;
-              font-weight: 700;
+              font-weight: 600;
               font-size: 16px;
               color: rgba(0, 0, 0, 0.65);
 

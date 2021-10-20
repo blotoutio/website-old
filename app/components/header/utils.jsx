@@ -4,18 +4,19 @@ import XIconDark from '../../graphics/icons/x-icon-dark'
 import XIconLight from '../../graphics/icons/x-icon-light'
 import LogoLight from '../../graphics/logo-light'
 import LogoBlue from '../../graphics/logo-blue'
+import LogoDark from '../../graphics/logo-dark'
 
 export const getBackgroundColor = (pathname) => {
-  if (pathname === '/about' || pathname.includes('/job')) {
-    return 'var(--dark-blue-1)'
+  if (pathname === '/about') {
+    return 'var(--orange-10)'
   }
 
   if (pathname === '/integrations') {
-    return 'var(--dark-blue-2)'
+    return 'var(--neutral-20)'
   }
 
   if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
-    return 'var(--grey-3)'
+    return '#f3f2f2'
   }
 
   if (
@@ -23,28 +24,28 @@ export const getBackgroundColor = (pathname) => {
     pathname.includes('/case-studies') ||
     pathname === '/compare-with-google-analytics'
   ) {
-    return 'var(--grey-1)'
+    return 'var(--neutral-10)'
   }
 
-  return 'var(--dark-blue-3)'
+  return 'var(--neutral-100)'
 }
 
 export const getMobileBackgroundColor = (pathname) => {
-  if (pathname === '/about' || pathname.includes('/job')) {
+  if (pathname === '/about') {
     {
-      return 'var(--dark-blue-3)'
+      return 'var(--orange-20)'
     }
   }
 
   if (pathname === '/integrations') {
     {
-      return 'var(--dark-blue-3)'
+      return 'var(--neutral-20)'
     }
   }
 
   if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
     {
-      return 'var(--grey-3)'
+      return '#f3f2f2'
     }
   }
 
@@ -53,28 +54,28 @@ export const getMobileBackgroundColor = (pathname) => {
     pathname.includes('/case-studies') ||
     pathname === '/compare-with-google-analytics'
   ) {
-    return 'var(--grey-1)'
+    return 'var(--neutral-10)'
   }
 
-  return 'var(--dark-blue-4)'
+  return 'var(--neutral-90)'
 }
 
 export const getMobileOverlayColor = (pathname) => {
-  if (pathname === '/about' || pathname.includes('/job')) {
+  if (pathname === '/about') {
     {
-      return 'rgb(0 31 61 / 75%)'
+      return 'rgba(255, 243, 230, ,0.85)'
     }
   }
 
   if (pathname === '/integrations') {
     {
-      return 'rgb(0 31 61 / 75%)'
+      return 'rgba(0, 31, 61, ,0.75)'
     }
   }
 
   if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
     {
-      return 'rgb(193 199 208 / 85%)'
+      return 'rgba(191, 204, 218, ,0.65)'
     }
   }
 
@@ -83,28 +84,28 @@ export const getMobileOverlayColor = (pathname) => {
     pathname.includes('/case-studies') ||
     pathname === '/compare-with-google-analytics'
   ) {
-    return 'rgb(179 212 255 / 65%)'
+    return 'rgba(179, 212, 255, ,0.65)'
   }
 
-  return 'rgba(0, 31, 61, 0.85)'
+  return 'rgba(135, 153, 175, ,0.90)'
 }
 
 export const getMobileLinkColor = (pathname) => {
-  if (pathname === '/about' || pathname.includes('/job')) {
+  if (pathname === '/about') {
     {
-      return 'var(--light-blue-1)'
+      return 'var(--blue-80)'
     }
   }
 
   if (pathname === '/integrations') {
     {
-      return 'var(--light-blue-1)'
+      return 'var(--neutral-100)'
     }
   }
 
   if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
     {
-      return 'var(--dark-blue-4)'
+      return 'var(--neutral-100)'
     }
   }
 
@@ -113,30 +114,30 @@ export const getMobileLinkColor = (pathname) => {
     pathname.includes('/case-studies') ||
     pathname === '/compare-with-google-analytics'
   ) {
-    return 'var(--dark-blue-4)'
+    return 'var(--blue-90)'
   }
 
-  return 'var(--light-blue-1)'
+  return 'var(--neutral-10)'
 }
 
 export const getMobileTitleColor = (pathname) => {
-  if (pathname === '/about' || pathname.includes('/job')) {
+  if (pathname === '/about') {
     {
-      return 'rgb(179 212 255 / 50%)'
+      return 'var(--neutral-60)'
     }
   }
 
   if (pathname === '/integrations') {
     {
       {
-        return 'rgb(179 212 255 / 50%)'
+        return 'rgba(179 212 255 ,0.50)'
       }
     }
   }
 
   if (pathname === '/privacy-policy' || pathname === '/terms-of-service') {
     {
-      return 'rgb(10 8 37 / 50%)'
+      return 'rgba(10 8 37 ,0.50)'
     }
   }
 
@@ -145,18 +146,20 @@ export const getMobileTitleColor = (pathname) => {
     pathname.includes('/case-studies') ||
     pathname === '/compare-with-google-analytics'
   ) {
-    return 'var(--dark-blue-2)'
+    return 'var(--neutral-60)'
   }
 
-  return 'var(--light-blue-4)'
+  return 'var(--orange-20)'
 }
 
 export const getLogo = (pathname) => {
   if (
+    pathname === '/about' ||
     pathname === '/privacy-policy' ||
     pathname === '/terms-of-service' ||
     pathname.includes('/blog') ||
     pathname.includes('/case-studies') ||
+    pathname === '/integrations' ||
     pathname === '/compare-with-google-analytics'
   ) {
     return <LogoBlue />
@@ -167,10 +170,12 @@ export const getLogo = (pathname) => {
 
 export const getMenuIcon = (pathname) => {
   if (
+    pathname === '/about' ||
     pathname === '/privacy-policy' ||
     pathname === '/terms-of-service' ||
     pathname.includes('/blog') ||
     pathname.includes('/case-studies') ||
+    pathname === '/integrations' ||
     pathname === '/compare-with-google-analytics'
   ) {
     return <MenuIconDark />
@@ -181,10 +186,12 @@ export const getMenuIcon = (pathname) => {
 
 export const getXIcon = (pathname) => {
   if (
+    pathname === '/about' ||
     pathname === '/privacy-policy' ||
     pathname === '/terms-of-service' ||
     pathname.includes('/blog') ||
     pathname.includes('/case-studies') ||
+    pathname === '/integrations' ||
     pathname === '/compare-with-google-analytics'
   ) {
     return <XIconDark />

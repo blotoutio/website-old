@@ -53,10 +53,14 @@ const Header = () => {
         <div
           id='header-nav'
           className={
-            pathname.includes('/blog')
+            pathname.includes('/about')
+              ? 'about'
+              : pathname.includes('/blog')
               ? 'blog'
               : pathname.includes('/case-studies')
               ? 'case-studies'
+              : pathname.includes('/integrations')
+              ? 'integrations'
               : pathname === '/privacy-policy'
               ? 'privacy-policy'
               : pathname === '/terms-of-service'
@@ -72,7 +76,7 @@ const Header = () => {
             className='header-nav-link'
             onClick={() => codifyClick('Menu - Product')}
           >
-            <span>Product</span>
+            Product
           </Link>
           <Link
             to='/integrations'
@@ -80,7 +84,7 @@ const Header = () => {
             className='header-nav-link'
             onClick={() => codifyClick('Menu - Integrations')}
           >
-            <span>Integrations</span>
+            Integrations
           </Link>
           <div id='header-nav-link-docs' className='header-nav-link'>
             <span>Docs</span>
@@ -143,6 +147,14 @@ const Header = () => {
                 Case Studies
               </Link>
               <a
+                href='https://help.blotout.io/'
+                target='_blank'
+                rel='noopener'
+                onClick={() => codifyClick('Menu - Help Center')}
+              >
+                Help Center
+              </a>
+              <a
                 href='https://join.slack.com/t/blotout-shared/shared_invite/zt-nzwq4zpj-hOpfoZUs9Ar0n~fSxPBaSw'
                 target='_blank'
                 rel='noreferrer'
@@ -158,7 +170,7 @@ const Header = () => {
             className='header-nav-link'
             onClick={() => codifyClick('Menu - Company')}
           >
-            <span>Company</span>
+            Company
           </Link>
         </div>
         <a
@@ -197,7 +209,7 @@ const Header = () => {
                 }}
                 id='header-nav-mobile-product'
               >
-                <span>Product</span>
+                Product
               </Link>
               <Link
                 to='/integrations'
@@ -207,7 +219,7 @@ const Header = () => {
                   codifyClick('Menu - Integrations')
                 }}
               >
-                <span>Integrations</span>
+                Integrations
               </Link>
               <div className='header-nav-mobile-group'>
                 <div
@@ -311,7 +323,7 @@ const Header = () => {
                   codifyClick('Menu - Company')
                 }}
               >
-                <span>Company</span>
+                Company
               </Link>
             </div>
           </div>

@@ -1,4 +1,6 @@
 .legal {
+  background-color: #f3f2f2;
+
   .legal-text {
     padding: 70px 0;
   }
@@ -6,30 +8,43 @@
   .legal-header,
   .legal-text {
     width: 100%;
-    padding: 70px 0 100px 0;
+    padding: 70px 0 60px 0;
 
     @media (max-width: 1200px) {
       padding: 60px 25px;
     }
 
     @media (max-width: 1024px) {
-      padding: 60px 20px;
+      padding: 50px 20px;
     }
 
     @media (max-width: 768px) {
-      padding: 60px 15px;
+      padding: 40px 15px;
     }
 
     .legal-text-content {
-      max-width: 800px;
+      max-width: 750px;
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
-      color: var(--dark-blue-3);
+      color: var(--neutral-90);
+      padding-top: 0;
+
+      @media (max-width: 1200px) {
+        padding-top: 0;
+      }
+
+      @media (max-width: 1024px) {
+        padding-top: 0;
+      }
+
+      @media (max-width: 768px) {
+        padding-top: 0;
+      }
 
       span {
-        font-weight: 700;
-        color: var(--dark-blue-4);
+        font-weight: 600;
+        color: var(--neutral-100);
       }
     }
 
@@ -44,46 +59,33 @@
       text-align: center;
 
       .legal-title {
-        margin: auto;
         font-weight: 600;
-        font-size: 42px;
-        line-height: 125%;
+        font-size: 50px;
+        line-height: 100%;
         letter-spacing: -0.035em;
-        color: var(--dark-blue-4);
+        color: var(--neutral-90);
 
-        @media (max-width: 1024px) {
-          max-width: 800px;
-          font-size: 36px;
+        @media (max-width: 768px) {
+          font-size: 40px;
         }
 
         @media (max-width: 550px) {
-          font-size: 30px;
+          font-size: 35px;
         }
       }
 
       .legal-subtitle {
+        margin-top: 15px;
         font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
           Liberation Mono, monospace;
         font-weight: 600;
-        font-size: 18px;
-        color: rgba(0, 0, 0, 0.35);
+        font-size: 16px;
+        color: var(--neutral-50);
 
-        @media (max-width: 1024px) {
-          font-size: 18px;
-        }
-
-        @media (max-width: 900px) {
-          font-size: 16px;
+        @media (max-width: 768px) {
+          margin-top: 12px;
         }
       }
     }
-  }
-
-  .legal-header {
-    background-color: var(--grey-3);
-  }
-
-  .legal-text {
-    background-color: var(--grey-1);
   }
 }

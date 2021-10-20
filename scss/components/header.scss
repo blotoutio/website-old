@@ -42,7 +42,7 @@ header {
       .header-nav-link {
         position: relative;
         padding: 10px 15px;
-        color: var(--light-blue-1);
+        color: var(--white);
         text-align: left;
         text-decoration: none;
 
@@ -55,13 +55,14 @@ header {
         }
 
         &:hover {
-          background-color: var(--light-blue-1);
-          color: var(--dark-blue-4);
+          background-color: var(--neutral-20);
+          color: var(--blue-50);
           border-radius: 3px;
 
           .header-nav-submenu {
             display: flex;
             font-weight: 500;
+            background-color: var(--neutral-20);
           }
         }
 
@@ -74,8 +75,7 @@ header {
           width: max-content;
           padding: 10px 20px;
           text-align: left;
-          background-color: var(--light-blue-1);
-          color: var(--dark-blue-4);
+          color: var(--blue-90);
 
           @media (max-width: 1024px) {
             padding: 10px 15px;
@@ -87,11 +87,12 @@ header {
 
           a {
             padding: 5px 0;
-            color: var(--dark-blue-4);
+            color: var(--blue-90);
             text-decoration: none;
+            transition: color 0.2s ease-in-out;
 
             &:hover {
-              color: var(--dark-blue-1);
+              color: var(--blue-50);
             }
           }
         }
@@ -100,33 +101,63 @@ header {
       #header-nav-link-product,
       #header-nav-link-company {
         &:hover {
-          color: var(--dark-blue-1) !important;
+          color: var(--blue-50) !important;
         }
       }
 
       #header-nav-link-docs,
       #header-nav-link-resources {
+        border-radius: 3px 3px 0 0;
+
         &:hover {
-          border-radius: 3px 3px 0 0;
-
           span {
-            color: var(--dark-blue-2);
+            color: var(--neutral-70);
           }
+        }
 
-          .header-nav-submenu {
-            border-radius: 0 3px 3px 3px;
+        .header-nav-submenu {
+          border-radius: 0 3px 3px 3px;
+        }
+      }
+
+      &.about {
+        .header-nav-link {
+          &:hover {
+            background-color: var(--orange-20) !important;
+
+            .header-nav-submenu {
+              background-color: var(--orange-20) !important;
+            }
           }
         }
       }
-    }
 
-    .blog,
-    .case-studies,
-    .privacy-policy,
-    .terms-of-service,
-    .compare-with-google-analytics {
-      .header-nav-link {
-        color: var(--dark-blue-3) !important;
+      &.integrations {
+        .header-nav-link {
+          &:hover {
+            background-color: var(--neutral-10) !important;
+
+            .header-nav-submenu {
+              background-color: var(--neutral-10) !important;
+            }
+          }
+        }
+      }
+
+      &.about,
+      &.blog,
+      &.case-studies,
+      &.integrations,
+      &.privacy-policy,
+      &.terms-of-service,
+      &.compare-with-google-analytics {
+        .header-nav-link {
+          color: var(--blue-90);
+
+          &:hover {
+            color: var(--blue-50);
+          }
+        }
       }
     }
 
@@ -137,12 +168,14 @@ header {
       font-size: 16px;
       text-align: center;
       text-decoration: none;
-      background-color: var(--yellow-2);
-      color: var(--dark-blue-3);
+      background-color: var(--orange-50);
+      color: var(--white);
       border-radius: 3px;
+      transition: all 0.2s ease-in-out;
 
       &:hover {
-        background-color: var(--yellow-1);
+        background-color: var(--orange-60);
+        color: var(--neutral-10);
       }
 
       @media (max-width: 900px) {
@@ -161,6 +194,7 @@ header {
         display: block;
         width: 26px;
         height: 26px;
+        transition: all 0.2s ease-in-out;
 
         &:hover {
           opacity: 0.7;
@@ -206,6 +240,7 @@ header {
             display: block;
             width: 32px;
             height: 32px;
+            transition: all 0.2s ease-in-out;
 
             &:hover {
               opacity: 0.7;
@@ -245,9 +280,10 @@ header {
             display: flex;
             width: 100%;
             text-decoration: none;
+            transition: color 0.2s ease-in-out;
 
             &:hover {
-              color: var(--dark-blue-1) !important;
+              color: var(--blue-40) !important;
             }
           }
 
@@ -256,7 +292,6 @@ header {
 
             .header-nav-mobile-group-title {
               display: flex;
-              color: var(--light-blue-4);
               text-decoration: none;
             }
 

@@ -1,6 +1,6 @@
 footer {
   padding: 100px 0;
-  background-color: var(--grey-2);
+  background-color: var(--white);
 
   @media (max-width: 1200px) {
     padding: 80px 25px;
@@ -56,7 +56,7 @@ footer {
           font-weight: 500;
           font-size: 23px;
           line-height: 115%;
-          color: var(--dark-blue-2);
+          color: var(--blue-100);
         }
 
         #footer-special-cta {
@@ -67,14 +67,14 @@ footer {
           font-size: 16px;
           line-height: 130%;
           text-align: center;
-          background-color: var(--dark-blue-4);
-          color: var(--light-blue-1);
+          background-color: var(--blue-80);
+          color: var(--neutral-10);
           text-decoration: none;
           border-radius: 3px;
           transition: all 0.2s ease-in-out;
 
           &:hover {
-            background-color: var(--dark-blue-3);
+            background-color: var(--blue-90);
           }
 
           .cta-icon {
@@ -140,7 +140,7 @@ footer {
             font-weight: 700;
             font-size: 16px;
             line-height: 130%;
-            color: var(--dark-blue-2);
+            color: var(--blue-60);
             margin-bottom: 25px;
 
             @media (max-width: 630px) {
@@ -156,7 +156,7 @@ footer {
             .footer-nav-link {
               display: block;
               margin-bottom: 10px;
-              color: var(--dark-blue-3);
+              color: var(--blue-90);
               text-decoration: none;
               transition: all 0.2s ease-in-out;
 
@@ -165,7 +165,7 @@ footer {
               }
 
               &:hover {
-                color: var(--dark-blue-1);
+                color: var(--blue-50);
               }
 
               @media (max-width: 630px) {
@@ -187,7 +187,7 @@ footer {
       align-items: center;
       width: 100%;
       padding-top: 25px;
-      border-top: 2px solid var(--grey-3);
+      border-top: 2px solid var(--neutral-20);
 
       @media (max-width: 630px) {
         flex-direction: column-reverse;
@@ -220,14 +220,14 @@ footer {
           }
 
           &:hover svg {
-            fill: var(--dark-blue-1);
+            fill: var(--blue-50);
           }
 
           svg {
             display: block;
             width: 24px;
             height: 24px;
-            fill: var(--dark-blue-3);
+            fill: var(--blue-90);
             transition: all 0.2s ease-in-out;
 
             &:first-of-type {
@@ -243,7 +243,7 @@ footer {
         a {
           display: inline-block;
           font-size: 14px;
-          color: rgba(0, 0, 0, 0.65);
+          color: var(--neutral-60);
           text-decoration: none;
           transition: all 0.2s ease-in-out;
 
@@ -252,7 +252,7 @@ footer {
           }
 
           &:hover {
-            color: var(--dark-blue-1);
+            color: var(--blue-50);
           }
         }
       }
