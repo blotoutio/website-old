@@ -45,7 +45,6 @@ header {
         color: var(--white);
         text-align: left;
         text-decoration: none;
-        transition: color 0.2s ease-in-out;
 
         @media (max-width: 1024px) {
           padding: 10px 12px;
@@ -63,6 +62,7 @@ header {
           .header-nav-submenu {
             display: flex;
             font-weight: 500;
+            background-color: var(--neutral-20);
           }
         }
 
@@ -75,7 +75,6 @@ header {
           width: max-content;
           padding: 10px 20px;
           text-align: left;
-          background-color: var(--neutral-20);
           color: var(--blue-90);
 
           @media (max-width: 1024px) {
@@ -101,8 +100,6 @@ header {
 
       #header-nav-link-product,
       #header-nav-link-company {
-        transition: color 0.2s ease-in-out;
-
         &:hover {
           color: var(--blue-50) !important;
         }
@@ -110,44 +107,56 @@ header {
 
       #header-nav-link-docs,
       #header-nav-link-resources {
-        transition: color 0.2s ease-in-out;
+        border-radius: 3px 3px 0 0;
 
         &:hover {
-          border-radius: 3px 3px 0 0;
-          color: var(--blue-90);
-
-          .header-nav-submenu {
-            border-radius: 0 3px 3px 3px;
+          span {
+            color: var(--neutral-70);
           }
-        }
-      }
-    }
-
-    .about {
-      .header-nav-link {
-        &:hover {
-          background-color: var(--orange-20) !important;
-          color: var(--blue-50);
         }
 
         .header-nav-submenu {
-          background-color: var(--orange-20) !important;
+          border-radius: 0 3px 3px 3px;
         }
       }
-    }
 
-    .about,
-    .blog,
-    .case-studies,
-    .integrations,
-    .privacy-policy,
-    .terms-of-service,
-    .compare-with-google-analytics {
-      .header-nav-link {
-        color: var(--blue-90) !important;
+      &.about {
+        .header-nav-link {
+          &:hover {
+            background-color: var(--orange-20) !important;
 
-        &:hover {
-          color: var(--blue-50) !important;
+            .header-nav-submenu {
+              background-color: var(--orange-20) !important;
+            }
+          }
+        }
+      }
+
+      &.integrations {
+        .header-nav-link {
+          &:hover {
+            background-color: var(--neutral-10) !important;
+
+            .header-nav-submenu {
+              background-color: var(--neutral-10) !important;
+            }
+          }
+        }
+      }
+
+      &.about,
+      &.blog,
+      &.case-studies,
+      &.integrations,
+      &.privacy-policy,
+      &.terms-of-service,
+      &.compare-with-google-analytics {
+        .header-nav-link {
+          color: var(--blue-90);
+
+          &:hover {
+            color: var(--blue-50);
+          }
         }
       }
     }
