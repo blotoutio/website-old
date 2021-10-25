@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import SlackIcon from '../../graphics/icons/slack-icon'
-import TwitterIcon from '../../graphics/icons/twitter-icon'
-import LinkedInIcon from '../../graphics/icons/linkedin-icon'
-import { codifyClick } from '../../utils'
+import SlackIcon from '~/graphics/icons/slack-icon'
+import TwitterIcon from '~/graphics/icons/twitter-icon'
+import LinkedInIcon from '~/graphics/icons/linkedin-icon'
+import { codifyClick } from '~/utils'
 
 const Footer = () => {
   return (

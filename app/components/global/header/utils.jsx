@@ -1,10 +1,10 @@
-import MenuIconDark from '../../graphics/icons/menu-icon-dark'
-import MenuIconLight from '../../graphics/icons/menu-icon-light'
-import XIconDark from '../../graphics/icons/x-icon-dark'
-import XIconLight from '../../graphics/icons/x-icon-light'
-import LogoLight from '../../graphics/logo-light'
-import LogoBlue from '../../graphics/logo-blue'
-import LogoDark from '../../graphics/logo-dark'
+import MenuIconDark from '~/graphics/icons/menu-icon-dark'
+import MenuIconLight from '~/graphics/icons/menu-icon-light'
+import XIconDark from '~/graphics/icons/x-icon-dark'
+import XIconLight from '~/graphics/icons/x-icon-light'
+import LogoLight from '~/graphics/logo-light'
+import LogoBlue from '~/graphics/logo-blue'
+import LogoDark from '~/graphics/logo-dark'
 
 export const getBackgroundColor = (pathname) => {
   if (pathname === '/about') {

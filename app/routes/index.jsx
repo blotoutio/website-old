@@ -1,6 +1,8 @@
 import SlackIcon from '../graphics/icons/slack-icon'
 import stylesUrl from '../styles/index.css'
 import { codifyClick, metaInfo } from '../utils'
+import PersonaSectionWithPoints from '~/components/home/PersonaSectionWithPoints'
+import SectionPoint from '~/components/home/PersonaSectionWithPoints/SectionPoint'
 
 export function meta() {
   return metaInfo('')
@@ -21,12 +23,12 @@ export default function Index() {
       <div id='hero' className='home-section'>
         <div id='hero-content' className='home-section-content'>
           <h1 id='hero-title'>
-            Serverless analytics and marketing attribution for the privacy era
+            The customer data platform reimagined for the privacy era
           </h1>
           <p id='hero-subtitle'>
-            Your third-party analytics and marketing tools are bleeding data.
-            Blotout gives you the turnkey infrastructure and solutions to solve
-            this.
+            Join the trusted enterprises that activate customer journeys with
+            100% visibility using Blotout’s trusted solutions
+            infrastructure-as-code.
           </p>
           <div id='hero-cta-group'>
             <a
@@ -55,7 +57,7 @@ export default function Index() {
           </div>
           <div id='hero-customer'>
             <div id='hero-customer-text'>
-              Trusted by privacy-first organizations
+              Trusted organizations rely on Blotout
             </div>
             <div id='hero-customer-logo-group'>
               <div className='hero-customer-logo'>
@@ -89,10 +91,11 @@ export default function Index() {
 
       <div id='explainer' className='home-section'>
         <div id='explainer-content' className='home-section-content'>
-          <h2 id='explainer-title'>
-            Fix your measurements, enhance your metrics, and exceed your privacy
-            obligations at a fraction of the cost of doing it yourself
-          </h2>
+          <h2 id='explainer-title'>Reignite your growth stack</h2>
+          <p>
+            Blotout lets you capture every customer data point -- without loss
+            -- to bring accuracy back to your growth stack.
+          </p>
           <img
             id='explainer-image'
             src='/img/main/explainer.png'
@@ -111,37 +114,23 @@ export default function Index() {
               id='marketers-text-heading'
               className='non-engineer-text-heading'
             >
-              For Marketers
+              For growth marketing teams
             </div>
             <h2 id='marketers-text-title' className='non-engineer-text-title'>
-              Accurately measure and optimize conversions in the post-cookie era
+              Maximize your marketing spend in our post-cookie world
             </h2>
             <p
               id='marketers-text-subtitle'
               className='non-engineer-text-subtitle'
             >
-              Capture your data in-house to accurately measure the value of
-              every dollar you spend across the lifetimes of your campaigns.
+              Measure, attribute, optimize, and activate customer data with 100%
+              customer coverage.
             </p>
           </div>
           <div
             id='marketers-illustration-group'
             className='non-engineer-illustration-group'
           >
-            <div
-              id='marketers-point-group'
-              className='non-engineer-point-group'
-            >
-              <h3 className='marketers-point non-engineer-point'>
-                Capture every missing user and event
-              </h3>
-              <h3 className='marketers-point non-engineer-point'>
-                Measure true campaign ROI and ROAS
-              </h3>
-              <h3 className='marketers-point non-engineer-point'>
-                Attribute conversions across channels and devices
-              </h3>
-            </div>
             <div
               id='marketers-illustration'
               className='non-engineer-illustration'
@@ -165,154 +154,66 @@ export default function Index() {
         </div>
       </div>
 
-      <div id='product-managers' className='home-section non-engineer'>
-        <div
-          id='product-managers-content'
-          className='home-section-content non-engineer-content'
-        >
-          <div
-            id='product-managers-text-group'
-            className='non-engineer-text-group'
-          >
-            <div
-              id='product-managers-text-heading'
-              className='non-engineer-text-heading'
-            >
-              For Product Managers
-            </div>
-            <h2
-              id='product-managers-text-title'
-              className='non-engineer-text-title'
-            >
-              Map the entire customer journey
-            </h2>
-            <p
-              id='product-managers-text-subtitle'
-              className='non-engineer-text-subtitle'
-            >
-              Customer journeys go beyond your site and app. Finally see
-              journeys with every service ticket, package return, and all your
-              other interactions in one place.
-            </p>
-          </div>
-          <div
-            id='product-managers-illustration-group'
-            className='non-engineer-illustration-group'
-          >
-            <div
-              id='product-managers-point-group'
-              className='non-engineer-point-group'
-            >
-              <h3 className='product-managers-point non-engineer-point'>
-                Optimize your customer funnels
-              </h3>
-              <h3 className='product-managers-point non-engineer-point'>
-                Segment behaviors and personas without code
-              </h3>
-              <h3 className='product-managers-point non-engineer-point'>
-                Personalize content and products with feature flags
-              </h3>
-            </div>
-            <div
-              id='product-managers-illustration'
-              className='non-engineer-illustration'
-            >
-              <img
-                src='/img/main/product-managers.png'
-                alt='A diagram illustrating how Blotout can benefit product managers by letting them see the complete customer journey by letting them track not just their websites and apps but interactions beyond them like service tickets and package return status'
-              />
-            </div>
-          </div>
-          <a
-            href='https://calendly.com/blotout-experts'
-            target='_blank'
-            rel='noreferrer'
-            id='product-managers-cta'
-            className='non-engineer-cta'
-            onClick={() => codifyClick('PM - Trial')}
-          >
-            Start Free Trial
-          </a>
-        </div>
-      </div>
+      <PersonaSectionWithPoints
+        persona='product-managers'
+        title='For product-led growth teams'
+        heading='Build better customer journeys'
+        sub_heading='The only stack that combines 100% of your digital and offline data
+      to give you total customer lifecycle visibility.'
+        image_src='img/main/product-managers.png'
+        image_alt='A diagram illustrating how the Blotout infrastructure can be deployed under two hours and that it comprises of only three steps - configuration, deployment and scaling'
+        codify_as='PM - Trial'
+      >
+        <SectionPoint
+          heading='Combine online and offline journeys'
+          sub_heading=''
+        />
+        <SectionPoint
+          heading='Navigate forwards and backwards from an event in time'
+          sub_heading=''
+        />
+        <SectionPoint
+          heading='Build trusted relationships with your customers'
+          sub_heading=''
+        />
+      </PersonaSectionWithPoints>
 
-      <div id='engineers' className='home-section'>
-        <div id='engineers-content' className='home-section-content'>
-          <div id='engineers-text-group'>
-            <div id='engineers-text-heading'>For Engineers</div>
-            <h2 id='engineers-text-title'>
-              A complete privacy data engineering stack as infrastructure
-            </h2>
-            <p id='engineers-text-subtitle'>
-              Data engineering is expensive. Engineers aren’t privacy lawyers.
-              Solve for both with our no-code customer data infrastructure stack
-              built for privacy.
-            </p>
-          </div>
-          <div id='engineers-illustration'>
-            <img
-              src='/img/main/engineers.png'
-              alt='A diagram illustrating how the Blotout infrastructure can be deployed under two hours and that it comprises of only three steps - configuration, deployment and scaling'
-            />
-          </div>
-          <div id='engineers-point-group'>
-            <h3 className='engineers-point'>Deploy as your infrastructure</h3>
-            <h3 className='engineers-point'>
-              Save millions in engineering time and effort
-            </h3>
-            <h3 className='engineers-point'>
-              Rely on built in-privacy solutions
-            </h3>
-          </div>
-          <a
-            href='https://calendly.com/blotout-experts'
-            target='_blank'
-            rel='noreferrer'
-            id='engineers-cta'
-            onClick={() => codifyClick('Engineer - Trial')}
-          >
-            Start Free Trial
-          </a>
-        </div>
-      </div>
+      <PersonaSectionWithPoints
+        persona='engineers'
+        title='For engineering teams'
+        heading='Solutions infrastructure-as-code that builds trust'
+        sub_heading='Data engineering is expensive. Engineers aren’t lawyers. Solve for
+      both.'
+        image_src='img/main/engineers.png'
+        image_alt='A diagram illustrating how the Blotout infrastructure can be deployed under two hours and that it comprises of only three steps - configuration, deployment and scaling'
+        codify_as='Engineer - Trial'
+      >
+        <SectionPoint
+          heading='Infra-as-code with Terraform'
+          sub_heading='Deploy at the CDN edge and 250 data centers globally.'
+        />
+        <SectionPoint
+          heading='Serverless data architecture'
+          sub_heading='Airflow and Superset containers built in. DBT pipelines.'
+        />
+        <SectionPoint
+          heading='Zero code unified user graph'
+          sub_heading='SDKs for clickstream. EL +T for online and offline sources.
+      UI-based data unification.'
+        />
+      </PersonaSectionWithPoints>
 
       <div id='privacy' className='home-section'>
         <div id='privacy-content' className='home-section-content'>
           <div id='privacy-content-text'>
-            <div id='privacy-hashtag'>#PrivacyOps</div>
+            <div id='privacy-hashtag'>#TrustOps</div>
             <h2 id='privacy-title'>
-              Privacy woven into the fabric of your data infrastructure
+              A trusted relationship is a compliant relationship
             </h2>
             <p id='privacy-subtitle'>
-              Consent management, audit logs, and governance from the moment of
-              ingestion for compliance with global privacy laws.
+              Establish a trusted data relationship with your customers to build
+              loyalty while reducing compliance risk.
             </p>
-            <div id='privacy-point-group'>
-              <h3 className='privacy-point'>
-                Data processing in your infrastructure as Controller
-                <img src='/img/check.svg' alt='A check mark' />
-              </h3>
-              <h3 className='privacy-point'>
-                Integrated consent for subject identity
-                <img src='/img/check.svg' alt='A check mark' />
-              </h3>
-              <h3 className='privacy-point'>
-                Observable and auditable infra
-                <img src='/img/check.svg' alt='A check mark' />
-              </h3>
-              <h3 className='privacy-point'>
-                Governed and secure data management
-                <img src='/img/check.svg' alt='A check mark' />
-              </h3>
-              <h3 className='privacy-point'>
-                Purpose-limited data sharing
-                <img src='/img/check.svg' alt='A check mark' />
-              </h3>
-              <h3 className='privacy-point special'>
-                GDPR, CCPA, CPRA, POPIA, LGPD
-                <img src='/img/check.svg' alt='A check mark' />
-              </h3>
-            </div>
           </div>
           <a
             href='https://calendly.com/blotout-experts'

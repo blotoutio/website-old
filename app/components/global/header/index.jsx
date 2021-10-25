@@ -10,7 +10,7 @@ import {
   getMobileTitleColor,
   getXIcon,
 } from './utils'
-import { codifyClick } from '../../utils'
+import { codifyClick } from '~/utils'
 
 const Header = () => {
   const location = useLocation()
