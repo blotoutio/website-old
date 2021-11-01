@@ -1,0 +1,84 @@
+#main-section {
+  width: 100%;
+  background-color: var(--blue-100);
+
+  #main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+
+    // Common Stuff
+
+    h2 {
+      max-width: 800px;
+      margin: 0 auto;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -0.02em;
+      color: var(--blue-20);
+
+      @media (max-width: 1180px) {
+        max-width: 750px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      @media (max-width: 900px) {
+        max-width: 600px;
+        font-size: 33px;
+        line-height: 46px;
+        letter-spacing: -0.015em;
+      }
+
+      @media (max-width: 650px) {
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: -0.019em;
+      }
+    }
+
+    // Common Stuff
+
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      padding-top: 40px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.015em;
+      color: var(--neutral-10);
+
+      @media (max-width: 1180px) {
+        padding-top: 32px;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 575px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    // Common Stuff (Padding can be common with section padding)
+
+    img {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 0;
+
+      @media (max-width: 1280px) {
+        padding: 64px 0;
+      }
+    }
+  }
+}

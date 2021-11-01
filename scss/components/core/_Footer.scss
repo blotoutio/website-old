@@ -1,0 +1,260 @@
+footer {
+  width: 100%;
+  background-color: var(--black);
+
+  #footer-styled-container {
+    width: 100%;
+    padding: 64px 80px 48px 80px;
+
+    @media (max-width: 1280px) {
+      padding: 64px 0 40px 0;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 64px 0 32px 0;
+    }
+
+    #footer-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: {
+        left: 24px;
+        right: 24px;
+      }
+
+      @media (max-width: 1120px) {
+        max-width: 900px;
+      }
+
+      .top {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+
+        @media (max-width: 1120px) {
+          grid-auto-flow: row;
+          justify-content: stretch;
+          row-gap: 80px;
+        }
+
+        @media (max-width: 480px) {
+          justify-content: flex-start;
+        }
+
+        .left {
+          display: flex;
+          flex-direction: column;
+          row-gap: 64px;
+
+          @media (max-width: 1120px) {
+            align-items: center;
+          }
+
+          @media (max-width: 480px) {
+            align-items: flex-start;
+          }
+
+          .logo {
+            width: 100px;
+
+            @media (max-width: 1120px) {
+              justify-self: center;
+            }
+
+            @media (max-width: 480px) {
+              justify-self: flex-start;
+            }
+
+            svg {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .slack-invitation {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            max-width: 250px;
+            font-weight: 400;
+            letter-spacing: -0.011em;
+
+            @media (max-width: 1120px) {
+              text-align: center;
+            }
+
+            @media (max-width: 480px) {
+              text-align: left;
+            }
+
+            .invitation-text {
+              font-size: 13px;
+              line-height: 18px;
+              color: var(--neutral-30);
+            }
+
+            .invitation-link {
+              display: flex;
+              align-items: center;
+              column-gap: 8px;
+              font-size: 14px;
+              line-height: 18px;
+              color: var(--neutral-30);
+              transition: all 150ms ease-in-out;
+
+              &:hover {
+                color: var(--white);
+              }
+
+              @media (max-width: 1120px) {
+                justify-content: center;
+              }
+
+              @media (max-width: 480px) {
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
+
+        .right {
+          .nav {
+            display: grid;
+            grid-template-columns: repeat(3, 175px) auto;
+            column-gap: 40px;
+
+            @media (max-width: 1360px) {
+              column-gap: 24px;
+            }
+
+            @media (max-width: 1280px) {
+              column-gap: 16px;
+            }
+
+            @media (max-width: 1120px) {
+              grid-template-columns: repeat(3, 1fr) auto;
+              column-gap: unset;
+            }
+
+            @media (max-width: 850px) {
+              grid-template-rows: 1fr 1fr;
+              grid-template-columns: max-content max-content;
+              column-gap: 128px;
+              row-gap: 64px;
+              justify-content: center;
+            }
+
+            @media (max-width: 600px) {
+              column-gap: 64px;
+            }
+
+            @media (max-width: 480px) {
+              grid-template-rows: 1fr;
+              grid-template-columns: unset;
+              column-gap: 0;
+              justify-content: flex-start;
+            }
+
+            .nav-group {
+              display: grid;
+              align-content: baseline;
+
+              .nav-group-title {
+                margin-bottom: 12px;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: var(--neutral-60);
+              }
+
+              .nav-link {
+                padding: 4px 0;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: -0.01em;
+                color: var(--neutral-30);
+                text-decoration: none;
+                transition: all 150ms ease-in-out;
+
+                &:hover {
+                  color: var(--white);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .bottom {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        margin-top: 80px;
+
+        @media (max-width: 850px) {
+          grid-auto-flow: row;
+          grid-template-rows: 1fr;
+          justify-content: center;
+          row-gap: 64px;
+          margin-top: 64px;
+        }
+
+        .social-links {
+          display: grid;
+          grid-auto-flow: column;
+          grid-template-columns: max-content max-content;
+          column-gap: 8px;
+          justify-content: center;
+
+          @media (max-width: 850px) {
+            column-gap: 24px;
+          }
+
+          svg {
+            fill: var(--neutral-10);
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+              fill: var(--neutral-30);
+            }
+          }
+        }
+
+        .legal-links {
+          display: grid;
+          grid-auto-flow: column;
+          column-gap: 24px;
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 16px;
+          letter-spacing: 0.09em;
+          text-transform: uppercase;
+
+          @media (max-width: 850px) {
+            column-gap: 48px;
+          }
+
+          @media (max-width: 480px) {
+            column-gap: 24px;
+          }
+
+          a {
+            text-decoration: none;
+            color: var(--neutral-60);
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+              color: var(--neutral-40);
+            }
+          }
+        }
+      }
+    }
+  }
+}

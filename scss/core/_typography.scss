@@ -1,0 +1,189 @@
+:root {
+  --sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
+}
+
+@mixin type-1 {
+  font-size: 9px;
+  line-height: 16px;
+  letter-spacing: 0.016em;
+}
+
+@mixin type-2 {
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+@mixin type-3 {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+}
+
+@mixin type-4 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin type-5 {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -0.0025em;
+}
+
+@mixin type-6 {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+}
+
+@mixin type-7 {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.009em;
+}
+
+@mixin type-8 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+}
+
+@mixin type-9 {
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.013em;
+}
+
+@mixin type-10 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.014em;
+}
+
+@mixin type-11 {
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: -0.016em;
+}
+
+@mixin type-12 {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.017em;
+}
+
+@mixin type-13 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.019em;
+}
+
+@mixin type-14 {
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.021em;
+}
+
+@mixin type-15 {
+  font-size: 40px;
+  line-height: 56px;
+  letter-spacing: -0.022em;
+}
+
+@mixin type-16 {
+  font-size: 42px;
+  line-height: 56px;
+  letter-spacing: -0.022em;
+}
+
+@mixin type-17 {
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -0.022em;
+}
+
+@mixin type-18 {
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: -0.022em;
+}
+
+// Barlow
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/font/Barlow-Regular.woff2') format('woff2'),
+    url('/font/Barlow-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/font/Barlow-Medium.woff2') format('woff2'),
+    url('/font/Barlow-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  src: url('/font/BarlowSemiCondensed-SemiBold.woff2') format('woff2'),
+    url('/font/BarlowSemiCondensed-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Inter
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/font/Inter-Light.woff2') format('woff2'),
+    url('/font/Inter-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/font/Inter-Regular.woff2') format('woff2'),
+    url('/font/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/font/Inter-Medium.woff2') format('woff2'),
+    url('/font/Inter-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/font/Inter-SemiBold.woff2') format('woff2'),
+    url('/font/Inter-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/font/Inter-Bold.woff2') format('woff2'),
+    url('/font/Inter-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

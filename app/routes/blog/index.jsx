@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useRouteData } from '@remix-run/react'
+import { useRouteData } from 'remix'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
@@ -16,6 +16,8 @@ import * as post4 from './announcing-blotout-V0-1.mdx'
 import * as post3 from './kiss-making-privacy-by-design-easy.mdx'
 import * as post2 from './privacy-by-trust-vs-privacy-by-design.mdx'
 import * as post1 from './privacy-has-muscle-at-the-device-edge.mdx'
+
+import SubHeader from '~/components/core/SubHeader'
 
 export function meta() {
   return metaInfo('Blog')
@@ -51,32 +53,30 @@ export function loader() {
 export default function Blog() {
   let posts = useRouteData()
   return (
-    <div id='blog' className='writing'>
-      <div id='blog-header' className='writing-header'>
-        <div id='blog-header-content' className='writing-header-content'>
-          <h1 id='blog-title' className='writing-title'>
-            Blog
-          </h1>
-        </div>
-      </div>
-      <div id='blog-list' className='writing-list'>
-        <div id='blog-list-content' className='writing-list-content'>
-          <div className='list'>
-            <div className='list-content'>
-              {posts.map((blog) => (
-                <div className='list-item' key={blog.slug}>
-                  <h2>
-                    <Link
-                      to={blog.slug}
-                      className='list-item-title'
-                      onClick={() => codifyClick(`Blog - ${blog.title}`)}
-                    >
-                      {blog.title}
-                    </Link>
-                  </h2>
-                  <div className='list-item-info'>{formatDate(blog.date)}</div>
-                </div>
-              ))}
+    <div className='writing-new'>
+      <SubHeader heading='Blog' />
+      <div id='blog' className='writing'>
+        <div id='blog-list' className='writing-list'>
+          <div id='blog-list-content' className='writing-list-content'>
+            <div className='list'>
+              <div className='list-content'>
+                {posts.map((blog) => (
+                  <div className='list-item' key={blog.slug}>
+                    <h2>
+                      <Link
+                        to={blog.slug}
+                        className='list-item-title'
+                        onClick={() => codifyClick(`Blog - ${blog.title}`)}
+                      >
+                        {blog.title}
+                      </Link>
+                    </h2>
+                    <div className='list-item-info'>
+                      {formatDate(blog.date)}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

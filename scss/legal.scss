@@ -1,27 +1,13 @@
-.legal {
-  background-color: #f3f2f2;
+@use 'components/home/SubHeader';
 
-  .legal-text {
-    padding: 70px 0;
+.legal-new {
+  h1 {
+    color: var(--neutral-100) !important;
   }
+}
 
-  .legal-header,
+.legal {
   .legal-text {
-    width: 100%;
-    padding: 70px 0 60px 0;
-
-    @media (max-width: 1200px) {
-      padding: 60px 25px;
-    }
-
-    @media (max-width: 1024px) {
-      padding: 50px 20px;
-    }
-
-    @media (max-width: 768px) {
-      padding: 40px 15px;
-    }
-
     .legal-text-content {
       max-width: 750px;
       font-weight: 400;
@@ -29,13 +15,16 @@
       line-height: 150%;
       color: var(--neutral-90);
       padding-top: 0;
+      padding-bottom: 96px;
 
-      @media (max-width: 1200px) {
+      @media (max-width: 1280px) {
         padding-top: 0;
+        padding-bottom: 80px;
       }
 
       @media (max-width: 1024px) {
         padding-top: 0;
+        padding-bottom: 64px;
       }
 
       @media (max-width: 768px) {
@@ -48,44 +37,9 @@
       }
     }
 
-    .legal-header-content,
     .legal-text-content {
       width: 100%;
       margin: auto;
-    }
-
-    .legal-header-content {
-      max-width: 1180px;
-      text-align: center;
-
-      .legal-title {
-        font-weight: 600;
-        font-size: 50px;
-        line-height: 100%;
-        letter-spacing: -0.035em;
-        color: var(--neutral-90);
-
-        @media (max-width: 768px) {
-          font-size: 40px;
-        }
-
-        @media (max-width: 550px) {
-          font-size: 35px;
-        }
-      }
-
-      .legal-subtitle {
-        margin-top: 15px;
-        font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-          Liberation Mono, monospace;
-        font-weight: 600;
-        font-size: 16px;
-        color: var(--neutral-50);
-
-        @media (max-width: 768px) {
-          margin-top: 12px;
-        }
-      }
     }
   }
 }

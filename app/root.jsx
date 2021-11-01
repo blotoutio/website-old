@@ -2,8 +2,8 @@ import { useEffect } from 'react'
 import { Meta, Links, Scripts, LiveReload } from 'remix'
 import { capture, init } from '@blotoutio/sdk-core'
 import { useLocation, Outlet } from 'react-router-dom'
-import Header from './components/header'
-import Footer from './components/footer'
+import Header from './components/core/Header'
+import Footer from './components/core/Footer'
 
 import stylesUrl from './styles/main.css'
 
@@ -12,9 +12,9 @@ export function meta() {
 
   return {
     'og:site_name': 'Blotout, Inc.',
-    'og:image': 'https://blotout.io/img/og-rectangle.png',
+    'og:image': 'https://blotout.io/img/open-graph-small.png',
     'og:url': `https://blotout.io${pathname}`,
-    'twitter:image': 'https://blotout.io/img/og-square.png',
+    'twitter:image': 'https://blotout.io/img/open-graph-large.png',
     'twitter:card': 'summary',
   }
 }

@@ -1,0 +1,138 @@
+.persona-section {
+  width: 100%;
+  background-color: var(--white);
+
+  &:nth-of-type(2n) {
+    background-color: #f1f1f1;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    span {
+      max-width: 600px;
+      margin: 0 auto;
+      padding-bottom: 24px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0.065em;
+      text-transform: uppercase;
+      color: var(--orange-50);
+
+      @media (max-width: 1180px) {
+        font-size: 17px;
+      }
+
+      @media (max-width: 900px) {
+        font-size: 16px;
+      }
+    }
+
+    // Common Stuff
+
+    h2 {
+      max-width: 800px;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -0.02em;
+      color: var(--neutral-80);
+
+      @media (max-width: 1180px) {
+        max-width: 750px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      @media (max-width: 900px) {
+        max-width: 600px;
+        font-size: 33px;
+        line-height: 46px;
+        letter-spacing: -0.015em;
+      }
+
+      @media (max-width: 650px) {
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: -0.019em;
+      }
+    }
+
+    // Common Stuff
+
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      padding-top: 24px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.015em;
+      color: var(--blue-100);
+
+      @media (max-width: 1180px) {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 575px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    // Common Stuff (Padding can be common with section padding)
+
+    .graphic {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 96px 0;
+
+      @media (max-width: 1280px) {
+        padding: 80px 0;
+      }
+    }
+  }
+}
+
+#marketer {
+  .graphic {
+    max-width: 850px;
+    padding-top: 64px;
+  }
+}
+
+#product-manager {
+  // Get rid of this
+
+  .persona-section-point-container {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .persona-section-point {
+      max-width: 250px;
+      border: 2px solid var(--white);
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: -0.015em;
+      color: var(--blue-100);
+
+      @media (max-width: 1024px) {
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: -0.014em;
+      }
+    }
+  }
+}
