@@ -2,7 +2,7 @@ import stylesUrl from '../styles/campaign.css'
 import { useSubmit, redirect, useRouteData } from 'remix'
 import { capture } from '@blotoutio/sdk-core'
 import { codifyClick, metaInfo } from '../utils'
-import LogoLight from '../graphics/LogoLight'
+import LogoDark from '../graphics/LogoDark'
 
 export function loader({ request }) {
   let requestURL = new URL(request.url)
@@ -142,7 +142,7 @@ export default function Campaign() {
           <div id='table-content'>
             <div></div>
             <div className='blotout-box main-box'>
-              <LogoBlue />
+              <LogoDark />
             </div>
             <div className='ga-box main-box'>Google Analytics</div>
 
@@ -238,7 +238,7 @@ export default function Campaign() {
           <div id='table-content-mobile'>
             <div className='table-mobile-group'>
               <div className='blotout-box main-box'>
-                <LogoBlue />
+                <LogoDark />
               </div>
               <div className='ga-box main-box'>Google Analytics</div>
             </div>
