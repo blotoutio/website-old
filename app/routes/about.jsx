@@ -19,7 +19,9 @@ export function links() {
 }
 
 export function loader() {
-  return fetch('https://api.lever.co/v0/postings/blotout')
+  return fetch('https://api.lever.co/v0/postings/blotout').then((response) => {
+    return response.json()
+  })
 }
 
 export default function About() {
