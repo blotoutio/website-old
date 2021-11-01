@@ -103,11 +103,19 @@
         color: var(--orange-30);
       }
 
-      img {
+      img:first-of-type {
+        max-width: 85%;
+
+        @media (max-width: 1280px) {
+          max-width: 200px;
+        }
+      }
+
+      img:last-of-type {
         max-width: 100%;
 
         @media (max-width: 1280px) {
-          max-width: 250px;
+          max-width: 265px;
         }
       }
     }
