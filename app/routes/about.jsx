@@ -68,8 +68,12 @@ export default function About() {
           <div className='right'>
             <span>Backed by leading investors</span>
             <img
-              src='img/core/investor/yc.svg'
+              src='img/core/investor/y-combinator.svg'
               alt='Logo of Y Combinator'
+            ></img>
+            <img
+              src='img/core/investor/first-rays.svg'
+              alt='Logo of First Rays Venture Partners'
             ></img>
           </div>
         </div>

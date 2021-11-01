@@ -85,12 +85,13 @@
     .right {
       display: flex;
       flex-direction: column;
-      row-gap: 48px;
+      row-gap: 64px;
       justify-content: center;
       align-items: center;
       max-width: 40%;
 
       @media (max-width: 850px) {
+        row-gap: 48px;
         max-width: 650px;
       }
 
@@ -103,11 +104,19 @@
         color: var(--orange-30);
       }
 
-      img {
-        max-width: 100%;
+      img:first-of-type {
+        max-width: 65%;
 
         @media (max-width: 1280px) {
-          max-width: 250px;
+          max-width: 200px;
+        }
+      }
+
+      img:last-of-type {
+        max-width: 80%;
+
+        @media (max-width: 1280px) {
+          max-width: 265px;
         }
       }
     }
