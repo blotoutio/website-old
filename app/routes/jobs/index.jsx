@@ -1,14 +1,9 @@
 import { redirect } from 'remix'
-import { metaInfo } from '../../utils'
-
-export function meta() {
-  return metaInfo('Jobs')
-}
 
 export function loader() {
-  throw redirect('/about')
+  return redirect('/about')
 }
 
-export default function Job() {
+export default function Index() {
   return null
 }

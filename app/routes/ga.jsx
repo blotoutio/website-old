@@ -2,7 +2,7 @@ import stylesUrl from '../styles/campaign.css'
 import { useSubmit, redirect, useRouteData } from 'remix'
 import { capture } from '@blotoutio/sdk-core'
 import { codifyClick, metaInfo } from '../utils'
-import LogoBlue from '../graphics/logo-blue'
+import LogoLight from '../graphics/LogoLight'
 
 export function loader({ request }) {
   let requestURL = new URL(request.url)

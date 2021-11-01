@@ -1,27 +1,23 @@
-.writing {
-  background-color: var(--neutral-10);
+@use 'components/home/SubHeader';
 
-  .writing-header,
+.writing-new {
+  h1 {
+    color: var(--orange-50) !important;
+  }
+}
+
+.writing {
   .writing-list {
     width: 100%;
 
-    .writing-header-content,
     .writing-list-content {
       width: 100%;
       max-width: 1180px;
       margin: auto;
-      padding: 70px 0 60px 0;
+      padding: 80px 24px;
 
-      @media (max-width: 1200px) {
-        padding: 60px 25px;
-      }
-
-      @media (max-width: 1024px) {
-        padding: 50px 20px;
-      }
-
-      @media (max-width: 768px) {
-        padding: 40px 15px;
+      @media (max-width: 1280px) {
+        padding: 64px 24px;
       }
     }
 
@@ -38,26 +34,6 @@
 
       @media (max-width: 768px) {
         padding-top: 0;
-      }
-    }
-
-    .writing-header-content {
-      text-align: center;
-
-      .writing-title {
-        font-weight: 600;
-        font-size: 50px;
-        line-height: 100%;
-        letter-spacing: -0.035em;
-        color: var(--blue-80);
-
-        @media (max-width: 768px) {
-          font-size: 40px;
-        }
-
-        @media (max-width: 550px) {
-          font-size: 35px;
-        }
       }
     }
 
@@ -81,6 +57,7 @@
 
             h2 {
               margin: 0;
+              font-weight: 400;
               line-height: 135%;
 
               @media (max-width: 768px) {
@@ -97,6 +74,7 @@
 
               a {
                 text-decoration: none;
+                transition: all 150ms ease-in-out;
 
                 &:hover {
                   color: var(--blue-50);
@@ -105,12 +83,12 @@
             }
 
             .list-item-info {
-              margin-top: 15px;
-              font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo,
-                Consolas, Liberation Mono, monospace;
-              font-weight: 600;
+              margin-top: 8px;
+              font-weight: 500;
               font-size: 16px;
-              color: rgba(0, 0, 0, 0.65);
+              line-height: 24px;
+              letter-spacing: -0.011em;
+              color: var(--neutral-50);
 
               @media (max-width: 768px) {
                 margin-top: 12px;

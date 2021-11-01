@@ -1,0 +1,30 @@
+.primary-cta {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  height: 40px;
+  padding: 10px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.011em;
+  text-decoration: none;
+  background-color: var(--blue-50);
+  color: var(--white);
+  border-radius: 50px;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    background-color: var(--blue-60);
+
+    .primary-cta-icon {
+      transform: translate(3px, -3px);
+    }
+  }
+
+  .primary-cta-icon {
+    margin-left: 8px;
+    transform: none;
+    transition: all 150ms ease-in-out;
+  }
+}

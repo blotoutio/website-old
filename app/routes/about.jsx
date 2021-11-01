@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom'
-import { useRouteData } from '@remix-run/react'
+import { useRouteData } from 'remix'
 import stylesUrl from '../styles/about.css'
-import { codifyClick, metaInfo } from '../utils'
+import { metaInfo } from '../utils'
+
+import Section from '~/components/core/Section'
+import { ArrowUpRight24 } from '@carbon/icons-react'
 
 export function meta() {
   return metaInfo('About')
@@ -17,100 +19,77 @@ export function links() {
 }
 
 export function loader() {
-  return fetch('https://api.lever.co/v0/postings/blotout?group=department')
-    .then((response) => response.json())
-    .then((data) => {
-      return Promise.all(
-        data.map((department) => {
-          return fetch(
-            `https://api.lever.co/v0/postings/blotout?department=${department.title}&group=team`
-          )
-            .then((response) => response.json())
-            .then((data) => {
-              return { title: department.title, teams: data }
-            })
-        })
-      )
-    })
+  return fetch('https://api.lever.co/v0/postings/blotout')
 }
 
 export default function About() {
-  let jobs = useRouteData()
+  let data = useRouteData()
+
+  let numberOfJobs = data.length
 
   return (
-    <div id='about'>
-      <div id='about-header'>
-        <div id='about-header-content'>
-          <h1 id='about-title'>About</h1>
+    <>
+      <Section id='about-section'>
+        <div className='about-introduction'>
+          <h1>
+            Blotout is reinventing the <span>customer data platform</span> to
+            put trust first.
+          </h1>
         </div>
-      </div>
-
-      <div id='about-text'>
-        <div id='about-text-content'>
-          <div id='about-text-title'>
-            We are a group of individuals that came together with the mindset
-            that privacy has an important place in our future, our children’s
-            future.
+      </Section>
+      <Section id='info'>
+        <div className='company-details'>
+          <div className='left'>
+            <p>
+              Most companies today depend on marketing and analytics tools that
+              track users and silo data. Increasingly, this means data loss,
+              compliance risk, and weak customer relationships.
+            </p>
+            <p>
+              Blotout turns this on its head by providing companies with
+              solutions infrastructure-as-code that they run themselves. Instead
+              of sending customer data to third-parties, they capture it to
+              their own warehouse — data is never lost and incredible
+              possibilities open for a unified view of the customer.
+            </p>
+            <p>
+              This is a completely new way to think of the growth stack. Our
+              platform makes it possible for anyone from startups to publicly
+              traded companies to harness the power of a direct and trusted
+              relationship with their customers.
+            </p>
+            <p>
+              We're venture funded and proud to count Y Combinator and leading
+              investors as our backers.
+            </p>
           </div>
-          <div className='about-text-header'>Meet our team</div>
-          <div className='about-text-header-content'>
-            We are engineers, designers, operators, sales, and web/app
-            developers who believe privacy is a fundamental right and must
-            always be protected. Now over a year in development, we can proudly
-            showcase how our technology can co-exist with the data needs of any
-            business or enterprise, while ensuring privacy by design and global
-            compliance.
-          </div>
-          <div className='about-text-header'>Our vision for Blotout</div>
-          <div className='about-text-header-content'>
-            It was a huge win for web consumers when Apple took up the cause of
-            protecting user privacy. Since 2017, the company has steadily
-            improved the Intelligent Tracking Prevention (ITP) feature in
-            WebKit, the engine that powers the Safari browser across its devices
-            and operating systems. Other browsers, like Firefox and Brave, have
-            extensive tracking prevention and an astonishing 55% of users
-            globally use ad blockers that take this sort of prevention even
-            further. Reading the times, the team responsible for Chromium — the
-            core of Google’s Chrome browser, which has 65% market share — has
-            itself committed to eliminating third-party (3P) cookies by 2021.
-          </div>
-          <div className='about-text-header'>Open Jobs</div>
-          <div id='job-list'>
-            {jobs.map((department) => {
-              return (
-                <div className='job-group' key={department.title}>
-                  <div className='job-group-title'>{department.title}</div>
-                  {department.teams.map((team, index) => {
-                    return (
-                      <div className='job-sub-group' key={team.title}>
-                        <div className='job-sub-group-title'>{team.title}</div>
-                        <div className='job-group-items'>
-                          {team.postings.map((posting) => {
-                            return (
-                              <a
-                                href={posting.hostedUrl}
-                                className='job-title'
-                                target='_blank'
-                                rel='noreferrer'
-                                key={posting.id}
-                                onClick={() =>
-                                  codifyClick(`Jobs - ${posting.text}`)
-                                }
-                              >
-                                {posting.text}
-                              </a>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
-              )
-            })}
+          <div className='right'>
+            <span>Backed by leading investors</span>
+            <img
+              src='img/core/investor/yc.svg'
+              alt='Logo of Y Combinator'
+            ></img>
           </div>
         </div>
-      </div>
-    </div>
+      </Section>
+      <Section id='careers'>
+        <h2>Join the team</h2>
+        <p>
+          We’re growing rapidly and looking to fill roles across our teams.
+          You'll get to work alongside experts on some of the most interesting
+          questions of our moment as we reamgine the growth stack for the
+          privacy era.
+        </p>
+        <a
+          href='https://jobs.lever.co/blotout'
+          target='_blank'
+          rel='noreferrer'
+          className='careers-cta'
+        >
+          View {numberOfJobs >= 5 ? numberOfJobs : null} open positions
+          <ArrowUpRight24 className='careers-cta-icon' />
+        </a>
+      </Section>
+    </>
   )
 }

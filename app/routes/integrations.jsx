@@ -3,6 +3,8 @@ import stylesUrl from '../styles/integrations.css'
 import { capture } from '@blotoutio/sdk-core'
 import { codifyClick, metaInfo } from '../utils'
 
+import SubHeader from '~/components/core/SubHeader'
+
 export function meta() {
   return metaInfo('Integrations')
 }
@@ -41,43 +43,42 @@ const captureSearch = (text) => {
 
 export default function Integrations() {
   return (
-    <div id='integrations'>
-      <div id='integrations-header'>
-        <div id='integrations-header-content'>
-          <h1 id='integrations-title'>Integrations</h1>
-        </div>
-      </div>
-
-      <div id='integrations-text'>
-        <div id='integrations-text-content'>
-          <div id='integrations-search'>
-            <input
-              type='text'
-              placeholder='Search'
-              onKeyUp={filter}
-              onFocus={() => capture('Integration - Search Focus')}
-            />
-          </div>
-          <div id='integrations-list'>
-            {integrationList.map((integration) => {
-              return (
-                <a
-                  href={integration.git_url}
-                  className='integration'
-                  key={integration.git_url}
-                  onClick={() =>
-                    codifyClick('Integration - Box', { type: integration.name })
-                  }
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <div className='integration-icon'>
-                    <img src={integration.icon_url} />
-                  </div>
-                  <div className='integration-text'>{integration.name}</div>
-                </a>
-              )
-            })}
+    <div className='integrations-new'>
+      <SubHeader heading='Integrations' />
+      <div id='integrations'>
+        <div id='integrations-text'>
+          <div id='integrations-text-content'>
+            <div id='integrations-search'>
+              <input
+                type='text'
+                placeholder='Search'
+                onKeyUp={filter}
+                onFocus={() => capture('Integration - Search Focus')}
+              />
+            </div>
+            <div id='integrations-list'>
+              {integrationList.map((integration) => {
+                return (
+                  <a
+                    href={integration.git_url}
+                    className='integration'
+                    key={integration.git_url}
+                    onClick={() =>
+                      codifyClick('Integration - Box', {
+                        type: integration.name,
+                      })
+                    }
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <div className='integration-icon'>
+                      <img src={integration.icon_url} />
+                    </div>
+                    <div className='integration-text'>{integration.name}</div>
+                  </a>
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>

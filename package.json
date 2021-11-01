@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@blotoutio/sdk-core": "^0.9.1",
+    "@carbon/icons-react": "^10.41.0",
     "@remix-run/react": "^0.18.0",
     "@remix-run/vercel": "^0.18.0",
     "@vercel/node": "^1.8.3",
