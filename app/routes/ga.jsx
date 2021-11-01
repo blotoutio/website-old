@@ -1,8 +1,8 @@
-import stylesUrl from '../styles/campaign.css'
+import stylesUrl from '~/styles/campaign.css'
 import { useSubmit, redirect, useRouteData } from 'remix'
 import { capture } from '@blotoutio/sdk-core'
 import { codifyClick, metaInfo } from '../utils'
-import LogoDark from '../graphics/LogoDark'
+import LogoDark from '~/graphics/LogoDark'
 
 export function loader({ request }) {
   let requestURL = new URL(request.url)
@@ -377,7 +377,7 @@ export default function Campaign() {
               type='email'
               name='email'
               required
-              onFocus={() => capture('GA Campaign - Form Focus')}
+              onFocus={() => capture('GA Campaign - Form Input Focus')}
             />
             <button
               type='submit'

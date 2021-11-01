@@ -47,15 +47,27 @@ const Header = () => {
       className={mobileMenuState ? 'mobile-menu-closed' : 'mobile-menu-open'}
     >
       <div id='header-container'>
-        <Link to={'/'} className='logo'>
+        <Link
+          to={'/'}
+          className='logo'
+          onClick={() => codifyClick('Header - Logo')}
+        >
           <LogoDark />
         </Link>
         <nav>
-          <Link to={{ path: './', hash: '#main-section' }} className='nav-link'>
+          <Link
+            to={{ path: './', hash: '#main-section' }}
+            className='nav-link'
+            onClick={() => codifyClick('Header - Product')}
+          >
             {!mobileMenuState ? <Dashboard32 /> : null}
             <span>Product</span>
           </Link>
-          <Link to='/integrations' className='nav-link'>
+          <Link
+            to='/integrations'
+            className='nav-link'
+            onClick={() => codifyClick('Header - Integrations')}
+          >
             {!mobileMenuState ? <Integration32 /> : null}
             <span>Integrations</span>
           </Link>
@@ -69,6 +81,9 @@ const Header = () => {
                     target='_blank'
                     rel='noopener'
                     className='sub-nav-link'
+                    onClick={() =>
+                      codifyClick('Header / Resources - Help Center')
+                    }
                   >
                     <Notebook24 />
                     <span>Help Center</span>
@@ -78,17 +93,30 @@ const Header = () => {
                     target='_blank'
                     rel='noopener'
                     className='sub-nav-link'
+                    onClick={() =>
+                      codifyClick('Header / Resources - Documentation')
+                    }
                   >
                     <Api_124 />
                     <span>Documentation</span>
                   </a>
                 </div>
                 <div className='sub-nav-group'>
-                  <Link to='/case-studies' className='sub-nav-link'>
+                  <Link
+                    to='/case-studies'
+                    className='sub-nav-link'
+                    onClick={() =>
+                      codifyClick('Header / Resources - Case Studies')
+                    }
+                  >
                     <Growth24 />
                     <span>Case Studies</span>
                   </Link>
-                  <Link to='/blog' className='sub-nav-link'>
+                  <Link
+                    to='/blog'
+                    className='sub-nav-link'
+                    onClick={() => codifyClick('Header / Resources - Blog')}
+                  >
                     <Blog24 />
                     <span>Blog</span>
                   </Link>
@@ -99,6 +127,7 @@ const Header = () => {
                     target='_blank'
                     rel='noreferrer'
                     className='sub-nav-link'
+                    onClick={() => codifyClick('Header / Resources - Slack')}
                   >
                     <LogoSlack24 />
                     <span>Slack Community</span>
@@ -112,7 +141,7 @@ const Header = () => {
             <span>Company</span>
           </Link>
         </nav>
-        <PrimaryCTA text='Talk to us' />
+        <PrimaryCTA text='Talk to us' codify_as='Header - CTA' />
         {mobileMenuState ? (
           <Menu24 className='menu-icon' onClick={toggleMenu} />
         ) : (
@@ -121,35 +150,11 @@ const Header = () => {
       </div>
     </header>
     /* <header
-      style={{
-        backgroundColor: getBackgroundColor(pathname),
-      }}
     >
       <div id='header-content'>
-        <div id='logo'>
-          <Link to='/' onClick={() => codifyClick('Header - Logo')}>
-            {getLogo(pathname)}
-          </Link>
-        </div>
+
         <div
           id='header-nav'
-          className={
-            pathname.includes('/about')
-              ? 'about'
-              : pathname.includes('/blog')
-              ? 'blog'
-              : pathname.includes('/case-studies')
-              ? 'case-studies'
-              : pathname.includes('/integrations')
-              ? 'integrations'
-              : pathname === '/privacy-policy'
-              ? 'privacy-policy'
-              : pathname === '/terms-of-service'
-              ? 'terms-of-service'
-              : pathname.includes('/compare-with-google-analytics')
-              ? 'compare-with-google-analytics'
-              : 'other'
-          }
         >
           <Link
             to={{ pathname: './', hash: '#explainer' }}
@@ -274,12 +279,8 @@ const Header = () => {
           }}
         >
           <div
-            id='header-nav-mobile'
-            style={{ backgroundColor: getMobileBackgroundColor(pathname) }}
+
           >
-            <div id='header-nav-mobile-x-icon' onClick={toggleMobileMenu}>
-              {getXIcon(pathname)}
-            </div>
             <div id='header-nav-mobile-links'>
               <Link
                 to={{ pathname: './', hash: '#explainer' }}

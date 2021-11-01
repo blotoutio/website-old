@@ -1,6 +1,6 @@
 import { useRouteData } from 'remix'
 import stylesUrl from '../styles/about.css'
-import { metaInfo } from '../utils'
+import { codifyClick, metaInfo } from '../utils'
 
 import Section from '~/components/core/Section'
 import { ArrowUpRight24 } from '@carbon/icons-react'
@@ -85,6 +85,7 @@ export default function About() {
           target='_blank'
           rel='noreferrer'
           className='careers-cta'
+          onClick={() => codifyClick('About - Lever')}
         >
           View {numberOfJobs >= 5 ? numberOfJobs : null} open positions
           <ArrowUpRight24 className='careers-cta-icon' />

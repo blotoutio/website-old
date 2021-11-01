@@ -58,7 +58,6 @@ header {
       .sub-nav-title {
         color: var(--neutral-70);
         transition: all 150ms ease-in-out;
-        transition-delay: 50ms;
 
         @media (hover: hover) {
           &:hover {
@@ -89,7 +88,6 @@ header {
           position: absolute;
           left: -65px;
           padding-top: 12px;
-          background-color: var(--white);
           visibility: hidden;
           transform: translateY(8px);
           opacity: 0;
@@ -101,8 +99,13 @@ header {
             flex-direction: column;
             row-gap: 24px;
             padding: 24px 48px 24px 24px;
+            background-color: var(--white);
             border: 2px solid var(--neutral-20);
             border-radius: 3px;
+
+            .sub-nav-title {
+              transition-delay: 50ms;
+            }
 
             .sub-nav-group {
               display: flex;

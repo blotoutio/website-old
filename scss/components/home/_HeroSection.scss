@@ -84,12 +84,13 @@
   form {
     display: grid;
     grid-template-columns: 300px max-content;
-    gap: 24px;
+    column-gap: 24px;
     margin: 0 auto;
 
     @media (max-width: 650px) {
       grid-template-columns: minmax(100%, 300px);
       grid-auto-flow: row;
+      row-gap: 24px;
       justify-items: center;
     }
 
@@ -114,6 +115,57 @@
         color: var(--neutral-50);
       }
     }
+
+    .form-button {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      height: 40px;
+      padding: 10px 24px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: -0.011em;
+      text-decoration: none;
+      background-color: var(--blue-50);
+      color: var(--white);
+      border: none;
+      border-radius: 50px;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        background-color: var(--blue-60);
+        cursor: pointer;
+
+        .form-button-icon {
+          transform: translateX(3px);
+        }
+      }
+
+      .form-button-icon {
+        margin-left: 8px;
+        transform: none;
+        transition: all 150ms ease-in-out;
+      }
+    }
+
+    .form-message {
+      display: none;
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: -0.011em;
+      color: var(--neutral-50);
+    }
+  }
+
+  form.thank-you .form-message,
+  form.error .form-message {
+    display: block;
+  }
+
+  form.error .form-message {
+    color: var(--orange-50);
   }
 
   .customers {

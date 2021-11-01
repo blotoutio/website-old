@@ -1,24 +1,44 @@
 import Section from '~/components/core/Section'
-import PrimaryCTA from '~/components/core/PrimaryCTA'
 
 const PersonaSection = (props) => {
-  const { persona, title, heading, sub_heading, children } = props
+  const {
+    persona,
+    title,
+    heading,
+    sub_heading,
+    illustration,
+    animation,
+    children,
+  } = props
 
   return (
     <Section id={persona} className='persona-section'>
-      <div className='styled-container'>
-        <div className='container'>
-          <span>{title}</span>
-          <h2>{heading}</h2>
-          <p>{sub_heading}</p>
+      <div className='container'>
+        <span>{title}</span>
+
+        <h2>{heading}</h2>
+
+        <p>{sub_heading}</p>
+
+        {illustration ? (
           <img
-            className='illustration'
+            className='graphic'
             src={'img/home/' + persona + '.svg'}
             alt=''
           />
-          {children}
-          <PrimaryCTA text='Talk to us' />
-        </div>
+        ) : null}
+
+        {animation ? (
+          <div className='graphic'>
+            <lottie-player
+              autoplay
+              loop
+              src={'animation-data/animation_data_' + persona + '.json'}
+            ></lottie-player>
+          </div>
+        ) : null}
+
+        {children}
       </div>
     </Section>
   )

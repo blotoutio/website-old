@@ -128,10 +128,7 @@
   }
 
   .bottom {
-    // Hide for now
-
-    display: none;
-    // display: grid;
+    display: grid;
 
     .special-cta {
       box-sizing: content-box;
@@ -161,14 +158,13 @@
         color: var(--blue-50);
 
         .special-cta-icon {
-          left: 16px;
+          transform: translate(3px, -3px);
           color: var(--blue-50);
         }
       }
 
       .special-cta-icon {
-        position: relative;
-        left: 0;
+        transform: none;
         margin-left: 16px;
         transition: all 150ms ease-in-out;
       }
