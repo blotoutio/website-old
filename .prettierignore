@@ -1,6 +1,7 @@
 .cache
 app/styles
 build
+public/animation-data
 public/build
 server/build
 .vercel
