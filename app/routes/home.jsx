@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { redirect } from 'remix'
 import stylesUrl from '~/styles/home.css'
 import { codifyClick, metaInfo } from '~/utils'
@@ -88,10 +87,6 @@ export function links() {
 }
 
 export default function Index() {
-  useEffect(() => {
-    import('@lottiefiles/lottie-player')
-  })
-
   return (
     <div id='home'>
       {/* Hero */}

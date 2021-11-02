@@ -1,4 +1,5 @@
 import Section from '~/components/core/Section'
+import { Player } from '@lottiefiles/react-lottie-player'
 
 const PersonaSection = (props) => {
   const {
@@ -30,11 +31,11 @@ const PersonaSection = (props) => {
 
         {animation ? (
           <div className='graphic'>
-            <lottie-player
+            <Player
               autoplay
               loop
               src={'animation-data/animation_data_' + persona + '.json'}
-            ></lottie-player>
+            ></Player>
           </div>
         ) : null}
 

@@ -14,7 +14,7 @@
   "dependencies": {
     "@blotoutio/sdk-core": "^0.9.1",
     "@carbon/icons-react": "^10.41.0",
-    "@lottiefiles/lottie-player": "^1.4.4",
+    "@lottiefiles/react-lottie-player": "^3.4.1",
     "@remix-run/react": "^0.18.0",
     "@remix-run/vercel": "^0.18.0",
     "@vercel/node": "^1.8.3",
