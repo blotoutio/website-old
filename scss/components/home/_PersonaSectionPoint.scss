@@ -4,9 +4,6 @@
   margin: 0 auto;
   margin-top: 24px;
   margin-bottom: 80px;
-  // padding: 32px 64px;
-  // background-color: rgba(241, 244, 248, 0.5);
-  // border-radius: 3px;
   justify-content: space-around;
   flex-wrap: wrap;
 
@@ -66,14 +63,10 @@
     // Get rid of !important
 
     p {
-      margin: 0 auto;
       padding-bottom: 0 !important;
-      font-family: 'Inter' !important;
-      font-weight: 400 !important;
       font-size: 16px !important;
       line-height: 26px !important;
       letter-spacing: -0.011em !important;
-      color: var(--blue-100) !important;
 
       @media (max-width: 1024px) {
         font-size: 14px !important;
