@@ -12,7 +12,7 @@
     text-align: center;
 
     @media (max-width: 768px) {
-      padding: 96px 16px 24px 16px;
+      padding: 96px 24px 64px 24px;
     }
 
     h1 {
@@ -39,12 +39,16 @@
     }
 
     span {
-      padding: 24px 0;
+      margin-top: 16px;
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.011em;
       color: var(--neutral-50);
+
+      @media (max-width: 768px) {
+        margin-top: 8px;
+      }
     }
   }
 }

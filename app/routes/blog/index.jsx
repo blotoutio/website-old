@@ -61,7 +61,7 @@ export default function Blog() {
             <div className='list'>
               <div className='list-content'>
                 {posts.map((blog) => (
-                  <div className='list-item' key={blog.slug}>
+                  <article className='list-item' key={blog.slug}>
                     <h2>
                       <Link
                         to={blog.slug}
@@ -71,10 +71,8 @@ export default function Blog() {
                         {blog.title}
                       </Link>
                     </h2>
-                    <div className='list-item-info'>
-                      {formatDate(blog.date)}
-                    </div>
-                  </div>
+                    <p className='list-item-info'>{formatDate(blog.date)}</p>
+                  </article>
                 ))}
               </div>
             </div>

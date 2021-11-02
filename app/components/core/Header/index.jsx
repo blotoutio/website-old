@@ -47,6 +47,8 @@ const Header = () => {
       className={mobileMenuState ? 'mobile-menu-closed' : 'mobile-menu-open'}
     >
       <div id='header-container'>
+        {/* Link to home */}
+
         <Link
           aria-label='Blotout'
           to={'/'}
@@ -60,6 +62,9 @@ const Header = () => {
         >
           <LogoDark />
         </Link>
+
+        {/* Main Navigation */}
+
         <nav>
           <Link
             to={{ path: './', hash: '#main-section' }}
@@ -185,6 +190,9 @@ const Header = () => {
             <span>Company</span>
           </Link>
         </nav>
+
+        {/* Main CTA */}
+
         <PrimaryCTA text='Talk to us' codify_as='Header - CTA' />
         {mobileMenuState ? (
           <Menu24 className='menu-icon' onClick={toggleMenu} />

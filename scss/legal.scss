@@ -10,25 +10,19 @@
   .legal-text {
     .legal-text-content {
       max-width: 750px;
+      margin: auto;
+      padding: 0 24px 96px 24px;
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
       color: var(--neutral-90);
-      padding-top: 0;
-      padding-bottom: 96px;
 
-      @media (max-width: 1280px) {
-        padding-top: 0;
-        padding-bottom: 80px;
+      @media (max-width: 1200px) {
+        padding: 0 24px 80px 24px;
       }
 
       @media (max-width: 1024px) {
-        padding-top: 0;
-        padding-bottom: 64px;
-      }
-
-      @media (max-width: 768px) {
-        padding-top: 0;
+        padding: 0 24px 64px 24px;
       }
 
       span {
