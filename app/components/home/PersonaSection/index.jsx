@@ -21,10 +21,10 @@ const PersonaSection = (props) => {
   const inViewport = checkIntersection(ref, '250px')
 
   useEffect(() => {
-    if (inViewport) {
+    if (inViewport && lottie) {
       lottie.play()
     }
-  })
+  }, [])
 
   return (
     <Section id={persona} className='persona-section'>
