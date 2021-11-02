@@ -24,7 +24,7 @@ const PersonaSection = (props) => {
     if (inViewport && lottie) {
       lottie.play()
     }
-  }, [])
+  })
 
   return (
     <Section id={persona} className='persona-section'>
