@@ -65,14 +65,17 @@ header {
         }
       }
 
+      .sub-nav-title {
+      }
+
       .nav-group {
         position: relative;
 
         @media (hover: hover) {
           &:hover {
-            .nav-link,
             .sub-nav-title {
               color: var(--black);
+              cursor: default;
             }
 
             .sub-nav-wrapper {
