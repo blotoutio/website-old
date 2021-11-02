@@ -16,7 +16,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: var(--sans-serif);
+  font-family: 'Inter', system-ui, -apple-system;
   font-feature-settings: 'cv11' on, 'cv08' on, 'cv10' on, 'cv03' on, 'cv02' on,
     'cv04' on, 'zero' on, 'cv09' on;
   font-smooth: always;
@@ -26,7 +26,19 @@ body {
 
 input,
 button {
-  font-family: var(--sans-serif);
+  font-family: 'Inter', system-ui, -apple-system;
+}
+
+@supports (font-variation-settings: normal) {
+  html,
+  body {
+    font-family: 'Inter var', system-ui, -apple-system;
+  }
+
+  input,
+  button {
+    font-family: 'Inter var', system-ui, -apple-system;
+  }
 }
 
 p,
@@ -70,4 +82,8 @@ h3 {
   @media (max-width: 550px) {
     font-size: 20px;
   }
+}
+
+code {
+  font-family: ui-monospace, monospace;
 }

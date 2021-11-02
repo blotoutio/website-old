@@ -39,7 +39,7 @@ export default function CaseStudies() {
                   const formattedDate = formatDate(caseStudy.date)
 
                   return (
-                    <div className='list-item' key={caseStudy.slug}>
+                    <article className='list-item' key={caseStudy.slug}>
                       <h2>
                         <Link
                           to={caseStudy.slug}
@@ -51,8 +51,8 @@ export default function CaseStudies() {
                           {caseStudy.title}
                         </Link>
                       </h2>
-                      <div className='list-item-info'>{formattedDate}</div>
-                    </div>
+                      <p className='list-item-info'>{formattedDate}</p>
+                    </article>
                   )
                 })}
               </div>

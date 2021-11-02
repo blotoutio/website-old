@@ -18,6 +18,12 @@
       line-height: 45px !important;
       letter-spacing: -0.02em !important;
     }
+
+    @media (max-width: 650px) {
+      font-size: 28px !important;
+      line-height: 38px !important;
+      letter-spacing: -0.02em !important;
+    }
   }
 }
 
@@ -29,34 +35,14 @@
       width: 100%;
       max-width: 1180px;
       margin: auto;
-      padding: 98px 0;
+      padding: 0 24px 96px 24px;
 
       @media (max-width: 1200px) {
-        padding: 80px 24px;
+        padding: 0 24px 80px 24px;
       }
 
       @media (max-width: 1024px) {
-        padding: 64px 24px;
-      }
-
-      @media (max-width: 768px) {
-        padding: 64px 24px;
-      }
-    }
-
-    .writing-item-text-content {
-      padding-top: 0;
-
-      @media (max-width: 1200px) {
-        padding-top: 0;
-      }
-
-      @media (max-width: 1024px) {
-        padding-top: 0;
-      }
-
-      @media (max-width: 768px) {
-        padding-top: 0;
+        padding: 0 24px 64px 24px;
       }
     }
 

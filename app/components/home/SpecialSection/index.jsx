@@ -16,14 +16,14 @@ const SpecialSection = () => {
               <Special />
             </div>
             <div className='text'>
-              <div className='heading'>
+              <h2 className='heading'>
                 A trusted relationship is a compliant relationship
-              </div>
-              <div className='sub-heading'>
+              </h2>
+              <p className='sub-heading'>
                 Establish a trusted data relationship with your customers to
                 build loyalty and maintain compliance with the GDPR and global
                 privacy laws.
-              </div>
+              </p>
             </div>
           </div>
           <div className='right'>

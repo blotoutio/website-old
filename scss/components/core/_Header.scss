@@ -70,9 +70,9 @@ header {
 
         @media (hover: hover) {
           &:hover {
-            .nav-link,
             .sub-nav-title {
               color: var(--black);
+              cursor: default;
             }
 
             .sub-nav-wrapper {
@@ -239,4 +239,10 @@ header.mobile-menu-open {
       right: 24px;
     }
   }
+}
+
+header.mobile-menu-closed {
+  -webkit-backdrop-filter: saturate(100%) blur(20px);
+  backdrop-filter: saturate(100%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.85);
 }

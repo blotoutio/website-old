@@ -14,13 +14,18 @@ const Footer = () => {
         <div id='footer-container'>
           <div className='top'>
             <div className='left'>
+              {/* Link to home */}
+
               <Link
+                aria-label='Blotout'
                 to={'/'}
                 className='logo'
                 onClick={() => codifyClick('Footer - Logo')}
               >
                 <LogoLight />
               </Link>
+
+              {/* Separate link to Slack community */}
 
               <div className='slack-invitation'>
                 <div className='invitation-text'>
@@ -39,8 +44,11 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+
+            {/* Main Navigation */}
+
             <div className='right'>
-              <div className='nav'>
+              <nav>
                 <div className='nav-group'>
                   <div className='nav-group-title'>Product</div>
                   <Link
@@ -202,12 +210,16 @@ const Footer = () => {
                     Roadmap
                   </a>
                 </div>
-              </div>
+              </nav>
             </div>
           </div>
+
           <div className='bottom'>
+            {/* Social Links */}
+
             <div className='social-links'>
               <a
+                aria-label='Twitter'
                 href='https://twitter.com/blotout_io'
                 target='_blank'
                 rel='noreferrer'
@@ -215,7 +227,9 @@ const Footer = () => {
               >
                 <LogoTwitter24 />
               </a>
+
               <a
+                aria-label='LinkedIn'
                 href='https://www.linkedin.com/company/blotout/'
                 target='_blank'
                 rel='noreferrer'
@@ -224,6 +238,9 @@ const Footer = () => {
                 <LogoLinkedin24 />
               </a>
             </div>
+
+            {/* Legal Links */}
+
             <div className='legal-links'>
               <Link
                 to='/privacy-policy'
@@ -231,6 +248,7 @@ const Footer = () => {
               >
                 Privacy Policy
               </Link>
+
               <Link
                 to='/terms-of-service'
                 onClick={() => codifyClick('Footer - Terms of Service')}
