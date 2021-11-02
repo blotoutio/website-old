@@ -136,7 +136,11 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <Link to='/about' className='nav-link'>
+          <Link
+            to='/about'
+            className='nav-link'
+            onClick={() => codifyClick('Header - Company')}
+          >
             {!mobileMenuState ? <Enterprise32 /> : null}
             <span>Company</span>
           </Link>
