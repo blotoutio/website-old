@@ -50,7 +50,12 @@ const Header = () => {
         <Link
           to={'/'}
           className='logo'
-          onClick={() => codifyClick('Header - Logo')}
+          onClick={() => {
+            {
+              !mobileMenuState ? toggleMenu() : null
+            }
+            codifyClick('Header - Logo')
+          }}
         >
           <LogoDark />
         </Link>
@@ -58,7 +63,12 @@ const Header = () => {
           <Link
             to={{ path: './', hash: '#main-section' }}
             className='nav-link'
-            onClick={() => codifyClick('Header - Product')}
+            onClick={() => {
+              {
+                !mobileMenuState ? toggleMenu() : null
+              }
+              codifyClick('Header - Product')
+            }}
           >
             {!mobileMenuState ? <Dashboard32 /> : null}
             <span>Product</span>
@@ -66,7 +76,12 @@ const Header = () => {
           <Link
             to='/integrations'
             className='nav-link'
-            onClick={() => codifyClick('Header - Integrations')}
+            onClick={() => {
+              {
+                !mobileMenuState ? toggleMenu() : null
+              }
+              codifyClick('Header - Integrations')
+            }}
           >
             {!mobileMenuState ? <Integration32 /> : null}
             <span>Integrations</span>
@@ -81,9 +96,12 @@ const Header = () => {
                     target='_blank'
                     rel='noopener'
                     className='sub-nav-link'
-                    onClick={() =>
+                    onClick={() => {
+                      {
+                        !mobileMenuState ? toggleMenu() : null
+                      }
                       codifyClick('Header / Resources - Help Center')
-                    }
+                    }}
                   >
                     <Notebook24 />
                     <span>Help Center</span>
@@ -93,9 +111,12 @@ const Header = () => {
                     target='_blank'
                     rel='noopener'
                     className='sub-nav-link'
-                    onClick={() =>
+                    onClick={() => {
+                      {
+                        !mobileMenuState ? toggleMenu() : null
+                      }
                       codifyClick('Header / Resources - Documentation')
-                    }
+                    }}
                   >
                     <Api_124 />
                     <span>Documentation</span>
@@ -105,9 +126,12 @@ const Header = () => {
                   <Link
                     to='/case-studies'
                     className='sub-nav-link'
-                    onClick={() =>
+                    onClick={() => {
+                      {
+                        !mobileMenuState ? toggleMenu() : null
+                      }
                       codifyClick('Header / Resources - Case Studies')
-                    }
+                    }}
                   >
                     <Growth24 />
                     <span>Case Studies</span>
@@ -115,7 +139,12 @@ const Header = () => {
                   <Link
                     to='/blog'
                     className='sub-nav-link'
-                    onClick={() => codifyClick('Header / Resources - Blog')}
+                    onClick={() => {
+                      {
+                        !mobileMenuState ? toggleMenu() : null
+                      }
+                      codifyClick('Header / Resources - Blog')
+                    }}
                   >
                     <Blog24 />
                     <span>Blog</span>
@@ -127,7 +156,12 @@ const Header = () => {
                     target='_blank'
                     rel='noreferrer'
                     className='sub-nav-link'
-                    onClick={() => codifyClick('Header / Resources - Slack')}
+                    onClick={() => {
+                      {
+                        !mobileMenuState ? toggleMenu() : null
+                      }
+                      codifyClick('Header / Resources - Slack')
+                    }}
                   >
                     <LogoSlack24 />
                     <span>Slack Community</span>
@@ -139,7 +173,12 @@ const Header = () => {
           <Link
             to='/about'
             className='nav-link'
-            onClick={() => codifyClick('Header - Company')}
+            onClick={() => {
+              {
+                !mobileMenuState ? toggleMenu() : null
+              }
+              codifyClick('Header - Company')
+            }}
           >
             {!mobileMenuState ? <Enterprise32 /> : null}
             <span>Company</span>
