@@ -48,6 +48,7 @@ const Header = () => {
     >
       <div id='header-container'>
         <Link
+          aria-label='Blotout'
           to={'/'}
           className='logo'
           onClick={() => {

@@ -15,6 +15,7 @@ const Footer = () => {
           <div className='top'>
             <div className='left'>
               <Link
+                aria-label='Blotout'
                 to={'/'}
                 className='logo'
                 onClick={() => codifyClick('Footer - Logo')}
@@ -208,6 +209,7 @@ const Footer = () => {
           <div className='bottom'>
             <div className='social-links'>
               <a
+                aria-label='Twitter'
                 href='https://twitter.com/blotout_io'
                 target='_blank'
                 rel='noreferrer'
@@ -216,6 +218,7 @@ const Footer = () => {
                 <LogoTwitter24 />
               </a>
               <a
+                aria-label='LinkedIn'
                 href='https://www.linkedin.com/company/blotout/'
                 target='_blank'
                 rel='noreferrer'

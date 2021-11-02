@@ -178,6 +178,11 @@
     margin: 0 auto;
     padding-top: 96px;
 
+    img {
+      width: auto;
+      height: 100%;
+    }
+
     @media (max-width: 1180px) {
       grid-template-columns: repeat(3, auto);
       grid-template-rows: repeat(2, 1fr);

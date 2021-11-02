@@ -45,12 +45,12 @@ const HeroSection = () => {
         <div className='form-message'>{data.formMessage}</div>
       </form>
       <div className='customers'>
-        <img src='img/core/customer/razer.svg' />
-        <img src='img/core/customer/smart.svg' />
-        <img src='img/core/customer/uphold.svg' />
-        <img src='img/core/customer/globalid.svg' />
-        <img src='img/core/customer/tapcars.svg' />
-        <img src='img/core/customer/swarm.svg' />
+        <img src='img/core/customer/razer.svg' alt='Logo of Razer' />
+        <img src='img/core/customer/smart.svg' alt='Logo of Smart Adserver' />
+        <img src='img/core/customer/uphold.svg' alt='Logo of Uphold' />
+        <img src='img/core/customer/globalid.svg' alt='Logo of GlobaliD' />
+        <img src='img/core/customer/tapcars.svg' alt='Logo of TapCars' />
+        <img src='img/core/customer/swarm.svg' alt='Logo of Swarm Markets' />
       </div>
     </Section>
   )

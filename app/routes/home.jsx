@@ -127,17 +127,17 @@ export default function Index() {
       >
         <div className='persona-section-point-container'>
           <PersonaSectionPoint
-            icon={<FlowData32 className='orange-40' />}
+            icon={<FlowData32 />}
             heading='Combine online and offline journeys'
           />
 
           <PersonaSectionPoint
-            icon={<DataStructured32 className='orange-40' />}
+            icon={<DataStructured32 />}
             heading='Segment across online and offline customer profiles'
           />
 
           <PersonaSectionPoint
-            icon={<Partnership32 className='orange-40' />}
+            icon={<Partnership32 />}
             heading='Build trusted relationships with your customers'
           />
         </div>
@@ -160,19 +160,19 @@ export default function Index() {
       >
         <div className='persona-section-point-container'>
           <PersonaSectionPoint
-            icon={<DataCenter32 className='orange-50' />}
+            icon={<DataCenter32 />}
             heading='Infra-as-code with Terraform'
             sub_heading='Deploy and manage your infrastructure on 250 data centers globally.'
           />
 
           <PersonaSectionPoint
-            icon={<DataBlob32 className='orange-50' />}
+            icon={<DataBlob32 />}
             heading='Serverless data architecture'
             sub_heading='Airflow, Airbyte, DBT, and Superset built-in.'
           />
 
           <PersonaSectionPoint
-            icon={<Gui32 className='orange-50' />}
+            icon={<Gui32 />}
             heading='Zero code unified user graph'
             sub_heading='UI workflow to stitch clickstream and online/offline data (EL+T).'
           />
