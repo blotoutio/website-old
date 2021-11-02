@@ -1,3 +1,5 @@
+import { useRef, useState } from 'react'
+import checkIntersection from '~/utils/checkIntersection'
 import Section from '~/components/core/Section'
 import { Player } from '@lottiefiles/react-lottie-player'
 
@@ -11,6 +13,16 @@ const PersonaSection = (props) => {
     animation,
     children,
   } = props
+
+  const [lottie, setState] = useState(null)
+
+  const ref = useRef()
+
+  const inViewport = checkIntersection(ref, '250px')
+
+  if (inViewport) {
+    lottie.play()
+  }
 
   return (
     <Section id={persona} className='persona-section'>
@@ -30,9 +42,11 @@ const PersonaSection = (props) => {
         ) : null}
 
         {animation ? (
-          <div className='graphic'>
+          <div className='graphic' ref={ref}>
             <Player
-              autoplay
+              lottieRef={(instance) => {
+                setState(instance)
+              }}
               loop
               src={'animation-data/animation_data_' + persona + '.json'}
             ></Player>
