@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import checkIntersection from '~/utils/checkIntersection'
 import Section from '~/components/core/Section'
 import { Player } from '@lottiefiles/react-lottie-player'
@@ -20,9 +20,11 @@ const PersonaSection = (props) => {
 
   const inViewport = checkIntersection(ref, '250px')
 
-  if (inViewport) {
-    lottie.play()
-  }
+  useEffect(() => {
+    if (inViewport) {
+      lottie.play()
+    }
+  })
 
   return (
     <Section id={persona} className='persona-section'>
