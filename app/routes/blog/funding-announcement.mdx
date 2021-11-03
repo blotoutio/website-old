@@ -7,9 +7,14 @@ data:
 ---
 
 import Blog from '../../components/mdx/blog'
+
 import { Link } from 'react-router-dom'
 
+import { codifyClick } from '~/utils'
+
 <Blog {...attributes.meta} {...attributes.data}>
+
+<a href='https://techcrunch.com/2021/11/03/blotout-raises-3m-seed-to-build-privacy-focused-customer-data-platform/' target='_blank' rel='noreferrer' onClick={() => codifyClick('Funding Announcement - TechCrunch')} style={{ fontStyle: 'italic'}}>[See coverage of the funding round in TechCrunch.]</a>
 
 Privacy gives our lives dignity and yet we find ourselves in a digital world where too many companies choose to track us without our consent.
 
