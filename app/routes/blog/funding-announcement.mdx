@@ -7,6 +7,7 @@ data:
 ---
 
 import Blog from '../../components/mdx/blog'
+import { Link } from 'react-router-dom'
 
 <Blog {...attributes.meta} {...attributes.data}>
 
@@ -42,6 +43,6 @@ Blotout lets you harness the power of your data without compromising user trust.
 
 Our customers are companies like Razer and Uphold who understand that the future of martech and customer engagement will be predicated on trust and a one-to-one relationship with users. By going with Blotout, they’re turning that fact into a competitive advantage.
 
-We’re growing rapidly, hiring for every role, and building the customer data infrastructure that will power the privacy era. If that sounds exciting to you, come join us.
+We’re growing rapidly, hiring for every role, and building the customer data infrastructure that will power the privacy era. If that sounds exciting to you, <Link to='/about' onClick={() => codifyClick('Funding Announcement - About')}>come join us</Link>.
 
 </Blog>
