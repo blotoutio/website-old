@@ -11,6 +11,7 @@ export function meta() {
   const { pathname } = useLocation()
 
   return {
+    'og:type': 'website',
     'og:site_name': 'Blotout, Inc.',
     'og:image': `https://blotout.io/open-graph-large.png`,
     'og:url': `https://blotout.io${pathname}`,
