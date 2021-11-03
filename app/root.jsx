@@ -12,9 +12,9 @@ export function meta() {
 
   return {
     'og:site_name': 'Blotout, Inc.',
-    'og:image': 'https://blotout.io/img/open-graph-small.png',
+    'og:image': `https://blotout.io/open-graph-large.png`,
     'og:url': `https://blotout.io${pathname}`,
-    'twitter:image': 'https://blotout.io/img/open-graph-large.png',
+    'twitter:image': `https://blotout.io/open-graph-small.png`,
     'twitter:card': 'summary',
   }
 }
