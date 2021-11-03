@@ -175,6 +175,11 @@ header {
 
 header.mobile-menu-open {
   height: 100vh;
+  background-color: var(--neutral-10);
+
+  .banner {
+    display: none;
+  }
 
   #header-container {
     display: flex;
@@ -215,6 +220,7 @@ header.mobile-menu-open {
           .sub-nav {
             padding: 0;
             border: none;
+            background-color: var(--neutral-10);
 
             .sub-nav-link {
               span {
