@@ -21,17 +21,18 @@ const Banner = () => {
 
   return (
     <div className='banner'>
-      Blotout is proud to announce our $3m seed round.
       {checkIfAnnouncementPath() ? (
-        <span>Read the announcement below.</span>
+        'Blotout is proud to announce our $3m seed round. Read the announcement below.'
       ) : (
-        <Link
-          to='/blog/funding-announcement'
-          onClick={() => codifyClick('Banner - Funding Announcement')}
-        >
-          <span>Read the announcement</span>
-          <ArrowRight20 />
-        </Link>
+        <>
+          Blotout is proud to announce our $3m seed round.
+          <Link
+            to='/blog/funding-announcement'
+            onClick={() => codifyClick('Banner - Funding Announcement')}
+          >
+            Read the announcement <ArrowRight20 />
+          </Link>
+        </>
       )}
     </div>
   )
