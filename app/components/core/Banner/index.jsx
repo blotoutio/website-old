@@ -17,7 +17,6 @@ const Banner = () => {
 
   useEffect(() => {
     checkIfAnnouncementPath()
-    console.log(checkIfAnnouncementPath())
   }, [pathname])
 
   return (
