@@ -8,20 +8,14 @@
   font-weight: 450;
   font-size: 16px;
   line-height: 20px;
-  background: var(--blue-100);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 11, 25, 1) 0%,
-    rgba(0, 17, 40, 1) 42%,
-    rgba(0, 30, 71, 1) 100%
-  );
+  background: var(--blue-70);
 
   @media (max-width: 660px) {
     padding: 12px 24px;
     flex-direction: column;
     row-gap: 6px;
   }
-  color: var(--neutral-10);
+  color: var(--white);
 
   span {
     margin-left: 8px;
@@ -35,11 +29,11 @@
     display: flex;
     column-gap: 8px;
     font-weight: 500;
-    color: var(--blue-10);
+    color: var(--neutral-20);
     transition: all 150ms ease-in-out;
 
     &:hover {
-      color: var(--blue-20);
+      color: var(--neutral-10);
 
       svg {
         transform: translateX(4px);
