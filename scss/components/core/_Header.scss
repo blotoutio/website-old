@@ -176,6 +176,10 @@ header {
 header.mobile-menu-open {
   height: 100vh;
 
+  .banner {
+    display: none;
+  }
+
   #header-container {
     display: flex;
     flex-direction: column;

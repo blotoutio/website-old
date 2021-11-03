@@ -50,6 +50,56 @@
       max-width: 750px;
       margin: auto;
 
+      h2 {
+        line-height: 1.3em;
+        color: var(--blue-80);
+      }
+
+      h3 {
+        line-height: 1.3em;
+        color: var(--neutral-80);
+      }
+
+      p {
+        color: var(--neutral-100);
+      }
+
+      blockquote {
+        margin: 6em 24px 4em 24px;
+
+        @media (max-width: 1024px) {
+          margin: 4.8em 24px 3.3em 24px;
+        }
+
+        p {
+          position: relative;
+          font-style: italic;
+          font-weight: 450;
+          font-size: 1.25em;
+          letter-spacing: -0.008em;
+          color: var(--blue-100);
+
+          @media (max-width: 768px) {
+            font-size: 1.15em;
+          }
+
+          &:after {
+            content: '“';
+            position: absolute;
+            top: -0.25em;
+            left: -0.5em;
+            font-size: 4em;
+            color: var(--orange-50);
+
+            @media (max-width: 1024px) {
+              top: -0.2em;
+              left: -0.4em;
+              font-size: 4em;
+            }
+          }
+        }
+      }
+
       a {
         font-weight: 500;
         color: var(--blue-50);
