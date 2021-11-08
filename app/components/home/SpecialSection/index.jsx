@@ -32,7 +32,7 @@ const SpecialSection = () => {
         </div>
         <div className='bottom'>
           <a
-            href='https://calendly.com/blotout-experts/30-minute-zoom-session'
+            href='https://calendly.com/blotout-experts/talk-to-us'
             target='_blank'
             rel='noreferrer'
             className='special-cta'
