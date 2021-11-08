@@ -7,9 +7,7 @@ const PrimaryCTA = (props) => {
 
   return (
     <a
-      href={
-        link || 'https://calendly.com/blotout-experts/30-minute-zoom-session'
-      }
+      href={link || 'https://calendly.com/blotout-experts/talk-to-us'}
       target='_blank'
       rel='noreferrer'
       className='primary-cta'
