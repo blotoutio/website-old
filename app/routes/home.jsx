@@ -1,6 +1,6 @@
 import { redirect } from 'remix'
 import stylesUrl from '~/styles/home.css'
-import { codifyClick, metaInfo } from '~/utils'
+import { metaInfo } from '~/utils'
 import PrimaryCTA from '~/components/core/PrimaryCTA'
 import HeroSection from '~/components/home/HeroSection'
 import MainSection from '~/components/home/MainSection'
