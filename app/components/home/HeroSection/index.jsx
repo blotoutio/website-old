@@ -1,5 +1,6 @@
 import { useSubmit, useRouteData } from 'remix'
 import { capture } from '@blotoutio/sdk-core'
+import { mapID } from '@blotoutio/sdk-events'
 import { codifyClick } from '~/utils'
 import Section from '~/components/core/Section'
 import { ArrowRight20 } from '@carbon/icons-react'
@@ -10,7 +11,13 @@ const HeroSection = () => {
   const submit = useSubmit()
 
   const submission = (event) => {
+    mapID({
+      externalID: event.currentTarget.elements[0].value,
+      provider: 'website',
+    })
+
     submit(event.currentTarget, { replace: true })
+
     event.preventDefault()
   }
 
