@@ -200,16 +200,13 @@
       background-color: var(--orange-60);
 
       .careers-cta-icon {
-        left: 3px;
-        bottom: 3px;
+        transform: translate(3px, -3px);
       }
     }
 
     .careers-cta-icon {
-      position: relative;
-      left: 0;
-      bottom: 0;
       margin-left: 16px;
+      transform: none;
       transition: all 150ms ease-in-out;
     }
   }

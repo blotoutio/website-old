@@ -26,6 +26,7 @@ header {
       svg {
         width: 100%;
         height: auto;
+        shape-rendering: geometricPrecision;
       }
     }
 
@@ -96,7 +97,7 @@ header {
           .sub-nav {
             display: flex;
             flex-direction: column;
-            row-gap: 24px;
+            row-gap: 32px;
             padding: 24px 48px 24px 24px;
             background-color: var(--white);
             border: 2px solid var(--neutral-20);
@@ -190,7 +191,7 @@ header.mobile-menu-open {
     nav {
       display: grid;
       grid-auto-flow: row;
-      row-gap: 32px;
+      row-gap: 40px;
 
       .nav-link {
         display: flex;
