@@ -1,7 +1,7 @@
 ---
 meta:
   title: 'iOS 14.5 and the tracking apocalypse | Blotout'
-  description: 'Latest news and insights from Blotout — the customer data platform reimagined for the trusted enterprise.'
+  description: 'Latest news and insights from Blotout—the customer data platform reimagined for the trusted enterprise.'
   og:type: 'article'
   og:article:published_time: '2021-04-26T00:00:00.000Z'
 data:
@@ -18,7 +18,7 @@ The change should not be a surprise. As a matter of policy, it is a natural cont
 
 And, yet, the digital advertising industry, which has relied on mobile marketing as a cornerstone of its marketing strategy, remains unprepared.
 
-The crux of the problem is that the industry remains dependent on sending data to 3rd-parties, even as that becomes less and less viable as a strategy in the privacy era -- and until publishers and advertisers learn to capture data in-house as you, the app vendor (the 1st-party to your users), the effectiveness of their campaigns and measurements will continue to erode.
+The crux of the problem is that the industry remains dependent on sending data to 3rd-parties, even as that becomes less and less viable as a strategy in the privacy era—and until publishers and advertisers learn to capture data in-house as you, the app vendor (the 1st-party to your users), the effectiveness of their campaigns and measurements will continue to erode.
 
 ## The death of the IDFA (and tracking on iOS devices)
 
@@ -44,7 +44,7 @@ If a user refuses to allow tracking in an app, none of their data can be shared 
 
 This severely reduces the usefulness of mobile measurement partners (MMPs), who can now only see a fraction of your in-app mobile users. And for targeting and measurement goals that need both the advertiser and publisher to have consent, only data sampling will work.
 
-If a mobile user refuses to consent on the web, event measurement is also deeply narrowed. Additionally, attribution events -- e.g., tying a purchase to a user who came through an ad click -- which are typically attached to a specific individual, must now be delayed so that the individual user cannot be identified.
+If a mobile user refuses to consent on the web, event measurement is also deeply narrowed. Additionally, attribution events—e.g., tying a purchase to a user who came through an ad click—which are typically attached to a specific individual, must now be delayed so that the individual user cannot be identified.
 
 In other words, trying to track users through 3rd-parties is no longer the way forward for targeted experiences and monetization on iOS.
 
@@ -58,9 +58,9 @@ But imagine asking the user that is likely paying for your App to suggest you wa
 
 If tracking is dying, what should you do instead? Directly manage your relationship with your own users. This means two things: (1) collect the data yourself (instead of first sending it to third-parties) and (2) properly handle consent. Apple is very generous when the app vendor (i.e., advertiser) is the processor itself compared to when data is shared for processing of any kind.
 
-The 1st-party relationship -- directly between you and your users -- is privileged. There are no platform constraints on the data that you collect yourself, although privacy regulations like the GDPR and CPRA still require consent for specific uses and types of data.
+The 1st-party relationship—directly between you and your users—is privileged. There are no platform constraints on the data that you collect yourself, although privacy regulations like the GDPR and CPRA still require consent for specific uses and types of data.
 
-To do this, you need to collect, manage, analyze, and share customer data yourself in your warehouse. Warehouse data can capture consent across platforms and even allow advertisers to decide how to share data. More critically you can analyze the data that you have captured, and only share what users consent to, allowing you the best of both worlds -- understanding your users and engaging 3rd-parties as permitted.
+To do this, you need to collect, manage, analyze, and share customer data yourself in your warehouse. Warehouse data can capture consent across platforms and even allow advertisers to decide how to share data. More critically you can analyze the data that you have captured, and only share what users consent to, allowing you the best of both worlds—understanding your users and engaging 3rd-parties as permitted.
 
 Put concretely, when a user downloads your app you have always had two options for what to do with user data. You could send the data to trackers or you could send the data to your own warehouse. Until recently, the convenience of the first option has made it highly prevalent; with Apple's decision, the scales have tipped to 1st-party capture and management.
 
@@ -70,9 +70,9 @@ But few companies can build that warehouse capability themselves without complet
 
 To replace the IDFA for measuring the effectiveness of advertising campaigns, Apple provides advertisers and publishers with its SKAdNetwork API, which prioritizes respecting user privacy. It works by Apple reporting a cryptographically signed notification through the API, which contains the campaign ID and possible conversion values, but no user-specific or device-specific data. This means that it is still possible to measure the advertising effectiveness of mobile campaigns in the Apple ecosystem. However, Apple's SKAdNetwork is only used by a few advertisers even today, and will require changes within the industry that is deep rooted in tracking the users across Apps.
 
-So, instead of giving your valuable customer data to others, you are better off handling the data yourself. To do that, you will need a 1st-party data warehouse that manages and analyzes user and campaign data in your own infrastructure. And, if it is designed correctly, it will allow you to adjust to technology and policy changes -- like Privacy Shield breaking in Europe -- with relatively little difficulty.
+So, instead of giving your valuable customer data to others, you are better off handling the data yourself. To do that, you will need a 1st-party data warehouse that manages and analyzes user and campaign data in your own infrastructure. And, if it is designed correctly, it will allow you to adjust to technology and policy changes—like Privacy Shield breaking in Europe—with relatively little difficulty.
 
-However, building it yourself is a costly proposition both in terms of engineering effort and time to market. Therefore, the recommendation is obvious: For the construction and operation of such customer data lakes, rely on SaaS providers (but not co-processors -- since they are 3rd-parties), who will install the software in the your infrastructure so you can collect user data as the 1st-party that you are, while having automated processes for critical functions like data governance, marketing and product analytics, and privacy operations.
+However, building it yourself is a costly proposition both in terms of engineering effort and time to market. Therefore, the recommendation is obvious: For the construction and operation of such customer data lakes, rely on SaaS providers (but not co-processors—since they are 3rd-parties), who will install the software in the your infrastructure so you can collect user data as the 1st-party that you are, while having automated processes for critical functions like data governance, marketing and product analytics, and privacy operations.
 
 Not only does this return your control over such valuable data, it lets you focus your efforts on the core functions of your business.
 

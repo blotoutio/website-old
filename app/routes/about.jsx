@@ -51,7 +51,7 @@ export default function About() {
               Blotout turns this on its head by providing companies with
               solutions infrastructure-as-code that they run themselves. Instead
               of sending customer data to third-parties, they capture it to
-              their own warehouse — data is never lost and incredible
+              their own warehouse—data is never lost and incredible
               possibilities open for a unified view of the customer.
             </p>
             <p>
