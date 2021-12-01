@@ -28,6 +28,10 @@
       p {
         color: var(--neutral-100);
 
+        strong {
+          font-weight: 600;
+        }
+
         a {
           font-weight: 500;
           color: var(--blue-50);
