@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
     <div className='legal-new'>
       <SubHeader
         heading='Privacy Policy'
-        sub_heading='Last Updated: November 30, 2020'
+        sub_heading='Last Updated: November 30, 2021'
       />
       <div id='privacy-policy' className='legal'>
         <div id='privacy-policy-text' className='legal-text'>
