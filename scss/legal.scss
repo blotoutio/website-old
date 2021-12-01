@@ -25,9 +25,16 @@
         padding: 0 24px 64px 24px;
       }
 
-      span {
-        font-weight: 600;
+      p {
         color: var(--neutral-100);
+      }
+
+      span {
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: -0.009em;
+        color: var(--neutral-60);
       }
     }
 
