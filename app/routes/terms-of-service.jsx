@@ -21,7 +21,7 @@ export default function TermsOfService() {
     <div className='legal-new'>
       <SubHeader
         heading='Terms of Service'
-        sub_heading='Last Updated: 26 June, 2020'
+        sub_heading='Last Updated: June 26, 2020'
       />
       <div id='terms-of-service' className='legal'>
         <div id='terms-of-service-text' className='legal-text'>
