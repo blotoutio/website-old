@@ -27,6 +27,16 @@
 
       p {
         color: var(--neutral-100);
+
+        a {
+          font-weight: 500;
+          color: var(--blue-50);
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
 
       span {
