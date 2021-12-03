@@ -100,13 +100,36 @@
         }
       }
 
+      strong {
+        font-weight: 565;
+        color: var(--neutral-100);
+      }
+
       img {
         width: 100%;
         height: auto;
-        margin: 25px 0;
+        padding: 1.5em 0 10px 0;
 
         @media (max-width: 1024px) {
-          margin: 15px 0;
+          padding: 1.5em 0 6px 0;
+        }
+      }
+
+      .caption {
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        line-height: 18px;
+        width: 85%;
+        margin: 0 auto;
+        font-weight: 450;
+        font-style: italic;
+        color: var(--neutral-50);
+        letter-spacing: -0.0011em;
+        padding-bottom: 1.5em;
+
+        strong {
+          color: var(--neutral-60);
         }
       }
 
