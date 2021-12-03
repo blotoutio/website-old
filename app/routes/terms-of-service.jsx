@@ -21,7 +21,7 @@ export default function TermsOfService() {
     <div className='legal-new'>
       <SubHeader
         heading='Terms of Service'
-        sub_heading='Last Updated: 26 June, 2020'
+        sub_heading='Last Updated: November 30, 2021'
       />
       <div id='terms-of-service' className='legal'>
         <div id='terms-of-service-text' className='legal-text'>
@@ -30,213 +30,206 @@ export default function TermsOfService() {
             className='legal-text-content'
           >
             <p>
-              These Terms of Service (“Terms” , “Terms of Service”) govern your
-              (the “Client”) relationship with Blotout Software Development Kit
-              and Blotout Server SDK (the “SDK”) owned and operated by Blotout,
-              Inc registered in California, USA (“us”, “we”, or “our”).
+              These Terms of Service (“<strong>Terms</strong>”) govern your
+              access and use of our online services (the “
+              <strong>Services</strong>”), which also includes services or other
+              products or features made available by us to you on an unpaid
+              trial or free basis (the “<strong>Free Services</strong>”). These
+              Terms and any Order Form together form a binding “
+              <strong>Contract</strong>” between Customer and us. “Customer” is
+              the organization that you represent in agreeing to the Contract;
+              “we,” “our,” and “us” refer to Blotout, Inc. You may purchase a
+              subscription via an order form entered into between Customer and
+              us (“<strong>Order Form</strong>”); in so doing, you agree to the
+              then-current Contract on behalf of Customer. Free Services may be
+              made available without an Order Form. Customer represents and
+              warrants that it has validly entered into the Contract and has the
+              legal power to do so. Subscriptions commence when we make them
+              available to Customer and continue for the term specified in the
+              Order Form; fees are specified in the Order Form. The foregoing
+              sentence does not apply to Free Services, which are described
+              below.
             </p>
+
             <p>
-              Please read these Terms of Service carefully before using the SDK.
+              We will make available the Services, or may make available the
+              Free Services, in accordance with these Terms. All of our rights
+              not expressly granted by these Terms are hereby retained.
             </p>
+
             <p>
-              Your (the “Client”) access to and use of the SDK is conditioned on
-              your acceptance of and compliance with these Terms. These Terms
-              apply to all visitors, authorized users, and others who access or
-              use the SDK.
+              Customer may make data, including personal data, available to the
+              Services (“<strong>Customer Data</strong>”). Customer grants us a
+              worldwide, limited-term license to host, copy, use, transmit, and
+              display Customer Data or any Third-Party Apps created by or for
+              Customer. Subject to the limited licenses granted herein, we
+              acquire no right, title, or interest from Customer in or to any
+              Customer Data.
             </p>
+
             <p>
-              By accessing or using the SDK the Client agrees to be bound by the
-              Terms of Service. If you disagree with any part of the terms then
-              you may not access or make use of the SDK.
+              Customer is responsible for the accuracy, quality, and legality of
+              Customer Data, the means by which Customer acquired Customer Data,
+              and its use of Customer Data with the Services or any Third-Party
+              App. Customer will ensure that all necessary rights and
+              permissions are established for the transfer and/or processing of
+              Customer Data in connection with the Services or the applicable
+              Third-Party App in compliance with all applicable laws,
+              regulations, and self-regulatory requirements.
             </p>
+
             <p>
-              <span>Use of Service</span>
+              We will maintain appropriate administrative, physical and
+              technical safeguards for protection of the security,
+              confidentiality, and integrity of Customer Data, including
+              measures designed to prevent unauthorized access to or disclosure
+              of Customer Data. Adherence to security best practices obliges us
+              to provide end-user authentication, in addition to other technical
+              measures, as required, where the end user (e.g., customer of
+              Customer) will engage directly with the Services (including, e.g.,
+              via two-factor authentication, downloading, or logging-in to the
+              Services). Customer will not attempt to use the Services, or ask
+              us to configure the Services, in a manner inconsistent with these
+              requirements.
             </p>
+
             <p>
-              By agreeing to the Terms of Service, Blotout, Inc grants the
-              Client a limited, non-exclusive, non-transferable right to the
-              SDK, and SDK Services governed by the Terms of Service.
+              Subject to the limited rights expressly granted herein, we reserve
+              all of our right, title, and interest (including all intellectual
+              property rights) in and to the Services, and, as between us and
+              Customer, we own any data within or related to the Services that
+              is not Customer Data.
             </p>
+
             <p>
-              The Client’s access to the SDK and the SDK service is limited and
-              governed by the contract (the “Contract”) you may have signed with
-              Blotout, Inc.
+              In its use of the Services, Customer will comply with these Terms
+              (including any usage limits specified in Order Forms) and all
+              applicable laws and regulations. Customer will use commercially
+              reasonable efforts to prevent unauthorized access to or use of
+              Services and notify us promptly of any such unauthorized access or
+              use. Customer is responsible for its personnel’s and agents’
+              compliance with Customer’s obligations under these Terms.
             </p>
+
             <p>
-              The Client authorizes its users access to the services provided by
-              the SDK and is solely responsible for their access according to
-              the Terms of Service.
+              Our Services offer Customer the ability to select and integrate
+              applications that complement Customer’s use of the Services (each,
+              a “Third-Party App”). These are not our services, so we do not
+              warrant or support Third-Party Apps. Any use of Third-Party Apps
+              is solely between Customer and the applicable provider. We are not
+              responsible for any use, disclosure, modification or deletion of
+              Customer Data that is transmitted to, or accessed by, a
+              Third-Party App.
             </p>
+
             <p>
-              <span>Prohibitions</span>
+              The Contract remains effective until all subscriptions have
+              expired or been terminated or the Contract itself terminates.
+              Termination of the Contract will terminate all subscriptions and
+              Order Forms. Unless an Order Form says something different, all
+              subscriptions automatically renew for additional periods equal in
+              length to the initial period. Either party can give the other
+              notice of non-renewal at least thirty (30) days before the end of
+              a subscription term.
             </p>
+
             <p>
-              The Client shall use the SDK Services only in compliance with all
-              applicable laws, including any applicable data protection and
-              privacy laws, and the terms of this Agreement.
+              We or Customer may terminate the Contract on notice to the other
+              party if the other party materially breaches the Contract and such
+              breach is not cured within thirty (30) days after the
+              non-breaching party provides notice of the breach. We may suspend
+              the Services or terminate the Contract immediately on notice to
+              Customer if we believe the Services are being used in violation of
+              applicable law or in a way that may cause risk of litigation or
+              otherwise be harmful to us. In no event will termination relieve
+              Customer of the obligation to pay any fees payable to us for the
+              period prior to the effective date of termination. Following
+              termination or expiration of subscriptions, we will have no
+              obligation to maintain or provide any Customer Data.
             </p>
+
             <p>
-              <span>The Contract and Subscription fees</span>
+              Free Services are provided to Customer without charge up to
+              certain limits as described in the Documentation. Customer hereby
+              acknowledges that usage over these limits requires Customer’s
+              purchase of additional resources or services. Customer agrees that
+              we may, in our sole discretion and for any or no reason, terminate
+              Customer’s access to the Free Services or any part thereof.
+              Customer agrees that any termination of Customer’s access to the
+              Free Services may be without prior notice, and Customer agrees
+              that we will not be liable to Customer or any third party for such
+              termination. Customer is solely responsible for exporting Customer
+              Data from the Free Services prior to termination of Customer’s
+              access to the Free Services for any reason, provided that if we
+              terminate Customer’s account, except as required by law we will
+              provide Customer a reasonable opportunity to retrieve its Customer
+              Data. We may change the limits that apply to Customer’s use of the
+              Free Services at any time in our sole discretion without notice to
+              Customer, regardless of whether or not these are used in
+              conjunction with other products or services for which Customers
+              pays us a fee. We may make changes to the Free Services that
+              materially reduce the functionality provided to Customer.
             </p>
+
             <p>
-              The SDK is billed on a subscription basis (“Subscription(s)”)
-              based on the agreement signed between Blotout, Inc and the
-              Client’s (the “Contract”)
+              EXCEPT AS EXPRESSLY PROVIDED FOR HEREIN, THE SERVICES AND ALL
+              RELATED COMPONENTS AND INFORMATION ARE PROVIDED ON AN “AS IS” AND
+              “AS AVAILABLE” BASIS WITHOUT ANY WARRANTIES OF ANY KIND, AND WE
+              EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES, WHETHER EXPRESS OR
+              IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+              TITLE, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+              CUSTOMER ACKNOWLEDGES THAT WE DO NOT WARRANT THAT THE SERVICES
+              WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE.
             </p>
+
             <p>
-              Your Subscription(s) to the SDK is based on the Contract that you
-              may have signed with Blotout, Inc. The Contract decides the terms
-              of your payment and limits the user of SDK per terms in the
-              Contract. The Contract dictates if your services are to be
-              continued or discontinued per these terms.
+              OTHER THAN IN CONNECTION WITH A PARTY’S INDEMNIFICATION
+              OBLIGATIONS HEREUNDER, IN NO EVENT WILL EITHER CUSTOMER’S OR OUR
+              AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THESE TERMS
+              (WHETHER IN CONTRACT OR TORT OR UNDER ANY OTHER THEORY OF
+              LIABILITY) EXCEED THE TOTAL AMOUNT PAID BY CUSTOMER HEREUNDER IN
+              THE TWELVE (12) MONTHS PRECEDING THE LAST EVENT GIVING RISE TO
+              LIABILITY. THE FOREGOING WILL NOT LIMIT CUSTOMER’S PAYMENT
+              OBLIGATIONS.
             </p>
+
             <p>
-              Blotout, Inc has the right to change the subscription fees set
-              forth in the Contract at any time during the term of the Contract
-              via a written notice to the client authorized account.
+              IN NO EVENT WILL EITHER PARTY HAVE ANY LIABILITY TO THE OTHER
+              PARTY OR TO ANY THIRD PARTY FOR ANY LOST PROFITS OR REVENUES OR
+              FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, COVER OR
+              PUNITIVE DAMAGES HOWEVER CAUSED, WHETHER IN CONTRACT, TORT OR
+              UNDER ANY OTHER THEORY OF LIABILITY, AND WHETHER OR NOT THE PARTY
+              HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE FOREGOING
+              DISCLAIMER WILL NOT APPLY TO THE EXTENT PROHIBITED BY APPLICABLE
+              LAW.
             </p>
+
             <p>
-              <span>Refunds</span>
+              Customer will defend us from and against any and all third-party
+              claims, actions, suits, proceedings, and demands arising from or
+              related to Customer’s violation of these Terms or of applicable
+              law (a “<strong>Claim Against Us</strong>”), and will indemnify us
+              for all reasonable attorney’s fees incurred and damages and other
+              costs finally awarded against us in connection with or as a result
+              of, and for amounts paid by us under a settlement Customer
+              approves of in connection with, a Claim Against Us. We must
+              provide Customer with prompt written notice of any Claim Against
+              Us and allow Customer the right to assume the exclusive defense
+              and control, and cooperate with any reasonable requests assisting
+              Customer’s defense and settlement of such matter.
             </p>
+
             <p>
-              Any refunds are mandated via the Contract. If no such mandate is
-              present, the Terms of Service provides no provision for a refund
-              of fees.
+              Customer grants us the right to use Customer’s company name and
+              logo as a reference for marketing or promotional purposes on our
+              website and in other public or private communications with our
+              existing or potential customers.
             </p>
+
             <p>
-              <span>Your Account</span>
+              This Agreement is governed by the laws of the State of California,
+              without regard to conflicts of laws rules.
             </p>
-            <p>
-              When you create an account with us as the Client, you must provide
-              us information that is accurate, complete, and current at all
-              times. Failure to do so constitutes a breach of the Terms, which
-              may result in immediate termination of your account on our
-              Service.
-            </p>
-            <p>
-              You are responsible for the accounts created by individual
-              employees, and for their passwords to utilize and access the SDK.
-              You agree not to share or disclose the account credentials to any
-              third party or provide any third party access to the SDK and
-              services without a written authorization.
-            </p>
-            <p>
-              You are responsible for the usernames and passwords registered
-              with the SDK. You may not choose to use usernames that may
-              infringe a trademark or copyright or otherwise offensive, obscene,
-              or vulgar.
-            </p>
-            <p>
-              When you sign up with the SDK, you assign rights to use your logo
-              for the SDK’s marketing purposes.
-            </p>
-            <p>
-              <span>Intellectual Property, Trademarks</span>
-            </p>
-            <p>
-              The SDK and its original content, features and functionality are
-              and will remain the exclusive property of Blotout, Inc. The SDK is
-              protected by copyright, trademark, and other laws of the United
-              States and other foreign nations. Our trademarks may not be used
-              in connection with any product or service without the prior
-              written consent of Blotout, Inc
-            </p>
-            <p>
-              <span>Termination</span>
-            </p>
-            <p>
-              We may terminate or suspend your account immediately, without
-              prior notice or liability, for any reason whatsoever, including
-              without limitation if you breach the Terms of Service.
-            </p>
-            <p>
-              Upon termination, your right to use the SDK will immediately
-              cease. If you wish to terminate your account, you may simply
-              discontinue using the SDK and inform Blotout, Inc with a written
-              notice of termination. You will be continued to be charged per the
-              Contract.
-            </p>
-            <p>
-              <span>Privacy policy and Compliance</span>
-            </p>
-            <p>
-              Please refer to our privacy policy here that guides our privacy
-              principles and operating requirements to be compliant with various
-              laws in EU, California and other countries.
-            </p>
-            <p>
-              <span>Limitation Of Liability</span>
-            </p>
-            <p>
-              In no event shall Blotout, Inc, nor its directors, shareholders,
-              employees, partners, agents, suppliers, or affiliates, be liable
-              for any indirect, incidental, special, consequential or punitive
-              damages, including without limitation, loss of profits, data, use,
-              goodwill, or other intangible losses, resulting from (i) your
-              access to or use of or inability to access or use the SDK; (ii)
-              any conduct or content of any third party on the SDK; (iii) any
-              content obtained from the SDK; and (iv) unauthorized access, use
-              or alteration of your transmissions or content, whether based on
-              warranty, contract, negligence or any other legal theory, whether
-              or not we have been informed of the possibility of such damage,
-              and even if a remedy set forth herein is found to have failed of
-              its essential purpose.
-            </p>
-            <p>
-              <span>Disclaimer</span>
-            </p>
-            <p>
-              Your use of the SDK is at your sole risk. The SDK is provided on
-              an “AS IS” and “AS AVAILABLE” basis via a Blotout, Inc hosted
-              location. The SDK is provided without warranties of any kind,
-              whether express or implied, including, but not limited to, implied
-              warranties of merchantability, fitness for a particular purpose,
-              non-infringement or course of performance.
-            </p>
-            <p>
-              Blotout, Inc, its subsidiaries, affiliates, and its licensors do
-              not warrant that a) the SDK will function uninterrupted, secure or
-              available at any particular time or location; b) any errors or
-              defects will be corrected; c) the SDK is free of viruses or other
-              harmful components; or d) the results of using the SDK will meet
-              your requirements.
-            </p>
-            <p>
-              <span>Governing Law</span>
-            </p>
-            <p>
-              These Terms shall be governed and construed in accordance with the
-              laws of California, United States without regard to its conflict
-              of law provisions.
-            </p>
-            <p>
-              Our failure to enforce any right or provision of these Terms will
-              not be considered a waiver of those rights. If any provision of
-              these Terms is held to be invalid or unenforceable by a court, the
-              remaining provisions of these Terms will remain in effect. These
-              Terms constitute the entire agreement between us regarding our
-              Service, and supersede and replace any prior agreements we might
-              have between us regarding the SDK.
-            </p>
-            <p>
-              <span>Changes to the Terms of Service</span>
-            </p>
-            <p>
-              We reserve the right, at our sole discretion, to modify or replace
-              these Terms at any time. If a revision is made, we will try to
-              provide at least 30 days notice prior to any new terms taking
-              effect. What constitutes a material change will be determined at
-              our sole discretion.
-            </p>
-            <p>
-              By continuing to access or use our Service after those revisions
-              become effective, you agree to be bound by the revised terms. If
-              you do not agree to the new terms, please stop using the SDK.
-            </p>
-            <p>
-              <span>Contact</span>
-            </p>
-            <p>Please email us.</p>
           </div>
         </div>
       </div>

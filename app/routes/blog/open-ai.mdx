@@ -1,7 +1,7 @@
 ---
 meta:
   title: 'Blotout experimenting with Open AI | Blotout'
-  description: 'Latest news and insights from Blotout — the customer data platform reimagined for the trusted enterprise.'
+  description: 'Latest news and insights from Blotout—the customer data platform reimagined for the trusted enterprise.'
   og:type: 'article'
   og:article:published_time: '2021-07-27T00:00:00.000Z'
 data:
@@ -38,13 +38,13 @@ Our assumptions are that for everyday NLP, we can focus on doing automation and 
 
 ## So how does GPT-3 OpenAI work?
 
-[GPT-3](https://openai.com/blog/gpt-3-apps/) (Generative Pre-trained Transformer-3) is third generation GPT language -- it’s basically a deep learning transformer model which can produce a sequence of text upon some input text designed for question answering, text generation, and summarization.
+[GPT-3](https://openai.com/blog/gpt-3-apps/) (Generative Pre-trained Transformer-3) is third generation GPT language—it’s basically a deep learning transformer model which can produce a sequence of text upon some input text designed for question answering, text generation, and summarization.
 
 **Example**: If we pass the query as, "once upon a time," then it will return a completion in such a way that connects to a sentence like, "once upon a time there was a boy who won the Nobel Prize for a great invention."
 
 Along with that, GPT-3 has classification models that can classify the text by labels that are based upon our provided inputs labels.
 
-**Example**: I created this classification model very quickly using GPT-3 to classify text into two categories -- PII and NON PII (PII stands for personally identifiable information).
+**Example**: I created this classification model very quickly using GPT-3 to classify text into two categories—PII and NON PII (PII stands for personally identifiable information).
 
 To create the model we passed a few examples so the model could understand the classification, like `{"Name" = "PII", "Mobile number" = "PII", "Gender" = Non PII }`.
 
@@ -77,7 +77,7 @@ for i in query:
 
 ### What does Blotout want to achieve with OpenAI?
 
-Blotout is a privacy infrastructure as a service company solving everyday enterprise problems -- classifying high risk data (PII), classifying data segments, automating personalization APIs, etc.
+Blotout is a privacy infrastructure as a service company solving everyday enterprise problems—classifying high risk data (PII), classifying data segments, automating personalization APIs, etc.
 
 We are constantly exploring capabilities that enhance our automations and workflows to keep private data secure.
 
@@ -87,7 +87,7 @@ Building AI models from scratch is difficult and time-consuming, but with GPT-3,
 
 But it has its own limitations. In fact, every machine learning model no matter how powerful has some limitations. I am listing some which I experienced:
 
-- We can't retrain the model at run time. **Example**; Let's suppose I trained 50MB of files to create a classification model and received a fine-tuned model. Now imagine after a week I want to add some more training data to it (for better performance). Suppose the size of new required training data is 2MB. Then we need to train the model from scratch every time, which means we need to train (50+2)MB data again, and that will cost us again.
+- We can't retrain the model at run time. **Example**: Let's suppose I trained 50MB of files to create a classification model and received a fine-tuned model. Now imagine after a week I want to add some more training data to it (for better performance). Suppose the size of new required training data is 2MB. Then we need to train the model from scratch every time, which means we need to train (50+2)MB data again, and that will cost us again.
 
 - Because GPT-3 is so large, it works slowly to create a fine tuned model. But the team is working on it and soon they will come up with great solutions. AI is going to change the world.
 

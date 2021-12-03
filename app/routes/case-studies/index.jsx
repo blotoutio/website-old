@@ -3,8 +3,9 @@ import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 import { useRouteData } from 'remix'
 
-import * as post1 from './lux-foundation-solutions.mdx'
+import * as post3 from './edgetag-facebook-lux.mdx'
 import * as post2 from './besmitten.mdx'
+import * as post1 from './lux-foundation-solutions.mdx'
 
 import SubHeader from '~/components/core/SubHeader'
 
@@ -22,7 +23,7 @@ export function links() {
 }
 
 export function loader() {
-  return [postFromModule(post2), postFromModule(post1)]
+  return [postFromModule(post3), postFromModule(post2), postFromModule(post1)]
 }
 
 export default function CaseStudies() {
