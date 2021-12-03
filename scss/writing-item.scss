@@ -52,11 +52,11 @@
 
       .primary-cta {
         margin: 1.5em 0;
-        background-color: var(--blue-70);
-        color: var(--neutral-10);
+        background-color: var(--neutral-80);
+        color: var(--white);
 
         &:hover {
-          background-color: var(--blue-90);
+          background-color: var(--neutral-100);
           text-decoration: none;
         }
       }
