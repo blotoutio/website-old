@@ -50,6 +50,17 @@
       max-width: 750px;
       margin: auto;
 
+      .primary-cta {
+        margin: 1.5em 0;
+        background-color: var(--blue-70);
+        color: var(--neutral-10);
+
+        &:hover {
+          background-color: var(--blue-90);
+          text-decoration: none;
+        }
+      }
+
       p {
         color: var(--neutral-100);
       }
