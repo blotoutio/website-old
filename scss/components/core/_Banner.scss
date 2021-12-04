@@ -5,7 +5,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  background: var(--orange-50);
+  background: var(--neutral-80);
 
   @media (max-width: 768px) {
     padding: 10px 24px;
@@ -27,8 +27,8 @@
     display: inline-flex;
     align-items: center;
     margin-left: 8px;
-    font-weight: 500;
-    color: var(--orange-20);
+    font-weight: 400;
+    color: var(--neutral-30);
     transition: all 150ms ease-in-out;
 
     &:hover {
