@@ -98,9 +98,9 @@ footer {
             }
 
             .invitation-link {
+              position: relative;
               display: flex;
               align-items: center;
-              column-gap: 8px;
               font-size: 14px;
               line-height: 18px;
               color: var(--neutral-30);
@@ -116,6 +116,15 @@ footer {
 
               @media (max-width: 480px) {
                 justify-content: flex-start;
+              }
+
+              svg {
+                position: absolute;
+                right: 80px;
+
+                @media (max-width: 1024px) and (min-width: 481px) {
+                  right: 32px;
+                }
               }
             }
           }
