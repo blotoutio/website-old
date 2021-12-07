@@ -3,7 +3,7 @@ import { useRouteData } from 'remix'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
-import * as post15 from './edgetag-announcement.mdx'
+import * as post15 from './announcing-our-partnership-with-cloudflare.mdx'
 import * as post14 from './funding-announcement.mdx'
 import * as post13 from './google-ministry-of-magic-losing.mdx'
 import * as post12 from './storybook-for-blotout.mdx'
