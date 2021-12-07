@@ -13,7 +13,7 @@ export function meta() {
   return {
     'og:type': 'website',
     'og:site_name': 'Blotout, Inc.',
-    'og:image': `https://blotout.io/open-graph-large.png`,
+    'og:image': `https://blotout.io/open-graph-large`,
     'og:url': `https://blotout.io${pathname}`,
     'twitter:image': `https://blotout.io/open-graph-small.png`,
     'twitter:card': 'summary',
