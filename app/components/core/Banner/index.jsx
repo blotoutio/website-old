@@ -9,7 +9,7 @@ import { codifyClick } from '~/utils'
 const Banner = () => {
   const { pathname } = useLocation()
 
-  const announcementPath = '/blog/funding-announcement'
+  const announcementPath = '/blog/edgetag-announcement'
 
   const checkIfAnnouncementPath = () => {
     return pathname === announcementPath
@@ -22,13 +22,13 @@ const Banner = () => {
   return (
     <div className='banner'>
       {checkIfAnnouncementPath() ? (
-        'Blotout is proud to announce our $3m seed round. Read the announcement below.'
+        'Announcing EdgeTag: Fix your Facebook Pixels in 2 min. Read the announcement below.'
       ) : (
         <>
-          Blotout is proud to announce our $3m seed round.
+          Announcing EdgeTag: Fix your Facebook Pixels in 2 min.
           <Link
-            to='/blog/funding-announcement'
-            onClick={() => codifyClick('Banner - Funding Announcement')}
+            to='/blog/edgetag-announcement'
+            onClick={() => codifyClick('Banner - EdgeTag Announcement')}
           >
             Read the announcement <ArrowRight20 />
           </Link>

@@ -1,0 +1,161 @@
+---
+meta:
+  title: 'Blotout EdgeTag: Fix your Facebook Pixels in 2 min | Blotout'
+  description: 'Latest news and insights from Blotout—the customer data platform reimagined for the trusted enterprise.'
+  og:type: 'article'
+  og:article:published_time: '2021-12-07T00:00:00.000Z'
+  og:image: 'https://blotout.io/img/blog/edgetag-announcement.png'
+data:
+  date: '2021-12-07'
+---
+
+import Blog from '../../components/mdx/blog'
+import PrimaryCTA from '~/components/core/PrimaryCTA'
+
+import { codifyClick } from '~/utils'
+
+<Blog {...attributes.meta} {...attributes.data}>
+
+![Blotout EdgeTag: Fix your Facebook Pixels in 2 min](/img/blog/edgetag-announcement.png)
+
+We’re proud to share Blotout <a href='https://edgetag.io/facebook-conversion-api' target='_blank' rel='next' onClick={() => codifyClick('EdgeTag Announcement Blog - EdgeTag Website')}>EdgeTag</a>, the first privacy-preserving fix for lossy and non-consented Facebook data sharing.
+
+As marketers know, privacy changes are wreaking havoc on the martech stack. Ad blocking has made users invisible and Apple’s tracking prevention has eliminated third-party cookies and shortened attribution windows.
+
+Until we launched our [trusted CDP](https://blotout.io/#marketer), which deploys modern customer data infrastructure to your cloud, companies were forced to rebuild their martech stacks internally to correct lossy measures.
+
+Today we’re taking that vision one step further with EdgeTag, a serverless Cloudflare app that sends consented data to the Facebook Conversion API directly from the customer’s domain.
+
+If you’re a Facebook advertiser and want to meaningfully lower your cost per click by improving your ad targeting, you get:
+
+* A consented conversion API that increases your campaign performance
+* Pixel delivered to Facebook in less than 3 ms with a consent check
+* An auditable opt-out that deletes your customer data on Facebook
+* An ID that lets you build Audience lookalikes for the future
+
+To take it for a spin, head to <a href='https://edgetag.io/facebook-conversion-api' target='_blank' rel='next' onClick={() => codifyClick('EdgeTag Announcement Blog - EdgeTag Website')}>edgetag.io/facebook-conversion-api</a> and get set up in only 2 minutes.
+
+## Journey to EdgeTag
+
+EdgeTag is another way that Blotout’s building infrastructure that puts trust at the core of your modern customer data stack. Here’s how we got here.
+
+### Privacy challenges for martech
+
+Three privacy headwinds came into full force in 2021:
+
+* Apple iOS (versions 14 onward) mandates consent and limits access to hidden SaaS — something the even compliance laws had not yet achieved;
+* Browsers like Brave and Firefox limit direct access to site data for third-parties; and
+* Ad blockers — which have 43% global adoption according to HootSuite — cap the visibility of SaaS.
+
+Privacy is important for users, but enterprises are now caught in a bind. They were supposed to have built trust and managed data themselves, but the tools they relied on — e.g., for advertising activities — are now getting blocked.
+
+![Use of ad blockers by country (HootSuite, 2021)](/img/blog/edgetag-announcement-1.png)
+<span className='caption'>**Figure**: Use of ad blockers by country (HootSuite, 2021)</span>
+
+### What Google and Facebook recommend
+
+As browsers and app stores push companies to directly collect data, large players like Google and Facebook have acknowledged that companies need to handle user data and consent themselves before engaging third-party tools.
+
+Google is releasing a [server-side tag manager](https://developers.google.com/tag-platform/tag-manager/server-side) so that companies can send customer data within their own domain (but only enabled for GCP, of course).
+
+Similarly, Facebook has developed an API gateway on AWS with a standard [architecture](https://developers.facebook.com/docs/marketing-api/conversions-api/guides/gateway) so its AWS-focused customers are not left behind.
+
+![Google’s server tag container — expensive and cumbersome](/img/blog/edgetag-announcement-2.png)
+<span className='caption'>**Figure**: Google’s server tag container — expensive and cumbersome</span>
+
+![Facebook’s AWS Gateway for its Conversions API (CAPI)](/img/blog/edgetag-announcement-3.png)
+<span className='caption'>**Figure**: Facebook’s AWS Gateway for its Conversions API (CAPI)</span>
+
+While pushing GCP on nascent cloud customers is useful for Google, the reality is that only 15-20% of companies have cloud accounts, meaning that this approach leaves most of the massive advertiser base to fend for themselves (and accept poorly optimized media spend).
+
+For companies that do make the jump to a cloud setup, the costs will be high. Server costs alone will Google’s server-side tag manager range from $1,000 to $10,000 annually, before even accounting for labor — for something that these companies once had for free.
+
+### A paradigm shift at the CDN edge
+
+Meanwhile, CDN providers like Cloudflare, Fastly, and Akamai have all developed technologies that let their customers leverage their infrastructure, within their own domains, for fast compute.
+
+These technologies enable a real-time machine that is available for companies to use at the network edge, without requiring a dedicated server for every customer. Also, by virtue of sitting between the browsers/apps and servers, CDN providers can enable low or no egress costs.
+
+This is a significant paradigm shift for companies who don’t want to store and process data — and instead want to share it with partners like Google and Facebook.
+
+References:
+
+* [Cloudflare Edge Workers](https://workers.cloudflare.com) – Deploy serverless code instantly across the globe to give it exceptional performance, reliability, and scale.
+* [Fastly Compute@Edge](https://www.fastly.com/products/edge-compute/serverless) – Faster, simpler, and more secure serverless code.
+* [Akamai Edge Compute](https://developer.akamai.com/akamai-edgeworkers-overview) – Serverless computing at the edge.
+
+### Our patent-pending solution
+
+Recognizing these changes as they were happening, we developed patent-pending data replication technology to replace Google Server Tags with simple microservices that transform and replicate data at the CDN edge.
+
+What does this mean for you?
+
+* No servers to manage;
+* Works like SaaS, but runs in your CDN (code and data in your control);
+* Consent is built-in; and
+* Data is simply replicated, shared, and discarded.
+
+## EdgeTag: Consented Facebook Conversion API implemented at the CDN edge
+
+Today, we’re announcing support for a consented Facebook Conversion API that operates as a single-tenant at the CDN edge.
+
+### How does it work?
+
+Just like any other javascript tag. The primary difference is that the tag runs in a company’s infrastructure and by default in Consent Mode. Companies use their CDN infrastructure to run Blotout software to manage its data.
+
+<video controls allowFullScreen poster="">
+  <source src="/video/edgetag-walkthrough.mp4" type="video/mp4" />
+</video>
+<span className='caption'>EdgeTag Video Walkthrough</span>
+
+### Why is this better?
+
+For the small and medium business user that does not have a cloud account and does not want to use a cloud account, this is just enabling a microservice.
+
+### Is the service regional to comply with local laws?
+
+Yes, because CDN zones are regional, Blotout applies local laws (based on consent and application of consent).
+
+### How does the service help protect privacy?
+
+By default, the tag doesn’t trigger events for conversion without user consent. If the user opts out, an automatic opt out is sent to Facebook to ensure user data lifecycle is complete.
+
+### Is Blotout a third-party?
+
+No. Blotout is a software provider; customers use our software in their CDN accounts. At no point does Blotout have access to any data from any customer. Customers choose to signal their marketing or analytics partners with toolkits that run in their control.
+
+## What this means for you
+
+Facebook is the largest platform for small and medium advertisers. Today, they don’t have the scale and resources to manage their own customer data. The CDN Compute and Store solution helps them with a simple to use, non expensive toolkit to achieve their goals;
+
+* **[2 min setup:](https://drive.google.com/file/d/1HECZ5EjW-OzIQPdvC6SLjIvbtTljEcEe/view?usp=sharing)** Faster than any other Conversions API setup.
+* **30% decrease in CPC:** See [recent case study](https://blotout.io/case-studies/edgetag-facebook-lux).
+* **Low cost:** Developers do not need to understand the new CAPI or CAPI Gateway and can get up and running immediately.
+* **Platform-independent:** Our solution is designed to work across all the advertising platforms that advertisers use today. Blotout is fully integrated into Facebook today and adding capabilities across Google and other platforms.
+* **[Real-time:](https://www.loom.com/share/b02f4d8dec1f4ff199d96a60863e93c1)** Pixels are delivered to Facebook in less than 3 ms with a consent check (compared to hours needed by server-side pixels).
+* **Single tenant/1st-Party:** Operated by the customer in their CDN account.
+* **Low technical bar:** Advertisers do not need technical expertise to deploy the app.
+* **Lossless:** Customers cannot be blocked for their own first-party data.
+* **Consent:** Consent mode option makes advertisers fully compliant from day one.
+* **Immediate deployment:** EdgeTag as an app.
+* **Continual updates:** Blotout continually updates the app without requiring any action from the advertiser.
+
+## Taking privacy seriously
+
+By default EdgeTag requires companies to check for consent on the tag itself (companies can choose their own policies for jurisdictions where consent is not mandated). We’re actively implementing the Global Privacy Control (GPC) for the upcoming release to make it compatible with California’s privacy law that is coming into effect in 2022.
+
+EdgeTag maintains an ID graph on the CDN edge, allowing proper signals and audit logs.
+
+Finally, when a user opts out, the EdgeTag microservice automatically sends an opt out signal to the appropriate provider and deletes the original ID at its end, completely deleting the trail for that user. From that point onwards, the browser will not send data back to the CDN edge, removing the user from its own network.
+
+Note that EdgeTag is _not_ SaaS; it executes within a Cloudflare, Fastly, or Akamai account so a company can manage its user’s data.
+
+## What’s next
+
+In the coming months we’ll be launching more microservices for marketing data activation, including Google Conversion.
+
+Eventually, customers will have microservices that negate the need for Google Tag Manager and which enable consented data sharing with audits and complete data lifecycle management. It’s safer, more cost efficient, and—critically—runs under your control in your infrastructure.
+
+<PrimaryCTA link='https://edgetag.io' rel='next' text='Go to EdgeTag' codify_as='EdgeTag Announcement Blog - EdgeTag Website CTA' />
+
+</Blog>
