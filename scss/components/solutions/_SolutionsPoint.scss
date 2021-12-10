@@ -2,12 +2,12 @@
   position: relative;
   width: 100%;
   max-width: 1200px;
-  height: 409px;
+  height: 400px;
 
   .point-title {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.025em;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
     color: var(--blue-80);
   }
 
@@ -29,10 +29,11 @@
       max-width: 400px;
 
       .sub-point-title {
+        font-weight: 450;
         font-size: 24px;
         line-height: 20px;
-        letter-spacing: -0.009em;
-        color: var(--blue-100);
+        letter-spacing: -0.015em;
+        color: var(--neutral-100);
       }
 
       .sub-point-description {
@@ -94,11 +95,15 @@
 
   .sub-point-image {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 32px;
     width: 650px;
     height: 400px;
     background-color: #eff3f8;
     border-radius: 5px;
+
+    @media (max-width: 1280px) {
+      width: 500px;
+    }
   }
 }
