@@ -1,0 +1,28 @@
+.solutions-points-header {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  column-gap: 64px;
+  margin: 0 auto;
+  padding: 24px 96px;
+  background-color: #f3f5f6;
+  color: var(--orange-40);
+  border-radius: 5px;
+
+  .icon {
+    display: flex;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -0.022em;
+    color: var(--blue-80);
+  }
+}

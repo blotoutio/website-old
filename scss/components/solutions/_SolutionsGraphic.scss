@@ -1,0 +1,13 @@
+.solutions-graphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  height: 340px;
+  margin: 0 auto;
+  margin-bottom: 128px;
+  font-style: italic;
+  background-color: var(--neutral-10);
+  color: var(--neutral-60);
+  border-radius: 5px;
+}

@@ -1,0 +1,104 @@
+.solutions-point {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 409px;
+
+  .point-title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.025em;
+    color: var(--blue-80);
+  }
+
+  .sub-point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 48px;
+    height: 300px;
+    margin-top: 24px;
+    padding-left: 32px;
+    background-color: var(--white);
+    border-radius: 5px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      max-width: 400px;
+
+      .sub-point-title {
+        font-size: 24px;
+        line-height: 20px;
+        letter-spacing: -0.009em;
+        color: var(--blue-100);
+      }
+
+      .sub-point-description {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.0065em;
+        color: var(--neutral-80);
+      }
+    }
+
+    .buttons {
+      display: flex;
+      column-gap: 24px;
+
+      .button {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding: 10px 24px;
+        color: var(--orange-50);
+        border: 2px solid var(--neutral-20);
+        border-radius: 50px;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--neutral-10);
+
+          &.previous-button {
+            svg {
+              transform: translateX(-4px);
+            }
+          }
+
+          &.next-button {
+            svg {
+              transform: translateX(4px);
+            }
+          }
+        }
+
+        span {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: -0.011em;
+          color: var(--neutral-80);
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          transform: none;
+          transition: all 150ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  .sub-point-image {
+    position: absolute;
+    top: 0;
+    right: 32px;
+    width: 650px;
+    height: 400px;
+    background-color: #eff3f8;
+    border-radius: 5px;
+  }
+}
