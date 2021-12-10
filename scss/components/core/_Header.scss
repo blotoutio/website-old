@@ -7,7 +7,7 @@ header {
 
   #header-container {
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -21,6 +21,7 @@ header {
     }
 
     .logo {
+      justify-self: start;
       width: 100px;
 
       svg {
@@ -153,6 +154,8 @@ header {
     }
 
     .primary-cta {
+      justify-self: end;
+
       @media (max-width: 1024px) {
         display: none;
       }
