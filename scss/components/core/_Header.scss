@@ -85,6 +85,12 @@ header {
           }
         }
 
+        &:first-of-type {
+          .sub-nav-group {
+            row-gap: 16px !important;
+          }
+        }
+
         .sub-nav-wrapper {
           position: absolute;
           left: -65px;

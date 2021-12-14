@@ -11,13 +11,17 @@ import { Close24 } from '@carbon/icons-react'
 import { Dashboard32 } from '@carbon/icons-react'
 import { Integration32 } from '@carbon/icons-react'
 
-import { Notebook24 } from '@carbon/icons-react'
-import { Api_124 } from '@carbon/icons-react'
-import { Blog24 } from '@carbon/icons-react'
-import { Growth24 } from '@carbon/icons-react'
-import { LogoSlack24 } from '@carbon/icons-react'
-
-import { Enterprise32 } from '@carbon/icons-react'
+import {
+  Notebook24,
+  Api_124,
+  Blog24,
+  Growth24,
+  LogoSlack24,
+  Enterprise32,
+  SummaryKpi24,
+  DecisionTree24,
+  BareMetalServer24,
+} from '@carbon/icons-react'
 
 import { codifyClick } from '~/utils'
 
@@ -69,19 +73,57 @@ const Header = () => {
         {/* Main Navigation */}
 
         <nav>
-          <Link
-            to={{ path: './', hash: '#main-section' }}
-            className='nav-link'
-            onClick={() => {
-              {
-                !mobileMenuState ? toggleMenu() : null
-              }
-              codifyClick('Header - Product')
-            }}
-          >
-            {!mobileMenuState ? <Dashboard32 /> : null}
-            <span>Product</span>
-          </Link>
+          <div className='nav-group'>
+            <div className='sub-nav-title'>Product</div>
+            <div className='sub-nav-wrapper'>
+              <div className='sub-nav'>
+                <div className='sub-nav-group'>
+                  <Link
+                    to='/for-marketers'
+                    className='sub-nav-link'
+                    onClick={() => {
+                      {
+                        !mobileMenuState ? toggleMenu() : null
+                      }
+                      codifyClick('Header / Product - For Marketers')
+                    }}
+                  >
+                    <SummaryKpi24 />
+                    <span>For Marketers</span>
+                  </Link>
+
+                  <Link
+                    to='/for-product-managers'
+                    className='sub-nav-link'
+                    onClick={() => {
+                      {
+                        !mobileMenuState ? toggleMenu() : null
+                      }
+                      codifyClick('Header / Product - For Product Managers')
+                    }}
+                  >
+                    <DecisionTree24 />
+                    <span>For Product Managers</span>
+                  </Link>
+
+                  <Link
+                    to='/for-engineers'
+                    className='sub-nav-link'
+                    onClick={() => {
+                      {
+                        !mobileMenuState ? toggleMenu() : null
+                      }
+                      codifyClick('Header / Product - For Engineers')
+                    }}
+                  >
+                    <BareMetalServer24 />
+                    <span>For Engineers</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <Link
             to='/integrations'
             className='nav-link'
@@ -95,6 +137,7 @@ const Header = () => {
             {!mobileMenuState ? <Integration32 /> : null}
             <span>Integrations</span>
           </Link>
+
           <div className='nav-group'>
             <div className='sub-nav-title'>Resources</div>
             <div className='sub-nav-wrapper'>
@@ -179,6 +222,7 @@ const Header = () => {
               </div>
             </div>
           </div>
+
           <Link
             to='/about'
             className='nav-link'
