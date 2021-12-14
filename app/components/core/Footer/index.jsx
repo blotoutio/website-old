@@ -70,30 +70,30 @@ const Footer = () => {
                     Integrations
                   </Link>
                   <Link
-                    to={{ pathname: './', hash: '#marketer' }}
+                    to='/for-marketers'
                     className='nav-link'
                     onClick={() =>
-                      codifyClick('Footer / Product - For Marketers (Home')
+                      codifyClick('Footer / Product - For Marketers Page')
                     }
                   >
                     For Marketers
                   </Link>
                   <Link
-                    to={{ pathname: './', hash: '#product-manager' }}
+                    to='/for-product-managers'
                     className='nav-link'
                     onClick={() =>
                       codifyClick(
-                        'Footer / Product - For Product Managers (Home)'
+                        'Footer / Product - For Product Managers Page'
                       )
                     }
                   >
                     For Product Managers
                   </Link>
                   <Link
-                    to={{ pathname: './', hash: '#engineer' }}
+                    to='/for-engineers'
                     className='nav-link'
                     onClick={() =>
-                      codifyClick('Footer / Product - For Engineers (Home)')
+                      codifyClick('Footer / Product - For Engineers Page')
                     }
                   >
                     For Engineers
