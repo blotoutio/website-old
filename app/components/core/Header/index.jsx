@@ -20,7 +20,7 @@ import {
   Enterprise32,
   SummaryKpi24,
   DecisionTree24,
-  BareMetalServer24,
+  Datastore24,
 } from '@carbon/icons-react'
 
 import { codifyClick } from '~/utils'
@@ -118,7 +118,7 @@ const Header = () => {
                       codifyClick('Header / Product - For Engineers Page')
                     }}
                   >
-                    <BareMetalServer24 />
+                    <Datastore24 />
                     <span>For Engineers</span>
                   </Link>
                 </div>
