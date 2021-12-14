@@ -25,7 +25,12 @@ export function links() {
 export default function ForEngineers() {
   return (
     <>
-      <SolutionsIntro />
+      <SolutionsIntro
+        title='For Engineering Teams'
+        heading='Build your cloud. Or bring your cloud.'
+        sub_heading='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor
+      sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.'
+      />
 
       <SolutionsGraphic />
 
@@ -34,7 +39,8 @@ export default function ForEngineers() {
       <SolutionsPointsContainer>
         <SolutionsPointsHeader
           text='Solutions infrastructure-as-code'
-          icon={<Cube32 />}
+          icon_left={<Cube32 />}
+          icon_right={<Cube32 />}
         />
 
         <SolutionsPointsSubContainer>
