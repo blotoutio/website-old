@@ -85,7 +85,7 @@ const Header = () => {
                       {
                         !mobileMenuState ? toggleMenu() : null
                       }
-                      codifyClick('Header / Product - For Marketers')
+                      codifyClick('Header / Product - For Marketers Page')
                     }}
                   >
                     <SummaryKpi24 />
@@ -99,7 +99,9 @@ const Header = () => {
                       {
                         !mobileMenuState ? toggleMenu() : null
                       }
-                      codifyClick('Header / Product - For Product Managers')
+                      codifyClick(
+                        'Header / Product - For Product Managers Page'
+                      )
                     }}
                   >
                     <DecisionTree24 />
@@ -113,7 +115,7 @@ const Header = () => {
                       {
                         !mobileMenuState ? toggleMenu() : null
                       }
-                      codifyClick('Header / Product - For Engineers')
+                      codifyClick('Header / Product - For Engineers Page')
                     }}
                   >
                     <BareMetalServer24 />
