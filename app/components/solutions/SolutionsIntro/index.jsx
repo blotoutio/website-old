@@ -3,17 +3,15 @@ import Section from '~/components/core/Section'
 import PrimaryCTA from '~/components/core/PrimaryCTA'
 import { Partnership32, Rule32, DataSet32 } from '@carbon/icons-react'
 
-const SolutionsIntro = () => {
+const SolutionsIntro = (props) => {
+  const { title, heading, sub_heading } = props
   return (
     <Section className='solutions-intro'>
       <div className='group-one'>
         <div className='text'>
-          <div className='title'>For Engineering Teams</div>
-          <div className='heading'>Build your cloud. Or bring your cloud.</div>
-          <div className='sub-heading'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor
-            sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.{' '}
-          </div>
+          <div className='title'>{title}</div>
+          <div className='heading'>{heading}</div>
+          <div className='sub-heading'>{sub_heading}</div>
         </div>
 
         <PrimaryCTA text='Get Started' />
