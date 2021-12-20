@@ -63,7 +63,12 @@
       }
 
       .primary-cta {
-        background-color: var(--neutral-100);
+        transition: all 150ms ease-in-out;
+        background-color: var(--neutral-90);
+
+        &:hover {
+          background-color: var(--neutral-100);
+        }
       }
     }
 
