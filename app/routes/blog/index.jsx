@@ -73,7 +73,13 @@ export default function Blog() {
               onClick={() => codifyClick(`Blog - ${blog.title}`)}
             >
               <img
-                src='img/blog/default-thumbnail.png'
+                src={
+                  'img/blog/' +
+                  (blog.customThumbnail
+                    ? `${blog.slug}/thumbnail`
+                    : 'default-thumbnail') +
+                  '.png'
+                }
                 alt='Blog Thumbnail'
                 className='content-item-thumbnail'
               />
