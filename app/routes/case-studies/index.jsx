@@ -48,7 +48,13 @@ export default function CaseStudies() {
                 onClick={() => codifyClick(`Case Studies - ${caseStudy.title}`)}
               >
                 <img
-                  src='img/case-studies/default-thumbnail.png'
+                  src={
+                    'img/case-studies/' +
+                    (caseStudy.customThumbnail
+                      ? `${caseStudy.slug}/thumbnail`
+                      : 'default-thumbnail') +
+                    '.png'
+                  }
                   alt='Case Study Thumbnail'
                   className='content-item-thumbnail'
                 />
