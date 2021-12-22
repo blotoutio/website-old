@@ -30,41 +30,34 @@ export function loader() {
 export default function CaseStudies() {
   let posts = useRouteData()
   return (
-    <div className='writing-new'>
+    <div className='case-studies'>
       <ContentHeader
         icon={<Growth32 />}
         text='Case Studies'
         className='case-studies-header'
       />
-      <div id='case-studies' className='writing'>
-        <div id='case-studies-list' className='writing-list'>
-          <div id='case-studies-list-content' className='writing-list-content'>
-            <div className='list'>
-              <div className='list-content'>
-                {posts.map((caseStudy) => {
-                  const formattedDate = formatDate(caseStudy.date)
+      <div id='case-studies-list' className='content-list'>
+        {posts.map((caseStudy) => {
+          const formattedDate = formatDate(caseStudy.date)
 
-                  return (
-                    <article className='list-item' key={caseStudy.slug}>
-                      <h2>
-                        <Link
-                          to={caseStudy.slug}
-                          className='list-item-title'
-                          onClick={() =>
-                            codifyClick(`Case Studies - ${caseStudy.title}`)
-                          }
-                        >
-                          {caseStudy.title}
-                        </Link>
-                      </h2>
-                      <p className='list-item-info'>{formattedDate}</p>
-                    </article>
-                  )
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
+          return (
+            <article className='content-item' key={caseStudy.slug}>
+              <Link
+                to={caseStudy.slug}
+                className='content-item-link'
+                onClick={() => codifyClick(`Case Studies - ${caseStudy.title}`)}
+              >
+                <img
+                  src='img/case-studies/default-thumbnail.png'
+                  alt='Case Study Thumbnail'
+                  className='content-item-thumbnail'
+                />
+                <h2 className='content-item-title'>{caseStudy.title}</h2>
+              </Link>
+              <span className='content-item-date'>{formattedDate}</span>
+            </article>
+          )
+        })}
       </div>
     </div>
   )

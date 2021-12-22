@@ -62,31 +62,26 @@ export function loader() {
 export default function Blog() {
   let posts = useRouteData()
   return (
-    <div className='writing-new'>
+    <div className='blog'>
       <ContentHeader icon={<Blog32 />} text='Blog' className='blog-header' />
-      <div id='blog' className='writing'>
-        <div id='blog-list' className='writing-list'>
-          <div id='blog-list-content' className='writing-list-content'>
-            <div className='list'>
-              <div className='list-content'>
-                {posts.map((blog) => (
-                  <article className='list-item' key={blog.slug}>
-                    <h2>
-                      <Link
-                        to={blog.slug}
-                        className='list-item-title'
-                        onClick={() => codifyClick(`Blog - ${blog.title}`)}
-                      >
-                        {blog.title}
-                      </Link>
-                    </h2>
-                    <p className='list-item-info'>{formatDate(blog.date)}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id='blog-list' className='content-list'>
+        {posts.map((blog) => (
+          <article className='content-item' key={blog.slug}>
+            <Link
+              to={blog.slug}
+              className='content-item-link'
+              onClick={() => codifyClick(`Blog - ${blog.title}`)}
+            >
+              <img
+                src='img/blog/default-thumbnail.png'
+                alt='Blog Thumbnail'
+                className='content-item-thumbnail'
+              />
+              <h2 className='content-item-title'>{blog.title}</h2>
+            </Link>
+            <span className='content-item-date'>{formatDate(blog.date)}</span>
+          </article>
+        ))}
       </div>
     </div>
   )
