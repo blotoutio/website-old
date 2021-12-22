@@ -7,7 +7,8 @@ import * as post3 from './edgetag-facebook-lux.mdx'
 import * as post2 from './besmitten.mdx'
 import * as post1 from './lux-foundation-solutions.mdx'
 
-import SubHeader from '~/components/core/SubHeader'
+import ContentHeader from '~/components/core/ContentHeader'
+import { Growth32 } from '@carbon/icons-react'
 
 export function meta() {
   return metaInfo('Case Studies')
@@ -30,7 +31,11 @@ export default function CaseStudies() {
   let posts = useRouteData()
   return (
     <div className='writing-new'>
-      <SubHeader heading='Case Studies' />
+      <ContentHeader
+        icon={<Growth32 />}
+        text='Case Studies'
+        className='case-studies-header'
+      />
       <div id='case-studies' className='writing'>
         <div id='case-studies-list' className='writing-list'>
           <div id='case-studies-list-content' className='writing-list-content'>

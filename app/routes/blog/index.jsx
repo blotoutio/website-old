@@ -21,7 +21,8 @@ import * as post3 from './kiss-making-privacy-by-design-easy.mdx'
 import * as post2 from './privacy-by-trust-vs-privacy-by-design.mdx'
 import * as post1 from './privacy-has-muscle-at-the-device-edge.mdx'
 
-import SubHeader from '~/components/core/SubHeader'
+import ContentHeader from '~/components/core/ContentHeader'
+import { Blog32 } from '@carbon/icons-react'
 
 export function meta() {
   return metaInfo('Blog')
@@ -62,7 +63,7 @@ export default function Blog() {
   let posts = useRouteData()
   return (
     <div className='writing-new'>
-      <SubHeader heading='Blog' />
+      <ContentHeader icon={<Blog32 />} text='Blog' className='blog-header' />
       <div id='blog' className='writing'>
         <div id='blog-list' className='writing-list'>
           <div id='blog-list-content' className='writing-list-content'>

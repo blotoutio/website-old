@@ -1,10 +1,4 @@
-@use 'components/home/SubHeader';
-
-.writing-new {
-  h1 {
-    color: var(--orange-50) !important;
-  }
-}
+@use 'components/home/ContentHeader';
 
 .writing {
   .writing-list {

@@ -1,0 +1,82 @@
+#content-header {
+  width: 100%;
+
+  .main-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 128px 24px 64px 24px;
+
+    @media (max-width: 768px) {
+      padding: 96px 24px 64px 24px;
+    }
+
+    .header-group {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--neutral-20);
+
+      @media (max-width: 768px) {
+        column-gap: 16px;
+        padding-bottom: 16px;
+      }
+
+      svg {
+        width: 45px;
+        height: 45px;
+
+        @media (max-width: 1024px) {
+          width: 38px;
+          height: 38px;
+        }
+
+        @media (max-width: 768px) {
+          width: 34px;
+          height: 34px;
+        }
+      }
+
+      h1 {
+        margin: 0;
+        font-weight: 450;
+        font-size: 55px;
+        line-height: 55px;
+        letter-spacing: -0.022em;
+
+        @media (max-width: 1024px) {
+          font-size: 46px;
+          line-height: 46px;
+          letter-spacing: -0.022em;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 38px;
+          line-height: 38px;
+          letter-spacing: -0.034em;
+        }
+      }
+    }
+  }
+}
+
+.blog-header {
+  svg {
+    color: var(--orange-20);
+  }
+
+  h1 {
+    color: var(--orange-60);
+  }
+}
+
+.case-studies-header {
+  svg {
+    color: var(--blue-20);
+  }
+
+  h1 {
+    color: var(--blue-60);
+  }
+}
