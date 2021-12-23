@@ -3,6 +3,7 @@ import { useRouteData } from 'remix'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
+import * as post17 from './demise-of-cookies-rise-of-trust.mdx'
 import * as post16 from './edgetag-announcement.mdx'
 import * as post15 from './building-with-cloudflare-workers.mdx'
 import * as post14 from './funding-announcement.mdx'
@@ -20,7 +21,8 @@ import * as post3 from './kiss-making-privacy-by-design-easy.mdx'
 import * as post2 from './privacy-by-trust-vs-privacy-by-design.mdx'
 import * as post1 from './privacy-has-muscle-at-the-device-edge.mdx'
 
-import SubHeader from '~/components/core/SubHeader'
+import ContentHeader from '~/components/core/ContentHeader'
+import { Blog32 } from '@carbon/icons-react'
 
 export function meta() {
   return metaInfo('Blog')
@@ -37,6 +39,7 @@ export function links() {
 
 export function loader() {
   return [
+    postFromModule(post17),
     postFromModule(post16),
     postFromModule(post15),
     postFromModule(post14),
@@ -59,31 +62,32 @@ export function loader() {
 export default function Blog() {
   let posts = useRouteData()
   return (
-    <div className='writing-new'>
-      <SubHeader heading='Blog' />
-      <div id='blog' className='writing'>
-        <div id='blog-list' className='writing-list'>
-          <div id='blog-list-content' className='writing-list-content'>
-            <div className='list'>
-              <div className='list-content'>
-                {posts.map((blog) => (
-                  <article className='list-item' key={blog.slug}>
-                    <h2>
-                      <Link
-                        to={blog.slug}
-                        className='list-item-title'
-                        onClick={() => codifyClick(`Blog - ${blog.title}`)}
-                      >
-                        {blog.title}
-                      </Link>
-                    </h2>
-                    <p className='list-item-info'>{formatDate(blog.date)}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className='blog'>
+      <ContentHeader icon={<Blog32 />} text='Blog' className='blog-header' />
+      <div id='blog-list' className='content-list'>
+        {posts.map((blog) => (
+          <article className='content-item' key={blog.slug}>
+            <Link
+              to={blog.slug}
+              className='content-item-link'
+              onClick={() => codifyClick(`Blog - ${blog.title}`)}
+            >
+              <img
+                src={
+                  'img/blog/' +
+                  (blog.customThumbnail
+                    ? `${blog.slug}/thumbnail`
+                    : 'default-thumbnail') +
+                  '.png'
+                }
+                alt='Blog Thumbnail'
+                className='content-item-thumbnail'
+              />
+              <h2 className='content-item-title'>{blog.title}</h2>
+            </Link>
+            <span className='content-item-date'>{formatDate(blog.date)}</span>
+          </article>
+        ))}
       </div>
     </div>
   )

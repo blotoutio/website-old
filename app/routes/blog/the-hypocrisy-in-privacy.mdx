@@ -50,15 +50,15 @@ If a party attempts to circumvent our tracking prevention methods, we may add ad
 
 You can imagine our surprise, then, when we learned that Apple’s own websites—apple.com and its subdomains—use securemetrics.apple.com as part of their script called analytics.js to do exactly that.
 
-![image](/img/blog/dev-tools.jpg)
+![image](/img/blog/the-hypocrisy-in-privacy/dev-tools.jpg)
 At first sight, it looks like Apple is using its own 1P analytics script to manage consumer data collected in the 1P context—behavior that is expected from all publishers.
 
 However, if you look under the hood, what you find is that securemetrics.apple.com is actually nothing but a CNAME hack for Adobe Analytics.
 
-![image](/img/blog/terminal1.jpg)
+![image](/img/blog/the-hypocrisy-in-privacy/terminal1.jpg)
 That subdomain is mapped to a CNAME to appleglobal.102.112.207.net, which is not a 1P service that Apple is running, but is instead a service, elsewhere, that is collecting consumer data on Apple’s behalf.
 
-![image](/img/blog/terminal2.jpg)
+![image](/img/blog/the-hypocrisy-in-privacy/terminal2.jpg)
 Let’s dig a little deeper. Once you lookup 207.net via whois, you can see that the certificate is registered to Adobe.
 
 Digging deeper, when you lookup 207.net via whois, you can see that the certificate is indeed registered to Adobe.
@@ -69,7 +69,7 @@ In other words, Adobe is openly asking publishers to work around the policies en
 
 ## Why this is a big deal
 
-![image](/img/blog/dev-tools2.jpg)
+![image](/img/blog/the-hypocrisy-in-privacy/dev-tools2.jpg)
 Apple is not just letting Adobe run a workaround on apple.com, they are giving Adobe the ability to track it’s users across domains and they have effectively granted Adobe the power to override Apple’s own 1P cookies for apple.com.
 
 This entails a rather serious security vulnerability where the third party—Adobe in this case—could conduct malicious activity, since a subdomain can override the primary apple.com domain cookie and the relevant script is fully operated out of the Adobe Experience Manager.
