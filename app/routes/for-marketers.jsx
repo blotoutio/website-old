@@ -44,12 +44,12 @@ export default function ForMarketers() {
         />
 
         <SolutionsPointsSubContainer>
-          <SolutionsPoint title='Main point 1' />
-          <SolutionsPoint title='Main point 2' />
-          <SolutionsPoint title='Main point 3' />
-          <SolutionsPoint title='Main point 4' />
-          <SolutionsPoint title='Main point 5' />
-          <SolutionsPoint title='Main point 6' />
+          <SolutionsPoint title='Retention Cohorts' />
+          <SolutionsPoint title='Attribution' />
+          <SolutionsPoint title='Conversions / Sales' />
+          <SolutionsPoint title='CAC / LTV' />
+          <SolutionsPoint title='Segments' />
+          <SolutionsPoint title='Growth Attribution' />
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
 
