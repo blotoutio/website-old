@@ -1,0 +1,147 @@
+---
+meta:
+  title: 'Blotout Release v0.13 | Blotout'
+  description: 'Latest news and insights from Blotout—the customer data platform reimagined for the trusted enterprise.'
+  og:type: 'article'
+  og:article:published_time: '2022-01-17T00:00:00.000Z'
+data:
+  date: '2022-01-17'
+---
+
+import Blog from '../../components/mdx/blog'
+
+import { codifyClick } from '~/utils'
+
+<Blog {...attributes.meta} {...attributes.data}>
+
+## Objective (Release v0.13)
+
+v0.13 was our largest release of 2021 and it enables your data so that you can finally measure and attribute across online and offline systems.
+
+In addition, our Docker container system is now enabled with [Argo CD](https://argoproj.github.io/cd/), letting our customers self-serve upgrades in seconds.
+
+### Highlights from the previous release (v0.12)
+
+1. EL+T Zero Code Pipeline Support
+2. Scaling Airflow to manage 100’s of data pipelines for Managed Service
+3. Enable Cross Platform Attribution for campaigns
+4. 1P ID Graph - build your own ID resolution via UI/UX
+
+## Release Notes
+
+### Feature: HttpOnly Server Side Cookie
+
+**Benefit**: Apple, Firefox, and Privacy Browsers have started to crackdown on cross-domain or 3P cookies and local storage. This impacts a site’s own measurement of its users and its ability to provide a personalized experience. The alternative, the HttpOnly Server Side Cookie can only be set by the site domain but it lasts a full lifetime. This enables sites to catalog users for their life but can’t use that ID for any other purposes.
+
+**Fix**: We enabled HttpOnly Server Side cookies so that domains can catalog their users and provide personalized services.
+
+**Example:** A user comes to your site via Campaign X on Facebook on iOS (or Safari or Firefox or Brave), however does not purchase your product/subscription. 10 days later, the user organically remembers your brand and subscribes, your FB pixel has already been reset by Apple and does not register as a conversion on your FB analytics or GA analytics or Segment, etc. Blotout solves for this by having all of the user events registered server-side against the 1P cookie. This enables a lifetime attribution system for CAC, LTV, etc. becoming a very powerful tool to understand longer term impact of marketing dollars spent against conversions and revenue.
+
+With this change, all of our clients will have migrated to a server-side 1P domain cookie that only they can access and catalog users in their own infrastructure.
+
+![alt_text](/img/blog/blotout-release-point-thirteen/image1.png "image_tooltip")
+<span className='caption'>[Video Link](https://www.loom.com/share/d7e518c0963442089788c05e2d43c290): Benefits of Lifetime Cookie</span>
+
+### Feature: Reporting support for key charts
+
+**Benefit**: For every chart that shows a lead capture, customers were asking for a quick breakdown by channel, campaign-id, referrer, country, browser, OS, etc. This helps build rapid reports for presentations and email updates.
+
+**Example:** When your everyday measurements or lead/conversions are measured, your growth marketer or PM may want to understand a quick table view of users driven by campaigns, or organic channels or affiliate channels, or countries, etc. With Blotout these are now provided by default for any chart created via workflows by default. This enables the growth marketer or the PM or C-level executives to quickly get a reporting view that they can download and send it to teams or partners so they get an **<span style={{'textDecoration': 'underline'}}>accurate lifetime window</span>** to campaign performance and decide where to spend their dollars.
+
+Reporting is available realtime for any metrics, lead, or conversion charts;
+
+1. Breakdown by Campaign
+2. Breakdown by Referrer
+3. Breakdown by Country
+4. Breakdown by Browser
+5. Breakdown by OS
+6. Breakdown by Platform
+
+![alt_text](/img/blog/blotout-release-point-thirteen/image2.png "image_tooltip")
+<span className='caption'>[Video Link](https://www.loom.com/share/3b41ab452e464620ac5507af39aed0ef): How-to and Benefits</span>
+
+### Feature: Campaign Filter Support
+
+**Benefit**: Our core customer is the marketer and they have had a constant need to understand how their campaigns are performing now, or have been conforming for very long lookback windows. Also, it turns out they do not like complicated dashboards. So we just enabled real time filters by campaign and time for them to understand what’s driving traffic, leads, conversions, or even customer complaints via email, calls.
+
+**Example:** For the marketers, they are always trying to get a cross sectional view of
+
+In this release, all of the key charts for Metrics, Retention, Leads, Conversions, Funnels, Interactive-Funnels, and User segments get a campaign filter
+
+![alt_text](/img/blog/blotout-release-point-thirteen/image3.png "image_tooltip")
+<span className='caption'>WIP Video Link: (1-2 minutes) How-to and Benefits of Campaign Filtering</span>
+
+### Feature: Online/Offline Segment Filter Support
+
+**Benefit**: Blotout supports a CDP built-in that enables unification of online data with offline data and CRM. In this release our customers can use those segments to slice and dice any chart from metrics, retention cohorts, funnels, all the way to leads and conversions. This enables the various departments from marketing to product management, and customer success teams to understand their segments.
+
+**Example**: Imagine you are seeing a pile of customers from Indonesia reaching out to you due to some error. You can segment these in Zendesk but apply those to online - site or app - funnels to understand causality. That’s powerful, real time, and no code requirements via workflows simplifies any form of cross sections.
+
+Segment filters and on the fly segments are now available for Metrics (DAU, DRU, MAU), Reporting, Funnels, Interactive Funnels, Retention Cohorts, and Lead/Conversion trackers.
+
+![alt_text](/img/blog/blotout-release-point-thirteen/image4.png "image_tooltip")
+<span className='caption'>[Video Link](https://www.loom.com/share/d3dda410bb514ad4be8d94344e99a3c7): How-to and Benefits</span>
+
+### Feature: Customer 360 Portal
+
+**Benefit**: With core focus on measurements and attribution, Blotout had never introduced a customer portal 360 View. In this release we changed that by enabling a cross-platform, cross-departmental, online and offline view of the customer. This enables product management and customer success teams to quickly look up customers and get a POV about a particular customer, their journey, value creation, etc.
+
+**Example**: Customer success is getting spammed by a customer that they got cheated on a product but are unable to tell what’s going on, get them a consolidated view and understand customer lifetime better. This enables them to start getting a product POV w/o having to segment customers and get online plus offline data as a 360 view real time with a simple email or phone number plugin.
+
+With Blotout, you get the entire customer ID graph (with a lifetime cookie) mapped out automagically with no zone. You can use any of these IDs in the ID graph to discover the user. This ID is also available to the customer on their side via SDK (if required to find the customer that may not have a registered email or phone number).
+
+![alt_text](/img/blog/blotout-release-point-thirteen/image5.png "image_tooltip")
+<span className='caption'>[Video Link](https://www.loom.com/share/441458ec93e94066a5dab196ca0fcb46): How-to and Benefits</span>
+
+### Feature: Web and App Reporting widgets
+
+**Benefit**: In this release, widgets were added for rapid feature development against app and web analytics for our customers who were missing out on Google Analytics or Matomo. These widgets now enable a direct link into five Apache Superset dashboards with pre-canned information. In this release, the focus was on web dashboards with specialty dashboards like visitors, remarketing potential, etc. Over time, customers can add widgets and Blotout will enable a widget marketplace that cross pollinates one customer’s generic widgets to others.
+
+**Example**: Some customers want to know which are the highest viewed pages or where do their customers hover; for such customers widgets are an easy way to access data without having to know SQL.
+
+![alt_text](/img/blog/blotout-release-point-thirteen/image6.png "image_tooltip")
+<span className='caption'>[Video Link](https://www.loom.com/share/10779819dc6f451b9f727f2d8eb31585): How-to and Benefits</span>
+
+### Feature: CAC and Campaign Reporting
+
+**Benefit**: Marketers are constantly trying to get to the source of the truth on which campaigns are working and which are not. Conversions may happen in campaign windows or may be attributed to users that were driven by campaigns days before the attribution window (lookback). However, with significant data loss issues, measuring conversions and CAC on channels like FB, Google, etc. is not possible anymore. In this release we introduce the ability to measure CAC for our marketing customers; by expanding attribution windows to 90 days and lookback windows to 90 days enabling marketers to claim more conversions for ad spend prior to their attribution windows; that shows them true lower CAC. While enabling this, we also allow the Marketer to show how many new and returning users they drive back to the site - eventually, we will enable forecasting here based on historical data (aka value of new users and returning users over time)
+
+**Example**: With significant data loss, marketers are unable to use ROAS features to compute CAC on Facebook and GOogle; worse, marketers struggle to really know which campaign drove the conversion. Finally, campaigns that drove users before the attribution window but came back organically never get attributed to them. We just solved this for every marketer w/o code. Filter by campaign and select any conversion/lead event on the fly, lookback and pring report. **BOOM!**
+
+![alt_text](/img/blog/blotout-release-point-thirteen/image7.png "image_tooltip")
+<span className='caption'>[Video Link](https://www.loom.com/share/3dc0d820d49c49c7920ab428a8228d64): How-to and Benefits</span>
+
+### Feature: Retention Chart Upgrades
+
+**Benefit**: Today marketing is multi-channel and at times it’s hard to understand what is driving customer retention. Blotout has had a retention cohort chart but customers complained that they could not separate new from the total pool. In this release we enable two retention cohort charts, for new users exclusively and for everyone. This enables customer retention on average (total) vs. just for new users and if new users > average, PLG/Growth companies are killing it.
+
+**Example**: It’s important to be able to separate lifetime customers against new customers when it comes to retention cohorts, besides filtering by customer segments and campaigns. With the new feature, growth marketers can focus on retention as a % against the total user base to understand if customer quality is going up or down!
+
+![alt_text](/img/blog/blotout-release-point-thirteen/image8.png "image_tooltip")
+
+### Infra Upgrade: Airflow 2.0
+
+Moved cloud workflows to [Airflow 2.0](https://airflow.apache.org/blog/airflow-two-point-oh-is-here/) and ability to support 100+ pipelines in a single deployment scaling. No Astronomer needed;** BOOM!**
+
+## What’s next
+
+As with any startups, we are agile. As our customer size doubled in the last few weeks, we have agreed to focus on 50% of releases to be attributed to feedback. Talk often, listen more!!
+
+### Release v0.14 (1) - Self Serve via Terraform
+
+We are going to enable two new features in this release from an infrastructure perspective;
+
+1. **Self Served Blotout**: Infrastructure with Docker/Container stack. Free to play with Bring your Cloud capabilities in your AWS.
+2. **Managed Blotout**: Deploy your Cloud infrastructure with Docker/Container stack. Modern Data Infrastructure in less time it takes to bake a pizza!
+
+### Release v0.14 (2) - Reduce EL+T pipeline friction
+
+Blotout has always been a Zero Code Pipeline company; we have now expanded zero code pipelines and zero expertise analytics to enable turnkey analytics.
+
+In this release we will support Google Analytics and Twilio Segment mapping between Analytics and Data pipelines from your CRM, Campaigns, Marketing stacks, etc. Still Zero Code. Leapfrog into the Cloud Native era!
+
+### Infra Upgrade: Airbyte and Apache Superset
+
+Both Apache Superset and Airbyte were updated to their latest versions.
+
+</Blog>
