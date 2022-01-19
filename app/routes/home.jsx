@@ -155,8 +155,8 @@ export default function Index() {
         title='For engineering teams'
         heading='Solutions infrastructure-as-code that builds trust'
         sub_heading='Data engineering is expensive. Engineers aren’t lawyers. Solve for both.'
-        illustration={true}
-        animation={false}
+        illustration={false}
+        animation={true}
       >
         <div className='persona-section-point-container'>
           <PersonaSectionPoint
