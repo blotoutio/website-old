@@ -14,23 +14,10 @@ const SolutionsIntro = (props) => {
           <div className='sub-heading'>{sub_heading}</div>
         </div>
 
-        <PrimaryCTA text='Get Started' />
+        <PrimaryCTA text='Get started' />
       </div>
 
-      <div className='group-two'>
-        <div className='solutions-intro-point'>
-          <Partnership32 />
-          <div>Build Lasting Trust</div>
-        </div>
-        <div className='solutions-intro-point'>
-          <Rule32 />
-          <div>Stay Compliant</div>
-        </div>
-        <div className='solutions-intro-point'>
-          <DataSet32 />
-          <div>100% Data Accuracy</div>
-        </div>
-      </div>
+      <div className='group-two'></div>
     </Section>
   )
 }

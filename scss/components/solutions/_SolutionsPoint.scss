@@ -52,7 +52,7 @@
         display: flex;
         align-items: center;
         column-gap: 10px;
-        padding: 10px 24px;
+        padding: 8px 16px;
         color: var(--orange-50);
         border: 2px solid var(--neutral-20);
         border-radius: 50px;
@@ -62,13 +62,13 @@
           cursor: pointer;
           background-color: var(--neutral-10);
 
-          &.previous-button {
+          &.move-left {
             svg {
               transform: translateX(-4px);
             }
           }
 
-          &.next-button {
+          &.move-right {
             svg {
               transform: translateX(4px);
             }
@@ -90,6 +90,37 @@
           transition: all 150ms ease-in-out;
         }
       }
+
+      .primary-cta {
+        padding: 8px 16px;
+        background-color: var(--white);
+        color: var(--neutral-80);
+        border: 2px solid var(--neutral-20);
+
+        &:hover {
+          background-color: var(--neutral-10);
+        }
+
+        svg {
+          fill: var(--blue-50);
+        }
+      }
+
+      .learn-button {
+        border: 2px solid var(--neutral-60);
+
+        &:hover {
+          background-color: var(--neutral-10);
+        }
+
+        span {
+          color: var(--neutral-80);
+        }
+      }
+    }
+
+    .slideshow-buttons {
+      display: none;
     }
   }
 
@@ -97,10 +128,17 @@
     position: absolute;
     bottom: 0;
     right: 32px;
+    display: flex;
+    align-items: center;
     width: 650px;
     height: 400px;
     background-color: #eff3f8;
     border-radius: 5px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
 
     @media (max-width: 1280px) {
       width: 500px;

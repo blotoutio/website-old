@@ -1,13 +1,13 @@
-import stylesUrl from '../styles/solutions.css'
-import { codifyClick, metaInfo } from '../utils'
+import stylesUrl from '../../styles/solutions.css'
+import { codifyClick, metaInfo } from '../../utils'
 import SolutionsIntro from '~/components/solutions/SolutionsIntro'
-import SolutionsGraphic from '~/components/solutions/SolutionsGraphic'
 import SolutionsTestimonial from '~/components/solutions/SolutionsTestimonial'
 import SolutionsPointsContainer from '~/components/solutions/SolutionsPointsContainer'
 import SolutionsPointsHeader from '~/components/solutions/SolutionsPointsHeader'
 import SolutionsPointsSubContainer from '~/components/solutions/SolutionsPointsSubContainer'
 import SolutionsPoint from '~/components/solutions/SolutionsPoint'
 import { ConnectSource32, ConnectTarget32 } from '@carbon/icons-react'
+import { useLocation } from 'react-router-dom'
 
 export function meta() {
   return metaInfo('For Product-led Growth Teams')
@@ -23,6 +23,10 @@ export function links() {
 }
 
 export default function ForProductManagers() {
+  let location = useLocation()
+  let pathname = location.pathname
+  let persona = pathname.substring(pathname.lastIndexOf('/') + 1)
+
   return (
     <>
       <SolutionsIntro
@@ -32,24 +36,37 @@ export default function ForProductManagers() {
       sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.'
       />
 
-      <SolutionsGraphic />
-
       <SolutionsTestimonial />
 
-      <SolutionsPointsContainer>
+      <SolutionsPointsContainer persona={persona}>
         <SolutionsPointsHeader
           icon_left={<ConnectSource32 />}
           text='A complete customer lifecycle'
           icon_right={<ConnectTarget32 />}
         />
 
-        <SolutionsPointsSubContainer>
-          <SolutionsPoint title='Main point 1' />
-          <SolutionsPoint title='Main point 2' />
-          <SolutionsPoint title='Main point 3' />
-          <SolutionsPoint title='Main point 4' />
-          <SolutionsPoint title='Main point 5' />
-          <SolutionsPoint title='Main point 6' />
+        <SolutionsPointsSubContainer persona={persona}>
+          <SolutionsPoint
+            persona={persona}
+            title='Segments'
+            topic='Customer segments on the fly'
+            description='Enable the ability to measure all of your favourite customer segments without breaking a sweat.'
+            previous_topic='Previous slide title'
+            next_topic='Next slide title'
+            slug='segments'
+            number='0'
+            temp='true'
+          />
+
+          <SolutionsPoint title='Some Feature' />
+
+          <SolutionsPoint title='Some Feature' />
+
+          <SolutionsPoint title='Some Feature' />
+
+          <SolutionsPoint title='Some Feature' />
+
+          <SolutionsPoint title='Some Feature' />
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
 
