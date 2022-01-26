@@ -30,6 +30,7 @@ export default function ForEngineers() {
   return (
     <>
       <SolutionsIntro
+        persona={persona}
         title='For Engineering Teams'
         heading='Build your cloud. Or bring your cloud.'
         sub_heading='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor

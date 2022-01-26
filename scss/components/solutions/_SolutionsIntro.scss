@@ -69,10 +69,16 @@
     }
 
     .group-two {
+      display: flex;
+      align-items: center;
       width: 65%;
       max-width: 650px;
       height: 100%;
-      background-color: #fcfaf9;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }

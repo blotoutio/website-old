@@ -4,7 +4,7 @@ import PrimaryCTA from '~/components/core/PrimaryCTA'
 import { Partnership32, Rule32, DataSet32 } from '@carbon/icons-react'
 
 const SolutionsIntro = (props) => {
-  const { title, heading, sub_heading } = props
+  const { persona, title, heading, sub_heading } = props
   return (
     <Section className='solutions-intro'>
       <div className='group-one'>
@@ -17,7 +17,9 @@ const SolutionsIntro = (props) => {
         <PrimaryCTA text='Get started' />
       </div>
 
-      <div className='group-two'></div>
+      <div className='group-two'>
+        <img src={'../img/solutions/' + persona + '/' + 'main.svg'} />
+      </div>
     </Section>
   )
 }
