@@ -70,7 +70,7 @@ const Footer = () => {
                     Integrations
                   </Link>
                   <Link
-                    to='/for-marketers'
+                    to='solutions/marketer'
                     className='nav-link'
                     onClick={() =>
                       codifyClick('Footer / Product - For Marketers Page')
@@ -79,7 +79,7 @@ const Footer = () => {
                     For Marketers
                   </Link>
                   <Link
-                    to='/for-product-managers'
+                    to='solutions/product-manager'
                     className='nav-link'
                     onClick={() =>
                       codifyClick(
@@ -90,7 +90,7 @@ const Footer = () => {
                     For Product Managers
                   </Link>
                   <Link
-                    to='/for-engineers'
+                    to='solutions/engineer'
                     className='nav-link'
                     onClick={() =>
                       codifyClick('Footer / Product - For Engineers Page')

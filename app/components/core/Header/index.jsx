@@ -74,18 +74,18 @@ const Header = () => {
 
         <nav>
           <div className='nav-group'>
-            <div className='sub-nav-title'>Product</div>
+            <div className='sub-nav-title'>Solutions</div>
             <div className='sub-nav-wrapper'>
               <div className='sub-nav'>
                 <div className='sub-nav-group'>
                   <Link
-                    to='/for-marketers'
+                    to='solutions/marketer'
                     className='sub-nav-link'
                     onClick={() => {
                       {
                         !mobileMenuState ? toggleMenu() : null
                       }
-                      codifyClick('Header / Product - For Marketers Page')
+                      codifyClick('Header / Solutions - For Marketers Page')
                     }}
                   >
                     <SummaryKpi24 />
@@ -93,14 +93,14 @@ const Header = () => {
                   </Link>
 
                   <Link
-                    to='/for-product-managers'
+                    to='solutions/product-manager'
                     className='sub-nav-link'
                     onClick={() => {
                       {
                         !mobileMenuState ? toggleMenu() : null
                       }
                       codifyClick(
-                        'Header / Product - For Product Managers Page'
+                        'Header / Solutions - For Product Managers Page'
                       )
                     }}
                   >
@@ -109,13 +109,13 @@ const Header = () => {
                   </Link>
 
                   <Link
-                    to='/for-engineers'
+                    to='solutions/engineer'
                     className='sub-nav-link'
                     onClick={() => {
                       {
                         !mobileMenuState ? toggleMenu() : null
                       }
-                      codifyClick('Header / Product - For Engineers Page')
+                      codifyClick('Header / Solutions - For Engineers Page')
                     }}
                   >
                     <Datastore24 />
