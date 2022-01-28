@@ -32,7 +32,7 @@ export default function ForProductManagers() {
       <SolutionsIntro
         persona={persona}
         title='For Product-led Growth Teams'
-        heading='Create better customer journeys'
+        heading='Build better customer journeys'
         sub_heading='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor
       sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.'
       />
