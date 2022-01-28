@@ -37,8 +37,6 @@ export default function ForEngineers() {
       sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.'
       />
 
-      <SolutionsTestimonial />
-
       <SolutionsPointsContainer persona={persona}>
         <SolutionsPointsHeader
           text='Solutions infrastructure-as-code'
@@ -70,6 +68,8 @@ export default function ForEngineers() {
           <SolutionsPoint title='Some Feature' />
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
+
+      <SolutionsTestimonial />
 
       {/*       <div>
         <div>Sub-nav-link-1</div>

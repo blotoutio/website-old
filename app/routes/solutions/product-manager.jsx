@@ -37,8 +37,6 @@ export default function ForProductManagers() {
       sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.'
       />
 
-      <SolutionsTestimonial />
-
       <SolutionsPointsContainer persona={persona}>
         <SolutionsPointsHeader
           icon_left={<ConnectSource32 />}
@@ -70,6 +68,8 @@ export default function ForProductManagers() {
           <SolutionsPoint title='Some Feature' />
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
+
+      <SolutionsTestimonial />
 
       {/*       <div>
         <div>Sub-nav-link-1</div>

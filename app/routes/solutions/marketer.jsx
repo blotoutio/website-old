@@ -31,8 +31,6 @@ export default function ForMarketers() {
       sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.'
       />
 
-      <SolutionsTestimonial />
-
       <SolutionsPointsContainer>
         <SolutionsPointsHeader
           icon_left={<Growth32 />}
@@ -49,6 +47,8 @@ export default function ForMarketers() {
           <SolutionsPoint title='Growth Attribution' />
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
+
+      <SolutionsTestimonial />
 
       {/*       <div>
         <div>Sub-nav-link-1</div>
