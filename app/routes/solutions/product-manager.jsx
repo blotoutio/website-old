@@ -6,6 +6,7 @@ import SolutionsPointsContainer from '~/components/solutions/SolutionsPointsCont
 import SolutionsPointsHeader from '~/components/solutions/SolutionsPointsHeader'
 import SolutionsPointsSubContainer from '~/components/solutions/SolutionsPointsSubContainer'
 import SolutionsPoint from '~/components/solutions/SolutionsPoint'
+import SolutionsPointSlide from '~/components/solutions/SolutionsPointSlide'
 import { ConnectSource32, ConnectTarget32 } from '@carbon/icons-react'
 import { useLocation } from 'react-router-dom'
 
@@ -37,48 +38,82 @@ export default function ForProductManagers() {
       sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.'
       />
 
-      <SolutionsPointsContainer persona={persona}>
+      <SolutionsPointsContainer>
         <SolutionsPointsHeader
           icon_left={<ConnectSource32 />}
           text='A complete customer lifecycle'
           icon_right={<ConnectTarget32 />}
         />
 
-        <SolutionsPointsSubContainer persona={persona}>
-          <SolutionsPoint
-            persona={persona}
-            title='Segments'
-            topic='Customer segments on the fly'
-            description='Enable the ability to measure all of your favourite customer segments without breaking a sweat.'
-            previous_topic='Previous slide title'
-            next_topic='Next slide title'
-            slug='segments'
-            number='0'
-            temp='true'
-          />
+        <SolutionsPointsSubContainer persona='product-manager'>
+          <SolutionsPoint persona={persona} title='Segments'>
+            <SolutionsPointSlide
+              intro='true'
+              text='Customer segments on the fly'
+              sub_text='Enable the ability to measure all of your favourite customer segments without breaking a sweat.'
+              intro_slide_text='Learn how it works'
+              persona={persona}
+              slug='segments'
+              number='0'
+            />
+
+            <SolutionsPointSlide
+              middle='true'
+              text='Step 1: Create'
+              sub_text='Use a simple UI toolkit to create an online or online segment on the fly.'
+              previous_slide_text='Overview'
+              next_slide_text='Step 2: Filter'
+              persona={persona}
+              slug='segments'
+              number='1'
+            />
+
+            <SolutionsPointSlide
+              middle='true'
+              text='Step 2: Filter'
+              sub_text='Measure your segment against any filter, including email and ad campaigns, to understand how they are trending.'
+              previous_slide_text='Step 1: Create'
+              next_slide_text='Step 3: Measure'
+              persona={persona}
+              slug='segments'
+              number='2'
+            />
+
+            <SolutionsPointSlide
+              middle='true'
+              text='Step 3: Measure'
+              sub_text='Use created filters to measure your segment against metrics, retention, conversions, or cost of acquisition.'
+              previous_slide_text='Step 2: Filter'
+              next_slide_text='Overview'
+              persona={persona}
+              slug='segments'
+              number='3'
+            />
+
+            <SolutionsPointSlide
+              done='true'
+              text='Customer segments on the fly'
+              sub_text='Enable the ability to measure all of your favourite customer segments without breaking a sweat.'
+              intro_again_text='Learn how it works'
+              persona={persona}
+              slug='segments'
+              number='0'
+            />
+          </SolutionsPoint>
 
           <SolutionsPoint title='Some Feature' />
 
-          <SolutionsPoint title='Some Feature' />
+          <SolutionsPoint title='Another Feature' />
 
-          <SolutionsPoint title='Some Feature' />
+          <SolutionsPoint title='A Crucial Feature' />
 
-          <SolutionsPoint title='Some Feature' />
+          <SolutionsPoint title='An Important Feature' />
 
-          <SolutionsPoint title='Some Feature' />
+          <SolutionsPoint title='Yet Another Feature' />
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
 
       <SolutionsTestimonial />
-
-      {/*       <div>
-        <div>Sub-nav-link-1</div>
-        <div>Sub-nav-link-2</div>
-        <div>Sub-nav-link-3</div>
-        <div>Sub-nav-link-4</div>
-        <div>Sub-nav-link-5</div>
-        <div>Sub-nav-link-6</div>
-      </div> */}
     </>
   )
 }

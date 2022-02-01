@@ -6,6 +6,7 @@ import SolutionsPointsContainer from '~/components/solutions/SolutionsPointsCont
 import SolutionsPointsHeader from '~/components/solutions/SolutionsPointsHeader'
 import SolutionsPointsSubContainer from '~/components/solutions/SolutionsPointsSubContainer'
 import SolutionsPoint from '~/components/solutions/SolutionsPoint'
+import SolutionsPointSlide from '~/components/solutions/SolutionsPointSlide'
 import { Growth32 } from '@carbon/icons-react'
 
 export function meta() {
@@ -38,26 +39,20 @@ export default function ForMarketers() {
           icon_right={<Growth32 />}
         />
 
-        <SolutionsPointsSubContainer>
-          <SolutionsPoint title='Retention Cohorts' />
-          <SolutionsPoint title='Attribution' />
-          <SolutionsPoint title='Conversions / Sales' />
-          <SolutionsPoint title='CAC / LTV' />
-          <SolutionsPoint title='Segments' />
-          <SolutionsPoint title='Growth Attribution' />
+        <SolutionsPointsSubContainer persona='marketer'>
+          <SolutionsPoint title='Some Feature' />
+
+          <SolutionsPoint title='Another Feature' />
+
+          <SolutionsPoint title='A Crucial Feature' />
+
+          <SolutionsPoint title='An Important Feature' />
+
+          <SolutionsPoint title='Yet Another Feature' />
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
 
       <SolutionsTestimonial />
-
-      {/*       <div>
-        <div>Sub-nav-link-1</div>
-        <div>Sub-nav-link-2</div>
-        <div>Sub-nav-link-3</div>
-        <div>Sub-nav-link-4</div>
-        <div>Sub-nav-link-5</div>
-        <div>Sub-nav-link-6</div>
-      </div> */}
     </>
   )
 }
