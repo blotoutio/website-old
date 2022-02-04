@@ -8,6 +8,7 @@ import SolutionsPointsSubContainer from '~/components/solutions/SolutionsPointsS
 import SolutionsPoint from '~/components/solutions/SolutionsPoint'
 import SolutionsPointSlide from '~/components/solutions/SolutionsPointSlide'
 import { Growth32 } from '@carbon/icons-react'
+import { useLocation } from 'react-router-dom'
 
 export function meta() {
   return metaInfo('For Growth-Marketing Teams')
@@ -23,9 +24,14 @@ export function links() {
 }
 
 export default function ForMarketers() {
+  let location = useLocation()
+  let pathname = location.pathname
+  let persona = pathname.substring(pathname.lastIndexOf('/') + 1)
+
   return (
     <>
       <SolutionsIntro
+        persona={persona}
         title='For Growth-Marketing Teams'
         heading='Precise ROI & ROAS'
         sub_heading='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor
