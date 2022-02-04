@@ -70,7 +70,13 @@ export let action = async ({ request }) => {
     }
   })
 
-  return redirect(`/?status=${responseText}`)
+  if (responseText === 'thank-you') {
+    return redirect(
+      `https://calendly.com/blotout-experts/talk-to-us/?email=${email}`
+    )
+  } else {
+    return redirect(`/?status=${responseText}`)
+  }
 }
 
 export function meta() {
