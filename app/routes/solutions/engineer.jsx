@@ -46,11 +46,35 @@ export default function ForEngineers() {
         />
 
         <SolutionsPointsSubContainer persona='engineer'>
-          <SolutionsPoint persona={persona} title='EL + T'>
+          <SolutionsPoint title='Self Provisioned (No DevOps)'>
             <SolutionsPointSlide
               intro='true'
-              text='Some text here'
-              sub_text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.'
+              text='Own your sales and marketing infrastructure'
+              sub_text='Get your zero code lakehouse or warehouse with lifetime customer data in less than 15 minutes.'
+              intro_slide_text='Learn how it works'
+              persona={persona}
+              slug=''
+              number='0'
+            />
+          </SolutionsPoint>
+
+          <SolutionsPoint title='Lossless Web Clickstream'>
+            <SolutionsPointSlide
+              intro='true'
+              text='Lifetime ID (iOS 14.5 fix)'
+              sub_text='Get lossless behavioral analytics with a lifetime cookie. Map your customer ID online & offline.'
+              intro_slide_text='Learn how it works'
+              persona={persona}
+              slug=''
+              number='0'
+            />
+          </SolutionsPoint>
+
+          <SolutionsPoint title='Zero Code Data Pipelines'>
+            <SolutionsPointSlide
+              intro='true'
+              text='EL + T and Unify workflow engine'
+              sub_text='Incrementatlly unify your customer journeys and CRM in your warehouse.'
               intro_slide_text='Learn how it works'
               persona={persona}
               slug='el-plus-t'
@@ -101,15 +125,41 @@ export default function ForEngineers() {
             />
           </SolutionsPoint>
 
-          <SolutionsPoint title='Some Feature' />
+          <SolutionsPoint title='Cross-platform Analytics'>
+            <SolutionsPointSlide
+              intro='true'
+              text='Cross-platform behaviors'
+              sub_text='Send data from your apps to your warehouse and map your cross-platform attribution in-house.'
+              intro_slide_text='Learn how it works'
+              persona={persona}
+              slug=''
+              number='0'
+            />
+          </SolutionsPoint>
 
-          <SolutionsPoint title='Another Feature' />
+          <SolutionsPoint title='Zero Code Sales & Marketing Activation'>
+            <SolutionsPointSlide
+              intro='true'
+              text='Activate loyalty with consented data activation'
+              sub_text='Lossless pixels that work with iOS 14.5 and activate customer segments with UI workflows.'
+              intro_slide_text='Learn how it works'
+              persona={persona}
+              slug=''
+              number='0'
+            />
+          </SolutionsPoint>
 
-          <SolutionsPoint title='A Crucial Feature' />
-
-          <SolutionsPoint title='An Important Feature' />
-
-          <SolutionsPoint title='Yet Another Feature' />
+          <SolutionsPoint title='Marketing Attribution'>
+            <SolutionsPointSlide
+              intro='true'
+              text='Measure & activate growth with built-in attribution'
+              sub_text='Measurement expertise for B2C and B2B organizations built-in as turnkey workflow-based analytics.'
+              intro_slide_text='Learn how it works'
+              persona={persona}
+              slug=''
+              number='0'
+            />
+          </SolutionsPoint>
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
 
