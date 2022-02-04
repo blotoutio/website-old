@@ -3,7 +3,7 @@ import { capture } from '@blotoutio/sdk-core'
 import { mapID } from '@blotoutio/sdk-events'
 import { codifyClick } from '~/utils'
 import Section from '~/components/core/Section'
-import { ArrowRight20 } from '@carbon/icons-react'
+import { ArrowUpRight20 } from '@carbon/icons-react'
 
 const HeroSection = () => {
   const data = useRouteData()
@@ -47,7 +47,7 @@ const HeroSection = () => {
           onClick={() => codifyClick('Home - Hero Form Submit')}
         >
           Sign up for a demo
-          <ArrowRight20 className='form-button-icon' />
+          <ArrowUpRight20 className='form-button-icon' />
         </button>
         <div className='form-message'>{data.formMessage}</div>
       </form>
