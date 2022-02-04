@@ -4,8 +4,9 @@
   height: 400px;
 
   .point-title {
-    font-size: 36px;
-    line-height: 36px;
+    max-width: 460px;
+    font-size: 34px;
+    line-height: 48px;
     letter-spacing: -0.03em;
     color: var(--blue-80);
   }
