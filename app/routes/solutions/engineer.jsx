@@ -53,19 +53,19 @@ export default function ForEngineers() {
               sub_text='Get your zero code lakehouse or warehouse with lifetime customer data in less than 15 minutes.'
               intro_slide_text='Learn how it works'
               persona={persona}
-              slug=''
+              slug='self-provisioned'
               number='0'
             />
           </SolutionsPoint>
 
-          <SolutionsPoint title='Lossless Web Clickstream'>
+          <SolutionsPoint title='Lifetime ID & Lossless Analytics'>
             <SolutionsPointSlide
               intro='true'
               text='Lifetime ID (iOS 14.5 fix)'
               sub_text='Get lossless behavioral analytics with a lifetime cookie. Map your customer ID online & offline.'
               intro_slide_text='Learn how it works'
               persona={persona}
-              slug=''
+              slug='lifetime-id'
               number='0'
             />
           </SolutionsPoint>
@@ -125,38 +125,38 @@ export default function ForEngineers() {
             />
           </SolutionsPoint>
 
-          <SolutionsPoint title='Cross-platform Analytics'>
+          <SolutionsPoint title='Cross-App/Platform Analytics'>
             <SolutionsPointSlide
               intro='true'
               text='Cross-platform behaviors'
               sub_text='Send data from your apps to your warehouse and map your cross-platform attribution in-house.'
               intro_slide_text='Learn how it works'
               persona={persona}
-              slug=''
+              slug='cross-platform'
               number='0'
             />
           </SolutionsPoint>
 
-          <SolutionsPoint title='Zero Code Sales & Marketing Activation'>
+          <SolutionsPoint title='Online & Offline ID Unification'>
             <SolutionsPointSlide
               intro='true'
               text='Activate loyalty with consented data activation'
               sub_text='Lossless pixels that work with iOS 14.5 and activate customer segments with UI workflows.'
               intro_slide_text='Learn how it works'
               persona={persona}
-              slug=''
+              slug='online-offline'
               number='0'
             />
           </SolutionsPoint>
 
-          <SolutionsPoint title='Marketing Attribution'>
+          <SolutionsPoint title='Cross-Channel Attribution'>
             <SolutionsPointSlide
               intro='true'
               text='Measure & activate growth with built-in attribution'
               sub_text='Measurement expertise for B2C and B2B organizations built-in as turnkey workflow-based analytics.'
               intro_slide_text='Learn how it works'
               persona={persona}
-              slug=''
+              slug='cross-channel'
               number='0'
             />
           </SolutionsPoint>
