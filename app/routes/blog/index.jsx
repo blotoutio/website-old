@@ -3,9 +3,12 @@ import { useRouteData } from 'remix'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
-import * as post19 from './edgetag-cdn-general-availability.mdx'
-import * as post18 from './blotout-release-point-thirteen.mdx'
-import * as post17 from './demise-of-cookies-rise-of-trust.mdx'
+import * as post22 from './adweek-article-marketers.mdx'
+import * as post21 from './edgetag-cdn-general-availability.mdx'
+import * as post20 from './freethink-interview-youtube.mdx'
+import * as post19 from './blotout-release-point-thirteen.mdx'
+import * as post18 from './demise-of-cookies-rise-of-trust.mdx'
+import * as post17 from './cloudflare-tv-founder-spotlight.mdx'
 import * as post16 from './edgetag-announcement.mdx'
 import * as post15 from './building-with-cloudflare-workers.mdx'
 import * as post14 from './funding-announcement.mdx'
@@ -41,6 +44,9 @@ export function links() {
 
 export function loader() {
   return [
+    postFromModule(post22),
+    postFromModule(post21),
+    postFromModule(post20),
     postFromModule(post19),
     postFromModule(post18),
     postFromModule(post17),
@@ -71,24 +77,41 @@ export default function Blog() {
       <div id='blog-list' className='content-list'>
         {posts.map((blog) => (
           <article className='content-item' key={blog.slug}>
-            <Link
-              to={blog.slug}
-              className='content-item-link'
-              onClick={() => codifyClick(`Blog - ${blog.title}`)}
-            >
-              <img
-                src={
-                  'img/blog/' +
-                  (blog.customThumbnail
-                    ? `${blog.slug}/thumbnail`
-                    : 'default-thumbnail') +
-                  '.png'
-                }
-                alt='Blog Thumbnail'
-                className='content-item-thumbnail'
-              />
-              <h2 className='content-item-title'>{blog.title}</h2>
-            </Link>
+            {blog.internal ? (
+              <Link
+                to={blog.slug}
+                className='content-item-link'
+                onClick={() => codifyClick(`Blog - ${blog.title}`)}
+              >
+                <img
+                  src={
+                    'img/blog/' +
+                    (blog.customThumbnail
+                      ? `${blog.slug}/thumbnail`
+                      : 'default-thumbnail') +
+                    '.png'
+                  }
+                  alt='Blog Thumbnail'
+                  className='content-item-thumbnail'
+                />
+                <h2 className='content-item-title'>{blog.title}</h2>
+              </Link>
+            ) : blog.external ? (
+              <a
+                href={blog.url}
+                className='content-item-link'
+                onClick={() => codifyClick(`Blog (External) - ${blog.title}`)}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img
+                  src={'img/blog/' + `${blog.slug}/thumbnail` + '.png'}
+                  alt='Blog Thumbnail'
+                  className='content-item-thumbnail'
+                />
+                <h2 className='content-item-title'>{blog.title}</h2>
+              </a>
+            ) : null}
             <span className='content-item-date'>{formatDate(blog.date)}</span>
           </article>
         ))}
