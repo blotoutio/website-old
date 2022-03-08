@@ -6,7 +6,7 @@ import { ArrowLeft24, ArrowRight24, LogoSlack24 } from '@carbon/icons-react'
 const SolutionsPointSlide = (props) => {
   const { data, persona, slug } = props
 
-  const slideData = data[0].slides
+  const slideData = data.slides
 
   const [slideNumber, setSlideNumber] = useState(0)
   const [slideStatus, setSlideStatus] = useState('pending')
@@ -37,11 +37,9 @@ const SolutionsPointSlide = (props) => {
     <div className='solutions-point-slide'>
       <div className='sub-point'>
         <div className='text'>
-          <div className='sub-point-title'>{slideData[slideNumber].text}</div>
+          <div className='sub-point-title'>{slideData[0].text}</div>
 
-          <div className='sub-point-description'>
-            {slideData[slideNumber].sub_text}
-          </div>
+          <div className='sub-point-description'>{slideData[0].sub_text}</div>
         </div>
 
         {slideNumber === 0 ? (
