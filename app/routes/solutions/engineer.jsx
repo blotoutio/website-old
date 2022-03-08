@@ -9,6 +9,7 @@ import SolutionsPoint from '~/components/solutions/SolutionsPoint'
 import SolutionsPointSlide from '~/components/solutions/SolutionsPointSlide'
 import { Cube32 } from '@carbon/icons-react'
 import { useLocation } from 'react-router-dom'
+import { solutionsData } from '~/data/solutionsData'
 
 export function meta() {
   return metaInfo('For Engineering Teams')
@@ -46,7 +47,16 @@ export default function ForEngineers() {
         />
 
         <SolutionsPointsSubContainer persona='engineer'>
-          <SolutionsPoint title='Self Provisioned (No DevOps)'>
+          <SolutionsPoint title='Zero Code Data Pipelines'>
+            <SolutionsPointSlide
+              data={solutionsData}
+              persona={persona}
+              slug='el-plus-t'
+              number='0'
+            />
+          </SolutionsPoint>
+
+          {/*           <SolutionsPoint title='Self Provisioned (No DevOps)'>
             <SolutionsPointSlide
               intro='true'
               text='Own your sales and marketing infrastructure'
@@ -56,9 +66,9 @@ export default function ForEngineers() {
               slug='self-provisioned'
               number='0'
             />
-          </SolutionsPoint>
+          </SolutionsPoint> */}
 
-          <SolutionsPoint title='Lifetime ID & Lossless Analytics'>
+          {/*           <SolutionsPoint title='Lifetime ID & Lossless Analytics'>
             <SolutionsPointSlide
               intro='true'
               text='Lifetime ID (iOS 14.5 fix)'
@@ -68,9 +78,9 @@ export default function ForEngineers() {
               slug='lifetime-id'
               number='0'
             />
-          </SolutionsPoint>
+          </SolutionsPoint> */}
 
-          <SolutionsPoint title='Zero Code Data Pipelines'>
+          {/*           <SolutionsPoint title='Zero Code Data Pipelines'>
             <SolutionsPointSlide
               intro='true'
               text='EL + T and Unify workflow engine'
@@ -123,9 +133,9 @@ export default function ForEngineers() {
               slug='segments'
               number='0'
             />
-          </SolutionsPoint>
+          </SolutionsPoint> */}
 
-          <SolutionsPoint title='Cross-App/Platform Analytics'>
+          {/*           <SolutionsPoint title='Cross-App/Platform Analytics'>
             <SolutionsPointSlide
               intro='true'
               text='Cross-platform behaviors'
@@ -135,9 +145,9 @@ export default function ForEngineers() {
               slug='cross-platform'
               number='0'
             />
-          </SolutionsPoint>
+          </SolutionsPoint> */}
 
-          <SolutionsPoint title='Online & Offline ID Unification'>
+          {/*           <SolutionsPoint title='Online & Offline ID Unification'>
             <SolutionsPointSlide
               intro='true'
               text='Activate loyalty with consented data activation'
@@ -147,9 +157,9 @@ export default function ForEngineers() {
               slug='online-offline'
               number='0'
             />
-          </SolutionsPoint>
+          </SolutionsPoint> */}
 
-          <SolutionsPoint title='Cross-Channel Attribution'>
+          {/*           <SolutionsPoint title='Cross-Channel Attribution'>
             <SolutionsPointSlide
               intro='true'
               text='Measure & activate growth with built-in attribution'
@@ -159,7 +169,7 @@ export default function ForEngineers() {
               slug='cross-channel'
               number='0'
             />
-          </SolutionsPoint>
+          </SolutionsPoint> */}
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
 
