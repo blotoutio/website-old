@@ -37,9 +37,11 @@ const SolutionsPointSlide = (props) => {
     <div className='solutions-point-slide'>
       <div className='sub-point'>
         <div className='text'>
-          <div className='sub-point-title'>{slideData[0].text}</div>
+          <div className='sub-point-title'>{slideData[slideNumber].text}</div>
 
-          <div className='sub-point-description'>{slideData[0].sub_text}</div>
+          <div className='sub-point-description'>
+            {slideData[slideNumber].sub_text}
+          </div>
         </div>
 
         {slideNumber === 0 ? (
@@ -51,7 +53,9 @@ const SolutionsPointSlide = (props) => {
                 className='learn-button move-right button'
                 onClick={goToNextSlide}
               >
-                <span>Learn how it works</span>
+                <span>
+                  {data.cta_text ? data.cta_text : 'Learn how it works'}
+                </span>
                 <ArrowRight24 />
               </div>
             </div>
@@ -103,7 +107,7 @@ const SolutionsPointSlide = (props) => {
               setSlideStatus('pending')
             }}
           >
-            <span>Learn how it works</span>
+            <span>Learn about it again</span>
             <ArrowRight24 />
           </div>
         ) : null}

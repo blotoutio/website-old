@@ -34,20 +34,19 @@ export default function ForEngineers() {
       <SolutionsIntro
         persona={persona}
         title='For Engineering Teams'
-        heading='Build your cloud. Or bring your cloud.'
-        sub_heading='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor
-      sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.'
+        heading='Serverless Infra for Sales & Marketing'
+        sub_heading='Deploy a dedicated and managed modern data infrastructure for your sales and marketing teams in 20 minutes.'
       />
 
       <SolutionsPointsContainer>
         <SolutionsPointsHeader
-          text='Solutions infrastructure-as-code'
+          text='Bring your Cloud or Onboard to Cloud'
           icon_left={<Cube32 />}
           icon_right={<Cube32 />}
         />
 
         <SolutionsPointsSubContainer persona='engineer'>
-          <SolutionsPoint title='Self Provisioned (No DevOps)'>
+          <SolutionsPoint title='No DevOps. No Data Engineering'>
             <SolutionsPointSlide
               data={solutionsData[0]}
               persona={persona}
@@ -55,7 +54,7 @@ export default function ForEngineers() {
             />
           </SolutionsPoint>
 
-          <SolutionsPoint title='Lifetime ID & Lossless Analytics'>
+          <SolutionsPoint title='Lifetime Cookie & 1st Party Analytics'>
             <SolutionsPointSlide
               data={solutionsData[1]}
               persona={persona}
@@ -71,7 +70,7 @@ export default function ForEngineers() {
             />
           </SolutionsPoint>
 
-          <SolutionsPoint title='Cross-App/Platform Analytics'>
+          <SolutionsPoint title='Better Customer Journeys'>
             <SolutionsPointSlide
               data={solutionsData[3]}
               persona={persona}
@@ -79,7 +78,7 @@ export default function ForEngineers() {
             />
           </SolutionsPoint>
 
-          <SolutionsPoint title='Online & Offline ID Unification'>
+          <SolutionsPoint title='Lifetime ID Graph'>
             <SolutionsPointSlide
               data={solutionsData[4]}
               persona={persona}

@@ -3,34 +3,50 @@ export const solutionsData = [
     type: 'point',
     number: '1',
     slug: 'self-provisioned',
+    cta_text: 'Check it out',
     slides: [
       {
         type: 'slide',
         sub_type: 'intro',
-        text: 'Own your sales and marketing infrastructure',
+        text: 'Serverless sales and Marketing data lake as a service',
         sub_text:
-          'Get your zero code lakehouse or warehouse with lifetime customer data in less than 15 minutes.',
+          'Get your zero code customer data lake with dedicated and managed infrastructure.',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Use your Cloud or Or Onboard to Cloud',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Terraform Vault ensures your AWS credentials are managed by you. Alternatively, Blotout can onboard your Cloud experience.',
+        left_button_text: 'Back',
+        right_button_text: 'Configure setup',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Set up your Domain and Zero Trust Creds',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Setup your domain to map to your load balancers and the region to launch your infrastructure.',
+        left_button_text: 'Back',
+        right_button_text: 'Deploy. Boom!',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Zero Code DevOPS and Data Engineering',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Measure, attribute, and activate customer data anywhere on the globe in less than it takes time to file a DevOPS ticket.',
+        left_button_text: 'Back',
+        right_button_text: 'Your Complete Stack',
+      },
+      {
+        type: 'slide',
+        sub_type: 'step',
+        text: 'Complete Sales & Marketing stack in minutes',
+        sub_text:
+          'Try for free and save $1M in annual savings with Zero Code management.',
+        left_button_text: '',
+        right_button_text: '',
       },
     ],
   },
@@ -38,41 +54,52 @@ export const solutionsData = [
     type: 'point',
     number: '2',
     slug: 'lifetime-id',
+    cta_text: '',
     slides: [
       {
         type: 'slide',
         sub_type: 'intro',
-        text: 'Lifetime ID (iOS 14.5 fix)',
+        text: 'Unlimited Cross-Platform Analytics',
         sub_text:
-          'Get lossless behavioral analytics with a lifetime cookie. Map your customer ID online & offline.',
+          'Get accurate behavioral analytics and a lifetime ID graph with our cross platform SDKs.',
+        left_button_text: '',
+        right_button_text: '',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Easy setup and GO!',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Generate credentials and use our SDK to capture your behavioral clickstreams across sites, apps, and IoT.',
+        left_button_text: 'Back',
+        right_button_text: 'Lifetime ID',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Set your Lifetime Cookie and ID',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Get cross platform  lifetime ID  and ID Graph to activate customers via every online and offline interaction.',
+        left_button_text: 'Back',
+        right_button_text: 'Accurate Metrics',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Accurate Behavioral Analytics',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Never get blocked and analyze your customer in your stack without relying on 3P cookies or SaaS.',
+        left_button_text: 'Back',
+        right_button_text: 'Recap',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Lifetime Customer Analytics',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Get your Analytics in your own lake with complete workflows, and a BI query engine',
+        left_button_text: '',
+        right_button_text: '',
       },
     ],
   },
@@ -80,34 +107,52 @@ export const solutionsData = [
     type: 'point',
     number: '3',
     slug: 'el-plus-t',
+    cta_text: '',
     slides: [
       {
         type: 'slide',
         sub_type: 'intro',
-        text: 'EL + T and Unify workflow engine',
+        text: 'EL + T and ID Unification Workflow',
         sub_text:
-          'Incrementatlly unify your customer journeys and CRM in your warehouse.',
+          'Extract, Load, Transform and DBT Unification engine in a single workflow to unify data in a single table. Magic!',
+        left_button_text: '',
+        right_button_text: '',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Step 1: Source',
+        text: 'Configure your Source',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Choose from 200+ integrations from your database, SaaS, or warehouse data to pull in to lake and map it to your lifetime ID graph.',
+        left_button_text: 'Back',
+        right_button_text: 'Data Mapping',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Step 2: Schema',
+        text: 'Zero Code Data Mapping',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Select from pure data replication to conjoining customer journeys and multi CRM tables in to a single table.',
+        left_button_text: 'Back',
+        right_button_text: 'Data Lake',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Step 3: Summary',
+        text: 'Query-Ready Data Lake and Customer 360',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Get your raw tables, behavioral event tables, and unified data tables mapped to Athena and Superset BI engine.',
+        left_button_text: 'Back',
+        right_button_text: 'Recap',
+      },
+      {
+        type: 'slide',
+        sub_type: 'step',
+        text: 'Dedicated Zero Code EL + T and DBT Stack',
+        sub_text:
+          'Map your entire online and offline Customer Journey and Customer CRM stack in minutes. Save $1M in engineering costs.',
+        left_button_text: '',
+        right_button_text: '',
       },
     ],
   },
@@ -115,41 +160,52 @@ export const solutionsData = [
     type: 'point',
     number: '4',
     slug: 'cross-platform',
+    cta_text: '',
     slides: [
       {
         type: 'slide',
         sub_type: 'intro',
-        text: 'Cross-platform behaviors',
+        text: 'Online & Offline Analytics',
         sub_text:
-          'Send data from your apps to your warehouse and map your cross-platform attribution in-house.',
+          'Map customer journeys from your site, your apps, and your offline engagements like CRM, Customer Service, Retail store, etc.',
+        left_button_text: '',
+        right_button_text: '',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Add your Digital Clickstreams',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Map your customer event replay from site to your data lake. Map across website, apps, IoT, and other devices.',
+        left_button_text: 'Back',
+        right_button_text: 'Turnkey Analytics',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Plug and Play Analytics',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Zero code retention cohorts, metrics, data pivots, segmentation, conversion funnels, interactive funnels and BI.',
+        left_button_text: 'Back',
+        right_button_text: 'CRM Mapping',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Map your Customer',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Map your CRM via email, customer_id, etc. mapping that enables zero code data unification and lifetime ID graphs',
+        left_button_text: 'Back',
+        right_button_text: 'Customer 360',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Lifetime Customer 360',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Get online and offline journeys for your customers including marketing activation IDs and channels in a simple flow.',
+        left_button_text: 'Back',
+        right_button_text: 'Recap',
       },
     ],
   },
@@ -157,55 +213,70 @@ export const solutionsData = [
     type: 'point',
     number: '5',
     slug: 'online-offline',
+    cta_text: '',
     slides: [
       {
         type: 'slide',
         sub_type: 'intro',
-        text: 'Activate loyalty with consented data activation',
+        text: 'Multi-Channel Activation',
         sub_text:
-          'Lossless pixels that work with iOS 14.5 and activate customer segments with UI workflows.',
+          'Map all activation channels to lifetime cookie with zero code and have lifetime activation enablement via Airflow.',
+        left_button_text: '',
+        right_button_text: '',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Map online ID',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Use our ID mapping function to map any digital asset to your offline or CRM asset, internally or externally.',
+        left_button_text: 'Back',
+        right_button_text: 'Offline ID',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Map Online & Offline IDs',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Zero mapping of online to offline and offline to offline IDs. Mapping to an online ID provides a lifetime activation graph.',
+        left_button_text: '',
+        right_button_text: '',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'One Table to rule  them all',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Unify all Customer Journeys and multi tenant CRM to a single table. Map zero party data and first party data in your control.',
+        left_button_text: 'Back',
+        right_button_text: 'DBT built-in',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'DBT Unification built-in',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'No need for DBT Cloud or sending data elsewhere. Zero code DBT modeling built with a lifetime ID stitching algo.',
+        left_button_text: 'Back',
+        right_button_text: 'Airflow built-in',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Airflow 2.0 built-in',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Airflow orchestration and scaling is fully built in. No need for Astronomer or Data Engineering. Automated via UI/UX workflows.',
+        left_button_text: 'Back',
+        right_button_text: 'Recap',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Customer 360 & Customer Journeys',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Map your online offline events, and CRM to build better customer data built with a lifetime ID, and in your control.',
+        left_button_text: 'Back',
+        right_button_text: '',
       },
     ],
   },
@@ -213,41 +284,55 @@ export const solutionsData = [
     type: 'point',
     number: '6',
     slug: 'cross-channel',
+    cta_text: '',
     slides: [
       {
         type: 'slide',
         sub_type: 'intro',
-        text: 'Measure & activate growth with built-in attribution',
+        text: 'Incremental and decremental channel impact',
         sub_text:
-          'Measurement expertise for B2C and B2B organizations built-in as turnkey workflow-based analytics.',
+          'With lifetime online and offline customer data mapped out, understand media impact on your brand and sales across channels.',
+        left_button_text: '',
+        right_button_text: '',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Measure any Segment',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Build any segment on the fly, online or offline/retail, and see multi channel impact, lifetime, over seasons.',
+        left_button_text: 'Back',
+        right_button_text: 'Campaign impact',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Measure any Campaign',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Filter all users or any segment or conversion and measure impact of a campaign as last click and view the path to that Campaign.',
+        left_button_text: 'Back',
+        right_button_text: 'Conversions',
       },
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Measure any online or offline Conversion',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Build a Conversion event, online or in the store or via work desk tool, and be able to visualize the impact of channels.',
+        left_button_text: 'Back',
+        right_button_text: 'Recap',
       },
+
+      // TODO: Get new image from Talha
+
       {
         type: 'slide',
         sub_type: 'step',
-        text: 'Some text here',
+        text: 'Attribution, Incrementality, Channel Impact',
         sub_text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sollicitudin libero eget tincidunt. Donec sit amet aliquam risus.',
+          'Single sales and marketing stack to enable measurements based on lifetime journeys to pinpoint most impactful spend.',
+        left_button_text: '',
+        right_button_text: '',
       },
     ],
   },
