@@ -38,7 +38,7 @@ export const solutionsData = [
       },
       {
         type: 'slide',
-        sub_type: 'step',
+        sub_type: 'recap',
         text: 'Complete Sales & Marketing stack in minutes',
         sub_text:
           'Try for free and save $1M in annual savings with Zero Code management.',
@@ -86,7 +86,7 @@ export const solutionsData = [
       },
       {
         type: 'slide',
-        sub_type: 'step',
+        sub_type: 'recap',
         text: 'Lifetime Customer Analytics',
         sub_text:
           'Get your Analytics in your own lake with complete workflows, and a BI query engine',
@@ -134,7 +134,7 @@ export const solutionsData = [
       },
       {
         type: 'slide',
-        sub_type: 'step',
+        sub_type: 'recap',
         text: 'Dedicated Zero Code EL + T and DBT Stack',
         sub_text:
           'Map your entire online and offline Customer Journey and Customer CRM stack in minutes. Save $1M in engineering costs.',
@@ -182,7 +182,7 @@ export const solutionsData = [
       },
       {
         type: 'slide',
-        sub_type: 'step',
+        sub_type: 'recap',
         text: 'Lifetime Customer 360',
         sub_text:
           'Get online and offline journeys for your customers including marketing activation IDs and channels in a simple flow.',
@@ -246,7 +246,7 @@ export const solutionsData = [
       },
       {
         type: 'slide',
-        sub_type: 'step',
+        sub_type: 'recap',
         text: 'Customer 360 & Customer Journeys',
         sub_text:
           'Map your online offline events, and CRM to build better customer data built with a lifetime ID, and in your control.',
@@ -292,12 +292,9 @@ export const solutionsData = [
           'Build a Conversion event, online or in the store or via work desk tool, and be able to visualize the impact of channels.',
         next_slide_button_text: 'Recap',
       },
-
-      // TODO: Get new image from Talha
-
       {
         type: 'slide',
-        sub_type: 'step',
+        sub_type: 'recap',
         text: 'Attribution, Incrementality, Channel Impact',
         sub_text:
           'Single sales and marketing stack to enable measurements based on lifetime journeys to pinpoint most impactful spend.',
