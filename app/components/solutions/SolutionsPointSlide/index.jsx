@@ -76,11 +76,7 @@ const SolutionsPointSlide = (props) => {
               onClick={goToPreviousSlide}
             >
               <ArrowLeft24 />
-              <span>
-                {slideNumber === 1
-                  ? 'Overview'
-                  : slideData[slideNumber - 1].text}
-              </span>
+              <span>Back</span>
             </div>
 
             <div
@@ -91,7 +87,7 @@ const SolutionsPointSlide = (props) => {
             >
               <span>
                 {slideNumber !== maxLimit
-                  ? slideData[slideNumber + 1].text
+                  ? slideData[slideNumber + 1].next_slide_button_text
                   : 'Get started'}
               </span>
               <ArrowRight24 />
