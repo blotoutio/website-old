@@ -87,7 +87,7 @@ const SolutionsPointSlide = (props) => {
             >
               <span>
                 {slideNumber !== maxLimit
-                  ? slideData[slideNumber + 1].next_slide_button_text
+                  ? slideData[slideNumber].next_slide_button_text
                   : 'Get started'}
               </span>
               <ArrowRight24 />
