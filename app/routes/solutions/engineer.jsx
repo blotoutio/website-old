@@ -96,7 +96,7 @@ export default function ForEngineers() {
         </SolutionsPointsSubContainer>
       </SolutionsPointsContainer>
 
-      <SolutionsTestimonial />
+      {/* <SolutionsTestimonial /> */}
     </>
   )
 }
