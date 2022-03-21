@@ -2,7 +2,7 @@ export const solutionsData = [
   {
     type: 'point',
     number: '1',
-    slug: 'self-provisioned',
+    slug: 'point-1',
     cta_text: 'Check it out',
     slides: [
       {
@@ -49,7 +49,7 @@ export const solutionsData = [
   {
     type: 'point',
     number: '2',
-    slug: 'lifetime-id',
+    slug: 'point-2',
     cta_text: '',
     slides: [
       {
@@ -97,7 +97,7 @@ export const solutionsData = [
   {
     type: 'point',
     number: '3',
-    slug: 'el-plus-t',
+    slug: 'point-3',
     cta_text: '',
     slides: [
       {
@@ -145,7 +145,7 @@ export const solutionsData = [
   {
     type: 'point',
     number: '4',
-    slug: 'cross-platform',
+    slug: 'point-4',
     cta_text: '',
     slides: [
       {
@@ -193,7 +193,7 @@ export const solutionsData = [
   {
     type: 'point',
     number: '5',
-    slug: 'online-offline',
+    slug: 'point-5',
     cta_text: '',
     slides: [
       {
@@ -218,7 +218,7 @@ export const solutionsData = [
         text: 'Map Online & Offline IDs',
         sub_text:
           'Zero mapping of online to offline and offline to offline IDs. Mapping to an online ID provides a lifetime activation graph.',
-        next_slide_button_text: '',
+        next_slide_button_text: 'Configure your EL+T',
       },
       {
         type: 'slide',
@@ -257,7 +257,7 @@ export const solutionsData = [
   {
     type: 'point',
     number: '6',
-    slug: 'cross-channel',
+    slug: 'point-6',
     cta_text: '',
     slides: [
       {

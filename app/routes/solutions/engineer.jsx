@@ -50,7 +50,7 @@ export default function ForEngineers() {
             <SolutionsPointSlide
               data={solutionsData[0]}
               persona={persona}
-              slug='self-provisioned'
+              slug='point-1'
             />
           </SolutionsPoint>
 
@@ -58,7 +58,7 @@ export default function ForEngineers() {
             <SolutionsPointSlide
               data={solutionsData[1]}
               persona={persona}
-              slug='lifetime-id'
+              slug='point-2'
             />
           </SolutionsPoint>
 
@@ -66,7 +66,7 @@ export default function ForEngineers() {
             <SolutionsPointSlide
               data={solutionsData[2]}
               persona={persona}
-              slug='el-plus-t'
+              slug='point-3'
             />
           </SolutionsPoint>
 
@@ -74,7 +74,7 @@ export default function ForEngineers() {
             <SolutionsPointSlide
               data={solutionsData[3]}
               persona={persona}
-              slug='cross-platform'
+              slug='point-4'
             />
           </SolutionsPoint>
 
@@ -82,7 +82,7 @@ export default function ForEngineers() {
             <SolutionsPointSlide
               data={solutionsData[4]}
               persona={persona}
-              slug='online-offline'
+              slug='point-5'
             />
           </SolutionsPoint>
 
@@ -90,7 +90,7 @@ export default function ForEngineers() {
             <SolutionsPointSlide
               data={solutionsData[5]}
               persona={persona}
-              slug='cross-channel'
+              slug='point-6'
             />
           </SolutionsPoint>
         </SolutionsPointsSubContainer>
