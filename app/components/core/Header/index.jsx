@@ -79,13 +79,13 @@ const Header = () => {
               <div className='sub-nav'>
                 <div className='sub-nav-group'>
                   <Link
-                    to='solutions/marketer'
+                    to={{ pathname: './', hash: '#marketer' }}
                     className='sub-nav-link'
                     onClick={() => {
                       {
                         !mobileMenuState ? toggleMenu() : null
                       }
-                      codifyClick('Header / Solutions - For Marketers Page')
+                      codifyClick('Header / Solutions - For Marketers (Home)')
                     }}
                   >
                     <SummaryKpi24 />
@@ -93,14 +93,14 @@ const Header = () => {
                   </Link>
 
                   <Link
-                    to='solutions/product-manager'
+                    to={{ pathname: './', hash: '#product-manager' }}
                     className='sub-nav-link'
                     onClick={() => {
                       {
                         !mobileMenuState ? toggleMenu() : null
                       }
                       codifyClick(
-                        'Header / Solutions - For Product Managers Page'
+                        'Header / Solutions - For Product Managers (Home)'
                       )
                     }}
                   >
