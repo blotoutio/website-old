@@ -171,7 +171,7 @@
   .customers {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: repeat(6, 100px);
+    grid-template-columns: repeat(6, auto);
     gap: 64px;
     justify-items: center;
     align-items: center;

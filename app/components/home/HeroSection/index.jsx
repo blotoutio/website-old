@@ -53,11 +53,25 @@ const HeroSection = () => {
       </form>
       <div className='customers'>
         <img src='img/core/customer/razer.svg' alt='Logo of Razer' />
-        <img src='img/core/customer/smart.svg' alt='Logo of Smart Adserver' />
         <img src='img/core/customer/uphold.svg' alt='Logo of Uphold' />
-        <img src='img/core/customer/globalid.svg' alt='Logo of GlobaliD' />
-        <img src='img/core/customer/tapcars.svg' alt='Logo of TapCars' />
-        <img src='img/core/customer/swarm.svg' alt='Logo of Swarm Markets' />
+        <img
+          src='img/core/customer/red_door.svg'
+          alt='Logo of Red Door'
+          width={104}
+        />
+        <img src='img/core/customer/pura_vida.svg' alt='Logo of Pura Vida' />
+        {/*<img src='img/core/customer/eco_modern.svg' alt='Logo of Eco Modern' />*/}
+        <img
+          src='img/core/customer/loop_club.svg'
+          alt='Logo of Loop Club'
+          width={50}
+        />
+        {/*<img src='img/core/customer/top_tier.svg' alt='Logo of Top Tier' />*/}
+        <img
+          src='img/core/customer/yellow_line.svg'
+          alt='Logo of Yellow Line'
+          width={40}
+        />
       </div>
     </Section>
   )
