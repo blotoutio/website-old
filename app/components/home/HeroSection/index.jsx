@@ -24,13 +24,10 @@ const HeroSection = () => {
   return (
     <Section className='hero'>
       <h1>
-        The <span>customer data platform</span> reimagined for the trusted
-        enterprise
+        Modern <span>data infrastructure</span> for any Commerce in a{' '}
+        <span>cookieless era</span>
       </h1>
-      <p>
-        Activate customer journeys with complete visibility using
-        infrastructure-as-code.
-      </p>
+      <p>Attribution via Lifetime ID for Every Activation Channel</p>
       <form method='post' onSubmit={submission} className={data.status}>
         <input
           type='text'
@@ -61,6 +58,11 @@ const HeroSection = () => {
         />
         <img src='img/core/customer/pura_vida.svg' alt='Logo of Pura Vida' />
         {/*<img src='img/core/customer/eco_modern.svg' alt='Logo of Eco Modern' />*/}
+        <img
+          src='img/core/customer/pixated.svg'
+          alt='Logo of Pixated'
+          width={120}
+        />
         <img
           src='img/core/customer/loop_club.svg'
           alt='Logo of Loop Club'

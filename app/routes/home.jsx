@@ -102,65 +102,19 @@ export default function Index() {
       {/* Explainer */}
 
       <MainSection
-        heading='Reignite your company’s growth stack'
-        sub_heading='Trusted enterprises use Blotout’s consented single-tenant CDP and analytics stack to thrive in the post-cookie era.'
+        heading='Reclaim lost ROI of your current growth stack'
+        sub_heading='Improved event matching to decrease your CPC by 30%'
       >
         <PrimaryCTA text='Talk to us' codify_as='Home - CTA (Overview)' />
       </MainSection>
-
-      {/* Marketer */}
-
-      <PersonaSection
-        persona='marketer'
-        title='For growth marketing teams'
-        heading='Maximize your marketing spend in the post-cookie world'
-        sub_heading='Measure, attribute, optimize, and activate customer data with 100% customer coverage.'
-        illustration={false}
-        animation={true}
-      >
-        <PrimaryCTA text='Talk to us' codify_as='Home - CTA (For Marketers)' />
-      </PersonaSection>
-
-      {/* Product Manager */}
-
-      <PersonaSection
-        persona='product-manager'
-        title='For product-led growth teams'
-        heading='Build better customer journeys'
-        sub_heading='The only stack that gives you the complete customer lifecycle by unifying event, online, and offline data sources.'
-        illustration={true}
-        animation={false}
-      >
-        <div className='persona-section-point-container'>
-          <PersonaSectionPoint
-            icon={<FlowData32 />}
-            heading='Combine online and offline journeys'
-          />
-
-          <PersonaSectionPoint
-            icon={<DataStructured32 />}
-            heading='Segment across online and offline customer profiles'
-          />
-
-          <PersonaSectionPoint
-            icon={<Partnership32 />}
-            heading='Build trusted relationships with your customers'
-          />
-        </div>
-
-        <PrimaryCTA
-          text='Talk to us'
-          codify_as='Home - CTA (For Product Managers)'
-        />
-      </PersonaSection>
 
       {/* Engineer */}
 
       <PersonaSection
         persona='engineer'
         title='For engineering teams'
-        heading='Solutions infrastructure-as-code that builds trust'
-        sub_heading='Data engineering is expensive. Engineers aren’t lawyers. Solve for both.'
+        heading='The dedicated no-code solution that brings trust and powerhouse analytics'
+        sub_heading='Data engineering is expensive and compliance is complicated. Solve for both'
         illustration={false}
         animation={true}
       >
@@ -185,6 +139,52 @@ export default function Index() {
         </div>
 
         <PrimaryCTA text='Talk to us' codify_as='Home - CTA (For Engineers)' />
+      </PersonaSection>
+
+      {/* Marketer */}
+
+      <PersonaSection
+        persona='marketer'
+        title='For growth marketing teams'
+        heading='Personalized engagement with a lifetime ID of your customer'
+        sub_heading='Measure across the entire customer journey and respond based on your customer needs'
+        illustration={false}
+        animation={true}
+      >
+        <PrimaryCTA text='Talk to us' codify_as='Home - CTA (For Marketers)' />
+      </PersonaSection>
+
+      {/* Product Manager */}
+
+      <PersonaSection
+        persona='product-manager'
+        title='For product-led growth teams'
+        heading='Bring order to the chaos of activating sales and marketing channels with consent'
+        sub_heading='The only stack bringing together online, offline and event data to deliver the comprehensive customer journey'
+        illustration={true}
+        animation={false}
+      >
+        <div className='persona-section-point-container'>
+          <PersonaSectionPoint
+            icon={<FlowData32 />}
+            heading='Combine online and offline journeys'
+          />
+
+          <PersonaSectionPoint
+            icon={<DataStructured32 />}
+            heading='Segment across online and offline customer profiles'
+          />
+
+          <PersonaSectionPoint
+            icon={<Partnership32 />}
+            heading='Build trusted relationships with your customers'
+          />
+        </div>
+
+        <PrimaryCTA
+          text='Talk to us'
+          codify_as='Home - CTA (For Product Managers)'
+        />
       </PersonaSection>
 
       {/* TrustOps */}
