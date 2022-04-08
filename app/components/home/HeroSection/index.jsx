@@ -24,10 +24,10 @@ const HeroSection = () => {
   return (
     <Section className='hero'>
       <h1>
-        Modern <span>data infrastructure</span> for any Commerce in a{' '}
-        <span>cookieless era</span>
+        Thrive in the <span>cookieless era</span> with modern data
+        infrastructure
       </h1>
-      <p>Attribution via Lifetime ID for Every Activation Channel</p>
+      <p>Amplify your marketing ROI by restoring customer identity</p>
       <form method='post' onSubmit={submission} className={data.status}>
         <input
           type='text'

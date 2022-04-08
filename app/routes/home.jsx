@@ -102,8 +102,8 @@ export default function Index() {
       {/* Explainer */}
 
       <MainSection
-        heading='Reclaim lost ROI of your current growth stack'
-        sub_heading='Improved event matching to decrease your CPC by 30%'
+        heading='Recapture lost ROI on your growth expenditure'
+        sub_heading='Realize 20-25%+ returns with a lifetime ID'
       >
         <PrimaryCTA text='Talk to us' codify_as='Home - CTA (Overview)' />
       </MainSection>
@@ -120,6 +120,12 @@ export default function Index() {
       >
         <div className='persona-section-point-container'>
           <PersonaSectionPoint
+            icon={<Gui32 />}
+            heading='Zero code unified user graph'
+            sub_heading='UI workflow to stitch clickstream and online/offline data (EL+T).'
+          />
+
+          <PersonaSectionPoint
             icon={<DataCenter32 />}
             heading='Infra-as-code with Terraform'
             sub_heading='Deploy and manage your infrastructure on 250 data centers globally.'
@@ -129,12 +135,6 @@ export default function Index() {
             icon={<DataBlob32 />}
             heading='Serverless data architecture'
             sub_heading='Airflow, Airbyte, DBT, and Superset built-in.'
-          />
-
-          <PersonaSectionPoint
-            icon={<Gui32 />}
-            heading='Zero code unified user graph'
-            sub_heading='UI workflow to stitch clickstream and online/offline data (EL+T).'
           />
         </div>
 
@@ -146,7 +146,7 @@ export default function Index() {
       <PersonaSection
         persona='marketer'
         title='For growth marketing teams'
-        heading='Personalized engagement with a lifetime ID of your customer'
+        heading='Personalize engagement with a lifetime customer ID'
         sub_heading='Measure across the entire customer journey and respond based on your customer needs'
         illustration={false}
         animation={true}
@@ -159,7 +159,7 @@ export default function Index() {
       <PersonaSection
         persona='product-manager'
         title='For product-led growth teams'
-        heading='Bring order to the chaos of activating sales and marketing channels with consent'
+        heading='Bring order to the chaos of activating across your sales and marketing channels'
         sub_heading='The only stack bringing together online, offline and event data to deliver the comprehensive customer journey'
         illustration={true}
         animation={false}

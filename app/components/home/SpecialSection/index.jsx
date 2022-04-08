@@ -20,9 +20,8 @@ const SpecialSection = () => {
                 A trusted relationship is a compliant relationship
               </h2>
               <p className='sub-heading'>
-                Establish a trusted data relationship with your customers to
-                build loyalty and maintain compliance with the GDPR and global
-                privacy laws.
+                A trusted data relationship with your customers builds loyalty
+                and maintains compliance with the GDPR and global privacy laws.
               </p>
             </div>
           </div>
