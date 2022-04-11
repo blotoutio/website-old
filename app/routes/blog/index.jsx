@@ -3,7 +3,8 @@ import { useRouteData } from 'remix'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
-import * as post23 from './cdp-education-series-part-one.mdx'
+import * as post24 from './cdp-education-series-part-one.mdx'
+import * as post23 from './federal-deal.mdx'
 import * as post22 from './adweek-article-marketers.mdx'
 import * as post21 from './edgetag-cdn-general-availability.mdx'
 import * as post20 from './freethink-interview-youtube.mdx'
@@ -45,6 +46,7 @@ export function links() {
 
 export function loader() {
   return [
+    postFromModule(post24),
     postFromModule(post23),
     postFromModule(post22),
     postFromModule(post21),
