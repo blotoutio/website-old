@@ -57,13 +57,13 @@
   }
 
   p {
-    max-width: 650px;
+    max-width: 750px;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 64px;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 28px;
+    line-height: 34px;
     letter-spacing: -0.015em;
     color: var(--neutral-80);
 
@@ -169,25 +169,14 @@
   }
 
   .customers {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(6, auto);
+    display: flex;
+    flex-wrap: wrap;
     gap: 64px;
-    justify-items: center;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: center;
     padding-top: 96px;
 
     @media (max-width: 1180px) {
-      grid-template-columns: repeat(3, auto);
-      grid-template-rows: repeat(2, 1fr);
       gap: 48px;
-    }
-
-    @media (max-width: 650px) {
-      grid-template-columns: repeat(2, auto);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 40px;
     }
   }
 }

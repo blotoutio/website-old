@@ -102,19 +102,52 @@ export default function Index() {
       {/* Explainer */}
 
       <MainSection
-        heading='Reignite your company’s growth stack'
-        sub_heading='Trusted enterprises use Blotout’s consented single-tenant CDP and analytics stack to thrive in the post-cookie era.'
+        heading='Recapture lost ROI on your growth expenditure'
+        sub_heading='Realize 20-25%+ returns with a lifetime ID'
       >
         <PrimaryCTA text='Talk to us' codify_as='Home - CTA (Overview)' />
       </MainSection>
+
+      {/* Engineer */}
+
+      <PersonaSection
+        persona='engineer'
+        title='For engineering teams'
+        heading='The dedicated no-code solution that brings trust and powerhouse analytics'
+        sub_heading='Data engineering is expensive and compliance is complicated. Solve for both'
+        illustration={false}
+        animation={true}
+      >
+        <div className='persona-section-point-container'>
+          <PersonaSectionPoint
+            icon={<Gui32 />}
+            heading='Zero code unified user graph'
+            sub_heading='UI workflow to stitch clickstream and online/offline data (EL+T).'
+          />
+
+          <PersonaSectionPoint
+            icon={<DataCenter32 />}
+            heading='Infra-as-code with Terraform'
+            sub_heading='Deploy and manage your infrastructure on 250 data centers globally.'
+          />
+
+          <PersonaSectionPoint
+            icon={<DataBlob32 />}
+            heading='Serverless data architecture'
+            sub_heading='Airflow, Airbyte, DBT, and Superset built-in.'
+          />
+        </div>
+
+        <PrimaryCTA text='Talk to us' codify_as='Home - CTA (For Engineers)' />
+      </PersonaSection>
 
       {/* Marketer */}
 
       <PersonaSection
         persona='marketer'
         title='For growth marketing teams'
-        heading='Maximize your marketing spend in the post-cookie world'
-        sub_heading='Measure, attribute, optimize, and activate customer data with 100% customer coverage.'
+        heading='Personalize engagement with a lifetime customer ID'
+        sub_heading='Measure across the entire customer journey and respond based on your customer needs'
         illustration={false}
         animation={true}
       >
@@ -126,8 +159,8 @@ export default function Index() {
       <PersonaSection
         persona='product-manager'
         title='For product-led growth teams'
-        heading='Build better customer journeys'
-        sub_heading='The only stack that gives you the complete customer lifecycle by unifying event, online, and offline data sources.'
+        heading='Bring order to the chaos of activating across your sales and marketing channels'
+        sub_heading='The only stack bringing together online, offline and event data to deliver the comprehensive customer journey'
         illustration={true}
         animation={false}
       >
@@ -152,39 +185,6 @@ export default function Index() {
           text='Talk to us'
           codify_as='Home - CTA (For Product Managers)'
         />
-      </PersonaSection>
-
-      {/* Engineer */}
-
-      <PersonaSection
-        persona='engineer'
-        title='For engineering teams'
-        heading='Solutions infrastructure-as-code that builds trust'
-        sub_heading='Data engineering is expensive. Engineers aren’t lawyers. Solve for both.'
-        illustration={false}
-        animation={true}
-      >
-        <div className='persona-section-point-container'>
-          <PersonaSectionPoint
-            icon={<DataCenter32 />}
-            heading='Infra-as-code with Terraform'
-            sub_heading='Deploy and manage your infrastructure on 250 data centers globally.'
-          />
-
-          <PersonaSectionPoint
-            icon={<DataBlob32 />}
-            heading='Serverless data architecture'
-            sub_heading='Airflow, Airbyte, DBT, and Superset built-in.'
-          />
-
-          <PersonaSectionPoint
-            icon={<Gui32 />}
-            heading='Zero code unified user graph'
-            sub_heading='UI workflow to stitch clickstream and online/offline data (EL+T).'
-          />
-        </div>
-
-        <PrimaryCTA text='Talk to us' codify_as='Home - CTA (For Engineers)' />
       </PersonaSection>
 
       {/* TrustOps */}
