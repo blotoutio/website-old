@@ -34,8 +34,8 @@ export default function About() {
       <Section id='about-section'>
         <div className='about-introduction'>
           <h1>
-            Blotout is reinventing the <span>customer data platform</span> to
-            put trust first.
+            Blotout is innovating to restore{' '}
+            <span>identity and data accuracy</span> in the cookieless era.
           </h1>
         </div>
       </Section>
