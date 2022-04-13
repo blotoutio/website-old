@@ -24,8 +24,7 @@ const HeroSection = () => {
   return (
     <Section className='hero'>
       <h1>
-        Thrive in the <span>cookieless era</span> with modern data
-        infrastructure
+        Restore <span>identity and data accuracy</span> in the cookieless era
       </h1>
       <p>Amplify your marketing ROI by restoring customer identity</p>
       <form method='post' onSubmit={submission} className={data.status}>
