@@ -1,0 +1,86 @@
+---
+meta:
+  title: 'Time to put the Tech in Adtech | Blotout'
+  description: 'Latest news and insights from Blotout—the customer data platform reimagined for the trusted enterprise.'
+  og:type: 'article'
+  og:article:published_time: '2022-04-20T00:00:00.000Z'
+  og:image: 'https://blotout.io/img/blog/tech-in-adtech/thumbnail.png'
+data:
+  date: '2022-04-20'
+  internal: true
+  customThumbnail: true
+---
+
+import Blog from '../../components/mdx/blog'
+
+import { codifyClick } from '~/utils'
+
+<Blog {...attributes.meta} {...attributes.data}>
+
+![Time to put the Tech in Adtech](/img/blog/tech-in-adtech/main.png)
+
+#### Your Customer ID Graph depends on your data stack
+
+There has been a lot of press lately surrounding first-party data, clean rooms, various ID vendors, data lakes, and the list goes on. These touchpoints seek to fix things in a world faced with the imminent death of the 3rd party cookie and the strengthening of international consumer privacy protection laws. These topics are natural pieces to help solve the future of advertising trade in the US, but they purely address the symptoms; they do not address a more significant and fundamental issue for the players in the industry. Your data stack needs to be modernized if you want any of this to work in favor of your business.
+
+## Your Data Stack is Outdated
+
+For most folks, you need to take a hard look at your current data warehouse if you want to address a critical breakage point in the consent economy that trades in the currency of first-party data. You will likely find a core set of servers and many SAAS vendors piled on to provide one particular service. For example, someone may have Google Analytics to understand web traffic patterns and another Saas vendor to handle attribution. With the collapse of 3rd party cookies and browser changes, this type of setup will cause a few heartaches. First, you are now in a state of being blind. With various browsers and operating systems like iOS 14.5 implementing more demanding privacy protections, 3rd party cookies have been outright banned for years.
+
+Data will no longer transcend various browser ecosystems, ad blockers, etc. Most publishers are not even seeing 30%+ of their traffic, give or take. Advertisers seeking attribution will also see the same limitations apply. This number will continue to degrade as the system was built around an ecosystem of 3rd party vendors. In a world of privacy laws, all these various SAAS vendors tied to your data stack will open up the question of risk. If you are on the hook for mistreatment of data and the location of where that data is being stored, can you trust each vendor to abide by the rules your compliance team has and abide by your customer's consent wishes? You do not need to take my word for what happens when you do not have the proper infrastructure in place. A quick internet search will yield multiple results filled with lawsuits around privacy and their accompanying fines. Is your company prepared to take this risk?
+
+## Adapt or Die
+
+Adapt or die has always been the mantra of Silicon Valley, and the time has come to apply this mantra to ad tech. Interestingly, big market makers are already coming to that conclusion. One such example happened recently when NBCU announced the birth of their new 1st party marketplace NBCUnified. They understood that 1st party data is the currency of this new consent economy and that NBCU had billions of data points spanning all their online and offline properties. Their problem was not what identifier to use but reimagining their entire data stack to protect their data and market position by bringing it in-house.
+
+Fortunately, modernizing your stack does not require NBCU deep pockets, and the good news is that you already have your servers' core foundation. But this is a critical point, as you need to reimagine your server as the single source of truth. Your server is the backbone of your in-house data stack. It keeps your data safe and compliant, but it also provides several other benefits, such as easier browser approvals, faster load times, and increased security. It is under your domain and data that stems and flows into it that your first-party data is protected under regulations and greenlit from the various web browsers. So make sure you keep your server under your domain and protect your data with tight restrictions to ensure that your first-party data is safe and compliant.
+
+## Your Data Essential Playbook/Checklist for the Next Decade
+
+You are likely bombarded with clean rooms or SaaS products that will get more email sign-ups or some magical encryption. Ignore this for now, as the essentials are pretty basic, and less is more.
+
+## Get a Cloud Account; Own your Customer Data
+
+In this era of trust, _you_ must manage your customer data. Ensuring you have a 1:1 relationship with your customer goes a long way.
+
+## Get your Lifetime Cookie; you don’t have to go cookieless
+
+There is a lot of noise around 3P cookie death, cookieless, iOS14.5 changes, etc. It's essential to cut through this noise and get back to the basics.
+
+Your own server-side HTTP cookie is here to stay; it is meant for you to understand how to personalize your site; even for basics like this user has not consented previously, you need an identifier to ensure your customer metadata lives on.
+
+You will have a great way to build identity and a graph structure that you can build around from that cookie. Basic comprehension of all 3P SaaS scripts or user values or a lifetime identity graph that can be used to map referral partners.
+
+## Be compliant; ensure Consent
+
+Ensure you are implementing consent correctly. Every state law is different, and while it's easy to follow GDPR (or GDPR + ePD), it's vital that unless your dominant audience comes from the EU, there is no fundamental necessity to go to the lowest common denominator.
+
+## Zero and First-Party ID Graph
+
+Once you have established your 1P lifetime ID, you can wrap both zero-party identification and first-party identification to it.
+
+### Zero-party identification
+
+Referral identifiers you received as a user drop from another site or their site visitation log as part of them visiting your site fall in this category. Data that you received from the user without them voluntarily giving it
+
+### First-party identification
+
+When a client or user first decides to trust your service, they provide you with their first-party data. This usually consists of identifying information such as an email address, which should be kept secure and protected from third parties by implementing tight regulations. However, it is considered your first-party data because this information is located on your server under your domain name.
+
+With a lifetime cookie, mapping these with consent for what can be shared is key.
+
+## Clickstream data (Behavioral)
+
+The biggest value chain is collecting your user's zero-party clickstream data. This can be done by ensuring key variables like consent, region, frequently visited context, features, etc., are mapped. Zero-party data is valuable because it establishes how to personalize your site according to your customer visits and segments.
+
+Mapping your own 1P lifetime ID with this data in your control (1P domain) goes a long way in building historical segmentation that can be used for personalization and monetization.
+
+## Un-Silo the Silo!
+
+Finally, data sits in siloes. Your clickstream data is collected elsewhere, and user performance data sits in different systems. As your 3P cookies and cross-domain cookies go away, you need to use the ID graph to pull your customer data into your control. This enables a better understanding of your customers by developing critical Customer 360 value systems that allow segments, cohorts, and individual customer journeys. Additionally, it enhances personalization and monetization, enabling growth and building trust in the next decade.
+
+## Introducing Blotout
+
+Blotout is modern data infrastructure that helps businesses amplify their marketing ROI by restoring customer identity and data accuracy in the post-cookie world. Talk to us!
+
+</Blog>
