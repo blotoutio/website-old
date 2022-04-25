@@ -25,9 +25,9 @@ export const postFromModule = (mod) => {
 
 export const metaInfo = (title, desc) => {
   if (title) {
-    title = `${title} | Blotout`
+    title = `${title} | Blotout – Restore identity and data accuracy`
   } else {
-    title = 'Blotout'
+    title = 'Restore identity and data accuracy | Blotout'
   }
   const description = desc || metaDescription
 
