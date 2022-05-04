@@ -3,6 +3,7 @@ import { useRouteData } from 'remix'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
+import * as post25 from './eu-legislation.mdx'
 import * as post24 from './tech-in-adtech.mdx'
 import * as post23 from './federal-deal.mdx'
 import * as post22 from './adweek-article-marketers.mdx'
@@ -46,6 +47,7 @@ export function links() {
 
 export function loader() {
   return [
+    postFromModule(post25),
     postFromModule(post24),
     postFromModule(post23),
     postFromModule(post22),
