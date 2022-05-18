@@ -1,0 +1,106 @@
+---
+meta:
+  title: 'General Availability for a Conversion API for iOS & Android and Serverless TikTok | Blotout'
+  description: 'Latest news and insights from Blotout—the customer data platform reimagined for the trusted enterprise.'
+  og:type: 'article'
+  og:article:published_time: '2022-05-18T00:00:00.000Z'
+  og:image: 'https://blotout.io/img/blog/conversion-mobile-and-tiktok/thumbnail.png'
+data:
+  date: '2022-05-18'
+  internal: true
+  customThumbnail: true
+---
+
+import Blog from '../../components/mdx/blog'
+
+<Blog {...attributes.meta} {...attributes.data}>
+
+
+We recently announced the [general availability](https://blotout.io/blog/edgetag-cdn-general-availability) of EdgeTag, which replaces Google Tag Manager as an API-based connector at the network edge. EdgeTag ensures fast event delivery, zonally compliant tag management, consented data usage, and is never blocked in the cookieless world.
+
+
+#### What's New?
+We have now expanded the support of C-API web to C-API for mobile on iOS and Android. With this upgrade, mobile app developers can send and install conversion events, allowing Meta (and other social marketing platforms) to deliver users that add long-term value while immediately providing CAC and CPC relief for those channels. Furthermore, EdgeTag will do its analytical magic and improve your matching scores to improve your ROI on your Meta app installs.
+
+## Sharing the success of Meta web C-API
+
+When we launched the serverless Meta C-API, we anticipated cost savings, faster load times, and lifetime ID to be our core value propositions. It turns out that most other C-API implementations miss out on data and events, to begin with. After comparing ourselves with C-API implementations from Shopify and other commerce engine applications, we outperformed them by more than 35%!
+
+For customers who did not have C-API, we averaged doubling the signals (100%+) and reducing CAC/CPC by a surprising 60%.
+
+The fact that **100% of our customers who implemented a Meta C-API have retained** is our most exciting product validation statistic.
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>FB Event Score Lift (Avg)</th>
+      <th>FB Event Count Lift (Max)</th>
+      <th>CPC reduction (Avg)</th>
+      <th>CPC reduction (Max)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Existing C-API</b></td>
+      <td>~25%</td>
+      <td>~150%</td>
+      <td>~20%</td>
+      <td>~38%</td>
+    </tr>
+    <tr>
+      <td><b>No C-API</b></td>
+      <td>~150%</td>
+      <td>~170%</td>
+      <td>~25%</td>
+      <td>~50%</td>
+    </tr>
+  </tbody>
+</table>
+<span className='caption'><b>Table</b>: Averaged across 50 commerce engines</span>
+
+
+#### Why use EdgeTag C-API for App installs and conversions?
+
+Early results from our current clients show improvements across the board:
+1. 100% conversion events reaching Meta (unlike 30-40% of what an MMP sends back).
+2. Reduction for install CAC by about ~10% on Meta for iOS; highest result on a single campaign is a 15% reduction in CAC.
+
+<b>Note</b>: In addition to giving superior performance, with EdgeTag you can replace your Meta SDK from your app, reducing your privacy tracking requirements for iOS and Android.
+
+## Launching zero code TikTok C-API upgrade
+For our existing clients that use Meta, we have enabled a zero-code upgrade to TikTok. Clients can now get the same benefits on TikTok that they receive on Meta with EdgeTag.
+
+Without DevOps or data engineering, our clients significantly reduce their CAC/CPC for TikTok as a channel.
+
+![alt_text](/img/blog/conversion-mobile-and-tiktok/edgetag.png "edgetag")
+<span className='caption'><b>EdgeTag</b>: Just add TikTok as a provider for your existing domain. That’s it!</span>
+
+### Early TikTok trends with beta tests
+
+We reached out to existing customers to beta test our TikTok offering and found rapid uptake. Although it’s still early, these are the trends we’re seeing.
+
+<b>Average Event lift of 80%</b>: This is a staggering signal lift for TikTok. We know early reduction is more significant than 10%, and it's still in the testing phase. To publish detailed results we need to validate current observations over 30 days before we publish them.
+
+<b>Note</b>: In 100% of the test cases, the customers did not have a C-API installed. In every case, the customer has kept the C-API installed since the test started two weeks prior.
+
+#### Platform support
+EdgeTag App C-API supports iOS and Android SDK to generate serverless events and support Meta App Event C-API. From there onwards, developers can turn on TikTok-based App Event C-API without updating their apps.
+
+
+## Who should sign up?
+
+Any app developer relying on Meta for App installs should sign up. Likewise, web stores using TikTok advertising. The first 30 days are free, and 10% savings in CAC is quite significant.
+
+#### Where do I sign up?
+
+1. Go to [app.edgetag.io](https://app.edgetag.io) and get set up in around 5 minutes.
+2. Once you add your domain that you have registered your app side pixel around, use that to select Meta App as the provider; the rest is all code and docs.
+
+## What’s next
+
+We’re continuing to explore every channel and improve how we shake hands, making our C-API implementations cost-effective and leading them to outperform our competition (who make their customers jump through hoops before they can use their server-side C-API).
+
+Let's not forget that EdgeTag is serverless. There’s no server-side setup cost or the need for the AWS API Gateway, which is handy for companies globally.
+
+</Blog>
