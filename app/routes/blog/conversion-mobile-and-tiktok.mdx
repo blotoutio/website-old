@@ -12,6 +12,9 @@ data:
 ---
 
 import Blog from '../../components/mdx/blog'
+import PrimaryCTA from '~/components/core/PrimaryCTA'
+
+import { codifyClick } from '~/utils'
 
 <Blog {...attributes.meta} {...attributes.data}>
 
@@ -103,5 +106,7 @@ Any app developer relying on Meta for App installs should sign up. Likewise, web
 We’re continuing to explore every channel and improve how we shake hands, making our C-API implementations cost-effective and leading them to outperform our competition (who make their customers jump through hoops before they can use their server-side C-API).
 
 Let's not forget that EdgeTag is serverless. There’s no server-side setup cost or the need for the AWS API Gateway, which is handy for companies globally.
+
+<PrimaryCTA link='https://edgetag.io' rel='next' text='Go to EdgeTag' codify_as='Conversion Mobie and TikTok Blog - EdgeTag Website CTA' />
 
 </Blog>
