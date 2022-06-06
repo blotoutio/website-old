@@ -58,7 +58,6 @@ export default function App() {
     init({
       token: 'ZWBQ5E48ND3VTPB',
       endpointUrl: 'https://sales.blotout.io/sdk',
-      customDomain: 'blotout.io',
     })
   }, [])
 
