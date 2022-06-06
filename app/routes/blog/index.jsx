@@ -3,6 +3,9 @@ import { useRouteData } from 'remix'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
+import * as post32 from './small-businesses-with-own-martech.mdx'
+import * as post31 from './pixated-martech-series.mdx'
+import * as post30 from './cyber-news.mdx'
 import * as post29 from './cookieless-future.mdx'
 import * as post28 from './conversion-mobile-and-tiktok.mdx'
 import * as post27 from './modernize-site-tag-management.mdx'
@@ -51,6 +54,9 @@ export function links() {
 
 export function loader() {
   return [
+    postFromModule(post32),
+    postFromModule(post31),
+    postFromModule(post30),
     postFromModule(post29),
     postFromModule(post28),
     postFromModule(post27),
