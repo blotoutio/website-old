@@ -1,0 +1,91 @@
+---
+meta:
+  title: 'Reclaim your lost Klaviyo events with EdgeTag | Blotout'
+  description: 'Latest news and insights from Blotout—the customer data platform reimagined for the trusted enterprise.'
+  og:type: 'article'
+  og:article:published_time: '2022-06-27T00:00:00.000Z'
+data:
+  date: '2022-06-27'
+  internal: true
+---
+
+import Blog from '../../components/mdx/blog'
+
+import { codifyClick } from '~/utils'
+
+<Blog {...attributes.meta} {...attributes.data}>
+
+Blotout’s EdgeTag is an identity cloud that lives at your network edge. It gives you a lifetime ID that powers privacy-consented data streams to your marketing channels.
+
+The result is that your marketing channels provide you with much better results, because EdgeTag restores the flow of conversion and user data that you had lost with the death of cookies.
+
+**We have more than 50 customers with > 90% retention and over 100M pixels firing on a monthly basis**.
+
+We already support the Meta/Facebook and TikTok conversion APIs (web and mobile).
+
+Now we’re proud to announce support for Klaviyo.
+
+## Case study: Dropped carts with Klaviyo for a large online retailer
+
+One of our very large customers (a Shopify-based online retailer with over 10M customers) found that the death of cookies (i.e., iOS 14.5, ad blocking, Firefox, etc.) had severely impacted repeat sales because their engagement channel, Klaviyo, could not remember users past 7 days because their cookie was expiring.
+
+While working with this large customer - Shopify CRM base of 10M events - we found that cookieless (iOS 14.5, Adblockers, Firefox, etc.) was completely killing performance for consented, loyal customers because the Klaviyo cookie was expiring in 7 days, very much like the Facebook or any other cookie regardless of whether for analysis or activation purposes.
+
+This meant that dropped carts and browsing activity could only be engaged within 7 days of a user’s last logged in visit - which is key for commerce customers.
+
+### Klaviyo underreported dropped carts by 85%
+
+When we compared the number of reported dropped carts by Klaviyo to what the customer was measuring using Blotout’s data infrastructure, there was a huge gap: for that time period, **Klaviyo had reported only 15K dropped carts when in fact there had been 96K dropped carts**.
+
+What explained the difference? Blotout’s cookie did not expire and stitched each user to the customer’s central CRM, meaning that the customer could actually measure activity across lifetimes, not 7 days (which was the limit for Klaviyo’s cookie).
+
+Email marketing was no longer working for this customer because they were losing 85% of their high-intent customers, **dragging down their ROI by a 300% margin**.
+
+## The fix: Upgrading EdgeTag for Klaviyo support
+
+Recognizing the severity of Klaviyo’s underperformance, we now have a zero code upgrade for our existing EdgeTag customers that use Meta and TikTok.
+
+Here’s how to add Klaviyo support:
+
+1. Upgrade EdgeTag to v0.3.1
+2. Confirm consent
+3. Map user-data using docs for this SDK version
+4. Add Klaviyo as a provider
+
+![image](/img/blog/klaviyo-support-edgetag/image1.png)
+
+## Remarket Klaviyo segments on Facebook without needing a CDP
+
+If you don’t have a CDP and struggle with activating segments on both Facebook and Klaviyo, EdgeTag gives you a direct path to restoring your ROI on those channels.
+
+When you set up EdgeTag for Facebook, you collect events like PageView, ViewContent, AddtoCart, Purchase, etc.
+
+What’s uniquely powerful with EdgeTag is that you can use those same events to create segments in Klaviyo.
+
+And once you’ve built those segments, Klaviyo’s Facebook integration lets you re-utilize them for remarketing your Facebook campaigns.
+
+![image](/img/blog/klaviyo-support-edgetag/image2.png)
+<span className='caption'>**Figure:** Enable EdgeTag based segments w/o a CDP</span>
+
+## The impact for you
+
+With Blotout’s EdgeTag, you get a massive return on Meta with lifetime attribution for its C-API. With the Klaviyo integration, you capture lossless events that can be used to turn the clock back on your email marketing.
+
+Together you can remarket segments on Facebook to improve your ROAS and ROI.
+
+The impact is remarkable. These are actual customer results:
+
+1. Average ~15% ROAS improvement in one week
+2. Ability to scale ad spend by 25-30% WoW and still maintain ROAS performance
+
+The implications for commerce and DTC engines are massive.
+
+## Get started in minutes
+
+Setting up EdgeTag is quick. Create an account at [edgetag.io](https://edgetag.io), set up your channels (i.e., Facebook, TikTok, Klaviyo) and map the events you need to collect. Within 48 hours you begin to see the impact of restoring your marketing signals.
+
+## New Shopify app is live!
+
+For our Shopify customers, we have launched a Shopify App that is absolutely zero code for any merchant that does not have the development firepower but would love to get their ROAS and ROI back to previous levels. Start here: [apps.shopify.com/edgetag](https://apps.shopify.com/edgetag)
+
+</Blog>
