@@ -5,9 +5,7 @@ const ValuePropsWrapper = (props) => {
 
   return (
     <Section id='value-props-wrapper'>
-      <div id='main-container'>
-        {children}
-      </div>
+      <div id='main-container'>{children}</div>
     </Section>
   )
 }
