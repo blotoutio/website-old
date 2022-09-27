@@ -1,20 +1,20 @@
-import { redirect } from 'remix'
+{
+  /* import { redirect } from 'remix' */
+}
 import stylesUrl from '~/styles/home.css'
 import { metaInfo } from '~/utils'
 import PrimaryCTA from '~/components/core/PrimaryCTA'
 import HeroSection from '~/components/home/HeroSection'
 import MainSection from '~/components/home/MainSection'
-import PersonaSection from '~/components/home/PersonaSection'
-import PersonaSectionPoint from '~/components/home/PersonaSectionPoint'
+import ValuePropsWrapper from '~/components/home/ValuePropsWrapper'
+import ValuePropsSection from '~/components/home/ValuePropsSection'
+import StatsWrapper from '~/components/home/StatsWrapper'
+import StatsSection from '~/components/home/StatsSection'
+import TestimonialSection from '~/components/home/TestimonialSection'
 import SpecialSection from '~/components/home/SpecialSection'
-import { FlowData32 } from '@carbon/icons-react'
-import { DataStructured32 } from '@carbon/icons-react'
-import { Partnership32 } from '@carbon/icons-react'
-import { DataCenter32 } from '@carbon/icons-react'
-import { DataBlob32 } from '@carbon/icons-react'
-import { Gui32 } from '@carbon/icons-react'
 
-export function loader({ request }) {
+{
+  /* export function loader({ request }) {
   let requestURL = new URL(request.url)
   let urlStatus = requestURL.searchParams.get('status')
   let status
@@ -32,9 +32,11 @@ export function loader({ request }) {
   }
 
   return { status, formMessage }
+} */
 }
 
-export let action = async ({ request }) => {
+{
+  /* export let action = async ({ request }) => {
   let body = new URLSearchParams(await request.text())
 
   let email = body.get('email')
@@ -77,6 +79,7 @@ export let action = async ({ request }) => {
   } else {
     return redirect(`/?status=${responseText}`)
   }
+} */
 }
 
 export function meta() {
@@ -102,93 +105,60 @@ export default function Index() {
       {/* Explainer */}
 
       <MainSection
-        heading='Recapture lost ROI on your growth expenditure'
-        sub_heading='Realize 20-25%+ returns with a lifetime ID'
+        heading='Cookies are dead'
+        sub_heading='Your returning customers are showing up as anonymous. Blotout solves this with one line of code.'
       >
         <PrimaryCTA text='Talk to us' codify_as='Home - CTA (Overview)' />
       </MainSection>
 
-      {/* Engineer */}
+      {/* Value Props Section – EdgeTag & Cloud */}
+      <ValuePropsWrapper>
+        <ValuePropsSection
+          title='EdgeTag'
+          heading='A lifetime ID that’s never blocked'
+          text='Boost your marketing ROI by identifying new and returning customers with 100% accuracy. Your campaign attribution windows will last a lifetime, too.'
+        >
+          <PrimaryCTA
+            text='Try for free'
+            rel='next'
+            link='https://edgetag.io/'
+          ></PrimaryCTA>
+        </ValuePropsSection>
 
-      <PersonaSection
-        persona='engineer'
-        title='For engineering teams'
-        heading='The dedicated no-code solution that brings trust and powerhouse analytics'
-        sub_heading='Data engineering is expensive and compliance is complicated. Solve for both'
-        illustration={false}
-        animation={true}
-      >
-        <div className='persona-section-point-container'>
-          <PersonaSectionPoint
-            icon={<Gui32 />}
-            heading='Zero code unified user graph'
-            sub_heading='UI workflow to stitch clickstream and online/offline data (EL+T).'
-          />
+        <ValuePropsSection
+          title='Cloud'
+          heading='Multi-touch attribution'
+          text='Measure across the entire customer journey and personalize engagement points accordingly.'
+        >
+          <PrimaryCTA text='Learn how'></PrimaryCTA>
+        </ValuePropsSection>
+      </ValuePropsWrapper>
 
-          <PersonaSectionPoint
-            icon={<DataCenter32 />}
-            heading='Infra-as-code with Terraform'
-            sub_heading='Deploy and manage your infrastructure on 250 data centers globally.'
-          />
+      {/* Stats Section */}
+      <StatsWrapper>
+        <StatsSection
+          figure='50%'
+          text='Increased signal for Meta'
+        ></StatsSection>
 
-          <PersonaSectionPoint
-            icon={<DataBlob32 />}
-            heading='Serverless data architecture'
-            sub_heading='Airflow, Airbyte, DBT, and Superset built-in.'
-          />
-        </div>
+        <StatsSection
+          figure='8x'
+          text='More email flows on Klaviyo'
+        ></StatsSection>
 
-        <PrimaryCTA text='Talk to us' codify_as='Home - CTA (For Engineers)' />
-      </PersonaSection>
-
-      {/* Marketer */}
-
-      <PersonaSection
-        persona='marketer'
-        title='For growth marketing teams'
-        heading='Personalize engagement with a lifetime customer ID'
-        sub_heading='Measure across the entire customer journey and respond based on your customer needs'
-        illustration={false}
-        animation={true}
-      >
-        <PrimaryCTA text='Talk to us' codify_as='Home - CTA (For Marketers)' />
-      </PersonaSection>
-
-      {/* Product Manager */}
-
-      <PersonaSection
-        persona='product-manager'
-        title='For product-led growth teams'
-        heading='Bring order to the chaos of activating across your sales and marketing channels'
-        sub_heading='The only stack bringing together online, offline and event data to deliver the comprehensive customer journey'
-        illustration={true}
-        animation={false}
-      >
-        <div className='persona-section-point-container'>
-          <PersonaSectionPoint
-            icon={<FlowData32 />}
-            heading='Combine online and offline journeys'
-          />
-
-          <PersonaSectionPoint
-            icon={<DataStructured32 />}
-            heading='Segment across online and offline customer profiles'
-          />
-
-          <PersonaSectionPoint
-            icon={<Partnership32 />}
-            heading='Build trusted relationships with your customers'
-          />
-        </div>
-
-        <PrimaryCTA
-          text='Talk to us'
-          codify_as='Home - CTA (For Product Managers)'
-        />
-      </PersonaSection>
+        <StatsSection
+          figure='30%'
+          text='More conversions on Google'
+        ></StatsSection>
+      </StatsWrapper>
 
       {/* TrustOps */}
+      <TestimonialSection
+        text='EdgeTag has delivered immediate results for a number of our clients, resulting in increases in event match scores and - most importantly - real impact on CPCs, CTRs, and advertising ROI. The team is responsive and technically savvy and we’re excited to be a partner as the ecosystem inextricably moves towards a cookieless future.'
+        by='Tim Keen, Co-Founder & CEO at Loop'
+      ></TestimonialSection>
 
+      {/* TrustOps */}
       <SpecialSection />
     </div>
   )

@@ -70,7 +70,7 @@ const Header = () => {
 
         <nav>
           <Link
-            to={{ path: './', hash: '#main-section' }}
+            to={{ path: './', hash: '#value-props-wrapper' }}
             className='nav-link'
             onClick={() => {
               {
