@@ -21,18 +21,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 24px;
+        gap: 16px;
         max-width: 200px;
+        font-weight: 500;
+        color: var(--blue-100);
         text-align: center;
 
         .stats-section-figure {
-          font-size: 48px;
+          font-size: 64px;
           line-height: 100%;
           font-weight: 450;
           color: var(--orange-50);
 
           @media (max-width: 1024px) {
-            font-size: 40px;
+            font-size: 48px;
           }
         }
       }
