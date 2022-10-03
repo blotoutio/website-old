@@ -1,22 +1,83 @@
 #value-props-wrapper {
   width: 100%;
 
+  h2 {
+    max-width: 850px;
+    margin: 0 auto;
+    padding-top: 0;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: var(--blue-100);
+
+    @media (max-width: 1180px) {
+      max-width: 750px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    @media (max-width: 900px) {
+      max-width: 600px;
+      font-size: 33px;
+      line-height: 46px;
+      letter-spacing: -0.015em;
+    }
+
+    @media (max-width: 650px) {
+      font-size: 26px;
+      line-height: 36px;
+      letter-spacing: -0.019em;
+    }
+  }
+
+  // Common Stuff
+
+  p {
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 48px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    color: var(--neutral-80);
+    text-align: center;
+
+    @media (max-width: 1180px) {
+      padding-top: 24px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: -0.01em;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 20px;
+      padding-bottom: 32px;
+      max-width: 575px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
   #main-container {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 16px 48px;
+    padding-top: 64px;
 
     @media (max-width: 1180px) {
-      padding: 16px 40px;
+      padding-top: 55px;
     }
 
     @media (max-width: 900px) {
-      padding: 16px 28px;
+      padding-top: 48px;
     }
 
     @media (max-width: 768px) {
-      padding: 0;
+      padding-top: 32px;
     }
 
     .value-props-section {
@@ -27,7 +88,7 @@
 
       .value-props-section-title {
         max-width: 540px;
-        font-weight: 550;
+        font-weight: 500;
         font-size: 18px;
         line-height: 100%;
         letter-spacing: -0.011em;
@@ -47,7 +108,7 @@
       }
 
       .value-props-section-heading {
-        max-width: 540px;
+        max-width: 500px;
         font-weight: 400;
         font-size: 36px;
         line-height: 125%;
@@ -64,7 +125,7 @@
       }
 
       .value-props-section-text {
-        max-width: 540px;
+        max-width: 500px;
         font-size: 18px;
         line-height: 24px;
         letter-spacing: -0.011em;
