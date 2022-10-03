@@ -105,7 +105,7 @@ export default function Index() {
       {/* Explainer */}
 
       <MainSection
-        heading='Cookies are dead'
+        heading='Cookies are going extinct'
         sub_heading='Your returning customers are showing up as anonymous. Blotout solves this with one line of code.'
       >
         <PrimaryCTA text='Talk to us' codify_as='Home - CTA (Overview)' />
@@ -115,8 +115,8 @@ export default function Index() {
       <ValuePropsWrapper>
         <ValuePropsSection
           title='EdgeTag'
-          heading='A lifetime ID that’s never blocked'
-          text='Boost your marketing ROI by identifying new and returning customers with 100% accuracy. Your campaign attribution windows will last a lifetime, too.'
+          heading='Boost marketing and ad performance'
+          text='Privacy changes are hamstringing C-APIs. Blotout’s Edgetag rebuilds your signals around a lifetime ID so you can remarket every site visit in real-time.'
         >
           <PrimaryCTA
             text='Try for free'
@@ -127,29 +127,23 @@ export default function Index() {
 
         <ValuePropsSection
           title='Cloud'
-          heading='Multi-touch attribution'
-          text='Measure across the entire customer journey and personalize engagement points accordingly.'
+          heading='Build your first-party customer database'
+          text='Lifetime analytics and multi-touch attribution for every step of the customer journey. Seamlessly segment and activate your audiences in real time.'
         >
-          <PrimaryCTA text='Learn how'></PrimaryCTA>
+          <PrimaryCTA text='Schedule a demo'></PrimaryCTA>
         </ValuePropsSection>
       </ValuePropsWrapper>
 
       {/* Stats Section */}
       <StatsWrapper>
-        <StatsSection
-          figure='50%'
-          text='Increased signal for Meta'
-        ></StatsSection>
+        <StatsSection figure='20%' text='higher ROAS on Meta'></StatsSection>
 
         <StatsSection
-          figure='8x'
-          text='More email flows on Klaviyo'
+          figure='3x'
+          text='more conversions on Klaviyo'
         ></StatsSection>
 
-        <StatsSection
-          figure='30%'
-          text='More conversions on Google'
-        ></StatsSection>
+        <StatsSection figure='30%' text='higher ROAS on Google'></StatsSection>
       </StatsWrapper>
 
       {/* TrustOps */}
