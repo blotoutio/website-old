@@ -52,7 +52,7 @@ export default function Index() {
           <PrimaryCTA
             text='Try for free'
             rel='next'
-            link='https://edgetag.io/'
+            link='https://app.edgetag.io/'
           ></PrimaryCTA>
         </ValuePropsSection>
 

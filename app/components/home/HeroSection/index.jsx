@@ -19,7 +19,7 @@ const HeroSection = () => {
         <PrimaryCTA
           text='Try for free'
           rel='next'
-          link='https://edgetag.io/'
+          link='https://app.edgetag.io/'
           codify_as='Home - Hero EdgeTag CTA Click'
           class_name='new-cta'
         ></PrimaryCTA>
