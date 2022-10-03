@@ -112,7 +112,10 @@ export default function Index() {
       </MainSection>
 
       {/* Value Props Section – EdgeTag & Cloud */}
-      <ValuePropsWrapper>
+      <ValuePropsWrapper
+        heading='Always accurate. Never blocked.'
+        sub_heading='Blotout’s lifetime ID recognizes your new and returning customers with 100% accuracy.'
+      >
         <ValuePropsSection
           title='EdgeTag'
           heading='Boost marketing and ad performance'
