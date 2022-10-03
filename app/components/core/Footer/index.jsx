@@ -3,6 +3,8 @@ import { codifyClick } from '~/utils'
 import Section from '~/components/core/Section'
 import { Link } from 'react-router-dom'
 import LogoLight from '~/graphics/LogoLight'
+import AWSPartner from '~/graphics/AWSPartner'
+import MetaPartner from '~/graphics/MetaPartner'
 import { LogoTwitter24 } from '@carbon/icons-react'
 import { LogoLinkedin24 } from '@carbon/icons-react'
 import { ArrowUpRight16 } from '@carbon/icons-react'
@@ -170,6 +172,24 @@ const Footer = () => {
                   >
                     Slack Community
                   </a>
+                  <Link
+                    to='/privacy-policy'
+                    className='nav-link'
+                    onClick={() =>
+                      codifyClick('Footer / Resources - Privacy Policy')
+                    }
+                  >
+                    Privacy Policy
+                  </Link>
+                  <Link
+                    to='/terms-of-service'
+                    className='nav-link'
+                    onClick={() =>
+                      codifyClick('Footer / Resources - Terms of Service')
+                    }
+                  >
+                    Terms of Service
+                  </Link>
                 </div>
                 <div className='nav-group'>
                   <div className='nav-group-title'>Company</div>
@@ -242,19 +262,13 @@ const Footer = () => {
             {/* Legal Links */}
 
             <div className='legal-links'>
-              <Link
-                to='/privacy-policy'
-                onClick={() => codifyClick('Footer - Privacy Policy')}
-              >
-                Privacy Policy
-              </Link>
+              <div>
+                <AWSPartner />
+              </div>
 
-              <Link
-                to='/terms-of-service'
-                onClick={() => codifyClick('Footer - Terms of Service')}
-              >
-                Terms of Service
-              </Link>
+              <div>
+                <MetaPartner />
+              </div>
             </div>
           </div>
         </div>
