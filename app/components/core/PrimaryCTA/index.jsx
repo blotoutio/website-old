@@ -3,14 +3,14 @@ import { codifyClick } from '~/utils'
 import { ArrowUpRight20 } from '@carbon/icons-react'
 
 const PrimaryCTA = (props) => {
-  const { text, link, rel, codify_as } = props
+  const { text, link, rel, class_name, codify_as } = props
 
   return (
     <a
       href={link || 'https://calendly.com/blotout-experts/talk-to-us'}
       target='_blank'
       rel={rel || 'noreferrer'}
-      className='primary-cta'
+      className={`primary-cta ${class_name}`}
       onClick={() => codifyClick(codify_as)}
     >
       {text}
