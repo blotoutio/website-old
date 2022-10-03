@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <Section className='hero'>
       <h1>
-        Headless marketing for the <span>cookieless</span> era
+        Headless marketing for the <span>post-cookie</span> era
       </h1>
       <p>
         Blotout increases your marketing ROI by restoring customer identity.

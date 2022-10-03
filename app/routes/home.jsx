@@ -59,7 +59,7 @@ export default function Index() {
         <ValuePropsSection
           title='Cloud'
           heading='Build your first-party customer database'
-          text='Lifetime analytics and multi-touch attribution for every step of the customer journey. Seamlessly segment and activate your audiences in real time.'
+          text='Lifetime analytics and multi-touch attribution for every step of the customer journey. Seamlessly segment across online and offline customer profiles.'
         >
           <PrimaryCTA text='Schedule a demo'></PrimaryCTA>
         </ValuePropsSection>
