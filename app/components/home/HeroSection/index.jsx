@@ -1,30 +1,11 @@
-{
-  /* import { useSubmit, useRouteData } from 'remix' */
-}
 import { capture } from '@blotoutio/sdk-core'
 import { mapID } from '@blotoutio/sdk-events'
 import { codifyClick } from '~/utils'
 import Section from '~/components/core/Section'
+import PrimaryCTA from '~/components/core/PrimaryCTA'
 import { ArrowUpRight20 } from '@carbon/icons-react'
 
 const HeroSection = () => {
-  {
-    /* const data = useRouteData()
-
-  const submit = useSubmit()
-
-  const submission = (event) => {
-    mapID({
-      externalID: event.currentTarget.elements[0].value,
-      provider: 'website',
-    })
-
-    submit(event.currentTarget, { replace: true })
-
-    event.preventDefault()
-  } */
-  }
-
   return (
     <Section className='hero'>
       <h1>
@@ -34,47 +15,23 @@ const HeroSection = () => {
         Blotout increases your marketing ROI by restoring customer identity.
       </p>
 
-      {/* <form method='post' onSubmit={submission} className={data.status}>
-        <input
-          type='text'
-          placeholder='Your work email'
-          type='email'
-          name='email'
-          required
-          onFocus={() => capture('Home - Hero Form Input Focus')}
-        />
-        <button
-          type='submit'
-          className='form-button'
-          onClick={() => codifyClick('Home - Hero Form Submit')}
-        >
-          Sign up for a demo
-          <ArrowUpRight20 className='form-button-icon' />
-        </button>
-        <div className='form-message'>{data.formMessage}</div>
-      </form> */}
+      <div id='cta-section'>
+        <PrimaryCTA
+          text='Try for free'
+          rel='next'
+          link='https://edgetag.io/'
+          codify_as='Home - Hero EdgeTag CTA Click'
+          class_name='new-cta'
+        ></PrimaryCTA>
 
-      <form id='new-form'>
-        <input
-          type='text'
-          placeholder='Your work email'
-          type='email'
-          name='email'
-          required
-          onFocus={() => capture('Home - Hero Form Input Focus')}
-        />
-        <button
-          type='submit'
-          className='form-button'
-          onClick={() => codifyClick('Home - Hero Form Submit')}
+        <div
+          className='hero-cta'
+          onClick={() => codifyClick('Home - Hero Calendly CTA Click')}
         >
-          Try for free
-          <ArrowUpRight20 className='form-button-icon' />
-        </button>
-        <div className='form-extra-info'>
-          Free for the first 1000 API calls.
+          <span>Schedule a demo</span>
+          <ArrowUpRight20 />
         </div>
-      </form>
+      </div>
 
       <div id='customers'>
         <div id='customers-text'>Trusted by leading brands and agencies</div>
