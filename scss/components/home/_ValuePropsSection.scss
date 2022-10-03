@@ -132,7 +132,19 @@
       }
 
       .primary-cta {
-        margin-top: 1.5em;
+        margin: 1.5em 0;
+      }
+    }
+
+    .value-props-section:first-of-type {
+      .primary-cta {
+        background-color: var(--orange-50);
+        color: var(--white);
+
+        &:hover {
+          background-color: var(--orange-60);
+          text-decoration: none;
+        }
       }
     }
 
