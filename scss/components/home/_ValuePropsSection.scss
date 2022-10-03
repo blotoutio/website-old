@@ -5,13 +5,28 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 16px 48px;
+
+    @media (max-width: 1180px) {
+      padding: 16px 40px;
+    }
+
+    @media (max-width: 900px) {
+      padding: 16px 28px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
 
     .value-props-section {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      row-gap: 24px;
 
       .value-props-section-title {
+        max-width: 540px;
         font-weight: 550;
         font-size: 18px;
         line-height: 100%;
@@ -20,7 +35,6 @@
         color: var(--orange-50);
         background-color: var(--orange-10);
         border-radius: 5px;
-        margin-bottom: 24px;
         padding: 5px;
 
         @media (max-width: 1180px) {
@@ -33,10 +47,10 @@
       }
 
       .value-props-section-heading {
-        padding-bottom: 24px;
+        max-width: 540px;
         font-weight: 400;
         font-size: 36px;
-        line-height: 100%;
+        line-height: 125%;
         letter-spacing: -0.025em;
         color: var(--blue-80);
 
@@ -50,7 +64,7 @@
       }
 
       .value-props-section-text {
-        max-width: 600px;
+        max-width: 540px;
         font-size: 18px;
         line-height: 24px;
         letter-spacing: -0.011em;
@@ -61,24 +75,19 @@
       }
     }
 
-    .value-props-section:first-of-type {
-      .primary-cta {
-        margin: 1.5em 0;
-        background-color: var(--neutral-80);
-        color: var(--white);
-
-        &:hover {
-          background-color: var(--neutral-100);
-          text-decoration: none;
-        }
-      }
-    }
-
     .value-props-section:last-of-type {
       display: flex;
       align-items: flex-end;
       text-align: right;
-      margin-top: 64px;
+      margin-top: 80px;
+
+      @media (max-width: 1180px) {
+        margin-top: 64px;
+      }
+
+      @media (max-width: 900px) {
+        margin-top: 48px;
+      }
     }
   }
 }
