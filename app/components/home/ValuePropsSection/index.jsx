@@ -1,3 +1,5 @@
+import PrimaryCTA from '~/components/core/PrimaryCTA'
+
 const ValuePropsSection = (props) => {
   const { title, heading, text, children, graphic } = props
 
@@ -11,6 +13,15 @@ const ValuePropsSection = (props) => {
       </div>
       <div className='value-props-section value-props-section-graphic'>
         <img src={`img/home/graphic-${graphic}.png`} alt='' />
+        {graphic === 'edgetag' ? (
+          <PrimaryCTA
+            text='Try for free'
+            rel='next'
+            link='https://app.edgetag.io/'
+          ></PrimaryCTA>
+        ) : (
+          <PrimaryCTA text='Schedule a demo'></PrimaryCTA>
+        )}
       </div>
     </div>
   )
