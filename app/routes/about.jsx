@@ -1,4 +1,6 @@
-import { useRouteData } from 'remix'
+{
+  /* import { useRouteData } from 'remix' */
+}
 import stylesUrl from '../styles/about.css'
 import { codifyClick, metaInfo } from '../utils'
 
@@ -18,16 +20,20 @@ export function links() {
   ]
 }
 
-export function loader() {
+{
+  /* export function loader() {
   return fetch('https://api.lever.co/v0/postings/blotout').then((response) => {
     return response.json()
   })
+} */
 }
 
 export default function About() {
-  let data = useRouteData()
+  {
+    /* let data = useRouteData()
 
-  let numberOfJobs = data.length
+  let numberOfJobs = data.length */
+  }
 
   return (
     <>
@@ -78,7 +84,8 @@ export default function About() {
           </div>
         </div>
       </Section>
-      <Section id='careers'>
+
+      {/* <Section id='careers'>
         <h2>Join the team</h2>
         <p>
           We’re growing rapidly and looking to fill roles across our teams.
@@ -96,7 +103,7 @@ export default function About() {
           View {numberOfJobs >= 5 ? numberOfJobs : null} open positions
           <ArrowUpRight24 className='careers-cta-icon' />
         </a>
-      </Section>
+      </Section> */}
     </>
   )
 }
