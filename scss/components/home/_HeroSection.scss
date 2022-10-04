@@ -149,6 +149,8 @@
   }
 
   #customers {
+    overflow: hidden;
+
     #customers-text {
       font-size: 16px;
       line-height: 24px;
@@ -160,14 +162,31 @@
       padding-bottom: 50px;
     }
 
-    #customers-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 64px;
-      justify-content: center;
+    #customers-list-outer-container {
+      width: 200%;
 
-      @media (max-width: 1180px) {
-        gap: 48px;
+      #customers-list-inner-container {
+        width: 200%;
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 64px;
+        justify-content: flex-start;
+        animation: scroll 30s linear infinite;
+
+        @media (max-width: 1180px) {
+          gap: 48px;
+        }
+      }
+
+      @keyframes scroll {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: -50%;
+        }
       }
     }
   }
