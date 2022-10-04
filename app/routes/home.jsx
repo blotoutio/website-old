@@ -46,6 +46,7 @@ export default function Index() {
           title='EdgeTag'
           heading='Boost marketing and ad performance'
           text='Privacy changes are hamstringing C-APIs. Blotout’s Edgetag rebuilds your signals around a lifetime ID so you can remarket every site visit in real-time.'
+          graphic='edgetag'
         >
           <PrimaryCTA
             text='Try for free'
@@ -58,6 +59,7 @@ export default function Index() {
           title='Cloud'
           heading='Build your first-party customer database'
           text='Lifetime analytics and multi-touch attribution for every step of the customer journey. Seamlessly segment across online and offline customer profiles.'
+          graphic='cloud'
         >
           <PrimaryCTA text='Schedule a demo'></PrimaryCTA>
         </ValuePropsSection>
