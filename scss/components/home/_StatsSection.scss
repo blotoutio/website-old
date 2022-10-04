@@ -37,14 +37,14 @@
         align-items: center;
         gap: 16px;
         max-width: 200px;
-        font-weight: 500;
-        color: var(--blue-100);
+        font-weight: 480;
+        color: var(--black);
         text-align: center;
 
         .stats-section-figure {
           font-size: 64px;
           line-height: 100%;
-          font-weight: 450;
+          font-weight: 440;
           color: var(--orange-50);
 
           @media (max-width: 1024px) {

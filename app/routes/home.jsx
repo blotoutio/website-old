@@ -80,7 +80,8 @@ export default function Index() {
       {/* TrustOps */}
       <TestimonialSection
         text='EdgeTag has delivered immediate results for a number of our clients, resulting in increases in event match scores and - most importantly - real impact on CPCs, CTRs, and advertising ROI. The team is responsive and technically savvy and we’re excited to be a partner as the ecosystem inextricably moves towards a cookieless future.'
-        by='Tim Keen, Co-Founder & CEO at Loop'
+        name='Tim Keen'
+        role='Co-Founder & CEO at Loop'
       ></TestimonialSection>
 
       {/* TrustOps */}
