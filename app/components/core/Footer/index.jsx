@@ -54,7 +54,7 @@ const Footer = () => {
                 <div className='nav-group'>
                   <div className='nav-group-title'>Product</div>
                   <Link
-                    to={{ pathname: './', hash: '#main-section' }}
+                    to={{ pathname: './', hash: '#value-props-wrapper' }}
                     className='nav-link'
                     onClick={() =>
                       codifyClick('Footer / Product - Overview (Home)')
@@ -70,35 +70,6 @@ const Footer = () => {
                     }
                   >
                     Integrations
-                  </Link>
-                  <Link
-                    to={{ pathname: './', hash: '#marketer' }}
-                    className='nav-link'
-                    onClick={() =>
-                      codifyClick('Footer / Product - For Marketers (Home')
-                    }
-                  >
-                    For Marketers
-                  </Link>
-                  <Link
-                    to={{ pathname: './', hash: '#product-manager' }}
-                    className='nav-link'
-                    onClick={() =>
-                      codifyClick(
-                        'Footer / Product - For Product Managers (Home)'
-                      )
-                    }
-                  >
-                    For Product Managers
-                  </Link>
-                  <Link
-                    to={{ pathname: './', hash: '#engineer' }}
-                    className='nav-link'
-                    onClick={() =>
-                      codifyClick('Footer / Product - For Engineers (Home)')
-                    }
-                  >
-                    For Engineers
                   </Link>
                 </div>
                 <div className='nav-group'>

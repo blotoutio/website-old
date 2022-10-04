@@ -16,11 +16,13 @@
     h2 {
       max-width: 850px;
       margin: 0 auto;
+      padding-top: 0;
       font-weight: 400;
       font-size: 40px;
       line-height: 48px;
       letter-spacing: -0.02em;
       color: var(--blue-20);
+      text-align: center;
 
       @media (max-width: 1180px) {
         max-width: 750px;
@@ -47,12 +49,13 @@
     p {
       max-width: 750px;
       margin: 0 auto;
-      padding-top: 40px;
+      padding-top: 24px;
       font-weight: 400;
-      font-size: 28px;
+      font-size: 24px;
       line-height: 34px;
       letter-spacing: -0.015em;
       color: var(--neutral-10);
+      text-align: center;
 
       @media (max-width: 1180px) {
         padding-top: 32px;
@@ -62,6 +65,7 @@
       }
 
       @media (max-width: 768px) {
+        padding-top: 24px;
         max-width: 575px;
         font-size: 16px;
         line-height: 24px;
@@ -70,14 +74,99 @@
 
     // Common Stuff (Padding can be common with section padding)
 
-    .graphic {
+    #graphic {
+      display: flex;
+      flex-direction: column;
+      row-gap: 96px;
+      justify-content: center;
+      align-items: center;
       width: 100%;
+      height: auto;
       max-width: 900px;
       margin: 0 auto;
-      padding: 80px 0;
+      padding: 96px 0 48px 0;
 
-      @media (max-width: 1280px) {
-        padding: 64px 0;
+      #toggle-container {
+        display: flex;
+        border: 2px solid var(--neutral-40);
+        border-radius: 50px;
+        background-color: var(--neutral-20);
+
+        .switch {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 8px;
+          padding: 12px 26px;
+          transition: all 150ms ease-in-out;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 16px;
+          letter-spacing: -0.011em;
+          border: 2px solid var(--neutral-20);
+          border-radius: 50px;
+
+          @media (max-width: 425px) {
+            padding: 12px 16px;
+            font-size: 14px;
+            line-height: 14px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        #without-switch {
+          background-color: var(--neutral-20);
+          color: var(--neutral-100);
+
+          &.selected {
+            background-color: var(--neutral-10);
+            color: var(--neutral-80);
+            border-radius: 50px;
+            border: 2px solid var(--neutral-30);
+          }
+        }
+
+        #with-switch {
+          min-width: 200px;
+
+          @media (max-width: 425px) {
+            min-width: 180px;
+          }
+
+          &.selected {
+            background-color: var(--orange-10);
+            color: var(--orange-60);
+            border-radius: 50px;
+            border: 2px solid var(--orange-50);
+          }
+        }
+      }
+
+      #image-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        @media (max-width: 1024px) {
+          width: 90%;
+        }
+
+        @media (max-width: 768px) {
+          width: 85%;
+        }
+
+        @media (max-width: 550px) {
+          width: 95%;
+        }
       }
     }
   }

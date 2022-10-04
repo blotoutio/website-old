@@ -60,30 +60,30 @@ header {
         color: var(--neutral-70);
         transition: all 150ms ease-in-out;
 
-        @media (hover: hover) {
-          &:hover {
-            color: var(--black);
-          }
+        // @media (any-hover: hover) {
+        &:hover {
+          color: var(--black);
         }
+        // }
       }
 
       .nav-group {
         position: relative;
 
-        @media (hover: hover) {
-          &:hover {
-            .sub-nav-title {
-              color: var(--black);
-              cursor: default;
-            }
+        // @media (any-hover: hover) {
+        &:hover {
+          .sub-nav-title {
+            color: var(--black);
+            cursor: default;
+          }
 
-            .sub-nav-wrapper {
-              visibility: visible;
-              transform: translateY(0);
-              opacity: 1;
-            }
+          .sub-nav-wrapper {
+            visibility: visible;
+            transform: translateY(0);
+            opacity: 1;
           }
         }
+        // }
 
         .sub-nav-wrapper {
           position: absolute;
@@ -119,17 +119,17 @@ header {
                 align-items: center;
                 text-decoration: none;
 
-                @media (hover: hover) {
-                  &:hover {
-                    svg {
-                      fill: var(--blue-50);
-                    }
+                // @media (any-hover: hover) {
+                &:hover {
+                  svg {
+                    fill: var(--blue-50);
+                  }
 
-                    span {
-                      color: var(--blue-50);
-                    }
+                  span {
+                    color: var(--blue-50);
                   }
                 }
+                // }
 
                 svg {
                   fill: var(--neutral-50);

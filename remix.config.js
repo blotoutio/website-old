@@ -7,7 +7,6 @@ module.exports = {
   routes(defineRoute) {
     return defineRoute((route) => {
       route('', 'routes/home.jsx')
-      route('/compare-with-google-analytics', 'routes/ga.jsx')
     })
   },
 }
