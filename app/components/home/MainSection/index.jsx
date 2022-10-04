@@ -32,7 +32,7 @@ const MainSection = (props) => {
           </div>
           <div id='image-container'>
             <img
-              src={`img/home/${toggled ? 'with' : 'without'}-blotout.svg`}
+              src={`img/home/${toggled ? 'with' : 'without'}-blotout.png`}
               alt=''
             />
           </div>
