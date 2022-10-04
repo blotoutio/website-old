@@ -211,7 +211,7 @@ footer {
         @media (max-width: 850px) {
           grid-auto-flow: row;
           grid-template-rows: 1fr;
-          justify-content: center;
+          justify-content: normal;
           row-gap: 64px;
           margin-top: 64px;
         }
