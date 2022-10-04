@@ -35,9 +35,7 @@ export default function Index() {
       <MainSection
         heading='Cookies are going extinct'
         sub_heading='Your returning customers are showing up as anonymous. Blotout solves this with one line of code.'
-      >
-        <PrimaryCTA text='Talk to us' codify_as='Home - CTA (Overview)' />
-      </MainSection>
+      ></MainSection>
 
       {/* Value Props Section – EdgeTag & Cloud */}
       <ValuePropsWrapper
