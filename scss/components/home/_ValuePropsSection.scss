@@ -87,6 +87,7 @@
     .value-props-section-container {
       display: flex;
       align-items: center;
+      justify-content: space-between;
 
       .value-props-section-main {
         display: flex;
@@ -95,6 +96,10 @@
         row-gap: 24px;
         width: 100%;
         max-width: 500px;
+
+        @media (max-width: 1180px) {
+          max-width: 400px;
+        }
 
         .value-props-section-title {
           font-weight: 500;
@@ -152,6 +157,10 @@
           width: 90%;
           max-width: 540px;
           height: fit-content;
+
+          @media (max-width: 1180px) {
+            width: 100%;
+          }
         }
       }
     }
@@ -172,6 +181,10 @@
       .value-props-section-graphic {
         justify-content: flex-end;
         padding-left: 48px;
+
+        @media (max-width: 1180px) {
+          padding-left: 32px;
+        }
       }
     }
 
@@ -196,6 +209,10 @@
 
       .value-props-section-graphic {
         padding-right: 48px;
+
+        @media (max-width: 1180px) {
+          padding-right: 32px;
+        }
       }
     }
   }

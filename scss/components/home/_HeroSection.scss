@@ -25,6 +25,7 @@
     line-height: 64px;
     letter-spacing: -0.025em;
     color: var(--blue-100);
+    white-space: pre-wrap;
 
     @media (max-width: 1180px) {
       max-width: 850px;
@@ -93,7 +94,7 @@
     @media (max-width: 650px) {
       flex-direction: column;
       row-gap: 16px;
-      justify-items: center;
+      align-items: center;
     }
 
     .new-cta {
