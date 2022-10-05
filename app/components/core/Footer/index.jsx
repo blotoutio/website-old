@@ -171,7 +171,7 @@ const Footer = () => {
                   >
                     About
                   </Link>
-                  <a
+                  {/* <a
                     href='https://jobs.lever.co/blotout'
                     target='_blank'
                     rel='noreferrer'
@@ -181,7 +181,7 @@ const Footer = () => {
                     }
                   >
                     Careers
-                  </a>
+                  </a> */}
                   <Link
                     to='/blog'
                     className='nav-link'
