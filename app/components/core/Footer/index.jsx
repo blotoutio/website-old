@@ -189,17 +189,6 @@ const Footer = () => {
                   >
                     Blog
                   </Link>
-                  <a
-                    href='https://help.blotout.io/roadmap'
-                    target='_blank'
-                    rel='noopener'
-                    className='nav-link'
-                    onClick={() =>
-                      codifyClick('Footer / Company - Roadmap (Help Center)')
-                    }
-                  >
-                    Roadmap
-                  </a>
                 </div>
               </nav>
             </div>
