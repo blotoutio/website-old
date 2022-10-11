@@ -9,12 +9,14 @@ const HeroSection = () => {
   return (
     <Section className='hero'>
       <h1>
-        Headless marketing for
+        Power your growth stack
         <br />
-        the <span>post-cookie</span> era
+        in the <span>post-cookie</span> era
       </h1>
       <p>
-        Blotout increases your marketing ROI by restoring customer identity.
+        Blotout boosts your marketing performance
+        <br />
+        by restoring customer identity.
       </p>
 
       <div id='cta-section'>
