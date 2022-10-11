@@ -38,7 +38,6 @@ const SpecialSection = () => {
             onClick={() => codifyClick('TrustOps - CTA')}
           >
             Learn how
-            <ArrowUpRight24 className='special-cta-icon' />
           </a>
         </div>
       </div>

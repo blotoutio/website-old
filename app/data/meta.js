@@ -1,1 +1,1 @@
-export const metaDescription = 'Headless marketing for the post-cookie era'
+export const metaDescription = 'Power your growth stack in the post-cookie era'

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 
-import Banner from '~/components/core/Banner'
 import LogoDark from '~/graphics/LogoDark'
 import PrimaryCTA from '~/components/core/PrimaryCTA'
 
@@ -47,8 +46,6 @@ const Header = () => {
     <header
       className={mobileMenuState ? 'mobile-menu-closed' : 'mobile-menu-open'}
     >
-      <Banner />
-
       <div id='header-container'>
         {/* Link to home */}
 
@@ -196,7 +193,26 @@ const Header = () => {
 
         {/* Main CTA */}
 
-        <PrimaryCTA text='Talk to us' codify_as='Header - CTA' />
+        <div className='cta-wrapper'>
+          <a
+            href='https://app.edgetag.io/'
+            target='_blank'
+            rel='next'
+            className='login-cta'
+            onClick={() => codifyClick('Header - Login CTA')}
+          >
+            <span>Log in</span>
+          </a>
+
+          <PrimaryCTA
+            text='Try for free'
+            link='https://app.edgetag.io/'
+            rel='next'
+            codify_as='Header - EdgeTag CTA'
+            arrow='yes'
+          />
+        </div>
+
         {mobileMenuState ? (
           <Menu24 className='menu-icon' onClick={toggleMenu} />
         ) : (

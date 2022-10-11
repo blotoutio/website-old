@@ -88,7 +88,7 @@
 
   #cta-section {
     display: flex;
-    column-gap: 32px;
+    column-gap: 16px;
     margin: 0 auto;
 
     @media (max-width: 650px) {
@@ -125,13 +125,6 @@
         letter-spacing: -0.011em;
       }
 
-      svg {
-        width: 20px;
-        height: 20px;
-        transform: none;
-        transition: all 150ms ease-in-out;
-      }
-
       &:hover {
         cursor: pointer;
         background-color: var(--neutral-10);
@@ -139,10 +132,6 @@
 
         span {
           color: var(--neutral-80);
-        }
-
-        svg {
-          transform: translate(3px, -3px);
         }
       }
     }

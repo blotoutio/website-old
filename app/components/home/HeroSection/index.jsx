@@ -3,18 +3,19 @@ import { mapID } from '@blotoutio/sdk-events'
 import { codifyClick } from '~/utils'
 import Section from '~/components/core/Section'
 import PrimaryCTA from '~/components/core/PrimaryCTA'
-import { ArrowUpRight20 } from '@carbon/icons-react'
 
 const HeroSection = () => {
   return (
     <Section className='hero'>
       <h1>
-        Headless marketing for
+        Power your growth stack
         <br />
-        the <span>post-cookie</span> era
+        in the <span>post-cookie</span> era
       </h1>
       <p>
-        Blotout increases your marketing ROI by restoring customer identity.
+        Blotout boosts your marketing performance
+        <br />
+        by restoring customer identity.
       </p>
 
       <div id='cta-section'>
@@ -31,7 +32,6 @@ const HeroSection = () => {
           onClick={() => codifyClick('Home - Hero Calendly CTA Click')}
         >
           <span>Schedule a demo</span>
-          <ArrowUpRight20 />
         </div>
       </div>
 
