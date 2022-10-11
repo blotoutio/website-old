@@ -158,17 +158,6 @@
 
       &:hover {
         color: var(--blue-50);
-
-        .special-cta-icon {
-          transform: translate(3px, -3px);
-          color: var(--blue-50);
-        }
-      }
-
-      .special-cta-icon {
-        transform: none;
-        margin-left: 16px;
-        transition: all 150ms ease-in-out;
       }
     }
   }

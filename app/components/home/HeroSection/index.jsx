@@ -3,7 +3,6 @@ import { mapID } from '@blotoutio/sdk-events'
 import { codifyClick } from '~/utils'
 import Section from '~/components/core/Section'
 import PrimaryCTA from '~/components/core/PrimaryCTA'
-import { ArrowUpRight20 } from '@carbon/icons-react'
 
 const HeroSection = () => {
   return (
@@ -33,7 +32,6 @@ const HeroSection = () => {
           onClick={() => codifyClick('Home - Hero Calendly CTA Click')}
         >
           <span>Schedule a demo</span>
-          <ArrowUpRight20 />
         </div>
       </div>
 

@@ -3,7 +3,7 @@ import { codifyClick } from '~/utils'
 import { ArrowUpRight20 } from '@carbon/icons-react'
 
 const PrimaryCTA = (props) => {
-  const { text, link, rel, class_name, codify_as } = props
+  const { text, link, rel, class_name, codify_as, arrow } = props
 
   return (
     <a
@@ -14,7 +14,7 @@ const PrimaryCTA = (props) => {
       onClick={() => codifyClick(codify_as)}
     >
       {text}
-      <ArrowUpRight20 className='primary-cta-icon' />
+      {arrow === 'yes' ? <ArrowUpRight20 className='primary-cta-icon' /> : null}
     </a>
   )
 }

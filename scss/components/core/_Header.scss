@@ -155,6 +155,12 @@ header {
 
     .primary-cta {
       justify-self: end;
+      background-color: var(--orange-50);
+      color: var(--white);
+
+      &:hover {
+        background-color: var(--orange-60);
+      }
 
       @media (max-width: 1024px) {
         display: none;

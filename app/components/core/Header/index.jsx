@@ -193,7 +193,14 @@ const Header = () => {
 
         {/* Main CTA */}
 
-        <PrimaryCTA text='Talk to us' codify_as='Header - CTA' />
+        <PrimaryCTA
+          text='Try for free'
+          link='https://app.edgetag.io/'
+          rel='next'
+          codify_as='Header - CTA'
+          arrow='yes'
+        />
+
         {mobileMenuState ? (
           <Menu24 className='menu-icon' onClick={toggleMenu} />
         ) : (
