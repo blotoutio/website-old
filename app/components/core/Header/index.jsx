@@ -193,13 +193,25 @@ const Header = () => {
 
         {/* Main CTA */}
 
-        <PrimaryCTA
-          text='Try for free'
-          link='https://app.edgetag.io/'
-          rel='next'
-          codify_as='Header - CTA'
-          arrow='yes'
-        />
+        <div className='cta-wrapper'>
+          <a
+            href='https://app.edgetag.io/'
+            target='_blank'
+            rel='next'
+            className='login-cta'
+            onClick={() => codifyClick('Header - Login CTA')}
+          >
+            <span>Log in</span>
+          </a>
+
+          <PrimaryCTA
+            text='Try for free'
+            link='https://app.edgetag.io/'
+            rel='next'
+            codify_as='Header - EdgeTag CTA'
+            arrow='yes'
+          />
+        </div>
 
         {mobileMenuState ? (
           <Menu24 className='menu-icon' onClick={toggleMenu} />
