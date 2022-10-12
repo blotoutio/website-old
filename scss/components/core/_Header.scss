@@ -98,7 +98,7 @@ header {
           .sub-nav {
             display: flex;
             flex-direction: column;
-            row-gap: 32px;
+            row-gap: 24px;
             padding: 24px 48px 24px 24px;
             background-color: var(--white);
             border: 2px solid var(--neutral-20);
@@ -111,7 +111,7 @@ header {
             .sub-nav-group {
               display: flex;
               flex-direction: column;
-              row-gap: 8px;
+              row-gap: 6px;
 
               .sub-nav-link {
                 display: flex;
@@ -158,16 +158,16 @@ header {
       display: flex;
       column-gap: 8px;
 
+      @media (max-width: 1024px) {
+        display: none;
+      }
+
       .primary-cta {
         background-color: var(--orange-50);
         color: var(--white);
 
         &:hover {
           background-color: var(--orange-60);
-        }
-
-        @media (max-width: 1024px) {
-          display: none;
         }
       }
 
@@ -235,7 +235,7 @@ header.mobile-menu-open {
     nav {
       display: grid;
       grid-auto-flow: row;
-      row-gap: 40px;
+      row-gap: 32px;
 
       .nav-link {
         display: flex;
@@ -257,7 +257,7 @@ header.mobile-menu-open {
         .sub-nav-wrapper {
           position: relative;
           left: 0;
-          padding: 32px 0 0 32px;
+          padding: 24px 0 0 24px;
           transform: none;
           visibility: visible;
           opacity: 1;
