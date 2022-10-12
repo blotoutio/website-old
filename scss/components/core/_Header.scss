@@ -158,16 +158,16 @@ header {
       display: flex;
       column-gap: 8px;
 
+      @media (max-width: 1024px) {
+        display: none;
+      }
+
       .primary-cta {
         background-color: var(--orange-50);
         color: var(--white);
 
         &:hover {
           background-color: var(--orange-60);
-        }
-
-        @media (max-width: 1024px) {
-          display: none;
         }
       }
 
