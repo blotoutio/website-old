@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 
+import LinkBanner from '~/components/core/LinkBanner'
+
 import LogoDark from '~/graphics/LogoDark'
 import PrimaryCTA from '~/components/core/PrimaryCTA'
 
@@ -46,6 +48,8 @@ const Header = () => {
     <header
       className={mobileMenuState ? 'mobile-menu-closed' : 'mobile-menu-open'}
     >
+      <LinkBanner />
+
       <div id='header-container'>
         {/* Link to home */}
 
