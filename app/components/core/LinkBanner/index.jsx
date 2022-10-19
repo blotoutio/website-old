@@ -7,7 +7,7 @@ const LinkBanner = () => {
       <span>New Case Study:</span> Blotout doubles Pura Vida’s email marketing
       sales by augmenting Klaviyo audiences.
       <a
-        href=''
+        href='doc/pura-vida-klaviyo-case-study-by-blotout.pdf'
         download='doc/pura-vida-klaviyo-case-study-by-blotout.pdf'
         onClick={() => codifyClick('Banner - Case Study (Pura Vida / Klaviyo)')}
       >
