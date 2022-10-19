@@ -27,7 +27,8 @@ export const metaInfo = (title, desc) => {
   if (title) {
     title = `${title} | Blotout – Supercharge your marketing signals in the post-cookie world`
   } else {
-    title = 'Supercharge your marketing signals in the post-cookie world | Blotout'
+    title =
+      'Supercharge your marketing signals in the post-cookie world | Blotout'
   }
   const description = desc || metaDescription
 
