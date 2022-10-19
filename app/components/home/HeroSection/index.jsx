@@ -8,12 +8,12 @@ const HeroSection = () => {
   return (
     <Section className='hero'>
       <h1>
-        Power your growth stack
+        Supercharge your marketing signals
         <br />
-        in the <span>post-cookie</span> era
+        in the <span>post-cookie</span> world
       </h1>
       <p>
-        Blotout boosts your marketing performance
+        Increase sales, recover lost carts, and reduce CAC
         <br />
         by restoring customer identity.
       </p>
