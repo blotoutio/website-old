@@ -25,9 +25,9 @@ export const postFromModule = (mod) => {
 
 export const metaInfo = (title, desc) => {
   if (title) {
-    title = `${title} | Blotout – Power your growth stack in the post-cookie era`
+    title = `${title} | Blotout – Supercharge your marketing signals in the post-cookie world`
   } else {
-    title = 'Power your growth stack in the post-cookie era | Blotout'
+    title = 'Supercharge your marketing signals in the post-cookie world | Blotout'
   }
   const description = desc || metaDescription
 
