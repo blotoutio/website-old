@@ -209,7 +209,6 @@ const Header = () => {
             link='https://app.edgetag.io/'
             rel='next'
             codify_as='Header - EdgeTag CTA'
-            arrow='yes'
           />
         </div>
 
