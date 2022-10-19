@@ -194,7 +194,7 @@ const Header = () => {
         {/* Main CTA */}
 
         <div className='cta-wrapper'>
-          <a
+          {/* <a
             href='https://app.edgetag.io/'
             target='_blank'
             rel='next'
@@ -202,7 +202,7 @@ const Header = () => {
             onClick={() => codifyClick('Header - Login CTA')}
           >
             <span>Log in</span>
-          </a>
+          </a> */}
 
           <PrimaryCTA
             text='Try for free'
