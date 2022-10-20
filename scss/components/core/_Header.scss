@@ -280,8 +280,12 @@ header.mobile-menu-open {
       }
     }
 
-    .primary-cta {
-      display: inline-flex;
+    .cta-wrapper {
+      display: flex;
+
+      .primary-cta {
+        display: inline-flex;
+      }
     }
 
     .menu-icon {

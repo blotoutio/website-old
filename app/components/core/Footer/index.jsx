@@ -227,7 +227,14 @@ const Footer = () => {
               </div>
 
               <div>
-                <MetaPartner />
+                <a
+                  href='https://www.facebook.com/business/partner-directory/search?solution_type=offline_conversion&ref=pd_home_hero_cta&id=5504531309632254&section=overview'
+                  target='_blank'
+                  rel='noreferrer'
+                  onClick={() => codifyClick('Footer - Meta Partner Badge')}
+                >
+                  <MetaPartner />
+                </a>
               </div>
             </div>
           </div>

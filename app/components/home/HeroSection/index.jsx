@@ -8,14 +8,14 @@ const HeroSection = () => {
   return (
     <Section className='hero'>
       <h1>
-        Power your growth stack
+        Supercharge your marketing signals
         <br />
-        in the <span>post-cookie</span> era
+        &nbsp;in the <span>post-cookie</span> world
       </h1>
       <p>
-        Blotout boosts your marketing performance
+        Increase sales, recover lost carts, and reduce CAC
         <br />
-        by restoring customer identity.
+        &nbsp;by restoring customer identity.
       </p>
 
       <div id='cta-section'>
@@ -27,12 +27,15 @@ const HeroSection = () => {
           class_name='new-cta'
         ></PrimaryCTA>
 
-        <div
+        <a
+          href='https://calendly.com/blotout-experts/talk-to-us'
+          target='_blank'
+          rel='noreferrer'
           className='hero-cta'
           onClick={() => codifyClick('Home - Hero Calendly CTA Click')}
         >
           <span>Schedule a demo</span>
-        </div>
+        </a>
       </div>
 
       <div id='customers'>

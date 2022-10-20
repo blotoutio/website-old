@@ -18,7 +18,7 @@
   }
 
   h1 {
-    max-width: 650px;
+    max-width: 900px;
     margin: auto;
     font-weight: 400;
     font-size: 54px;
@@ -44,6 +44,12 @@
     @media (max-width: 768px) {
       font-size: 36px;
       line-height: 48px;
+    }
+
+    @media (max-width: 664px) {
+      br {
+        display: none;
+      }
     }
 
     @media (max-width: 600px) {
@@ -84,6 +90,12 @@
       padding-top: 20px;
       padding-bottom: 44px;
     }
+
+    @media (max-width: 424px) {
+      br {
+        display: none;
+      }
+    }
   }
 
   #cta-section {
@@ -114,6 +126,7 @@
       padding: 8px 16px;
       background-color: var(--white);
       color: var(--neutral-60);
+      text-decoration: none;
       border: 2px solid var(--neutral-60);
       border-radius: 50px;
       transition: all 150ms ease-in-out;
