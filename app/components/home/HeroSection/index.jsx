@@ -27,12 +27,15 @@ const HeroSection = () => {
           class_name='new-cta'
         ></PrimaryCTA>
 
-        <div
+        <a
+          href='https://calendly.com/blotout-experts/talk-to-us'
+          target='_blank'
+          rel='noreferrer'
           className='hero-cta'
           onClick={() => codifyClick('Home - Hero Calendly CTA Click')}
         >
           <span>Schedule a demo</span>
-        </div>
+        </a>
       </div>
 
       <div id='customers'>
