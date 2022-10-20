@@ -46,6 +46,12 @@
       line-height: 48px;
     }
 
+    @media (max-width: 664px) {
+      br {
+        display: none;
+      }
+    }
+
     @media (max-width: 600px) {
       font-size: 29px;
       line-height: 40px;
@@ -83,6 +89,12 @@
       letter-spacing: -0.014em;
       padding-top: 20px;
       padding-bottom: 44px;
+    }
+
+    @media (max-width: 424px) {
+      br {
+        display: none;
+      }
     }
   }
 

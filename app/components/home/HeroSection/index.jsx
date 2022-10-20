@@ -10,12 +10,12 @@ const HeroSection = () => {
       <h1>
         Supercharge your marketing signals
         <br />
-        in the <span>post-cookie</span> world
+        &nbsp;in the <span>post-cookie</span> world
       </h1>
       <p>
         Increase sales, recover lost carts, and reduce CAC
         <br />
-        by restoring customer identity.
+        &nbsp;by restoring customer identity.
       </p>
 
       <div id='cta-section'>
