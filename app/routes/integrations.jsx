@@ -1,6 +1,6 @@
 import { integrationList } from '../data/integrationList'
 import stylesUrl from '../styles/integrations.css'
-import { capture } from '@blotoutio/sdk-core'
+import { tag } from '@blotoutio/edgetag-sdk-js'
 import { codifyClick, metaInfo } from '../utils'
 
 import SubHeader from '~/components/core/SubHeader'
@@ -38,7 +38,11 @@ const captureSearch = (text) => {
   if (!text) {
     return
   }
-  capture('Integration - Search', { text })
+  tag(
+    'Integration - Search',
+    { text },
+    { blotoutCloud: true, googleAnalytics4: true }
+  )
 }
 
 export default function Integrations() {
@@ -53,7 +57,9 @@ export default function Integrations() {
                 type='text'
                 placeholder='Search'
                 onKeyUp={filter}
-                onFocus={() => capture('Integration - Search Focus')}
+                onFocus={() =>
+                  tag('Integration - Search Focus', {}, { blotoutCloud: true })
+                }
               />
             </div>
             <div id='integrations-list'>
