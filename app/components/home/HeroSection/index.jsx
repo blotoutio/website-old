@@ -1,5 +1,3 @@
-import { capture } from '@blotoutio/sdk-core'
-import { mapID } from '@blotoutio/sdk-events'
 import { codifyClick } from '~/utils'
 import Section from '~/components/core/Section'
 import PrimaryCTA from '~/components/core/PrimaryCTA'

@@ -1,9 +1,11 @@
 import { useEffect } from 'react'
 import { Meta, Links, Scripts, LiveReload } from 'remix'
-import { capture, init } from '@blotoutio/sdk-core'
+import { init } from '@blotoutio/edgetag-sdk-js'
 import { useLocation, Outlet } from 'react-router-dom'
 import Header from './components/core/Header'
 import Footer from './components/core/Footer'
+import * as blotoutCloud from '@blotoutio/providers-blotout-cloud-sdk'
+import * as ga4 from '@blotoutio/providers-google-analytics-4-sdk'
 
 import stylesUrl from './styles/main.css'
 
@@ -56,8 +58,9 @@ export default function App() {
 
   useEffect(() => {
     init({
-      token: 'ZWBQ5E48ND3VTPB',
-      endpointUrl: 'https://sales.blotout.io/sdk',
+      edgeURL: 'https://pjmsn.blotout.io',
+      disableConsentCheck: true,
+      providers: [blotoutCloud, ga4],
     })
   }, [])
 
@@ -67,7 +70,6 @@ export default function App() {
     if (!link) {
       link = 'homepage'
     }
-    capture('Page Navigation', { link })
   }, [pathname])
 
   return (

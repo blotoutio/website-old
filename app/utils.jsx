@@ -1,4 +1,4 @@
-import { capture } from '@blotoutio/sdk-core'
+import { tag } from '@blotoutio/edgetag-sdk-js'
 import { metaDescription } from './data/meta'
 
 export const formatDate = (date) => {
@@ -10,9 +10,14 @@ export const formatDate = (date) => {
 }
 
 export const codifyClick = (name, payload = {}) => {
-  capture(name, payload, {
-    method: 'beacon',
-  })
+  tag(
+    name,
+    payload,
+    {},
+    {
+      method: 'beacon',
+    }
+  )
 }
 
 export const postFromModule = (mod) => {
