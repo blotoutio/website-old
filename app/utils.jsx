@@ -14,7 +14,7 @@ export const codifyClick = (name, payload = {}) => {
     name,
     payload,
     {
-      blotoutCloud: true
+      blotoutCloud: true,
     },
     {
       method: 'beacon',

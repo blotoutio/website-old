@@ -150,6 +150,24 @@
     }
   }
 
+  #cta-section-meta {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    span {
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 450;
+      font-style: italic;
+      color: var(--neutral-50);
+      letter-spacing: -0.0011em;
+      text-align: center;
+    }
+  }
+
   #customers {
     overflow: hidden;
 

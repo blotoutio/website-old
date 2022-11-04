@@ -24,6 +24,7 @@ import { codifyClick } from '~/utils'
 
 const Header = () => {
   const location = useLocation()
+  const { pathname } = useLocation()
   const [mobileMenuState, changeCSS] = useState('false')
 
   useEffect(() => {
@@ -208,12 +209,19 @@ const Header = () => {
             <span>Log in</span>
           </a> */}
 
-          <PrimaryCTA
-            text='Try for free'
-            link='https://app.edgetag.io/'
-            rel='next'
-            codify_as='Header - EdgeTag CTA'
-          />
+          {pathname === '/meta' ? (
+            <PrimaryCTA
+              text='Learn more'
+              link='https://blotout.io/no-signal-loss'
+            />
+          ) : (
+            <PrimaryCTA
+              text='Try for free'
+              link='https://app.edgetag.io/'
+              rel='next'
+              codify_as='Header - EdgeTag CTA'
+            />
+          )}
         </div>
 
         {mobileMenuState ? (

@@ -10,10 +10,18 @@ import StatsWrapper from '~/components/home/StatsWrapper'
 import StatsSection from '~/components/home/StatsSection'
 import TestimonialSection from '~/components/home/TestimonialSection'
 import SpecialSection from '~/components/home/SpecialSection'
-import { tag } from '@blotoutio/edgetag-sdk-js'
 
 export function meta() {
-  return metaInfo('')
+  const title = 'Supercharge your Meta C-API in the post-cookie world | Blotout'
+  const description = 'Supercharge your Meta C-API in the post-cookie world'
+
+  return {
+    title,
+    description,
+    'og:title': title,
+    'og:description': description,
+    'og:image': `https://blotout.io/open-graph-large-meta.png`,
+  }
 }
 
 export function links() {
@@ -26,11 +34,6 @@ export function links() {
 }
 
 export default function Index() {
-  const handleCTAClick = () => {
-    codifyClick('Home - Hero Calendly CTA Click')
-    tag('Lead', { currency: 'USD', value: 10 })
-  }
-
   return (
     <div id='home'>
       {/* Hero */}
@@ -38,30 +41,18 @@ export default function Index() {
       <HeroSection
         text={
           <>
-            Supercharge your marketing signals
+            Supercharge your Meta C-API
             <br />
             &nbsp;in the <span>post-cookie</span> world
           </>
         }
       >
-        <div id='cta-section'>
+        <div id='cta-section-meta'>
           <PrimaryCTA
-            text='Try for free'
-            rel='next'
-            link='https://app.edgetag.io/'
-            codify_as='Home - Hero EdgeTag CTA Click'
-            class_name='new-cta'
+            text='Learn more'
+            link='https://blotout.io/no-signal-loss'
           ></PrimaryCTA>
-
-          <a
-            href='https://calendly.com/blotout-experts/talk-to-us'
-            target='_blank'
-            rel='noreferrer'
-            className='hero-cta'
-            onClick={handleCTAClick}
-          >
-            <span>Schedule a demo</span>
-          </a>
+          <span>Blotout is free to try for seven days</span>
         </div>
       </HeroSection>
 
@@ -84,9 +75,8 @@ export default function Index() {
           graphic='edgetag'
         >
           <PrimaryCTA
-            text='Try for free'
-            rel='next'
-            link='https://app.edgetag.io/'
+            text='Learn more'
+            link='https://blotout.io/no-signal-loss'
           ></PrimaryCTA>
         </ValuePropsSection>
 
@@ -96,7 +86,10 @@ export default function Index() {
           text='Lifetime analytics and multi-touch attribution for every step of the customer journey. Seamlessly segment across online and offline customer profiles.'
           graphic='cloud'
         >
-          <PrimaryCTA text='Schedule a demo'></PrimaryCTA>
+          <PrimaryCTA
+            text='Learn more'
+            link='https://blotout.io/no-signal-loss'
+          ></PrimaryCTA>
         </ValuePropsSection>
       </ValuePropsWrapper>
 
@@ -109,7 +102,7 @@ export default function Index() {
           text='more conversions on Klaviyo'
         ></StatsSection>
 
-        <StatsSection figure='30%' text='higher ROAS on Google'></StatsSection>
+        <StatsSection figure='100%' text='attribution on GA4'></StatsSection>
       </StatsWrapper>
 
       {/* TrustOps */}
@@ -122,13 +115,11 @@ export default function Index() {
       {/* TrustOps */}
       <SpecialSection>
         <a
-          href='https://calendly.com/blotout-experts/talk-to-us'
-          target='_blank'
-          rel='noreferrer'
+          href='https://blotout.io/no-signal-loss'
           className='special-cta'
           onClick={() => codifyClick('TrustOps - CTA')}
         >
-          Learn how
+          Learn more
         </a>
       </SpecialSection>
     </div>

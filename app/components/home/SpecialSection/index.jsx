@@ -1,12 +1,11 @@
-import { codifyClick } from '~/utils'
-
 import Section from '~/components/core/Section'
-
 import Special from '~/graphics/home/Special'
 import SpecialVisual from '~/graphics/home/SpecialVisual'
 import { ArrowUpRight24 } from '@carbon/icons-react'
 
-const SpecialSection = () => {
+const SpecialSection = (props) => {
+  const { children } = props
+
   return (
     <Section id='special-section'>
       <div id='special-container'>
@@ -29,17 +28,7 @@ const SpecialSection = () => {
             <SpecialVisual />
           </div>
         </div>
-        <div className='bottom'>
-          <a
-            href='https://calendly.com/blotout-experts/talk-to-us'
-            target='_blank'
-            rel='noreferrer'
-            className='special-cta'
-            onClick={() => codifyClick('TrustOps - CTA')}
-          >
-            Learn how
-          </a>
-        </div>
+        <div className='bottom'>{children}</div>
       </div>
     </Section>
   )
