@@ -4,8 +4,8 @@ import { codifyClick } from '~/utils'
 const LinkBanner = () => {
   return (
     <div className='banner'>
-      <span>New Case Study:</span> How Pura Vida used Blotout to expand their
-      most valuable audience segments.
+      <span>New Case Study:</span> Pura Vida captures returning customers with
+      Blotout Edgetag.
       <a
         href='doc/pura-vida-klaviyo-case-study-by-blotout.pdf'
         download='doc/pura-vida-klaviyo-case-study-by-blotout.pdf'
