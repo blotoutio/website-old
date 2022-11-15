@@ -1,6 +1,4 @@
-import { useLocation, Link } from 'react-router-dom'
-
-import { useEffect } from 'react'
+import { useEffect, useLocation, Link } from '@remix-run/react'
 
 import { ArrowRight20 } from '@carbon/icons-react'
 

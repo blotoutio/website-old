@@ -1,7 +1,7 @@
 import { codifyClick } from '~/utils'
 
 import Section from '~/components/core/Section'
-import { Link } from 'react-router-dom'
+import { Link } from '@remix-run/react'
 import LogoLight from '~/graphics/LogoLight'
 import AWSPartner from '~/graphics/AWSPartner'
 import MetaPartner from '~/graphics/MetaPartner'

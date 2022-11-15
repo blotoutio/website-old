@@ -1,7 +1,13 @@
-import { useEffect } from 'react'
-import { Meta, Links, Scripts, LiveReload } from 'remix'
+import {
+  Meta,
+  Links,
+  Scripts,
+  LiveReload,
+  Outlet,
+  useEffect,
+  useLocation,
+} from '@remix-run/react'
 import { init } from '@blotoutio/edgetag-sdk-js'
-import { useLocation, Outlet } from 'react-router-dom'
 import Header from './components/core/Header'
 import Footer from './components/core/Footer'
 import * as blotoutCloud from '@blotoutio/providers-blotout-cloud-sdk'
@@ -47,7 +53,7 @@ function Document({ children }) {
       <body>
         {children}
         <Scripts />
-        {process.env.NODE_ENV === 'development' && <LiveReload />}
+        <LiveReload />
       </body>
     </html>
   )

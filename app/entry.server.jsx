@@ -1,5 +1,5 @@
-import ReactDOMServer from 'react-dom/server'
-import { RemixServer } from 'remix'
+import { RemixServer } from '@remix-run/react'
+import { renderToString } from 'react-dom/server'
 
 export default function handleRequest(
   request,
@@ -7,15 +7,14 @@ export default function handleRequest(
   responseHeaders,
   remixContext
 ) {
-  let markup = ReactDOMServer.renderToString(
+  const markup = renderToString(
     <RemixServer context={remixContext} url={request.url} />
   )
 
+  responseHeaders.set('Content-Type', 'text/html')
+
   return new Response('<!DOCTYPE html>' + markup, {
+    headers: responseHeaders,
     status: responseStatusCode,
-    headers: {
-      ...Object.fromEntries(responseHeaders),
-      'Content-Type': 'text/html',
-    },
   })
 }

@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import { useRouteData } from 'remix'
+import { Link, useLoaderData } from '@remix-run/react'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
@@ -92,7 +91,7 @@ export function loader() {
 }
 
 export default function Blog() {
-  let posts = useRouteData()
+  let posts = useLoaderData()
   return (
     <div className='blog'>
       <ContentHeader icon={<Blog32 />} text='Blog' className='blog-header' />

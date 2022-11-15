@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link } from '@remix-run/react'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
-import { useRouteData } from 'remix'
+import { useRouteData } from '@remix-run/react'
 
 import * as post3 from './edgetag-facebook-lux.mdx'
 import * as post2 from './besmitten.mdx'
