@@ -20,9 +20,11 @@
     "@remix-run/react": "^0.18.0",
     "@remix-run/vercel": "^0.18.0",
     "@vercel/node": "^1.8.3",
+    "free-email-domains": "^1.0.27",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^6.0.0-beta.0",
+    "react-select": "^5.7.0",
     "remix": "^0.18.0"
   },
   "devDependencies": {

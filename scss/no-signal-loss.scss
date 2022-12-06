@@ -1,0 +1,208 @@
+#campaign-section {
+  .section-content {
+    padding: 128px 24px;
+
+    @media (max-width: 1280px) {
+      padding: 96px 24px;
+    }
+
+    h1 {
+      max-width: 700px;
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 50px;
+      text-align: center;
+      line-height: 64px;
+      letter-spacing: -0.025em;
+      color: var(--neutral-100);
+
+      @media (max-width: 1280px) {
+        max-width: 750px;
+        font-size: 40px;
+        line-height: 54px;
+        letter-spacing: -0.025em;
+      }
+
+      @media (max-width: 1280px) {
+        max-width: 750px;
+        font-size: 46px;
+        line-height: 54px;
+        letter-spacing: -0.025em;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 38px;
+        line-height: 46px;
+      }
+
+      @media (max-width: 650px) {
+        font-size: 34px;
+        line-height: 44px;
+      }
+
+      span {
+        font-weight: 500;
+        color: var(--orange-50);
+      }
+    }
+  }
+}
+
+#campaign-section {
+  .campaign-box {
+    box-shadow: 0 3px 20px var(--black-8);
+    width: 100%;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 72px auto 0;
+    position: relative;
+    border-radius: 10px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--black-8);
+    padding: 32px;
+
+    h2 {
+      padding: 0 0 32px;
+      color: var(--neutral-100);
+      text-align: center;
+    }
+
+    .icon-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      .thanks {
+        color: var(--neutral-100);
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .campaign-form {
+    .field-wrapper {
+      margin-bottom: 16px;
+
+      label span {
+        color: var(--errorJuice);
+        margin-left: 2px;
+      }
+
+      .helper-text {
+        color: var(--errorJuice);
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    label {
+      color: var(--neutral-70);
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    input {
+      background: --var(--white);
+      width: 100%;
+      padding: 10px 16px 10px 16px;
+      border: 1px solid var(--neutral-20);
+      border-radius: 5px;
+      transition: 0.1s;
+      outline: none;
+      color: var(--neutrals-80);
+      font-size: 16px;
+      line-height: 24px;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+
+      &:focus {
+        border-color: var(--blue-40);
+        box-shadow: 0 0 4px rgba(57, 123, 244, 0.5);
+        outline-width: 0;
+      }
+
+      &:disabled {
+        background: var(--neutral-10);
+      }
+    }
+
+    .input-error {
+      border: 1px solid var(--errorJuice);
+    }
+
+    .select-error .regular__control {
+      border-color: var(--errorJuice);
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+
+      color: var(--white);
+      background: var(--neutral-70);
+      border: 1px solid transparent;
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 300;
+
+      width: 100%;
+      cursor: pointer;
+      border-radius: 5px;
+      position: relative;
+      font-family: 'Inter', sans-serif;
+      text-decoration: none;
+      padding: 0;
+      display: inline-block;
+
+      &:hover {
+        background: var(--neutral-80);
+      }
+      &:active {
+        background: var(--neutral-90);
+      }
+    }
+
+    .select {
+      margin: 0;
+      font-size: 14px;
+      line-height: 20px;
+
+      .analyze__indicators {
+        display: none;
+      }
+
+      .analyze__menu {
+        width: auto;
+        min-width: 100%;
+      }
+
+      .regular__dropdown-indicator {
+        padding: 6px 8px;
+      }
+
+      .regular__indicator {
+        padding: 6px 8px;
+      }
+    }
+  }
+}
+
+body,
+header,
+.sub-nav {
+  background-color: var(--orange-10) !important;
+}
+
+.banner {
+  display: none;
+}
