@@ -3,7 +3,7 @@ import { metaInfo } from '../utils'
 import CheckCircle from '../graphics/CheckCircle'
 import Section from '~/components/core/Section'
 
-import { tag } from '@blotoutio/edgetag-sdk-js'
+import { tag, data } from '@blotoutio/edgetag-sdk-js'
 import { useState } from 'react'
 import Select from 'react-select'
 import freeEmailDomains from 'free-email-domains'
@@ -146,7 +146,7 @@ export default function CampaignForm() {
       return
     }
 
-    tag('data', {
+    data({
       firstName: form.name,
       email: form.email,
       phone: form.phone,
