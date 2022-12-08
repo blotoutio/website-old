@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Meta, Links, Scripts, LiveReload } from 'remix'
-import { init } from '@blotoutio/edgetag-sdk-js'
+import { init, tag } from '@blotoutio/edgetag-sdk-js'
 import { useLocation, Outlet } from 'react-router-dom'
 import Header from './components/core/Header'
 import Footer from './components/core/Footer'
@@ -65,11 +65,7 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    let link = pathname
-    link = link.substr(1, link.length)
-    if (!link) {
-      link = 'homepage'
-    }
+    tag('PageView')
   }, [pathname])
 
   return (
