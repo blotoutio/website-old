@@ -156,6 +156,13 @@ export default function CampaignForm() {
       { company: form.company, monthlyAdSpend: form.monthlyAdSpend.value },
       { klaviyo: true }
     )
+
+    const value = form.monthlyAdSpend.value.split('-')[0].replace(/[^0-9]/g, '')
+    tag(
+      'Lead',
+      { name: 'Campaign form', value, currency: 'USD' },
+      { facebook: true }
+    )
     setSubmitted(true)
   }
 
