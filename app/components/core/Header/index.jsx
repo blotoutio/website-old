@@ -117,7 +117,7 @@ const Header = () => {
                     <span>Help Center</span>
                   </a>
                   <a
-                    href='https://docs.blotout.io'
+                    href='https://app.edgetag.io/docs'
                     target='_blank'
                     rel='noopener'
                     className='sub-nav-link'
