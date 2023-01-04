@@ -1,8 +1,14 @@
 import { codifyClick } from '~/utils'
 import Section from '~/components/core/Section'
 import PrimaryCTA from '~/components/core/PrimaryCTA'
+import { tag } from '@blotoutio/edgetag-sdk-js'
 
 const HeroSection = () => {
+  const handleCTAClick = () => {
+    codifyClick('Home - Hero Calendly CTA Click')
+    tag('Lead', { currency: 'USD', value: 10 })
+  }
+
   return (
     <Section className='hero'>
       <h1>
@@ -30,7 +36,7 @@ const HeroSection = () => {
           target='_blank'
           rel='noreferrer'
           className='hero-cta'
-          onClick={() => codifyClick('Home - Hero Calendly CTA Click')}
+          onClick={handleCTAClick}
         >
           <span>Schedule a demo</span>
         </a>
