@@ -12,9 +12,9 @@
     "postinstall": "remix setup"
   },
   "dependencies": {
-    "@blotoutio/edgetag-sdk-js": "^0.7.3",
-    "@blotoutio/providers-blotout-cloud-sdk": "^0.7.3",
-    "@blotoutio/providers-google-analytics-4-sdk": "^0.7.3",
+    "@blotoutio/edgetag-sdk-js": "^0.8.0",
+    "@blotoutio/providers-blotout-cloud-sdk": "^0.8.0",
+    "@blotoutio/providers-google-analytics-4-sdk": "^0.8.0",
     "@carbon/icons-react": "^10.41.0",
     "@lottiefiles/react-lottie-player": "^3.4.1",
     "@remix-run/react": "^0.18.0",
