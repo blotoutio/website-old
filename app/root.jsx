@@ -81,7 +81,7 @@ export default function App() {
       <Header />
       <Outlet />
       <Footer />
-      {!showIframe && (
+      {showIframe && (
         <iframe
           src='https://nosignalloss.com?redirect=true'
           width={1}
