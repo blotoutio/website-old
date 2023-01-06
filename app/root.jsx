@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Meta, Links, Scripts, LiveReload } from 'remix'
 import { init, tag } from '@blotoutio/edgetag-sdk-js'
 import { useLocation, Outlet } from 'react-router-dom'
@@ -54,21 +54,13 @@ function Document({ children }) {
 }
 
 export default function App() {
-  const [showIframe, setShowIframe] = useState(true)
   const { pathname } = useLocation()
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search)
-
-    if (params.has('et_u_id')) {
-      setShowIframe(false)
-    }
-
     init({
       edgeURL: 'https://pjmsn.blotout.io',
       disableConsentCheck: true,
       providers: [blotoutCloud, ga4],
-      userId: params.get('et_u_id'),
     })
   }, [])
 
@@ -81,14 +73,6 @@ export default function App() {
       <Header />
       <Outlet />
       <Footer />
-      {showIframe && (
-        <iframe
-          src='https://nosignalloss.com?redirect=true'
-          width={1}
-          height={1}
-          style={{ visibility: 'hidden' }}
-        />
-      )}
     </Document>
   )
 }
