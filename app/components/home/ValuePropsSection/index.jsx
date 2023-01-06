@@ -13,15 +13,10 @@ const ValuePropsSection = (props) => {
       </div>
       <div className='value-props-section value-props-section-graphic'>
         <img src={`img/home/graphic-${graphic}.png`} alt='' />
-        {graphic === 'edgetag' ? (
-          <PrimaryCTA
-            text='Try for free'
-            rel='next'
-            link='https://app.edgetag.io/'
-          ></PrimaryCTA>
-        ) : (
-          <PrimaryCTA text='Schedule a demo'></PrimaryCTA>
-        )}
+        <PrimaryCTA
+          text='Learn more'
+          link='https://blotout.io/no-signal-loss'
+        ></PrimaryCTA>
       </div>
     </div>
   )

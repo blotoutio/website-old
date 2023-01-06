@@ -1,46 +1,19 @@
 import { codifyClick } from '~/utils'
 import Section from '~/components/core/Section'
-import PrimaryCTA from '~/components/core/PrimaryCTA'
-import { tag } from '@blotoutio/edgetag-sdk-js'
 
-const HeroSection = () => {
-  const handleCTAClick = () => {
-    codifyClick('Home - Hero Calendly CTA Click')
-    tag('Lead', { currency: 'USD', value: 10 })
-  }
+const HeroSection = (props) => {
+  const { text, children } = props
 
   return (
     <Section className='hero'>
-      <h1>
-        Supercharge your marketing signals
-        <br />
-        &nbsp;in the <span>post-cookie</span> world
-      </h1>
+      <h1>{text}</h1>
       <p>
         Increase sales, recover lost carts, and reduce CAC
         <br />
         &nbsp;by restoring customer identity.
       </p>
 
-      <div id='cta-section'>
-        <PrimaryCTA
-          text='Try for free'
-          rel='next'
-          link='https://app.edgetag.io/'
-          codify_as='Home - Hero EdgeTag CTA Click'
-          class_name='new-cta'
-        ></PrimaryCTA>
-
-        <a
-          href='https://calendly.com/blotout-experts/talk-to-us'
-          target='_blank'
-          rel='noreferrer'
-          className='hero-cta'
-          onClick={handleCTAClick}
-        >
-          <span>Schedule a demo</span>
-        </a>
-      </div>
+      {children}
 
       <div id='customers'>
         <div id='customers-text'>Trusted by leading brands and agencies</div>
