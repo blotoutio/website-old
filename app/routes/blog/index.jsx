@@ -3,6 +3,7 @@ import { useRouteData } from 'remix'
 import { codifyClick, formatDate, metaInfo, postFromModule } from '../../utils'
 import stylesUrl from '../../styles/writing.css'
 
+import * as post34 from './first-party-data-advantage.mdx'
 import * as post33 from './klaviyo-support-edgetag.mdx'
 import * as post32 from './small-businesses-with-own-martech.mdx'
 import * as post31 from './pixated-martech-series.mdx'
@@ -55,6 +56,7 @@ export function links() {
 
 export function loader() {
   return [
+    postFromModule(post34),
     postFromModule(post33),
     postFromModule(post32),
     postFromModule(post31),
