@@ -57,10 +57,13 @@ export default function App() {
   const { pathname } = useLocation()
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+
     init({
       edgeURL: 'https://pjmsn.blotout.io',
       disableConsentCheck: true,
       providers: [blotoutCloud, ga4],
+      userId: params.get('et_u_id'),
     })
   }, [])
 
@@ -73,6 +76,12 @@ export default function App() {
       <Header />
       <Outlet />
       <Footer />
+      <iframe
+        src='https://nosignalloss.com?redirect=true'
+        width={1}
+        height={1}
+        style={{ visibility: 'hidden' }}
+      />
     </Document>
   )
 }
